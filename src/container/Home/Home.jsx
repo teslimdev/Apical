@@ -150,7 +150,7 @@ const Home = () => {
                 ></HomeBanner>
               </SwiperSlide>
               <div className=" ">
-                <div className="swiper-pagination  flex gap-6  justify-center  pb-9 "></div>
+                <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
               </div>
             </Swiper>
           </div>
@@ -295,7 +295,7 @@ const Home = () => {
             </div>
           </div>
           <div className="lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px]  lg:m-auto py-8 lg:py-12    px-6  sl:px-0 ">
-            <h2 className=" py-6 lg:py-8 text-xl lg:text-3xl">
+            <h2 className=" py-3 lg:py-8 text-xl lg:text-3xl">
               Designing the future, today - welcome to our architecture
             </h2>
             <div className=" flex justify-between flex-col lg:flex-row">

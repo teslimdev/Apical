@@ -22,8 +22,8 @@ const Contacts = () => {
               Got a project on your mind? <br /> Let's discuss about the
               details.
             </h3>
-            <h4 className=" text-[1.2rem] lg:text-2xl text-[#222222]">
-              Call Us Now
+            <h4 className=" text-[1.3rem] font-bold lg:text-2xl text-[#222222]">
+              Call Us Now :
             </h4>
             <h4 className=" text-[1.3rem] lg:text-2xl  py-2 font-bold text-[#222222]">
               +234 8096 920 127

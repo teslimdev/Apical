@@ -1159,6 +1159,14 @@ video {
   padding-top: 5%;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }

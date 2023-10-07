@@ -1,11 +1,82 @@
 import React from 'react'
+import pic3  from '../../../src/pictures/img3.jpeg'
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { BsPinterest } from "react-icons/bs";
 
 const Contacts = () => {
   return (
-    <div>
-      <h2>nainja</h2>
+    <div className="">
+      <section className=" one">
+        <div
+          style={{ backgroundImage: `url(${pic3})` }}
+          className=" min-h-[500px] bg-cover bg-center"
+        ></div>
+      </section>
+      <section className="two bg-[#f2f2f2] ">
+        <div className=" flex flex-col lg:flex-row gap-10 lg:gap-0 max-w-[1250px] m-auto justify-between py-8 sl:py-16 px-6">
+          <div className=" lg:max-w-[500px]">
+            <h2 className=" text-2xl md:text-4xl lg:text-7xl font-bold 2xl:text-[6rem] text-[#222222] border-b-2 pb-3">
+              Let's Talk
+            </h2>
+            <h3 className=" lg:text-2xl text-[1.1rem] py-2">
+              Got a project on your mind? Let's discuss about the details.
+            </h3>
+            <h4 className=" text-[1.2rem] lg:text-2xl text-[#222222]">
+              Call Us
+            </h4>
+            <h4 className=" text-[1.3rem] lg:text-2xl  py-2 font-bold text-[#222222]">
+              +12 9887 234 122
+            </h4>
+            <div className=" flex text-xl gap-3 pt-2">
+              <AiFillInstagram className=" text-[#222222] text-2xl cursor-pointer" />
+              <AiFillLinkedin className=" text-[#222222]  text-2xl cursor-pointer" />
+              <BsPinterest className=" text-[#222222]  text-2xl cursor-pointer" />
+            </div>
+          </div>
+
+          <div>
+            <form action="data">
+              <div>
+                <input
+                  type="text"
+                  required
+                  placeholder=" Name"
+                  className="  bg-transparent text-[#222222] border-0 placeholder:text-[#8A6201] pl-1 w-full border-b border-b-black outline-[#222222] "
+                />
+              </div>{" "}
+              <br />
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  required
+                  className="  bg-transparent text-[#222222] border-0 placeholder:text-[#8A6201] w-full border-b pl-2 border-b-black outline-[#222222] "
+                />
+              </div>{" "}
+              <br />
+              <div>
+                <textarea
+                  name=""
+                  id=""
+                  cols="60"
+                  rows="8"
+                  required
+                  placeholder=" Your Message"
+                  className="  h-32 w-full resize-none border-b text-[#222222] border-b-black rounded outline-[#222222]  pl-1 bg-transparent placeholder:text-[#8A6201]  "
+                ></textarea>
+              </div>{" "}
+              <br />
+              <div>
+                <button className=" py-2 px-4 rounded-full  bg-[#222222] text-white hover:bg-[#333333]">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
 export default Contacts

@@ -22,18 +22,18 @@ export default function Header() {
       <nav className="    ">
         <div
           id="navmain"
-          className="  bg-white  py-2 w-full  fixed    border-[#333333] z-10"
+          className="  bg-white  shadow-lg py-2 w-full  fixed    border-[#333333] z-10"
         >
-          <div className=" flex max-w-[1250px] items-center m-auto justify-between">
-            <div className=" pl-6  ">
-              <a href="/" className=" flex  items-center gap-3">
-                <img src={pic1} alt="" className=" w-8 md:w-14 3xl:w-20" />
+          <div className=" flex sl:max-w-[1200px] px-6 sl:px-0 items-center m-auto justify-between">
+            <div className="  ">
+              <a href="/" className=" flex  items-center gap-2">
+                <img src={pic1} alt="" className=" w-8 md:w-12 3xl:w-20" />
                 <h1 className=" text-black text-[1rem] lg:text-3xl 3xl:text-5xl">
                   APICAL DESIGNS
                 </h1>
               </a>
             </div>
-            <div className=" hidden md:block  pr-16 lg:pr-36">
+            <div className=" hidden md:block  ">
               <ul className=" flex  2xl:gap-6 ">
                 <Link to="/ " className="">
                   <li className=" 3xl:text-4xl hover:bg-[#222222] py-1 px-2 rounded hover:text-white">HOME</li>
@@ -55,7 +55,7 @@ export default function Header() {
                 </Link>
               </ul>
             </div>
-            <div className=" md:hidden pr-6">
+            <div className=" md:hidden">
               {!nav ? (
                 <FaBars className=" text-black text-2xl " onClick={isOpen} />
               ) : (

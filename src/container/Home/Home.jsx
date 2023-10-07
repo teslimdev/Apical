@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
-import pic12 from '../../../src/pictures/img12.jpg'
+import pic12 from '../../../src/pictures/ridwan.png'
 import pic5 from "../../../src/pictures/img5.jpeg";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";

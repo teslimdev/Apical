@@ -48,15 +48,15 @@ const Footer = () => {
           </div>
         </div>
     </div>
-      <div className=' flex flex-col md:flex-row  pt-12 border-t  items-center md:justify-between max-w-[900px] md:px-8 lg:max-w-[1250px] 3xl:max-w-[2000px] m-auto px-3'>
+      <div className=' flex flex-col md:flex-row  pt-12 border-t  items-center md:justify-between max-w-[900px] md:px-8 lg:max-w-[1250px] 3xl:max-w-[2000px] m-auto px-6'>
       <div>
-          <p className=' text-white 3xl:text-3xl'>© 2023 APICAL DESIGNS, ALL RIGHTS RESERVED</p>
+          <p className=' text-white text-center text-[0.9rem] 3xl:text-3xl'>© 2023 APICAL DESIGNS, ALL RIGHTS RESERVED</p>
       </div>
       <div className=' pt-6 md:pt-0   '>
         <ul className=' flex space-x-4'>
-            <li className=' '><a href="https://www.instagram.com/apical_designs/?hl=en"><AiFillInstagram className='3xl:text-6xl  text-4xl text-white'></AiFillInstagram></a></li>
-            <li><a href="/"><AiFillLinkedin className='  3xl:text-6xl text-4xl text-white '></AiFillLinkedin></a></li>
-            <li><a href="https://www.pinterest.com/Apicaldesigns/"><BsPinterest className='3xl:text-6xl text-4xl text-white'></BsPinterest></a></li>
+            <li className=' '><a href="https://www.instagram.com/apical_designs/?hl=en"><AiFillInstagram className='3xl:text-6xl  text-2xl md:text-4xl text-white'></AiFillInstagram></a></li>
+            <li><a href="/"><AiFillLinkedin className='  3xl:text-6xl text-2xl md:text-4xl text-white '></AiFillLinkedin></a></li>
+            <li><a href="https://www.pinterest.com/Apicaldesigns/"><BsPinterest className='3xl:text-6xl text-2xl md:text-4xl text-white'></BsPinterest></a></li>
         </ul>
       </div>
     </div>

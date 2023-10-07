@@ -34,21 +34,24 @@ export default function Header() {
               </a>
             </div>
             <div className=" hidden md:block  pr-16 lg:pr-36">
-              <ul className=" flex  gap-6 ">
-                <Link to="/">
-                  <li className=" 3xl:text-4xl">HOME</li>
+              <ul className=" flex  2xl:gap-6 ">
+                <Link to="/ " className="">
+                  <li className=" 3xl:text-4xl hover:bg-[#222222] py-1 px-2 rounded hover:text-white">HOME</li>
                 </Link>
                 <Link to="/About">
-                  <li className=" 3xl:text-4xl ">ABOUT</li>
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">ABOUT</li>
+                </Link>
+                <Link to="/Services ">
+                  <li className="  hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">SERVICES</li>
                 </Link>
                 <Link to="/Projects">
-                  <li className=" 3xl:text-4xl ">PROJECTS</li>
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">PROJECTS</li>
                 </Link>
                 <Link to="/News">
-                  <li className=" 3xl:text-4xl ">NEWS</li>
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">NEWS</li>
                 </Link>
                 <Link to="/Contacts">
-                  <li className=" 3xl:text-4xl ">CONTACTS</li>
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">CONTACTS</li>
                 </Link>
               </ul>
             </div>
@@ -68,44 +71,25 @@ export default function Header() {
                         </a>
                       </li>
                       <li>
-                        <a href="/">NEWS</a>
+                        <a href="/About">ABOUT</a>
                       </li>
                       <li>
-                        <a href="/">ABOUT</a>
+                        <a href="/Services">SERVICES</a>
                       </li>
                       <li>
-                        <a href="/">PROJECTS</a>
+                        <a href="/Projects">PROJECTS</a>
                       </li>
                       <li>
-                        <a href="/">CONTACTS</a>
+                        <a href="/News">NEWS</a>
+                      </li>
+                      <li>
+                        <a href="/Contacts">CONTACTS</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               )}
             </div>
-          </div>
-
-          <div className=" top-[4.5rem] right-0  w-[300px]  h-screen  bg-[#8A6201]   border-t-2 hidden ">
-            <ul className=" text-white gap-6 px-10 space-y-8 pt-16 ">
-              <li className="">
-                <a href="/" className="">
-                  HOME
-                </a>
-              </li>
-              <li>
-                <a href="/">NEWS</a>
-              </li>
-              <li>
-                <a href="/">ABOUT</a>
-              </li>
-              <li>
-                <a href="/">PROJECTS</a>
-              </li>
-              <li>
-                <a href="/">CONTACTS</a>
-              </li>
-            </ul>
           </div>
         </div>
       </nav>

@@ -754,7 +754,7 @@ const Home = () => {
                 Do not hesitate to say Hello
               </p>
               <div>
-                <Link to='/'>
+                <Link to='/Contacts'>
                   <button className=" text-white border-2 py-3 px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
                     Lets Talk
                   </button>

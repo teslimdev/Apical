@@ -9,7 +9,7 @@ const Contacts = () => {
       <section className=" one">
         <div
           style={{ backgroundImage: `url(${pic3})` }}
-          className=" min-h-[500px] bg-cover bg-center"
+          className=" min-h-[400px] md:min-h-[500px] bg-cover bg-center"
         ></div>
       </section>
       <section className="two bg-[#f2f2f2] ">
@@ -18,19 +18,24 @@ const Contacts = () => {
             <h2 className=" text-2xl md:text-4xl lg:text-7xl font-bold 2xl:text-[6rem] text-[#222222] border-b-2 pb-3">
               Let's Talk
             </h2>
-            <h3 className=" lg:text-2xl text-[1.1rem] py-2">
-              Got a project on your mind? Let's discuss about the details.
+            <h3 className=" lg:text-2xl text-[1.25rem] py-2">
+              Got a project on your mind? <br /> Let's discuss about the
+              details.
             </h3>
             <h4 className=" text-[1.2rem] lg:text-2xl text-[#222222]">
-              Call Us
+              Call Us Now
             </h4>
             <h4 className=" text-[1.3rem] lg:text-2xl  py-2 font-bold text-[#222222]">
-              +12 9887 234 122
+              +234 8096 920 127
             </h4>
             <div className=" flex text-xl gap-3 pt-2">
-              <AiFillInstagram className=" text-[#222222] text-2xl cursor-pointer" />
+              <a href="https://www.instagram.com/apical_designs/?hl=en">
+                <AiFillInstagram className=" text-[#222222] text-2xl cursor-pointer" />
+              </a>
               <AiFillLinkedin className=" text-[#222222]  text-2xl cursor-pointer" />
-              <BsPinterest className=" text-[#222222]  text-2xl cursor-pointer" />
+              <a href="https://www.pinterest.com/Apicaldesigns/">
+                <BsPinterest className=" text-[#222222]  text-2xl cursor-pointer" />
+              </a>
             </div>
           </div>
 

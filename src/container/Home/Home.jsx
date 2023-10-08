@@ -179,10 +179,11 @@ const Home = () => {
               </h3>
               <div className="">
                 <Link
-                  to="/Projects"
-                  className=" text-[1.1rem] lg:text-xl 3xl:text-4xl underline hover:no-underline decoration-[#333333] "
+                  to="/Services"
+                  className=" underline hover:no-underline 3xl:text-[2rem] flex"
                 >
-                  All projects
+                  All Services
+                  <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
                 </Link>
               </div>
             </div>

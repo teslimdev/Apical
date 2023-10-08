@@ -20,8 +20,8 @@ const Projects = () => {
           Projects
         </h1>
         <div className="  grid  md:grid-cols-2    sl:px-0  m-auto gap-6 ">
-          <Link to="/">
-            <div>
+          <div>
+            <Link to="/">
               <Swiper
                 modules={[
                   Pagination,
@@ -70,12 +70,13 @@ const Projects = () => {
                   <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
                 </div>
               </Swiper>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          <Link to="/">
+          
             <div>
-              <Swiper
+              <Link to="/">
+                 <Swiper
                 modules={[
                   Pagination,
                   A11y,
@@ -123,12 +124,14 @@ const Projects = () => {
                   <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
                 </div>
               </Swiper>
+              </Link>
+             
             </div>
-          </Link>
+          
 
-          <Link to="/">
             <div>
-              <Swiper
+              <Link to="/">
+                 <Swiper
                 modules={[
                   Pagination,
                   A11y,
@@ -176,65 +179,68 @@ const Projects = () => {
                   <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
                 </div>
               </Swiper>
+              </Link>
+             
             </div>
-          </Link>
+          
+            <div>
+               <Link to="/">
+                 <Swiper
+                modules={[
+                  Pagination,
+                  A11y,
+                  EffectFade,
+                  Autoplay,
+                  EffectCoverflow,
+                ]}
+                effect="fade"
+                loop={true}
+                speed={1500}
+                autoplay={{
+                  delay: 7000,
+                  stopOnLastSlide: false,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: false,
+                  waitForTransition: true,
+                }}
+                a11y={{
+                  prevSlide: "true",
+                  nextSlide: "true",
+                }}
+                slidesPerView={1}
+                pagination={{
+                  el: ".swiper-pagination",
+                  clickable: true,
+                }}
+                scrollbar={{ draggable: true }}
+              >
+                <SwiperSlide>
+                  <Projectslide image={pic5}></Projectslide>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Projectslide image={pic2}></Projectslide>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Projectslide image={pic4}></Projectslide>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Projectslide image={pic5}></Projectslide>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Projectslide image={pic3}></Projectslide>
+                </SwiperSlide>
+                <div className=" ">
+                  <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
+                </div>
+              </Swiper>
+               </Link>
+             
+            </div>
+        
 
-          <Link to="/">
             <div>
-              <Swiper
-                modules={[
-                  Pagination,
-                  A11y,
-                  EffectFade,
-                  Autoplay,
-                  EffectCoverflow,
-                ]}
-                effect="fade"
-                loop={true}
-                speed={1500}
-                autoplay={{
-                  delay: 7000,
-                  stopOnLastSlide: false,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: false,
-                  waitForTransition: true,
-                }}
-                a11y={{
-                  prevSlide: "true",
-                  nextSlide: "true",
-                }}
-                slidesPerView={1}
-                pagination={{
-                  el: ".swiper-pagination",
-                  clickable: true,
-                }}
-                scrollbar={{ draggable: true }}
-              >
-                <SwiperSlide>
-                  <Projectslide image={pic5}></Projectslide>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Projectslide image={pic2}></Projectslide>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Projectslide image={pic4}></Projectslide>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Projectslide image={pic5}></Projectslide>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Projectslide image={pic3}></Projectslide>
-                </SwiperSlide>
-                <div className=" ">
-                  <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
-                </div>
-              </Swiper>
-            </div>
-          </Link>
-
-          <Link to="/">
-            <div>
-              <Swiper
+              <Link to="/">
+                <Swiper
                 modules={[
                   Pagination,
                   A11y,
@@ -282,12 +288,13 @@ const Projects = () => {
                   <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
                 </div>
               </Swiper>
+              </Link>
+              
             </div>
-          </Link>
-
-          <Link to="/">
+          
             <div>
-              <Swiper
+               <Link to="/">
+                <Swiper
                 modules={[
                   Pagination,
                   A11y,
@@ -335,8 +342,9 @@ const Projects = () => {
                   <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
                 </div>
               </Swiper>
+               </Link>
+              
             </div>
-          </Link>
         </div>
       </div>
     </div>

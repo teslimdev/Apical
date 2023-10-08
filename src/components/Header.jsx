@@ -40,7 +40,9 @@ const location = useLocation();
                 <Link
                   to="/ "
                   className={`text-[#222222] ${
-                    location.pathname === "/" ? "text-[#8A6201]" : ""
+                    location.pathname === "/"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
                   }`}
                 >
                   <li
@@ -53,7 +55,9 @@ const location = useLocation();
                 <Link
                   to="/About"
                   className={`text-[#222222] ${
-                    location.pathname === "/About" ? "text-[#8A6201]" : ""
+                    location.pathname === "/About"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
                   }`}
                 >
                   <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
@@ -63,7 +67,9 @@ const location = useLocation();
                 <Link
                   to="/Services "
                   className={`text-[#222222] ${
-                    location.pathname === "/Services" ? "text-[#8A6201]" : ""
+                    location.pathname === "/Services"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
                   }`}
                 >
                   <li className="  hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
@@ -73,7 +79,9 @@ const location = useLocation();
                 <Link
                   to="/Projects"
                   className={`text-[#222222] ${
-                    location.pathname === "/Projects" ? "text-[#8A6201]" : ""
+                    location.pathname === "/Projects"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
                   }`}
                 >
                   <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
@@ -83,7 +91,9 @@ const location = useLocation();
                 <Link
                   to="/News"
                   className={`text-[#222222] ${
-                    location.pathname === "/News" ? "text-[#8A6201]" : ""
+                    location.pathname === "/News"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
                   }`}
                 >
                   <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
@@ -93,7 +103,9 @@ const location = useLocation();
                 <Link
                   to="/Contacts"
                   className={`text-[#222222] ${
-                    location.pathname === "/Contacts" ? "text-[#8A6201]" : ""
+                    location.pathname === "/Contacts"
+                      ? "text-[#8A6201] font-semibold "
+                      : ""
                   }`}
                 >
                   <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">

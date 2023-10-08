@@ -7,7 +7,7 @@ const Projects = () => {
         <h1 className=" text-3xl md:text-4xl lg:text-7xl text-[#222222] sl:text-[5rem] 2xl:text-[6rem] font-bold text-center pb-10 lg:pb-16">
           Projects
         </h1>
-        <div className="  grid md:grid-cols-2 px-6 lg:grid-cols-3 max-w-[1200px] sl:px-0  m-auto gap-6 ">
+        <div className="  grid md:grid-cols-2 px-6  max-w-[1200px] sl:px-0  m-auto gap-6 ">
           <div className="  ">
             <img src={pic3} alt="" className=" w-full h-[250px] lg:h-[300px]" />
             <h2 className=" text-xl pl-4 pt-6 pb-1 font-semibold">

@@ -1,55 +1,330 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import pic3 from '../../../src/pictures/img3.jpeg'
+import { Projectslide } from '../../components';
+import "swiper/css";
+import pic2 from "../../../src/pictures/img2.jpeg";
+import pic4 from "../../../src/pictures/img4.jpeg";
+import pic5 from "../../../src/pictures/img5.jpeg";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, EffectCoverflow } from "swiper/modules";
 const Projects = () => {
   return (
-    <div>
-      <div className=" pt-[20%] lg:pt-[10%] pb-16 lg:pb-28">
+    <div id='two'>
+      <div className=" pt-[20%] lg:pt-[10%] pb-16 lg:pb-28 px-6">
         <h1 className=" text-3xl md:text-4xl lg:text-7xl text-[#222222] sl:text-[5rem] 2xl:text-[6rem] font-bold text-center pb-10 lg:pb-16">
           Projects
         </h1>
-        <div className="  grid md:grid-cols-2 px-6  max-w-[1200px] sl:px-0  m-auto gap-6 ">
-          <div className="  ">
-            <img src={pic3} alt="" className=" w-full h-[250px] lg:h-[300px]" />
-            <h2 className=" text-xl pl-4 pt-6 pb-1 font-semibold">
-              The Petronas Twin Towers
-            </h2>
-            <p className=" text-[0.8rem] pl-6">HIGH LINE</p>
-          </div>
-          <div>
-            <img src={pic3} alt="" className=" w-full h-[250px] lg:h-[300px]" />
-            <h2 className=" text-xl pl-4 pt-6 pb-1 font-semibold">
-              The Petronas Twin Towers
-            </h2>
-            <p className=" text-[0.8rem] pl-6">HIGH LINE</p>
-          </div>
-          <div>
-            <img src={pic3} alt="" className=" w-full h-[250px] lg:h-[300px]" />
-            <h2 className=" text-xl pl-4 pt-6 pb-1 font-semibold">
-              The Petronas Twin Towers
-            </h2>
-            <p className=" text-[0.8rem] pl-6">HIGH LINE</p>
-          </div>
-          <div>
-            <img src={pic3} alt="" className=" w-full h-[250px] lg:h-[300px]" />
-            <h2 className=" text-xl pl-4 pt-6 pb-1 font-semibold">
-              The Petronas Twin Towers
-            </h2>
-            <p className=" text-[0.8rem] pl-6">HIGH LINE</p>
-          </div>
-          <div>
-            <img src={pic3} alt="" className=" w-full h-[250px] lg:h-[300px]" />
-            <h2 className=" text-xl pl-4 pt-6 pb-1 font-semibold">
-              The Petronas Twin Towers
-            </h2>
-            <p className=" text-[0.8rem] pl-6">HIGH LINE</p>
-          </div>
-          <div>
-            <img src={pic3} alt="" className=" w-full h-[250px] lg:h-[300px]" />
-            <h2 className=" text-xl pl-4 pt-6 pb-1 font-semibold">
-              The Petronas Twin Towers
-            </h2>
-            <p className=" text-[0.8rem] pl-6">HIGH LINE</p>
-          </div>
+        <div className="  grid md:grid-cols-2    sl:px-0  m-auto gap-6 ">
+          <Link to="/">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCoverflow,
+              ]}
+              effect="fade"
+              loop={true}
+              speed={1500}
+              autoplay={{
+                delay: 7000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              pagination={{
+                el: ".swiper-pagination",
+                clickable: true,
+              }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic2}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic4}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic5}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic4}></Projectslide>
+              </SwiperSlide>
+              <div className=" ">
+                <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
+              </div>
+            </Swiper>
+          </Link>
+
+          <Link to="/">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCoverflow,
+              ]}
+              effect="fade"
+              loop={true}
+              speed={1500}
+              autoplay={{
+                delay: 7000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              pagination={{
+                el: ".swiper-pagination",
+                clickable: true,
+              }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic2}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic4}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic5}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic2}></Projectslide>
+              </SwiperSlide>
+              <div className=" ">
+                <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
+              </div>
+            </Swiper>
+          </Link>
+
+          <Link to="/">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCoverflow,
+              ]}
+              effect="fade"
+              loop={true}
+              speed={1500}
+              autoplay={{
+                delay: 7000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              pagination={{
+                el: ".swiper-pagination",
+                clickable: true,
+              }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <Projectslide image={pic2}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic4}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic5}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <div className=" ">
+                <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
+              </div>
+            </Swiper>
+          </Link>
+
+          <Link to="/">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCoverflow,
+              ]}
+              effect="fade"
+              loop={true}
+              speed={1500}
+              autoplay={{
+                delay: 7000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              pagination={{
+                el: ".swiper-pagination",
+                clickable: true,
+              }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <Projectslide image={pic4}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic5}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic2}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <div className=" ">
+                <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
+              </div>
+            </Swiper>
+          </Link>
+
+          <Link to="/">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCoverflow,
+              ]}
+              effect="fade"
+              loop={true}
+              speed={1500}
+              autoplay={{
+                delay: 7000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              pagination={{
+                el: ".swiper-pagination",
+                clickable: true,
+              }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <Projectslide image={pic5}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic4}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic2}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <div className=" ">
+                <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
+              </div>
+            </Swiper>
+          </Link>
+
+          <Link to="/">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCoverflow,
+              ]}
+              effect="fade"
+              loop={true}
+              speed={1500}
+              autoplay={{
+                delay: 7000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              pagination={{
+                el: ".swiper-pagination",
+                clickable: true,
+              }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <Projectslide image={pic3}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic5}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic4}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic2}></Projectslide>
+              </SwiperSlide>
+              <SwiperSlide>
+                <Projectslide image={pic5}></Projectslide>
+              </SwiperSlide>
+              <div className=" ">
+                <div className="swiper-pagination  flex gap-6  justify-center  pb-16 "></div>
+              </div>
+            </Swiper>
+          </Link>
         </div>
       </div>
     </div>

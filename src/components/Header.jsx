@@ -38,9 +38,9 @@ const location = useLocation();
             <div className=" hidden md:block  ">
               <ul className=" flex  2xl:gap-6 ">
                 <Link
-                  to="/ "
+                  to="/Home2 "
                   className={`text-[#222222] ${
-                    location.pathname === "/"
+                    location.pathname === "/Home2"
                       ? "text-[#8A6201] font-semibold"
                       : ""
                   }`}
@@ -138,9 +138,9 @@ const location = useLocation();
                     <ul className=" text-black gap-6 px-6 space-y-8 ">
                       <li className="  border-b py-1 border-[#222222]">
                         <a
-                          href="/"
+                          href="/Home2"
                           className={`text-[#222222] ${
-                            location.pathname === "/"
+                            location.pathname === "/Home2"
                               ? "text-[#8A6201] font-semibold"
                               : ""
                           }`}

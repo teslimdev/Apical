@@ -37,3 +37,15 @@
     border: 4px solid black;
 
 }
+#two .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    background-color: white;
+    border: 6px solid white;
+}
+
+#two .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: .8;
+    background-color: white;
+    border: 6px solid goldenrod;
+
+}

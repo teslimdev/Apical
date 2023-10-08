@@ -1,7 +1,7 @@
 
 import { Header, Footer } from "./components";
 import { Routes, Route } from "react-router-dom";
-import { Home,About,News,Projects,Contacts,Services } from "./container";
+import { Home,About,News,Projects,Contacts,Services,Home2 } from "./container";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
      <div>
      <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Home2" element={<Home2 />} />
           <Route path="/News" element={<News />} />
           <Route path="/About" element={<About />} />
             <Route path="/Services" element={<Services />} />

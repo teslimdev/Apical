@@ -768,6 +768,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-\[450px\] {
+  min-height: 450px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -1539,6 +1543,14 @@ video {
     min-height: 60vh;
   }
 
+  .md\:min-h-\[600px\] {
+    min-height: 600px;
+  }
+
+  .md\:min-h-\[580px\] {
+    min-height: 580px;
+  }
+
   .md\:w-12 {
     width: 3rem;
   }
@@ -1869,6 +1881,10 @@ video {
 
   .lg\:pb-28 {
     padding-bottom: 7rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
   }
 
   .lg\:text-2xl {

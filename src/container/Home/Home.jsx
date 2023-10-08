@@ -536,7 +536,7 @@ const Home = () => {
               <HomeSlide image={pic4} text={"Architectural Home"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic5} text={"Interior space"}></HomeSlide>
+              <HomeSlide image={pic5} text={"Interior space"} ></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
               <HomeSlide image={pic3} text={"Design Art"}></HomeSlide>
@@ -554,18 +554,20 @@ const Home = () => {
               ></div>
             </div>
           </Swiper>
-          <div className="  absolute   z-[1]  flex  gap-6 sl:left-32 left-6 lg:left-8 2xl:left-40 bottom-20 ">
-            <div
-              className="prev-arrow rounded-full  border  hover:bg-white py-2"
-              onClick={handlPrev}
-            >
-              <GrPrevious className=" text-white  text-3xl   w-12  cursor-pointer  " />
-            </div>
-            <div
-              className="next-arrow  text-white rounded-full  border  hover:bg-white py-2   "
-              onClick={handlNext}
-            >
-              <GrNext className=" text-3xl  cursor-pointer  text-red-700    w-12    " />
+          <div className=" lg:max-w-[950px] sl:max-w-[1200px] m-auto">
+            <div className="  absolute   z-[1]  flex  gap-6    px-6   bottom-20">
+              <div
+                className="prev-arrow rounded-full  border  hover:bg-white py-2"
+                onClick={handlPrev}
+              >
+                <GrPrevious className=" text-white  text-3xl   w-12  cursor-pointer  " />
+              </div>
+              <div
+                className="next-arrow  text-white rounded-full  border  hover:bg-white py-2   "
+                onClick={handlNext}
+              >
+                <GrNext className=" text-3xl  cursor-pointer  text-red-700    w-12    " />
+              </div>
             </div>
           </div>
         </div>
@@ -754,7 +756,7 @@ const Home = () => {
                 Do not hesitate to say Hello
               </p>
               <div>
-                <Link to='/Contacts'>
+                <Link to="/Contacts">
                   <button className=" text-white border-2 py-3 px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
                     Lets Talk
                   </button>

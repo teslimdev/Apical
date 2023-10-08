@@ -13,7 +13,6 @@ module.exports = {
 
     },
     extend: {
-      textColor: ['active']
     },
   },
   plugins: [],

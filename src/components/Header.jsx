@@ -118,30 +118,40 @@ const location = useLocation();
               {!nav ? (
                 <FaBars className=" text-black text-2xl " onClick={isOpen} />
               ) : (
-                <div className=" bg-[#8A6201]  left-0 right-0 h-full bottom-0 w-full fixed">
-                  <div className=" text-end" onClick={closeNav}>
-                    <FaTimes className=" absolute right-0" />
+                <div className=" bg-white   right-0 h-full bottom-0 w-full fixed">
+                  <div className=" border-b border-[#222222] py-3  shadow-lg">
+                    <div className=" flex items-center justify-between px-6">
+                      <div className=" flex items-center gap-2">
+                        <img src={pic1} alt="" className=" w-8" />
+                        <h1 className=" text-black text-[1rem] lg:text-3xl 3xl:text-5xl">
+                          APICAL DESIGNS
+                        </h1>
+                      </div>
+                      <div className=" text-end" onClick={closeNav}>
+                        <FaTimes className=" text-2xl " />
+                      </div>
+                    </div>
                   </div>
-                  <div className=" fixed top-0 ">
-                    <ul className=" text-black gap-6 px-10 space-y-8 pt-16 ">
-                      <li className="">
+                  <div className="  pt-10 ">
+                    <ul className=" text-black gap-6 px-6 space-y-8 ">
+                      <li className="  border-b py-1 border-[#222222]">
                         <a href="/" className=" ">
                           HOME
                         </a>
                       </li>
-                      <li>
+                      <li className="  border-b py-1 border-[#222222]">
                         <a href="/About">ABOUT</a>
                       </li>
-                      <li>
+                      <li className="  border-b py-1 border-[#222222]">
                         <a href="/Services">SERVICES</a>
                       </li>
-                      <li>
+                      <li className="  border-b py-1 border-[#222222]">
                         <a href="/Projects">PROJECTS</a>
                       </li>
-                      <li>
+                      <li className="  border-b py-1 border-[#222222]">
                         <a href="/News">NEWS</a>
                       </li>
-                      <li>
+                      <li className="  border-b py-1 border-[#222222]">
                         <a href="/Contacts">CONTACTS</a>
                       </li>
                     </ul>

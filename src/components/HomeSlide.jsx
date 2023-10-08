@@ -7,7 +7,7 @@ const HomeSlide = ({image,text}) => {
       style={{
         backgroundImage: `url(${image})`,
       }}
-      className=" min-h-[450px] md:min-h-[580px] bg-cover bg-center"
+      className=" min-h-[450px] md:min-h-[590px] bg-cover bg-center"
     >
       <div className="  bg-black  absolute inset-0    h-full     opacity-60">
         <div className=" lg:max-w-[950px] sl:max-w-[1200px] m-auto px-6 lg:px-0 pt-[10%] lg:pt-[7%]">

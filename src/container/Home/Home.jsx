@@ -260,16 +260,16 @@ const Home = () => {
             direction=""
             scrollamount="10"
           >
-            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:black] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
+            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:#926F34] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
               construction
             </span>
-            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:black] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
+            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:#926F34] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
               interior design
             </span>
-            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:black] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
+            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:#926F34] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
               mordern structures
             </span>
-            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:black] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
+            <span className=" text-5xl md:text-8xl [-webkit-text-stroke-color:#926F34] [-webkit-text-stroke-width:_2px] text-transparent mr-60">
               thinking outside the box
             </span>
           </marquee>
@@ -536,7 +536,7 @@ const Home = () => {
               <HomeSlide image={pic4} text={"Architectural Home"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic5} text={"Interior space"} ></HomeSlide>
+              <HomeSlide image={pic5} text={"Interior space"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
               <HomeSlide image={pic3} text={"Design Art"}></HomeSlide>

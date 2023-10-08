@@ -1413,6 +1413,74 @@ video {
   background-attachment: fixed;
 }
 
+.\[-webkit-text-stroke-color\:\(\)\] {
+  -webkit-text-stroke-color: ();
+}
+
+.\[-webkit-text-stroke-color\:\(\#\)\] {
+  -webkit-text-stroke-color: (#);
+}
+
+.\[-webkit-text-stroke-color\:\(\#222222\)\] {
+  -webkit-text-stroke-color: (#222222);
+}
+
+.\[-webkit-text-stroke-color\:\@\] {
+  -webkit-text-stroke-color: @;
+}
+
+.\[-webkit-text-stroke-color\:\#222222\] {
+  -webkit-text-stroke-color: #222222;
+}
+
+.\[-webkit-text-stroke-color\:\#8A6201\] {
+  -webkit-text-stroke-color: #8A6201;
+}
+
+.\[-webkit-text-stroke-color\:\#\] {
+  -webkit-text-stroke-color: #;
+}
+
+.\[-webkit-text-stroke-color\:\#D4\] {
+  -webkit-text-stroke-color: #D4;
+}
+
+.\[-webkit-text-stroke-color\:\#D4A\] {
+  -webkit-text-stroke-color: #D4A;
+}
+
+.\[-webkit-text-stroke-color\:\#D4AF\] {
+  -webkit-text-stroke-color: #D4AF;
+}
+
+.\[-webkit-text-stroke-color\:\#D4AF3\] {
+  -webkit-text-stroke-color: #D4AF3;
+}
+
+.\[-webkit-text-stroke-color\:\#D4AF37\] {
+  -webkit-text-stroke-color: #D4AF37;
+}
+
+.\[-webkit-text-stroke-color\:\#926F34\] {
+  -webkit-text-stroke-color: #926F34;
+}
+
+.\[-webkit-text-stroke-color\:\#9\] {
+  -webkit-text-stroke-color: #9;
+}
+
+.\[-webkit-text-stroke-color\:\#CC\] {
+  -webkit-text-stroke-color: #CC;
+}
+
+.\[-webkit-text-stroke-color\:\#CCB\] {
+  -webkit-text-stroke-color: #CCB;
+}
+
+.\[-webkit-text-stroke-color\:\#CCBA78\] {
+  -webkit-text-stroke-color: #CCBA78;
+}
+
 .swiper-pagination .swiper-pagination-bullet {
   opacity: 1;
   background-color: white;
@@ -1549,6 +1617,10 @@ video {
 
   .md\:min-h-\[580px\] {
     min-height: 580px;
+  }
+
+  .md\:min-h-\[590px\] {
+    min-height: 590px;
   }
 
   .md\:w-12 {

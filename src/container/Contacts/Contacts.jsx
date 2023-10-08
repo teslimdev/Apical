@@ -46,7 +46,7 @@ const Contacts = () => {
                   type="text"
                   required
                   placeholder=" Name"
-                  className="  bg-transparent text-[#222222] border-0 placeholder:text-[#8A6201] pl-1 w-full border-b border-b-black outline-[#222222] "
+                  className="  bg-transparent text-[#222222] border-0 py-1 placeholder:text-[#8A6201] pl-1 w-full border-b border-b-black outline-[#222222] "
                 />
               </div>{" "}
               <br />
@@ -55,7 +55,7 @@ const Contacts = () => {
                   type="email"
                   placeholder="Email"
                   required
-                  className="  bg-transparent text-[#222222] border-0 placeholder:text-[#8A6201] w-full border-b pl-2 border-b-black outline-[#222222] "
+                  className="  bg-transparent text-[#222222] border-0 py-1 placeholder:text-[#8A6201] w-full border-b pl-2 border-b-black outline-[#222222] "
                 />
               </div>{" "}
               <br />
@@ -67,7 +67,7 @@ const Contacts = () => {
                   rows="8"
                   required
                   placeholder=" Your Message"
-                  className="  h-32 w-full resize-none border-b text-[#222222] border-b-black rounded outline-[#222222]  pl-1 bg-transparent placeholder:text-[#8A6201]  "
+                  className="  h-32 w-full resize-none border-b text-[#222222] py-1 border-b-black rounded outline-[#222222]  pl-1 bg-transparent placeholder:text-[#8A6201]  "
                 ></textarea>
               </div>{" "}
               <br />

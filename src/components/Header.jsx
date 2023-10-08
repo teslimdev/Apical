@@ -121,11 +121,13 @@ const location = useLocation();
                 <div className=" bg-white   right-0 h-full bottom-0 w-full fixed">
                   <div className=" border-b border-[#222222] py-3  shadow-lg">
                     <div className=" flex items-center justify-between px-6">
-                      <div className=" flex items-center gap-2">
-                        <img src={pic1} alt="" className=" w-8" />
-                        <h1 className=" text-black text-[1rem] lg:text-3xl 3xl:text-5xl">
-                          APICAL DESIGNS
-                        </h1>
+                      <div className=" ">
+                        <a href="/" className="flex items-center gap-2">
+                          <img src={pic1} alt="" className=" w-8" />
+                          <h1 className=" text-black text-[1rem] lg:text-3xl 3xl:text-5xl">
+                            APICAL DESIGNS
+                          </h1>
+                        </a>
                       </div>
                       <div className=" text-end" onClick={closeNav}>
                         <FaTimes className=" text-2xl " />
@@ -135,24 +137,76 @@ const location = useLocation();
                   <div className="  pt-10 ">
                     <ul className=" text-black gap-6 px-6 space-y-8 ">
                       <li className="  border-b py-1 border-[#222222]">
-                        <a href="/" className=" ">
+                        <a
+                          href="/"
+                          className={`text-[#222222] ${
+                            location.pathname === "/"
+                              ? "text-[#8A6201] font-semibold"
+                              : ""
+                          }`}
+                        >
                           HOME
                         </a>
                       </li>
                       <li className="  border-b py-1 border-[#222222]">
-                        <a href="/About">ABOUT</a>
+                        <a
+                          href="/About"
+                          className={`text-[#222222] ${
+                            location.pathname === "/About"
+                              ? "text-[#8A6201] font-semibold"
+                              : ""
+                          }`}
+                        >
+                          ABOUT
+                        </a>
                       </li>
                       <li className="  border-b py-1 border-[#222222]">
-                        <a href="/Services">SERVICES</a>
+                        <a
+                          href="/Services"
+                          className={`text-[#222222] ${
+                            location.pathname === "/Services"
+                              ? "text-[#8A6201] font-semibold"
+                              : ""
+                          }`}
+                        >
+                          SERVICES
+                        </a>
                       </li>
                       <li className="  border-b py-1 border-[#222222]">
-                        <a href="/Projects">PROJECTS</a>
+                        <a
+                          href="/Projects"
+                          className={`text-[#222222] ${
+                            location.pathname === "/Projects"
+                              ? "text-[#8A6201] font-semibold"
+                              : ""
+                          }`}
+                        >
+                          PROJECTS
+                        </a>
                       </li>
                       <li className="  border-b py-1 border-[#222222]">
-                        <a href="/News">NEWS</a>
+                        <a
+                          href="/News"
+                          className={`text-[#222222] ${
+                            location.pathname === "/News"
+                              ? "text-[#8A6201] font-semibold"
+                              : ""
+                          }`}
+                        >
+                          NEWS
+                        </a>
                       </li>
                       <li className="  border-b py-1 border-[#222222]">
-                        <a href="/Contacts">CONTACTS</a>
+                        <a
+                          href="/Contacts"
+                          className={`text-[#222222] ${
+                            location.pathname === "/Contacts"
+                              ? "text-[#8A6201] font-semibold"
+                              : ""
+                          }`}
+                        >
+                          CONTACTS
+                        </a>
                       </li>
                     </ul>
                   </div>

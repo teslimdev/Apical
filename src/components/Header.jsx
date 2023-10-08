@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import pic1 from "../../src/pictures/img1.png";
 
+
 export default function Header() {
+ 
   const [nav, setNav] = useState(false);
 
   const isOpen = () => {
@@ -16,7 +18,7 @@ export default function Header() {
     document.getElementById("navmain").classList.add("items-center");
     document.getElementById("navmain").classList.add("py-3");
   };
-
+const location = useLocation();
   return (
     <div className="  z-10 w-full">
       <nav className="    ">
@@ -35,23 +37,68 @@ export default function Header() {
             </div>
             <div className=" hidden md:block  ">
               <ul className=" flex  2xl:gap-6 ">
-                <Link to="/ " className="">
-                  <li className=" 3xl:text-4xl hover:bg-[#222222] py-1 px-2 rounded hover:text-white">HOME</li>
+                <Link
+                  to="/ "
+                  className={`text-[#222222] ${
+                    location.pathname === "/" ? "text-[#8A6201]" : ""
+                  }`}
+                >
+                  <li
+                    className={`3xl:text-4xl  hover:bg-[#222222] py-1 px-2 rounded hover:text-white`}
+                  >
+                    HOME
+                  </li>
                 </Link>
-                <Link to="/About">
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">ABOUT</li>
+
+                <Link
+                  to="/About"
+                  className={`text-[#222222] ${
+                    location.pathname === "/About" ? "text-[#8A6201]" : ""
+                  }`}
+                >
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                    ABOUT
+                  </li>
                 </Link>
-                <Link to="/Services ">
-                  <li className="  hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">SERVICES</li>
+                <Link
+                  to="/Services "
+                  className={`text-[#222222] ${
+                    location.pathname === "/Services" ? "text-[#8A6201]" : ""
+                  }`}
+                >
+                  <li className="  hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                    SERVICES
+                  </li>
                 </Link>
-                <Link to="/Projects">
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">PROJECTS</li>
+                <Link
+                  to="/Projects"
+                  className={`text-[#222222] ${
+                    location.pathname === "/Projects" ? "text-[#8A6201]" : ""
+                  }`}
+                >
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                    PROJECTS
+                  </li>
                 </Link>
-                <Link to="/News">
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">NEWS</li>
+                <Link
+                  to="/News"
+                  className={`text-[#222222] ${
+                    location.pathname === "/News" ? "text-[#8A6201]" : ""
+                  }`}
+                >
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                    NEWS
+                  </li>
                 </Link>
-                <Link to="/Contacts">
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">CONTACTS</li>
+                <Link
+                  to="/Contacts"
+                  className={`text-[#222222] ${
+                    location.pathname === "/Contacts" ? "text-[#8A6201]" : ""
+                  }`}
+                >
+                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                    CONTACTS
+                  </li>
                 </Link>
               </ul>
             </div>

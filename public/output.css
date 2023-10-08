@@ -1249,6 +1249,11 @@ video {
   font-size: 1.25rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-\[350\] {
   font-weight: 350;
 }
@@ -1307,6 +1312,15 @@ video {
 
 .text-\[\] {
   color: ;
+}
+
+.text-\[\#8A6201\] {
+  --tw-text-opacity: 1;
+  color: rgb(138 98 1 / var(--tw-text-opacity));
+}
+
+.text-\[\#\] {
+  color: #;
 }
 
 .underline {

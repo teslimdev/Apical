@@ -12,7 +12,9 @@ module.exports = {
       'sl':'1440px'
 
     },
-    extend: {},
+    extend: {
+      textColor: ['active']
+    },
   },
   plugins: [],
 }

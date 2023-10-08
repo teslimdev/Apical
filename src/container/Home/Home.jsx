@@ -89,8 +89,14 @@ const Home = () => {
         <div className=" relative  ">
           <div>
             <Swiper
-              modules={[Pagination, A11y, EffectFade, Autoplay]}
-              effect="cube"
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCoverflow,
+              ]}
+              effect="fade"
               loop={true}
               speed={1500}
               autoplay={{

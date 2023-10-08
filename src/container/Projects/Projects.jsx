@@ -18,7 +18,7 @@ const Projects = () => {
                 <img
                   src={pic3}
                   alt=""
-                  className=" w-full h-[250px] lg:h-[500px]"
+                  className=" w-full h-[250px] lg:h-[500px] rounded-md"
                 />
                 <div className=" flex justify-center">
                   <div className=" absolute  top-[30%]  z-10]  text-center  bg-black opacity-70  hover:bg-white text-white cursor-pointer hover:text-black py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
@@ -40,7 +40,7 @@ const Projects = () => {
                 <img
                   src={pic4}
                   alt=""
-                  className=" w-full h-[250px] lg:h-[500px]"
+                  className=" w-full h-[250px] lg:h-[500px] rounded-md"
                 />
                 <div className=" flex justify-center">
                   <div className=" absolute  top-[30%]  z-10]  text-center  bg-black opacity-70  hover:bg-white text-white cursor-pointer hover:text-black py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
@@ -62,7 +62,7 @@ const Projects = () => {
                 <img
                   src={pic5}
                   alt=""
-                  className=" w-full h-[250px] lg:h-[500px]"
+                  className=" w-full h-[250px] lg:h-[500px] rounded-md"
                 />
                 <div className=" flex justify-center">
                   <div className=" absolute  top-[30%]  z-10]  text-center  bg-black opacity-70  hover:bg-white text-white cursor-pointer hover:text-black py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
@@ -84,7 +84,7 @@ const Projects = () => {
                 <img
                   src={pic2}
                   alt=""
-                  className=" w-full h-[250px] lg:h-[500px]"
+                  className=" w-full h-[250px] lg:h-[500px] rounded-md"
                 />
                 <div className=" flex justify-center">
                   <div className=" absolute  top-[30%]  z-10]  text-center  bg-black opacity-70  hover:bg-white text-white cursor-pointer hover:text-black py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
@@ -106,7 +106,7 @@ const Projects = () => {
                 <img
                   src={pic5}
                   alt=""
-                  className=" w-full h-[250px] lg:h-[500px]"
+                  className=" w-full h-[250px] lg:h-[500px] rounded-md"
                 />
                 <div className=" flex justify-center">
                   <div className=" absolute  top-[30%]  z-10]  text-center  bg-black opacity-70  hover:bg-white text-white cursor-pointer hover:text-black py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
@@ -121,14 +121,14 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-          
+
           <Link to="/">
             <div className="relative ">
               <div className="  ">
                 <img
                   src={pic3}
                   alt=""
-                  className=" w-full h-[250px] lg:h-[500px]"
+                  className=" w-full h-[250px] lg:h-[500px] rounded-md"
                 />
                 <div className=" flex justify-center">
                   <div className=" absolute  top-[30%]  z-10]  text-center  bg-black opacity-70  hover:bg-white text-white cursor-pointer hover:text-black py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">

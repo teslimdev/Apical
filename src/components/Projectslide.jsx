@@ -2,7 +2,7 @@
  
  const Projectslide = ({image}) => {
    return (
-     <div>
+     
        <div className="relative ">
          <div className="  ">
            <img src={image} alt="" className=" w-full h-[250px] lg:h-[500px]" />
@@ -18,7 +18,7 @@
            </div>
          </div>
        </div>
-     </div>
+    
    );
  }
  

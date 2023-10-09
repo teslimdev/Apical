@@ -136,15 +136,20 @@ const Services = () => {
                       onClick={isOpen}
                     >
                       <h1 className="  text-xl    font-[350]">
-                        What events do you have coming up?
+                        Construction Administration
                       </h1>
                       <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="hidden">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Construction administration services are a crucial
+                          component of any construction project, and they
+                          typically involve overseeing the construction process
+                          to ensure that the project is completed according to
+                          the client's specifications, on time, and within
+                          budget. Construction administration services can vary
+                          depending on the specific needs of the client
                         </p>
                       </li>
                     </div>
@@ -156,15 +161,20 @@ const Services = () => {
                       onClick={isClose}
                     >
                       <h1 className="  text-xl  font-[350]">
-                        What events do you have coming up?
+                        Construction Administration
                       </h1>
                       <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Construction administration services are a crucial
+                          component of any construction project, and they
+                          typically involve overseeing the construction process
+                          to ensure that the project is completed according to
+                          the client's specifications, on time, and within
+                          budget. Construction administration services can vary
+                          depending on the specific needs of the client
                         </p>
                       </li>
                     </div>
@@ -178,15 +188,27 @@ const Services = () => {
                       onClick={isTry}
                     >
                       <h1 className="  text-xl   font-[350]">
-                        What events do you have coming up?
+                        Post-Occupancy Evaluation
                       </h1>
                       <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="hidden">
                       <li>
                         <p className=" text-[1rem] font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Occupancy services refer to the various services
+                          provided by a company to help its clients effectively
+                          occupy their new spaces, whether it's a new building,
+                          a renovated space, or a leased property. These
+                          services can range from site selection and space
+                          planning to move management and ongoing facilities
+                          managementOverall, occupancy services are designed to
+                          provide comprehensive support to clients during the
+                          entire process of occupying their new spaces, from
+                          site selection to ongoing facilities management. By
+                          working with an experienced occupancy services
+                          provider, clients can ensure that their new space
+                          meets their needs, is functional, and contributes to
+                          their overall success.
                         </p>
                       </li>
                     </div>
@@ -198,15 +220,27 @@ const Services = () => {
                       onClick={isTime}
                     >
                       <h1 className="  text-xl   font-[350]">
-                        What events do you have coming up?
+                        Post-Occupancy Evaluation
                       </h1>
                       <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Occupancy services refer to the various services
+                          provided by a company to help its clients effectively
+                          occupy their new spaces, whether it's a new building,
+                          a renovated space, or a leased property. These
+                          services can range from site selection and space
+                          planning to move management and ongoing facilities
+                          managementOverall, occupancy services are designed to
+                          provide comprehensive support to clients during the
+                          entire process of occupying their new spaces, from
+                          site selection to ongoing facilities management. By
+                          working with an experienced occupancy services
+                          provider, clients can ensure that their new space
+                          meets their needs, is functional, and contributes to
+                          their overall success.
                         </p>
                       </li>
                     </div>
@@ -220,15 +254,26 @@ const Services = () => {
                       onClick={isApp}
                     >
                       <h1 className="  text-xl  font-[350]">
-                        What events do you have coming up?
+                        Project Management
                       </h1>
                       <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="hidden">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Project management is a critical function for any
+                          company, particularly those involved in complex
+                          projects or construction work. Project management
+                          involves planning, organizing, and executing projects
+                          efficiently and effectively, from conception to
+                          completionOverall, project management is an essential
+                          service for companies involved in complex projects,
+                          ensuring that projects are completed on time, within
+                          budget, and to the client's satisfaction. By working
+                          with an experienced project management company,
+                          clients can focus on their core business activities
+                          while having confidence that their projects are being
+                          managed effectively.
                         </p>
                       </li>
                     </div>
@@ -240,15 +285,26 @@ const Services = () => {
                       onClick={isAlt}
                     >
                       <h1 className="  text-xl  font-[350]">
-                        What events do you have coming up?
+                        Project Management
                       </h1>
                       <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Project management is a critical function for any
+                          company, particularly those involved in complex
+                          projects or construction work. Project management
+                          involves planning, organizing, and executing projects
+                          efficiently and effectively, from conception to
+                          completionOverall, project management is an essential
+                          service for companies involved in complex projects,
+                          ensuring that projects are completed on time, within
+                          budget, and to the client's satisfaction. By working
+                          with an experienced project management company,
+                          clients can focus on their core business activities
+                          while having confidence that their projects are being
+                          managed effectively.
                         </p>
                       </li>
                     </div>
@@ -257,6 +313,7 @@ const Services = () => {
               </ul>
             </div>
           </div>
+
           <div className=" grid lg:grid-cols-2 gap-10 pt-16">
             <div className=" lg:max-w-[500px]">
               <ul>
@@ -267,15 +324,27 @@ const Services = () => {
                       onClick={isOK}
                     >
                       <h1 className="  text-xl  font-[350]">
-                        What events do you have coming up?
+                        Permitting and Approvals
                       </h1>
                       <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="hidden">
                       <li>
                         <p className=" text-[1rem] font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Permitting and approvals are a critical aspect of the
+                          architectural design process, as they ensure that the
+                          design meets all applicable codes, regulations, and
+                          standardsOverall, the permitting and approvals process
+                          is a complex and time-consuming aspect of
+                          architectural design. Architectural companies play a
+                          critical role in ensuring that their clients' projects
+                          comply with all applicable regulations and
+                          requirements and obtain the necessary permits and
+                          approvals to proceed with construction. By working
+                          with an experienced architectural company, clients can
+                          ensure that their projects proceed smoothly and
+                          efficiently through the permitting and approvals
+                          process.
                         </p>
                       </li>
                     </div>
@@ -287,15 +356,27 @@ const Services = () => {
                       onClick={isNotOk}
                     >
                       <h1 className="  text-xl   font-[350]">
-                        What events do you have coming up?
+                        Permitting and Approvals
                       </h1>
                       <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="">
                       <li>
                         <p className=" text-[1rem]    font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Permitting and approvals are a critical aspect of the
+                          architectural design process, as they ensure that the
+                          design meets all applicable codes, regulations, and
+                          standardsOverall, the permitting and approvals process
+                          is a complex and time-consuming aspect of
+                          architectural design. Architectural companies play a
+                          critical role in ensuring that their clients' projects
+                          comply with all applicable regulations and
+                          requirements and obtain the necessary permits and
+                          approvals to proceed with construction. By working
+                          with an experienced architectural company, clients can
+                          ensure that their projects proceed smoothly and
+                          efficiently through the permitting and approvals
+                          process.
                         </p>
                       </li>
                     </div>
@@ -309,15 +390,27 @@ const Services = () => {
                       onClick={isAt}
                     >
                       <h1 className="  text-xl   font-[350]">
-                        What events do you have coming up?
+                        Construction Documents
                       </h1>
                       <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="hidden">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Construction documents are a critical aspect of the
+                          architectural design process, as they provide detailed
+                          information about the design and specifications
+                          required for construction. Architectural companies
+                          provide a range of services related to construction
+                          documentsOverall, construction documents are an
+                          essential aspect of the architectural design process,
+                          as they provide detailed information required for
+                          construction and serve as a communication tool between
+                          the design team and the construction team. By working
+                          with an experienced architectural company, clients can
+                          ensure that their construction documents are accurate,
+                          detailed, and meet all applicable regulations and
+                          requirements.
                         </p>
                       </li>
                     </div>
@@ -329,15 +422,27 @@ const Services = () => {
                       onClick={isOn}
                     >
                       <h1 className="  text-xl  font-[350]">
-                        What events do you have coming up?
+                        Construction Documents
                       </h1>
                       <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Construction documents are a critical aspect of the
+                          architectural design process, as they provide detailed
+                          information about the design and specifications
+                          required for construction. Architectural companies
+                          provide a range of services related to construction
+                          documentsOverall, construction documents are an
+                          essential aspect of the architectural design process,
+                          as they provide detailed information required for
+                          construction and serve as a communication tool between
+                          the design team and the construction team. By working
+                          with an experienced architectural company, clients can
+                          ensure that their construction documents are accurate,
+                          detailed, and meet all applicable regulations and
+                          requirements.
                         </p>
                       </li>
                     </div>
@@ -351,15 +456,27 @@ const Services = () => {
                       onClick={isFine}
                     >
                       <h1 className="  text-xl font-[350]">
-                        What events do you have coming up?
+                        Bidding and Negoatiation
                       </h1>
                       <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="hidden">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Bidding and negotiation are important services
+                          provided by architectural companies to help clients
+                          obtain the best value for their construction projects.
+                          These services involve soliciting bids from potential
+                          contractors and negotiating contracts to ensure that
+                          the project is completed within budget and on
+                          timeOverall, bidding and negotiation services provided
+                          by architectural companies are essential to ensure
+                          that clients obtain the best value for their
+                          construction projects. By working with an experienced
+                          architectural company, clients can ensure that they
+                          receive competitive bids from qualified contractors
+                          and negotiate contracts that meet their needs and
+                          budget requirements.
                         </p>
                       </li>
                     </div>
@@ -371,15 +488,27 @@ const Services = () => {
                       onClick={isNotFine}
                     >
                       <h1 className="  text-xl   font-[350]">
-                        What events do you have coming up?
+                        Bidding and Negoatiation
                       </h1>
                       <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
                     <div className="">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
-                          Later this month, we’re bringing teachable:u to life
-                          with three live workshops—more details to come!
+                          Bidding and negotiation are important services
+                          provided by architectural companies to help clients
+                          obtain the best value for their construction projects.
+                          These services involve soliciting bids from potential
+                          contractors and negotiating contracts to ensure that
+                          the project is completed within budget and on
+                          timeOverall, bidding and negotiation services provided
+                          by architectural companies are essential to ensure
+                          that clients obtain the best value for their
+                          construction projects. By working with an experienced
+                          architectural company, clients can ensure that they
+                          receive competitive bids from qualified contractors
+                          and negotiate contracts that meet their needs and
+                          budget requirements.
                         </p>
                       </li>
                     </div>

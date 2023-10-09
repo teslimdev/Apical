@@ -119,7 +119,7 @@ const location = useLocation();
                 <FaBars className=" text-black text-2xl " onClick={isOpen} />
               ) : (
                 <div className=" bg-white   right-0 h-full bottom-0 w-full fixed">
-                  <div className=" border-b border-[#222222] py-3  shadow-lg">
+                  <div className="  py-3  shadow-lg">
                     <div className=" flex items-center justify-between px-6">
                       <div className=" ">
                         <a href="/" className="flex items-center gap-2">

@@ -7,7 +7,7 @@ import pic12 from '../../../src/pictures/ridwan.png'
 import pic5 from "../../../src/pictures/img5.jpeg";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
-import { AiOutlinePlus, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlinePlus } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BiWorld } from "react-icons/bi";
 import { GrLinkNext, GrLinkPrevious, GrNext, GrPrevious } from "react-icons/gr";

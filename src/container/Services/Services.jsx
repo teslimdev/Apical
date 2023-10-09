@@ -12,11 +12,11 @@ const Services = () => {
     const [isAnswerOpen, setIsAnswerOpen] = useState(false);
 
     const isOpen = () => {
-      setIsAnswerOpen(true);
+      setIsAnswerOpen(false);
     };
 
     const isClose = () => {
-      setIsAnswerOpen(false);
+      setIsAnswerOpen(true);
     };
 
     const [isLock, setIsLock] = useState(false);
@@ -36,10 +36,10 @@ const Services = () => {
     };
     const [isNice, setIsNice] = useState(false);
     const isOK = () => {
-      setIsNice(true);
+      setIsNice(false);
     };
     const isNotOk = () => {
-      setIsNice(false);
+      setIsNice(true);
     };
     const [isBit, setIsBit] = useState(false);
     const isAt = () => {
@@ -133,14 +133,14 @@ const Services = () => {
                   <li className=" pt-3  border-b border-black pb-3">
                     <div
                       className=" flex justify-between items-center cursor-pointer"
-                      onClick={isOpen}
+                      onClick={isClose}
                     >
                       <h1 className="  text-xl    font-[350]">
                         Construction Administration
                       </h1>
-                      <BiPlus className=" cursor-pointer text-2xl" />
+                      <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
-                    <div className="hidden">
+                    <div className="">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
                           Construction administration services are a crucial
@@ -158,14 +158,14 @@ const Services = () => {
                   <li className=" pt-3  border-b border-black pb-3">
                     <div
                       className=" flex justify-between items-center  gap-6 cursor-pointer"
-                      onClick={isClose}
+                      onClick={isOpen}
                     >
                       <h1 className="  text-xl  font-[350]">
                         Construction Administration
                       </h1>
-                      <BiMinus className=" cursor-pointer text-2xl" />
+                      <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
-                    <div className="">
+                    <div className=" hidden">
                       <li>
                         <p className=" text-[1rem]  font-[350] pt-8">
                           Construction administration services are a crucial
@@ -321,14 +321,14 @@ const Services = () => {
                   <li className=" pt-3  border-b border-black pb-3">
                     <div
                       className=" flex justify-between items-center cursor-pointer"
-                      onClick={isOK}
+                      onClick={isNotOk}
                     >
                       <h1 className="  text-xl  font-[350]">
                         Permitting and Approvals
                       </h1>
-                      <BiPlus className=" cursor-pointer text-2xl" />
+                      <BiMinus className=" cursor-pointer text-2xl" />
                     </div>
-                    <div className="hidden">
+                    <div className="">
                       <li>
                         <p className=" text-[1rem] font-[350] pt-8">
                           Permitting and approvals are a critical aspect of the
@@ -353,14 +353,14 @@ const Services = () => {
                   <li className=" pt-3  border-b border-black pb-3">
                     <div
                       className=" flex justify-between items-center cursor-pointer"
-                      onClick={isNotOk}
+                      onClick={isOK}
                     >
                       <h1 className="  text-xl   font-[350]">
                         Permitting and Approvals
                       </h1>
-                      <BiMinus className=" cursor-pointer text-2xl" />
+                      <BiPlus className=" cursor-pointer text-2xl" />
                     </div>
-                    <div className="">
+                    <div className=" hidden">
                       <li>
                         <p className=" text-[1rem]    font-[350] pt-8">
                           Permitting and approvals are a critical aspect of the

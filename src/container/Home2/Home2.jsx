@@ -1,5 +1,9 @@
 import React, { useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
+import pic8 from "../../../src/pictures/img8.jpeg";
+import pic9 from "../../../src/pictures/img9.jpeg";
+import pic10 from "../../../src/pictures/img10.jpeg";
+import pic11 from "../../../src/pictures/img11.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
@@ -116,7 +120,7 @@ const Home2 = () => {
             >
               <SwiperSlide>
                 <HomeBanner
-                  image={pic2}
+                  image={pic9}
                   header={"Architecture is our Passion, Design is Our Art."}
                   text={
                     "Architect offer design and planning for buildings, landscapes and interiors"
@@ -126,7 +130,7 @@ const Home2 = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic3}
+                  image={pic10}
                   header={"Designing Spaces, Creating Experiences."}
                   text={
                     "Many architect specialize in sustainable design,incorporating environmentally friendly features into buildings."
@@ -136,7 +140,7 @@ const Home2 = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic5}
+                  image={pic11}
                   header={"Transforming Ideas   Into  Structures."}
                   text={
                     "Architects can conducts site analysis and evaluation to determine the best location for a building or development project"
@@ -145,7 +149,7 @@ const Home2 = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <HomeBanner
-                  image={pic4}
+                  image={pic8}
                   header={"Building Your Vision, Creating Your Reality. "}
                   text={
                     "Architect can manage the construction process from start to finish, overseeing contractors and ensuring that the project stays on schedule."

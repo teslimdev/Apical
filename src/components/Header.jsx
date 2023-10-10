@@ -136,19 +136,22 @@ const location = useLocation();
                   </div>
                   <div className="  pt-10 ">
                     <ul className=" text-black gap-6 px-6 space-y-8 ">
-                      <li className="  border-b py-1 border-[#222222]">
+                      <div>
                         <a
                           href="/Home2"
-                          className={`text-[#222222] ${
+                          className={`text-[#222222]  ${
                             location.pathname === "/Home2"
                               ? "text-[#8A6201] font-semibold"
                               : ""
                           }`}
                         >
-                          HOME
+                          {" "}
+                          <li className="  border-b py-1 border-[#222222]">
+                            HOME
+                          </li>
                         </a>
-                      </li>
-                      <li className="  border-b py-1 border-[#222222]">
+                      </div>
+                      <div>
                         <a
                           href="/About"
                           className={`text-[#222222] ${
@@ -157,10 +160,13 @@ const location = useLocation();
                               : ""
                           }`}
                         >
-                          ABOUT
+                          {" "}
+                          <li className="  border-b py-1 border-[#222222]">
+                            ABOUT
+                          </li>
                         </a>
-                      </li>
-                      <li className="  border-b py-1 border-[#222222]">
+                      </div>
+                      <div>
                         <a
                           href="/Services"
                           className={`text-[#222222] ${
@@ -169,10 +175,12 @@ const location = useLocation();
                               : ""
                           }`}
                         >
-                          SERVICES
+                          <li className="  border-b py-1 border-[#222222]">
+                            SERVICES
+                          </li>
                         </a>
-                      </li>
-                      <li className="  border-b py-1 border-[#222222]">
+                      </div>
+                      <div>
                         <a
                           href="/Projects"
                           className={`text-[#222222] ${
@@ -181,10 +189,13 @@ const location = useLocation();
                               : ""
                           }`}
                         >
-                          PROJECTS
+                          {" "}
+                          <li className="  border-b py-1 border-[#222222]">
+                            PROJECTS
+                          </li>
                         </a>
-                      </li>
-                      <li className="  border-b py-1 border-[#222222]">
+                      </div>
+                      <div>
                         <a
                           href="/News"
                           className={`text-[#222222] ${
@@ -193,10 +204,13 @@ const location = useLocation();
                               : ""
                           }`}
                         >
-                          NEWS
+                          {" "}
+                          <li className="  border-b py-1 border-[#222222]">
+                            NEWS
+                          </li>
                         </a>
-                      </li>
-                      <li className="  border-b py-1 border-[#222222]">
+                      </div>
+                      <div>
                         <a
                           href="/Contacts"
                           className={`text-[#222222] ${
@@ -205,9 +219,12 @@ const location = useLocation();
                               : ""
                           }`}
                         >
-                          CONTACTS
+                          {" "}
+                          <li className="  border-b py-1 border-[#222222]">
+                            CONTACTS
+                          </li>
                         </a>
-                      </li>
+                      </div>
                     </ul>
                   </div>
                 </div>

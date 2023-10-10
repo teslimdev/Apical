@@ -315,7 +315,7 @@ const Services = () => {
           </div>
 
           <div className=" grid lg:grid-cols-2 gap-10 pt-16">
-            <div className=" lg:max-w-[500px]">
+            <div className=" lg:max-w-[500px] order-2 lg:order-1">
               <ul>
                 {!isNice ? (
                   <li className=" pt-3  border-b border-black pb-3">
@@ -516,7 +516,7 @@ const Services = () => {
                 )}
               </ul>
             </div>
-            <div>
+            <div className=' order-1 lg:order-2'>
               <img
                 src={pic3}
                 alt=""

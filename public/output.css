@@ -1190,6 +1190,14 @@ video {
   padding-top: 8%;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1895,6 +1903,10 @@ video {
 
   .lg\:pt-\[7\%\] {
     padding-top: 7%;
+  }
+
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .lg\:text-2xl {

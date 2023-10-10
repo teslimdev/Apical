@@ -174,7 +174,7 @@ const Home = () => {
       <section className=" two bg-[#f2f2f2]">
         <div>
           <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
-            <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-10 font-bold">
+            <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
             </h2>
             <div className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1150px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">

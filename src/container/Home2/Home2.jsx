@@ -259,7 +259,7 @@ const Home2 = () => {
 
       <section className=" three">
         <div
-          style={{ backgroundImage: `url(${pic3})` }}
+          style={{ backgroundImage: `url(${pic9})` }}
           className=" min-h-[40vh] md:min-h-[60vh] bg-center bg-no-repeat bg-cover shadow-2xl flex justify-center items-center [background-attachment:_fixed]"
         >
           <marquee
@@ -329,16 +329,16 @@ const Home2 = () => {
                   scrollbar={{ draggable: true }}
                 >
                   <SwiperSlide>
-                    <Slider image={pic2}></Slider>
+                    <Slider image={pic9}></Slider>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <Slider image={pic3}></Slider>
+                    <Slider image={pic10}></Slider>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <Slider image={pic4}></Slider>
+                    <Slider image={pic11}></Slider>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <Slider image={pic4}></Slider>
+                    <Slider image={pic8}></Slider>
                   </SwiperSlide>
                 </Swiper>
               </div>
@@ -406,19 +406,19 @@ const Home2 = () => {
               className=" md:max-w-full lg:max-w-full sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto  "
             >
               <SwiperSlide>
-                <Slide image={pic2}></Slide>
+                <Slide image={pic9}></Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic3}></Slide>
+                <Slide image={pic10}></Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic4}></Slide>
+                <Slide image={pic11}></Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic5}></Slide>
+                <Slide image={pic8}></Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic3}></Slide>
+                <Slide image={pic11}></Slide>
               </SwiperSlide>
             </Swiper>
           </div>
@@ -538,19 +538,19 @@ const Home2 = () => {
               ></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic3} text={" The Light House"}></HomeSlide>
+              <HomeSlide image={pic9} text={" The Light House"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic4} text={"Architectural Home"}></HomeSlide>
+              <HomeSlide image={pic10} text={"Architectural Home"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic5} text={"Interior space"}></HomeSlide>
+              <HomeSlide image={pic11} text={"Interior space"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic3} text={"Design Art"}></HomeSlide>
+              <HomeSlide image={pic8} text={"Design Art"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic2} text={"Visualization"}></HomeSlide>
+              <HomeSlide image={pic10} text={"Visualization"}></HomeSlide>
             </SwiperSlide>
             <div
               id="two"
@@ -650,19 +650,19 @@ const Home2 = () => {
               className=" w-full  2xl:max-w-[1200px]  m-auto  "
             >
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider image={pic9}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider image={pic10}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider image={pic11}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider image={pic8}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider image={pic11}></HomeSlider>
               </SwiperSlide>
               <div
                 id="one"
@@ -752,20 +752,20 @@ const Home2 = () => {
 
       <section className=" thirteen">
         <div
-          style={{ backgroundImage: `url(${pic3})` }}
+          style={{ backgroundImage: `url(${pic9})` }}
           className=" min-h-[300px] md:min-h-[450px] bg-cover bg-center relative"
         >
           <div className=" px-6 pt-[10%] lg:pt-[7%] ">
             <div className="  text-center  ">
-              <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
+              <h2 className=" text-[#8A6201]  text-4xl md:text-5xl lg:text-7xl">
                 Have a project in mind?
               </h2>
-              <p className=" text-white py-4 text-2xl font-semibold">
+              <p className=" text-[#8A6201]  py-4 text-2xl font-semibold">
                 Do not hesitate to say Hello
               </p>
               <div>
                 <Link to="/Contacts">
-                  <button className=" text-white border-2 py-3 px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
+                  <button className=" text-[#8A6201]  border-[#8A6201]  hover:border-white border-2 py-3 px-16 rounded-full hover:text-black   text-2xl hover:bg-white ">
                     Lets Talk
                   </button>
                 </Link>

@@ -1,11 +1,119 @@
 import React from 'react'
-
+import pic9 from '../../../src/pictures/img9.jpeg'
+import pic7 from "../../../src/pictures/img7.png";
 const News = () => {
   return (
-    <div className='  pt-[40px] '>
-      <h2 className=''> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi, sapiente accusamus cupiditate quia excepturi soluta eius nostrum nesciunt aspernatur! Tempora magnam debitis enim tempore eaque ad laudantium deleniti ducimus vero, vitae, ullam doloremque porro ab quia at eum, esse maiores placeat. Nisi doloribus, ipsa, illo, enim quia blanditiis corrupti velit inventore repellat perspiciatis saepe dolores nemo eveniet culpa amet consequuntur! Earum libero quaerat aperiam alias veniam laboriosam voluptates eveniet fugiat facere. Rerum consectetur molestias eaque dignissimos doloribus delectus earum repellat quas inventore corporis. Temporibus animi incidunt sapiente laudantium soluta, quam voluptatibus est ratione, similique id consequatur, vitae odit saepe! Voluptatum quis, cupiditate vero modi odit dolores excepturi, nam exercitationem doloribus culpa impedit in quidem quod ad mollitia blanditiis repellendus deleniti ea hic reprehenderit explicabo. Totam, qui veniam dolores, quasi alias officiis architecto eum cum itaque exercitationem quas officia nisi atque labore, distinctio velit. Voluptatem repudiandae alias ea vel, placeat delectus odit architecto quos aspernatur ratione consectetur cupiditate, dolor nostrum est, corporis corrupti velit omnis in atque. Perferendis nobis, mollitia, ratione cupiditate ut eaque saepe esse quod cumque aspernatur iste expedita molestias, modi tempora possimus. Ratione velit qui ut. Repellat expedita illum provident modi neque quidem harum fugit laborum aspernatur a inventore qui quis velit deserunt, consequuntur vero dolorum sequi recusandae et praesentium quaerat ipsa fugiat. Consequuntur doloremque eveniet unde dolorum dolorem minus quia accusamus architecto reiciendis vel eius adipisci amet debitis veritatis id aut corporis autem temporibus voluptates suscipit, nam beatae. Aliquam impedit repellendus modi vero pariatur molestias quod id porro numquam, expedita suscipit repudiandae sint nesciunt magnam culpa enim architecto qui nemo perspiciatis at odit ad quos rerum? Aspernatur, repellendus enim! Aut minima vero aperiam obcaecati, veritatis tempora totam cum modi voluptas nemo voluptatum odio labore libero officia voluptatibus harum iste impedit esse laboriosam incidunt. Incidunt obcaecati nesciunt molestiae esse aliquid reprehenderit ratione odit exercitationem vitae deserunt porro et voluptate optio id nam iste animi, quam atque quos enim vel. Veritatis, saepe aliquid, quos fugiat fuga dicta iure, tempora ut magni veniam quibusdam eum? Recusandae soluta ratione non adipisci doloribus vero, voluptatem cum aliquid aperiam, quo quisquam ullam hic unde quae numquam nostrum libero quod veritatis exercitationem, commodi harum corporis? Illum consequuntur, magni ex enim doloremque deleniti voluptatem perferendis totam quis esse inventore optio obcaecati beatae, exercitationem nostrum maxime eligendi veniam culpa commodi. Nulla, cupiditate sed! Sequi quis dolore tempore vitae, odio cum earum quasi minima incidunt doloremque autem iste iusto vel, perspiciatis itaque asperiores? Quod eligendi incidunt exercitationem ullam necessitatibus aut labore. Nihil, vero ea nostrum id facilis voluptate! Similique delectus velit eius cupiditate quasi eveniet, voluptas ab ratione repellendus laboriosam ad autem, placeat obcaecati aut illum aliquid dolor dolorum, ipsum modi blanditiis maiores? Iure reprehenderit ab necessitatibus modi, quibusdam possimus quis tempore sed suscipit soluta cumque quaerat nostrum officiis inventore commodi numquam sunt minus labore porro perspiciatis. Fuga quam pariatur quaerat, culpa adipisci quasi ducimus accusamus natus, asperiores cupiditate error! Laudantium rerum deserunt facere veritatis fugit corrupti, a tenetur repudiandae? Unde vitae ipsam assumenda eveniet reiciendis.</h2>
+    <div className="   ">
+      <section>
+        <div
+          style={{ backgroundImage: `url(${pic9})` }}
+          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
+        >
+          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70"></div>
+        </div>
+      </section>
+      <section className="bg-[#f2f2f2]">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] m-auto  gap-x-6 gap-y-12 py-20 px-6 sl:px-0 ">
+          <div className=" shadow-lg">
+            <div>
+              <img src={pic9} alt="" />
+            </div>
+            <div className=" pl-6 py-6">
+              <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+              <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div className=" shadow-lg">
+            <div>
+              {" "}
+              <img src={pic9} alt="" />
+            </div>
+            <div className=" pl-6 py-6">
+              <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+              <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <div className=" shadow-lg">
+            <div>
+              {" "}
+              <img src={pic9} alt="" />
+            </div>
+            <div className=" pl-6 py-6">
+              <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+              <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className=" shadow-lg">
+            <div>
+              {" "}
+              <img src={pic9} alt="" />
+            </div>
+            <div className=" pl-6 py-6">
+              <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+              <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className=" shadow-lg">
+            <div>
+              {" "}
+              <img src={pic9} alt="" />
+            </div>
+            <div className=" pl-6 py-6">
+              <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+              <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div className=" shadow-lg">
+            <div>
+              {" "}
+              <img src={pic9} alt="" />
+            </div>
+            <div className=" pl-6 py-6">
+              <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+              <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#f2f2f2]">
+        <div className=" py-14 px-6 shadow-2xl">
+          <div className="  bg-[#666666] w-full md:max-w-[500px] text-white m-auto text-center py-12  px-6 rounded-md">
+            <div className=" flex justify-center ">
+              <img src={pic7} alt="" className=" w-12" />
+            </div>
+            <h2 className=" py-2 text-2xl">Newsletter</h2>
+            <p className=" py-2 pb-6 text-[1.1rem]">
+              Stay up to date with our latest news and designs
+            </p>
+            <form className=" space-x-2 md:space-x-6">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className=" w-[60%] py-1 pl-2"
+              />
+              <button className=" border py-1 px-3 rounded-full hover:bg-[#222222] hover:text-white  ">
+                SUBSCRIBE
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
 export default News

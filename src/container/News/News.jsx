@@ -16,7 +16,7 @@ const News = () => {
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] m-auto  gap-x-6 gap-y-12 py-20 px-6 sl:px-0 ">
           <div className=" shadow-lg">
             <div>
-              <img src={pic9} alt="" />
+              <img src={pic9} alt="" className=" rounded-t-lg" />
             </div>
             <div className=" pl-6 py-6">
               <h2 className=" py-4 text-xl">Architectural Heritage</h2>
@@ -29,7 +29,7 @@ const News = () => {
           <div className=" shadow-lg">
             <div>
               {" "}
-              <img src={pic9} alt="" />
+              <img src={pic9} alt="" className="  rounded-t-lg" />
             </div>
             <div className=" pl-6 py-6">
               <h2 className=" py-4 text-xl">Architectural Heritage</h2>
@@ -42,7 +42,7 @@ const News = () => {
           <div className=" shadow-lg">
             <div>
               {" "}
-              <img src={pic9} alt="" />
+              <img src={pic9} alt="" className=" rounded-t-lg" />
             </div>
             <div className=" pl-6 py-6">
               <h2 className=" py-4 text-xl">Architectural Heritage</h2>
@@ -54,7 +54,7 @@ const News = () => {
           <div className=" shadow-lg">
             <div>
               {" "}
-              <img src={pic9} alt="" />
+              <img src={pic9} alt="" className=" rounded-t-lg" />
             </div>
             <div className=" pl-6 py-6">
               <h2 className=" py-4 text-xl">Architectural Heritage</h2>
@@ -66,7 +66,7 @@ const News = () => {
           <div className=" shadow-lg">
             <div>
               {" "}
-              <img src={pic9} alt="" />
+              <img src={pic9} alt="" className=" rounded-t-lg" />
             </div>
             <div className=" pl-6 py-6">
               <h2 className=" py-4 text-xl">Architectural Heritage</h2>
@@ -78,7 +78,7 @@ const News = () => {
           <div className=" shadow-lg">
             <div>
               {" "}
-              <img src={pic9} alt="" />
+              <img src={pic9} alt="" className=" rounded-t-lg" />
             </div>
             <div className=" pl-6 py-6">
               <h2 className=" py-4 text-xl">Architectural Heritage</h2>

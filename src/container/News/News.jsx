@@ -9,7 +9,11 @@ const News = () => {
           style={{ backgroundImage: `url(${pic9})` }}
           className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
         >
-          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70"></div>
+          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
+            <div className=' pt-[40%] md:pt-[20%] lg:pt-[15%] sl:pt-[10%] text-center'>
+              <h2 className=" text-white lg:text-[7rem] text-[3rem] md:text-[5rem] font-bold"> Latest News</h2>
+            </div>
+          </div>
         </div>
       </section>
       <section className="bg-[#f2f2f2]">
@@ -99,12 +103,12 @@ const News = () => {
             <p className=" py-2 pb-6 text-[1.1rem]">
               Stay up to date with our latest news and designs
             </p>
-            <form className=" space-x-2 md:space-x-6">
+            <form className="  flex md:gap-4 justify-center flex-col md:flex-row">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className=" w-[60%] py-1 pl-2"
-              />
+                className=" w-full py-1 pl-2"
+              /> <br />
               <button className=" border py-1 px-3 rounded-full hover:bg-[#222222] hover:text-white  ">
                 SUBSCRIBE
               </button>

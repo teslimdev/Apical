@@ -107,7 +107,7 @@ const News = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className=" w-full py-1 pl-2"
+                className=" text-black w-full py-1 pl-2"
               /> <br />
               <button className=" border py-1 px-3 rounded-full hover:bg-[#222222] hover:text-white  ">
                 SUBSCRIBE

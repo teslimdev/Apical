@@ -6,7 +6,7 @@ const Slide = ({image}) => {
       <img
         src={image}
         alt=""
-        className=" w-full     h-[300px]  lg:h-[380px]"
+        className=" w-full     object-cover  h-[300px]  lg:h-[380px]"
       />
     </div>
   );

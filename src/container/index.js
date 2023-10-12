@@ -5,3 +5,4 @@ export { default as News } from "./News/News";
 export { default as Projects } from "./Projects/Projects";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as Services } from "./Services/Services";
+export { default as NewsPost1 } from "./NewsPost1/NewsPost1";

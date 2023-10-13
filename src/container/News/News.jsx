@@ -29,7 +29,7 @@ const News = () => {
                   <div className="">
                     <img src={pic9} alt="" className=" rounded-t-lg" />
                   </div>
-                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-[1] bg-black">
                     {" "}
                   </div>
                 </div>
@@ -48,7 +48,7 @@ const News = () => {
                   <div className="">
                     <img src={pic9} alt="" className=" rounded-t-lg" />
                   </div>
-                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-[1] bg-black">
                     {" "}
                   </div>
                 </div>
@@ -67,7 +67,7 @@ const News = () => {
                   <div className="">
                     <img src={pic9} alt="" className=" rounded-t-lg" />
                   </div>
-                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-[1] bg-black">
                     {" "}
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const News = () => {
                   <div className="">
                     <img src={pic9} alt="" className=" rounded-t-lg" />
                   </div>
-                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-[1] bg-black">
                     {" "}
                   </div>
                 </div>
@@ -105,7 +105,7 @@ const News = () => {
                   <div className="">
                     <img src={pic9} alt="" className=" rounded-t-lg" />
                   </div>
-                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-1 bg-black">
                     {" "}
                   </div>
                 </div>
@@ -124,7 +124,7 @@ const News = () => {
                   <div className="">
                     <img src={pic9} alt="" className=" rounded-t-lg" />
                   </div>
-                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-[1] bg-black">
                     {" "}
                   </div>
                 </div>

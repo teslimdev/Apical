@@ -100,7 +100,7 @@ const NewsPost1 = () => {
                     className=" w-full h-[300px] md:h-[350px]   lg:h-[400px]   "
                   />
                   <div className=" ">
-                    <div className=" absolute  top-0  z-10]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
+                    <div className=" absolute  top-0  z-[1]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
                       <div className="   absolute top-[25%]  py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
                         <h2 className=" text-2xl  text-white  pl-4 pt-6 pb-1 font-semibold">
                           Architectural Marvels
@@ -126,7 +126,7 @@ const NewsPost1 = () => {
                     className=" w-full h-[300px] md:h-[350px]   lg:h-[400px]   "
                   />
                   <div className=" ">
-                    <div className=" absolute  top-0  z-10]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
+                    <div className=" absolute  top-0  z-[1]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
                       <div className="   absolute top-[25%]  py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
                         <h2 className=" text-2xl  text-white  pl-4 pt-6 pb-1 font-semibold">
                           Architectural Marvels
@@ -152,7 +152,7 @@ const NewsPost1 = () => {
                     className=" w-full h-[300px] md:h-[350px]   lg:h-[400px]   "
                   />
                   <div className=" ">
-                    <div className=" absolute  top-0  z-10]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
+                    <div className=" absolute  top-0  z-[1]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
                       <div className="   absolute top-[25%]  py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
                         <h2 className=" text-2xl  text-white  pl-4 pt-6 pb-1 font-semibold">
                           Architectural Marvels

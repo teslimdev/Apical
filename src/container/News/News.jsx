@@ -21,91 +21,126 @@ const News = () => {
         </div>
       </section>
       <section className="bg-[#f2f2f2]">
-        <div className=" grid md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] m-auto  gap-x-6 gap-y-12 py-20 px-6 sl:px-0 ">
-          <Link to="/NewsPost1">
-            <div className=" shadow-lg">
-              <div>
-                <img src={pic9} alt="" className=" rounded-t-lg" />
+        <div className="py-20 ">
+          <div className=" grid md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] m-auto   gap-x-6 gap-y-12 px-6 sl:px-0 ">
+            <Link to="/NewsPost1">
+              <div className=" shadow-lg  ">
+                <div className=" relative">
+                  <div className="">
+                    <img src={pic9} alt="" className=" rounded-t-lg" />
+                  </div>
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                    {" "}
+                  </div>
+                </div>
+                <div className=" pl-6 py-6">
+                  <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+                  <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                    Read More
+                  </button>
+                </div>
               </div>
-              <div className=" pl-6 py-6">
-                <h2 className=" py-4 text-xl">Architectural Heritage</h2>
-                <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </Link>
+            </Link>
 
-          <Link to="/NewsPost1">
-            <div className=" shadow-lg">
-              <div>
-                <img src={pic9} alt="" className=" rounded-t-lg" />
+            <Link to="/NewsPost1">
+              <div className=" shadow-lg  ">
+                <div className=" relative">
+                  <div className="">
+                    <img src={pic9} alt="" className=" rounded-t-lg" />
+                  </div>
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                    {" "}
+                  </div>
+                </div>
+                <div className=" pl-6 py-6">
+                  <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+                  <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                    Read More
+                  </button>
+                </div>
               </div>
-              <div className=" pl-6 py-6">
-                <h2 className=" py-4 text-xl">Architectural Heritage</h2>
-                <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </Link>
+            </Link>
 
-          <Link to="/NewsPost1">
-            <div className=" shadow-lg">
-              <div>
-                <img src={pic9} alt="" className=" rounded-t-lg" />
+            <Link to="/NewsPost1">
+              <div className=" shadow-lg  ">
+                <div className=" relative">
+                  <div className="">
+                    <img src={pic9} alt="" className=" rounded-t-lg" />
+                  </div>
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                    {" "}
+                  </div>
+                </div>
+                <div className=" pl-6 py-6">
+                  <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+                  <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                    Read More
+                  </button>
+                </div>
               </div>
-              <div className=" pl-6 py-6">
-                <h2 className=" py-4 text-xl">Architectural Heritage</h2>
-                <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
-                  Read More
-                </button>
+            </Link>
+
+            <Link to="/NewsPost1">
+              <div className=" shadow-lg  ">
+                <div className=" relative">
+                  <div className="">
+                    <img src={pic9} alt="" className=" rounded-t-lg" />
+                  </div>
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                    {" "}
+                  </div>
+                </div>
+                <div className=" pl-6 py-6">
+                  <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+                  <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                    Read More
+                  </button>
+                </div>
               </div>
-            </div>
-          </Link>
-          <Link to="/NewsPost1">
-            <div className=" shadow-lg">
-              <div>
-                <img src={pic9} alt="" className=" rounded-t-lg" />
+            </Link>
+
+            <Link to="/NewsPost1">
+              <div className=" shadow-lg  ">
+                <div className=" relative">
+                  <div className="">
+                    <img src={pic9} alt="" className=" rounded-t-lg" />
+                  </div>
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                    {" "}
+                  </div>
+                </div>
+                <div className=" pl-6 py-6">
+                  <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+                  <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                    Read More
+                  </button>
+                </div>
               </div>
-              <div className=" pl-6 py-6">
-                <h2 className=" py-4 text-xl">Architectural Heritage</h2>
-                <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
-                  Read More
-                </button>
+            </Link>
+
+            <Link to="/NewsPost1">
+              <div className=" shadow-lg  ">
+                <div className=" relative">
+                  <div className="">
+                    <img src={pic9} alt="" className=" rounded-t-lg" />
+                  </div>
+                  <div className=" h-full w-full  opacity-50  top-0 absolute z-10 bg-black">
+                    {" "}
+                  </div>
+                </div>
+                <div className=" pl-6 py-6">
+                  <h2 className=" py-4 text-xl">Architectural Heritage</h2>
+                  <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
+                    Read More
+                  </button>
+                </div>
               </div>
-            </div>
-          </Link>
-          <Link to="/NewsPost1">
-            <div className=" shadow-lg">
-              <div>
-                <img src={pic9} alt="" className=" rounded-t-lg" />
-              </div>
-              <div className=" pl-6 py-6">
-                <h2 className=" py-4 text-xl">Architectural Heritage</h2>
-                <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </Link>
-          <Link to="/NewsPost1">
-            <div className=" shadow-lg">
-              <div>
-                <img src={pic9} alt="" className=" rounded-t-lg" />
-              </div>
-              <div className=" pl-6 py-6">
-                <h2 className=" py-4 text-xl">Architectural Heritage</h2>
-                <button className=" border border-black rounded-full py-1 px-3 hover:bg-[#222222] hover:text-white">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
       </section>
       <section className="bg-[#f2f2f2]">
-        <div className=" py-14 px-6 shadow-2xl">
+        <div className=" py-14 px-6 ">
           <div className="  bg-[#666666] w-full md:max-w-[500px] text-white m-auto text-center py-12  px-6 rounded-md">
             <div className=" flex justify-center ">
               <img src={pic7} alt="" className=" w-12" />

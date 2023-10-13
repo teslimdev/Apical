@@ -5,6 +5,7 @@ import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
+import {IoIosCheckmark} from'react-icons/io'
 const NewsPost1 = () => {
   return (
     <div className="">
@@ -87,24 +88,29 @@ const NewsPost1 = () => {
       </section>
       <section className="bg-[#f2f2f2]">
         <div className=" max-w-[1200px] m-auto py-6 lg:py-12 px-6 sl:px-0">
-          <h2 className=" py-8">YOU MAY ALSO LIKE</h2>
-          <div className="  grid  md:grid-cols-2 lg:grid-cols-3  gap-6   sl:px-0  m-auto  ">
+          <h2 className="  pb-1 ">YOU MAY ALSO LIKE</h2>
+          <div className="  border-t-2 w-16  border-black "></div>
+          <div className="  grid  md:grid-cols-2 lg:grid-cols-3  gap-6   sl:px-0  m-auto  py-8 ">
             <Link to="/">
               <div className="relative ">
                 <div className="  ">
                   <img
                     src={pic3}
                     alt=""
-                    className=" w-full h-[300px] md:h-[350px]  lg:h-[400px] "
+                    className=" w-full h-[300px] md:h-[350px]   lg:h-[400px]   "
                   />
-                  <div className=" flex justify-center">
-                    <div className=" absolute  top-[30%]  z-10]  text-center    py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
-                      <h2 className=" text-2xl   pl-4 pt-6 pb-1 font-semibold">
-                        Architectural Marvels
-                      </h2>
-                      <button className=" text-white text-xl hover:bg-white hover:text-black px-3 py-1 rounded-full h border">
-                        View Post
-                      </button>
+                  <div className=" ">
+                    <div className=" absolute  top-0  z-10]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
+                      <div className="   absolute top-[25%]  py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
+                        <h2 className=" text-2xl  text-white  pl-4 pt-6 pb-1 font-semibold">
+                          Architectural Marvels
+                        </h2>
+                        <div className=" pt-8">
+                          <button className=" text-white text-xl hover:bg-white hover:text-black px-3 py-1 rounded-full h border">
+                            View Post
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -117,16 +123,20 @@ const NewsPost1 = () => {
                   <img
                     src={pic4}
                     alt=""
-                    className=" w-full h-[300px] md:h-[350px]  lg:h-[400px] "
+                    className=" w-full h-[300px] md:h-[350px]   lg:h-[400px]   "
                   />
-                  <div className=" flex justify-center">
-                    <div className=" absolute  top-[30%]  z-10]  text-center    py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
-                      <h2 className=" text-2xl   pl-4 pt-6 pb-1 font-semibold">
-                        Architectural Marvels
-                      </h2>
-                      <button className=" text-white text-xl hover:bg-white hover:text-black px-3 py-1 rounded-full h border">
-                        View Post
-                      </button>
+                  <div className=" ">
+                    <div className=" absolute  top-0  z-10]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
+                      <div className="   absolute top-[25%]  py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
+                        <h2 className=" text-2xl  text-white  pl-4 pt-6 pb-1 font-semibold">
+                          Architectural Marvels
+                        </h2>
+                        <div className=" pt-8">
+                          <button className=" text-white text-xl hover:bg-white hover:text-black px-3 py-1 rounded-full h border">
+                            View Post
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -139,16 +149,20 @@ const NewsPost1 = () => {
                   <img
                     src={pic5}
                     alt=""
-                    className=" w-full h-[300px] md:h-[350px]  lg:h-[400px] "
+                    className=" w-full h-[300px] md:h-[350px]   lg:h-[400px]   "
                   />
-                  <div className=" flex justify-center">
-                    <div className=" absolute  top-[30%]  z-10]  text-center    py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
-                      <h2 className=" text-2xl   pl-4 pt-6 pb-1 font-semibold">
-                        Architectural Marvels
-                      </h2>
-                      <button className=" text-white text-xl hover:bg-white hover:text-black px-3 py-1 rounded-full h border">
-                        View Post
-                      </button>
+                  <div className=" ">
+                    <div className=" absolute  top-0  z-10]  text-center   flex justify-center  bg-black w-full h-full  opacity-70 ">
+                      <div className="   absolute top-[25%]  py-2 px-2  lg:pr-3 sl:px-10 sl:py-4  rounded-md">
+                        <h2 className=" text-2xl  text-white  pl-4 pt-6 pb-1 font-semibold">
+                          Architectural Marvels
+                        </h2>
+                        <div className=" pt-8">
+                          <button className=" text-white text-xl hover:bg-white hover:text-black px-3 py-1 rounded-full h border">
+                            View Post
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -157,38 +171,56 @@ const NewsPost1 = () => {
           </div>
         </div>
       </section>
-      {/* <section className="bg-[#f2f2f2]">
-        <div>
-          <form>
-            <h2>LEAVE A COMMENT</h2>
-            <label htmlFor="">COMMENT *</label>
-            <br />
-            <textarea name="" id="" cols="30" rows="5"></textarea>
-            <br />
-            <div className=" flex gap-6">
-              <div>
-                <label htmlFor="">Name</label>
-                <br />
-                <input type="text" />
-                <br />
+      <section className="bg-[#f2f2f2]">
+        <div className=" max-w-[800px] m-auto px-6 py-20  sl:px-0">
+          <div className="border-[#222222] border  px-6 sl:px-0">
+            <form className=" max-w-[700px]  py-10  m-auto">
+              <h2 className=" pb-3">LEAVE A COMMENT</h2>
+              <div className=" flex flex-col gap-2 ">
+                <label htmlFor="" className=" text-sm ">
+                  COMMENT *
+                </label>
+
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="7"
+                  className=" w-full pl-3 pt-2"
+                ></textarea>
               </div>
-              <div>
-                <label htmlFor="">Email</label>
-                <br />
-                <input type="emaill" /><br />
-              </div> <br />
-              <div className=''>
-                {" "}
-                <input type="checkbox" /><br />
-                <label htmlFor="">
+              <br />
+              <div className=" flex flex-col md:flex-row  gap-6">
+                <div className=" w-full flex flex-col gap-1">
+                  <label htmlFor="">Name</label>
+
+                  <input type="text" className=" w-full py-1 pl-2" />
+                
+                </div>
+                <div className=" w-full flex flex-col gap-1">
+                  <label htmlFor="">Email</label>
+                  <input type="emaill" className=" w-full py-1 pl-2" />
+               
+                </div>
+             
+              </div>
+              <div className=" flex gap-1 md:gap-3 flex-row items-center pt-6">
+               
+                <input type="checkbox" className=" " />
+                <label htmlFor="" className=" text-[0.7rem] ">
                   SAVE MY NAME, EMAIL, IN THIS BROWSER FOR THE NEXT TIME I
                   COMMENT.
                 </label>
               </div>
-            </div>
-          </form>
+              <div className=" pt-6">
+                <button className=" border-2 px-6 py-1 rounded-full border-black">
+                  Post Comment
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }

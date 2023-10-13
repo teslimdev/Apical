@@ -98,7 +98,7 @@ const Home = () => {
               ]}
               effect="fade"
               loop={true}
-              speed={1500}
+              speed={1200}
               autoplay={{
                 delay: 7000,
                 stopOnLastSlide: false,

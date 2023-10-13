@@ -170,16 +170,16 @@ const ProjectPost1 = () => {
       </section>
       <section>
         <div className="">
-          <video controls className="  w-full">
+          <video controls className=" shadow-2xl w-full">
             <source src={vid1} type="video/mp4" />
           </video>
         </div>
       </section>
       <section className="bg-[#f2f2f2] ">
-        <div className=" py-10">
+        <div className=" py-16 lg:py-28">
           <div className=" max-w-[950px] lg:max-w-[1200px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto   px-6  sl:px-0  ">
-            <div className=" flex flex-col-reverse md:flex-row  gap-8 md:max-w-[950px]  lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
-              <h2 className=" text-[2rem] md:max-w-[550px] lg:max-w-[800px] sl:max-w-[1000px] md:text-[3rem] lg:leading-[7rem] pt-6 lg:text-[5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem] ">
+            <div className=" flex flex-col-reverse md:flex-row  gap-4 md:max-w-[950px]  lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
+              <h2 className=" text-[2rem] md:max-w-[550px] lg:max-w-[800px] sl:max-w-[1000px] md:text-[3rem] lg:leading-[7rem] lg:pt-6 lg:text-[5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem] ">
                 Project Diversity
               </h2>
               <div className=" flex  place-self-end  md:place-self-start">
@@ -192,7 +192,7 @@ const ProjectPost1 = () => {
                 </Link>
               </div>
             </div>
-            <h3 className=" text-xl lg:text-[2rem] font-[350] py-10 lg:py-6 ">
+            <h3 className=" text-xl lg:text-[2rem] font-[350] py-3 lg:py-6 ">
               "Discover Our Passion for Creating Timeless and Innovative
               Designs"
             </h3>

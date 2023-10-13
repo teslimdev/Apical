@@ -1014,6 +1014,10 @@ video {
   border-width: 8px;
 }
 
+.border-4 {
+  border-width: 4px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -1052,6 +1056,10 @@ video {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-\[\] {
+  border-color: ;
 }
 
 .border-b-\[\#222222\] {
@@ -2104,6 +2112,11 @@ video {
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .lg\:pb-10 {

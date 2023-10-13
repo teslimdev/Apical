@@ -34,7 +34,7 @@ const Projects = () => {
             </div>
           </Link>
 
-          <Link to="/">
+          <Link to="/ProjectPost1">
             <div className="relative ">
               <div className="  ">
                 <img
@@ -56,7 +56,7 @@ const Projects = () => {
             </div>
           </Link>
 
-          <Link to="/">
+          <Link to="/ProjectPost1">
             <div className="relative ">
               <div className="  ">
                 <img
@@ -78,7 +78,7 @@ const Projects = () => {
             </div>
           </Link>
 
-          <Link to="/">
+          <Link to="/ProjectPost1">
             <div className="relative ">
               <div className="  ">
                 <img
@@ -100,7 +100,7 @@ const Projects = () => {
             </div>
           </Link>
 
-          <Link to="/">
+          <Link to="/ProjectPost1">
             <div className="relative ">
               <div className="  ">
                 <img
@@ -122,7 +122,7 @@ const Projects = () => {
             </div>
           </Link>
 
-          <Link to="/">
+          <Link to="/ProjectPost1">
             <div className="relative ">
               <div className="  ">
                 <img

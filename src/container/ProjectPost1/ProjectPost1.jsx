@@ -170,8 +170,8 @@ const ProjectPost1 = () => {
       </section>
       <section>
         <div className="">
-          <video controls className=" shadow-2xl w-full">
-            <source src={vid1} type="video/mp4" />
+          <video controls className=" shadow-2xl w-full object-cover">
+            <source src={vid1} type="video/mp4 "  className='  '/>
           </video>
         </div>
       </section>

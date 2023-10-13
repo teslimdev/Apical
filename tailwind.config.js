@@ -12,6 +12,9 @@ module.exports = {
       'sl':'1440px'
 
     },
+    aspectRatio: {
+        '4/3': '1/ 3',
+      },
     extend: {
     },
   },

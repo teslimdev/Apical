@@ -342,7 +342,7 @@ const Home = () => {
                 </Swiper>
               </div>
               <div className=" pt-6 lg:pt-0">
-                <div className="container mx-auto lg:max-w-[400px] sl:max-w-[500px] ">
+                <div className="h ">
                   <Tabs tabs={tabs} />
                   <div>
                     <ul>

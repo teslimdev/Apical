@@ -12,7 +12,7 @@ const Projects = () => {
           Projects
         </h1>
         <div className="  grid  md:grid-cols-2  gap-6   sl:px-0  m-auto  ">
-          <Link to="/">
+          <Link to="/ProjectPost1">
             <div className="relative ">
               <div className="  ">
                 <img

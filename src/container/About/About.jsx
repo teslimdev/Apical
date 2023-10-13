@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
+import { Pagination, A11y, Autoplay, } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, EffectCoverflow } from "swiper/modules";
 import pic12 from "../../../src/pictures/ridwan.png";

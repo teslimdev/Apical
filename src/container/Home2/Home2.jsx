@@ -5,13 +5,11 @@ import pic9 from "../../../src/pictures/img9.jpeg";
 import pic10 from "../../../src/pictures/img10.jpeg";
 import pic11 from "../../../src/pictures/img11.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
-import pic3 from "../../../src/pictures/img3.jpeg";
-import pic4 from "../../../src/pictures/img4.jpeg";
 import pic12 from "../../../src/pictures/ridwan.png";
-import pic5 from "../../../src/pictures/img5.jpeg";
+
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
-import { AiOutlinePlus, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlinePlus,  } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BiWorld } from "react-icons/bi";
 import { GrLinkNext, GrLinkPrevious, GrNext, GrPrevious } from "react-icons/gr";

@@ -158,7 +158,7 @@ const ProjectPost1 = () => {
               className=" shadow-lg w-full md:w-[500px] h-[300px] sl:w-[1100px] sl:h-[600px]"
             />
           </div>
-          <div className=" max-w-[1200px] m-auto pt-10 sl:pt-28">
+          <div className=" max-w-[1200px] m-auto pt-10 sl:pt-28 px-6 sl:px-0">
             <p className=" max-w-[500px] text-[0.95rem]">
               Through a unique combination of engineering, construction and
               design disciplines and expertise, Concor delivers world class

@@ -1,10 +1,29 @@
 import React from 'react'
+import { useState } from "react";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import { Link } from "react-router-dom";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 const NewsPost1 = () => {
+ 
+    const [formData, setFormData] = useState({
+      username: "",
+      email: "",
+      // Add more form fields as needed
+    });
+
+    const handleInputChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({ formData, [name]: value });
+    };
+    
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log("Form submitted:", formData);
+    };
+  
   return (
     <div className="">
       <section className="bg-[#f2f2f2]">
@@ -172,7 +191,10 @@ const NewsPost1 = () => {
       <section className="bg-[#f2f2f2]">
         <div className=" max-w-[800px] m-auto px-6 py-20  sl:px-0">
           <div className="border-[#222222] border  px-6 sl:px-0">
-            <form className=" max-w-[700px]  py-10  m-auto">
+            <form
+              onSubmit={handleSubmit}
+              className=" max-w-[700px]  py-10  m-auto"
+            >
               <h2 className=" pb-3">LEAVE A COMMENT</h2>
               <div className=" flex flex-col gap-2 ">
                 <label htmlFor="" className=" text-sm ">
@@ -192,18 +214,28 @@ const NewsPost1 = () => {
                 <div className=" w-full flex flex-col gap-1">
                   <label htmlFor="">Name</label>
 
-                  <input type="text" className=" w-full py-1 pl-2" />
-                
+                  <input
+                    type="text"
+                    required
+                    name="username"
+                    value={formData.username}
+                    onChange={handleInputChange}
+                    className=" w-full py-1 pl-2"
+                  />
                 </div>
                 <div className=" w-full flex flex-col gap-1">
                   <label htmlFor="">Email</label>
-                  <input type="emaill" className=" w-full py-1 pl-2" />
-               
+                  <input
+                  required
+                    type="emaill"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className=" w-full py-1 pl-2"
+                  />
                 </div>
-             
               </div>
               <div className=" flex gap-1 md:gap-3 flex-row items-center pt-6">
-               
                 <input type="checkbox" className=" " />
                 <label htmlFor="" className=" text-[0.7rem] ">
                   SAVE MY NAME, EMAIL, IN THIS BROWSER FOR THE NEXT TIME I

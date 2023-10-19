@@ -870,10 +870,6 @@ video {
   max-width: 100%;
 }
 
-.max-w-\[\] {
-  max-width: ;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -2028,14 +2024,6 @@ video {
 
   .lg\:max-w-full {
     max-width: 100%;
-  }
-
-  .lg\:max-w-\[\] {
-    max-width: ;
-  }
-
-  .lg\:max-w-\[5\] {
-    max-width: 5;
   }
 
   .lg\:grid-cols-2 {

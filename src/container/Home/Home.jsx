@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
@@ -83,6 +83,8 @@ const Home = () => {
      if (!slideRef.current) return;
      slideRef.current.swiper.slideNext();
    }, []);
+
+   
   return (
     <div id="hom" className=" ">
       <section id=" home" className=" one">
@@ -773,6 +775,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+     
+      
     </div>
   );
 };

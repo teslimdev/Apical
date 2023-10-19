@@ -1,12 +1,15 @@
 import React, { useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
+import pic101 from "../../../src/pictures/img101.gif"
 import pic8 from "../../../src/pictures/img8.jpeg";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic10 from "../../../src/pictures/img10.jpeg";
 import pic11 from "../../../src/pictures/img11.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic12 from "../../../src/pictures/ridwan.png";
-
+import pic21 from "../../../src/pictures/img21.gif"
+import pic81 from "../../../src/pictures/img81.gif"
+import pic111 from "../../../src/pictures/img111.gif"
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { AiOutlinePlus,  } from "react-icons/ai";
@@ -118,7 +121,7 @@ const Home2 = () => {
             >
               <SwiperSlide>
                 <HomeBanner
-                  image={pic9}
+                  image={pic21}
                   header={"Architecture is our Passion, Design is Our Art."}
                   text={
                     "Architect offer design and planning for buildings, landscapes and interiors"
@@ -128,7 +131,7 @@ const Home2 = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic10}
+                  image={pic101}
                   header={"Designing Spaces, Creating Experiences."}
                   text={
                     "Many architect specialize in sustainable design,incorporating environmentally friendly features into buildings."
@@ -138,7 +141,7 @@ const Home2 = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic11}
+                  image={pic111}
                   header={"Transforming Ideas   Into  Structures."}
                   text={
                     "Architects can conducts site analysis and evaluation to determine the best location for a building or development project"
@@ -147,7 +150,7 @@ const Home2 = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <HomeBanner
-                  image={pic8}
+                  image={pic81}
                   header={"Building Your Vision, Creating Your Reality. "}
                   text={
                     "Architect can manage the construction process from start to finish, overseeing contractors and ensuring that the project stays on schedule."

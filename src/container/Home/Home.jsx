@@ -5,6 +5,10 @@ import pic3 from "../../../src/pictures/img3.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic12 from '../../../src/pictures/ridwan.png'
 import pic5 from "../../../src/pictures/img5.jpeg";
+import pic41 from "../../../src/pictures/img41.gif"
+import pic52 from "../../../src/pictures/img52.gif"
+import pic31 from "../../../src/pictures/img31.gif"
+import pic51 from "../../../src/pictures/img51.gif"
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -121,7 +125,7 @@ const Home = () => {
             >
               <SwiperSlide>
                 <HomeBanner
-                  image={pic2}
+                  image={pic52}
                   header={"Architecture is our Passion, Design is Our Art."}
                   text={
                     "Architect offer design and planning for buildings, landscapes and interiors"
@@ -131,7 +135,7 @@ const Home = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic3}
+                  image={pic31}
                   header={"Designing Spaces, Creating Experiences."}
                   text={
                     "Many architect specialize in sustainable design,incorporating environmentally friendly features into buildings."
@@ -141,7 +145,7 @@ const Home = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic5}
+                  image={pic51}
                   header={"Transforming Ideas   Into  Structures."}
                   text={
                     "Architects can conducts site analysis and evaluation to determine the best location for a building or development project"
@@ -150,7 +154,7 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <HomeBanner
-                  image={pic4}
+                  image={pic41}
                   header={"Building Your Vision, Creating Your Reality. "}
                   text={
                     "Architect can manage the construction process from start to finish, overseeing contractors and ensuring that the project stays on schedule."

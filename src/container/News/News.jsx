@@ -2,12 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import pic9 from '../../../src/pictures/img9.jpeg'
 import pic7 from "../../../src/pictures/img7.png";
+import pic21 from "../../../src/pictures/img21.gif"
+
 const News = () => {
   return (
     <div className="   ">
       <section>
         <div
-          style={{ backgroundImage: `url(${pic9})` }}
+          style={{ backgroundImage: `url(${pic21})` }}
           className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
         >
           <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">

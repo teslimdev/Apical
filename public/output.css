@@ -756,10 +756,6 @@ video {
   height: 350px;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-\[500px\] {
   height: 500px;
 }
@@ -768,20 +764,12 @@ video {
   height: 100%;
 }
 
-.h-\[\] {
-  height: ;
-}
-
 .min-h-\[300px\] {
   min-height: 300px;
 }
 
 .min-h-\[350px\] {
   min-height: 350px;
-}
-
-.min-h-\[400px\] {
-  min-height: 400px;
 }
 
 .min-h-\[40vh\] {

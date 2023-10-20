@@ -4,12 +4,12 @@ import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
-import pic31  from '../../../src/pictures/img31.gif'
+
 const Projects = () => {
   return (
     <div >
       <div
-        style={{ backgroundImage: `url(${pic31})` }}
+        style={{ backgroundImage: `url(${pic3})` }}
         className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
       >
         <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">

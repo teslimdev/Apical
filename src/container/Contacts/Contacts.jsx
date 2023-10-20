@@ -1,6 +1,6 @@
 import React from 'react'
 import pic3  from '../../../src/pictures/img3.jpeg'
-import pic31  from '../../../src/pictures/img31.gif'
+
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 
@@ -9,7 +9,7 @@ const Contacts = () => {
     <div className="">
       <section className=" one">
         <div
-          style={{ backgroundImage: `url(${pic31})` }}
+          style={{ backgroundImage: `url(${pic3})` }}
           className=" min-h-[300px] md:min-h-[500px] bg-cover bg-center"
         >
           <div className=' bg-black  absolute inset-0   h-[300px]  md:h-[500px]     opacity-70'></div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import pic9 from '../../../src/pictures/img9.jpeg'
-import pic21  from '../../../src/pictures/img21.gif'
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay, } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, EffectCoverflow } from "swiper/modules";
+import {  EffectCoverflow } from "swiper/modules";
 import pic12 from "../../../src/pictures/ridwan.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
@@ -21,7 +20,7 @@ const About = () => {
     <div>
       <section>
         <div
-          style={{ backgroundImage: `url(${pic21})` }}
+          style={{ backgroundImage: `url(${pic9})` }}
           className=" min-h-[500px] bg-cover bg-center"
         >
            <div className=' bg-black  absolute inset-0    h-[500px]     opacity-70'></div>

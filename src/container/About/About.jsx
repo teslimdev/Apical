@@ -14,7 +14,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { BsPinterest } from "react-icons/bs";
 import pic2 from "../../../src/pictures/img2.jpeg";
 
-import { AboutSlide } from '../../components';
+import { AboutSlide, Footer } from '../../components';
 const About = () => {
   return (
     <div>
@@ -323,6 +323,9 @@ const About = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer/>
       </section>
     </div>
   );

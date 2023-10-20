@@ -8,7 +8,7 @@ import pic2 from "../../../src/pictures/img2.jpeg";
 import pic12 from "../../../src/pictures/ridwan.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
-import { AiOutlinePlus,  } from "react-icons/ai";
+import { AiOutlinePlus } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BiWorld } from "react-icons/bi";
 import { GrLinkNext, GrLinkPrevious, GrNext, GrPrevious } from "react-icons/gr";
@@ -26,6 +26,7 @@ import {
   Slider,
   Tabs,
   HomeSlider,
+  Footer,
 } from "../../components/";
 const Home2 = () => {
   const tabs = [
@@ -770,6 +771,9 @@ const Home2 = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );

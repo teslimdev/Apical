@@ -1,6 +1,6 @@
 import React from 'react'
 import pic3  from '../../../src/pictures/img3.jpeg'
-
+import {Footer} from '../../components'
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 
@@ -82,6 +82,9 @@ const Contacts = () => {
             </form>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer/>
       </section>
     </div>
   );

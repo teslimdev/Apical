@@ -25,6 +25,7 @@ import {
   Slider,
   Tabs,
   HomeSlider,
+  Footer
 } from "../../components/";
 const Home = () => {
   const tabs = [
@@ -775,7 +776,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-     
+    <section>
+     <Footer/>
+    </section>
       
     </div>
   );

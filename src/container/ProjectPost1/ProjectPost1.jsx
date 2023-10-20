@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay, } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
-import { Tabs, HomeSlide } from "../../components";
+import { Tabs, HomeSlide, Footer2 } from "../../components";
 const ProjectPost1 = () => {
     const tabs = [
       {
@@ -323,6 +323,9 @@ const ProjectPost1 = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer2/>
       </section>
     </div>
   );

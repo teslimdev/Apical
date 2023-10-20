@@ -1,5 +1,5 @@
 
-import { Header, Footer } from "./components";
+import { Header, Footer, Footer2} from "./components";
 import { Routes, Route } from "react-router-dom";
 import { Home,About,News,Projects,Contacts,Services,Home2 , NewsPost1, ProjectPost1} from "./container";
 
@@ -11,6 +11,8 @@ function App() {
      </div>
      <div>
      <Routes>
+           <Route path="/Footer2" element={<Footer2 />} />
+                   <Route path="/Footer" element={<Footer />} />
           <Route path="/" element={<Home />} />
           <Route path="/Home2" element={<Home2 />} />
           <Route path="/News" element={<News />} />
@@ -23,9 +25,7 @@ function App() {
      </Routes>
      </div>
 
-    <div>
-            <Footer />
-    </div>
+   
     </div>
   );
 }

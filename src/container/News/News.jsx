@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import pic9 from '../../../src/pictures/img9.jpeg'
 import pic7 from "../../../src/pictures/img7.png";
+  import {Footer2} from '../../components'
 
 
 const News = () => {
@@ -164,6 +165,9 @@ const News = () => {
             </form>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer2/>
       </section>
     </div>
   );

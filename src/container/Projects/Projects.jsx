@@ -4,6 +4,7 @@ import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
+import { Footer2 } from "../../components";
 
 const Projects = () => {
   return (
@@ -21,8 +22,9 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className=" py-20  ">
-        <div className=" pt-24 px-6 ">
+       <section className="bg-[#f2f2f2]">
+         <div className=" py-10  ">
+        <div className=" pt-20 px-6 ">
         <div className="  grid  md:grid-cols-2  gap-6   sl:px-0  m-auto  ">
           <Link to="/ProjectPost1">
             <div className="relative ">
@@ -158,6 +160,10 @@ const Projects = () => {
         </div>
       </div>
       </div>
+       </section>
+      <section>
+        <Footer2/>
+      </section>
     </div>
   );
 };

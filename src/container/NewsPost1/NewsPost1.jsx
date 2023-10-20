@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
+import { Footer2 } from '../../components';
 const NewsPost1 = () => {
  
     const [formData, setFormData] = useState({
@@ -26,9 +27,17 @@ const NewsPost1 = () => {
   
   return (
     <div className="">
+    <section>
+        <div
+          style={{ backgroundImage: `url(${pic9})` }}
+          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
+        >
+           <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70"></div>
+        </div>
+    </section>
       <section className="bg-[#f2f2f2]">
         <div className=" px-6">
-          <div className=" text-center pt-28 pb-8">
+          <div className=" text-center pt-12 pb-8">
             <button className=" border border-black text-[1.1rem] px-4  rounded-full">
               news
             </button>
@@ -189,7 +198,7 @@ const NewsPost1 = () => {
         </div>
       </section>
       <section className="bg-[#f2f2f2]">
-        <div className=" max-w-[800px] m-auto px-6 py-20  sl:px-0">
+        <div className=" max-w-[800px] m-auto px-6 py-10  sl:px-0">
           <div className="border-[#222222] border  px-6 sl:px-0">
             <form
               onSubmit={handleSubmit}
@@ -250,6 +259,9 @@ const NewsPost1 = () => {
             </form>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer2/>
       </section>
     </div>
   );

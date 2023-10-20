@@ -8,6 +8,7 @@ import pic12 from "../../../src/pictures/ridwan.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsPinterest } from "react-icons/bs";
+import {Footer} from '../../components'
 const Services = () => {
  
 
@@ -302,6 +303,9 @@ const Services = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <Footer/>
       </section>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from 'react'
 import pic3  from '../../../src/pictures/img3.jpeg'
+import pic31  from '../../../src/pictures/img31.gif'
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 
@@ -8,9 +9,11 @@ const Contacts = () => {
     <div className="">
       <section className=" one">
         <div
-          style={{ backgroundImage: `url(${pic3})` }}
-          className=" min-h-[400px] md:min-h-[500px] bg-cover bg-center"
-        ></div>
+          style={{ backgroundImage: `url(${pic31})` }}
+          className=" min-h-[300px] md:min-h-[500px] bg-cover bg-center"
+        >
+          <div className=' bg-black  absolute inset-0   h-[300px]  md:h-[500px]     opacity-70'></div>
+        </div>
       </section>
       <section className="two bg-[#f2f2f2] ">
         <div className=" flex flex-col lg:flex-row gap-10 lg:gap-0 max-w-[1250px] m-auto justify-between py-8 sl:py-16 px-6">

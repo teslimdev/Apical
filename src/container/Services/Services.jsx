@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import pic3 from "../../../src/pictures/img3.jpeg";
+import pic31  from '../../../src/pictures/img31.gif'
 import { Link } from "react-router-dom";
 import { BiMinus, BiPlus } from "react-icons/bi";
 import pic12 from "../../../src/pictures/ridwan.png";
@@ -84,9 +85,11 @@ const Services = () => {
     <div>
       <section className=" one">
         <div
-          style={{ backgroundImage: `url(${pic3})` }}
-          className=" min-h-[500px] bg-cover bg-center"
-        ></div>
+          style={{ backgroundImage: `url(${pic31})` }}
+          className=" h-[300px] md:min-h-[500px] bg-cover bg-center"
+        >
+           <div className=' bg-black  absolute inset-0  h-[300px]   md:h-[500px]     opacity-70'></div>
+        </div>
       </section>
 
       <section className=" two bg-[#f2f2f2]">

@@ -1,16 +1,28 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import pic3 from '../../../src/pictures/img3.jpeg'
+import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
+import pic31  from '../../../src/pictures/img31.gif'
 const Projects = () => {
   return (
-    <div id="two">
-      <div className=" pt-[20%] lg:pt-[10%] px-6 pb-16 lg:pb-28">
-        <h1 className=" text-3xl md:text-4xl lg:text-7xl text-[#222222] sl:text-[5rem] 2xl:text-[6rem] font-bold text-center pb-10 lg:pb-16">
-          Projects
-        </h1>
+    <div >
+      <div
+        style={{ backgroundImage: `url(${pic31})` }}
+        className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
+      >
+        <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
+          <div className=" pt-[40%] md:pt-[20%] lg:pt-[15%] sl:pt-[10%] text-center">
+            <h2 className=" text-white lg:text-[7rem] text-[3rem] md:text-[5rem] font-bold">
+              {" "}
+              Projects
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div className=" py-20  ">
+        <div className=" pt-24 px-6 ">
         <div className="  grid  md:grid-cols-2  gap-6   sl:px-0  m-auto  ">
           <Link to="/ProjectPost1">
             <div className="relative ">
@@ -145,8 +157,9 @@ const Projects = () => {
           </Link>
         </div>
       </div>
+      </div>
     </div>
   );
-}
+};
 
-export default Projects
+export default Projects;

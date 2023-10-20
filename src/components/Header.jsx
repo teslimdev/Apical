@@ -1,11 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import pic1 from "../../src/pictures/img1.png";
-
+import pic7 from "../../src/pictures/img7.png";
 
 export default function Header() {
- 
+  const [backgroundColor, setBackgroundColor] = useState("transparent");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const navbarHeight = 60;
+
+      if (scrollY > navbarHeight) {
+        setBackgroundColor("white");
+      } else {
+        setBackgroundColor("transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const [nav, setNav] = useState(false);
 
   const isOpen = () => {
@@ -18,28 +38,45 @@ export default function Header() {
     document.getElementById("navmain").classList.add("items-center");
     document.getElementById("navmain").classList.add("py-3");
   };
-const location = useLocation();
+  const location = useLocation();
   return (
     <div className="  z-10 w-full">
       <nav className="    ">
         <div
           id="navmain"
-          className="  bg-white  shadow-lg py-2 w-full  fixed    border-[#333333] z-10"
+          style={{ backgroundColor }}
+          className={`py-2 w-full  fixed    border-[#333333] z-10 ${
+            backgroundColor === "transparent" ? " shadow-none" : " shadow-lg"
+          } `}
         >
           <div className=" flex sl:max-w-[1200px] px-6 sl:px-0 items-center m-auto justify-between">
-            <div className="  ">
+            <div
+              className={`  ${
+                backgroundColor === "transparent" ? "text-white" : "text-black"
+              }`}
+            >
               <a href="/" className=" flex  items-center gap-2">
-                <img src={pic1} alt="" className=" w-8 md:w-12 3xl:w-20" />
-                <h1 className=" text-black text-[1rem] lg:text-3xl 3xl:text-5xl">
+                <img
+                  src={`${backgroundColor === "transparent" ? pic7 : pic1}`}
+                  alt=""
+                  className=" w-8 md:w-12 3xl:w-20"
+                />
+                <h1 className="  text-[1rem] lg:text-3xl 3xl:text-5xl">
                   APICAL DESIGNS
                 </h1>
               </a>
             </div>
             <div className=" hidden md:block  ">
-              <ul className=" flex  2xl:gap-6 ">
+              <ul
+                className={` flex  2xl:gap-6  ${
+                  backgroundColor === "transparent"
+                    ? "text-white"
+                    : "text-black"
+                }`}
+              >
                 <Link
                   to="/Home2 "
-                  className={`text-[#222222] ${
+                  className={` ${
                     location.pathname === "/Home2"
                       ? "text-[#8A6201] font-semibold"
                       : ""
@@ -54,7 +91,7 @@ const location = useLocation();
 
                 <Link
                   to="/About"
-                  className={`text-[#222222] ${
+                  className={` ${
                     location.pathname === "/About"
                       ? "text-[#8A6201] font-semibold"
                       : ""
@@ -64,9 +101,10 @@ const location = useLocation();
                     ABOUT
                   </li>
                 </Link>
+
                 <Link
                   to="/Services "
-                  className={`text-[#222222] ${
+                  className={` ${
                     location.pathname === "/Services"
                       ? "text-[#8A6201] font-semibold"
                       : ""
@@ -78,7 +116,7 @@ const location = useLocation();
                 </Link>
                 <Link
                   to="/Projects"
-                  className={`text-[#222222] ${
+                  className={` ${
                     location.pathname === "/Projects"
                       ? "text-[#8A6201] font-semibold"
                       : ""
@@ -90,7 +128,7 @@ const location = useLocation();
                 </Link>
                 <Link
                   to="/News"
-                  className={`text-[#222222] ${
+                  className={` ${
                     location.pathname === "/News"
                       ? "text-[#8A6201] font-semibold"
                       : ""
@@ -102,7 +140,7 @@ const location = useLocation();
                 </Link>
                 <Link
                   to="/Contacts"
-                  className={`text-[#222222] ${
+                  className={` ${
                     location.pathname === "/Contacts"
                       ? "text-[#8A6201] font-semibold "
                       : ""
@@ -116,7 +154,14 @@ const location = useLocation();
             </div>
             <div className=" md:hidden">
               {!nav ? (
-                <FaBars className=" text-black text-2xl " onClick={isOpen} />
+                <FaBars
+                  className={`text-black text-2xl ${
+                    backgroundColor === "transparent"
+                      ? "text-white"
+                      : "text-black"
+                  }`}
+                  onClick={isOpen}
+                />
               ) : (
                 <div className=" bg-white   right-0 h-full bottom-0 w-full fixed">
                   <div className="  py-3  shadow-lg">

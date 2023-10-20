@@ -1,5 +1,6 @@
 import React from 'react'
 import pic9 from '../../../src/pictures/img9.jpeg'
+import pic21  from '../../../src/pictures/img21.gif'
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,9 +21,11 @@ const About = () => {
     <div>
       <section>
         <div
-          style={{ backgroundImage: `url(${pic9})` }}
+          style={{ backgroundImage: `url(${pic21})` }}
           className=" min-h-[500px] bg-cover bg-center"
-        ></div>
+        >
+           <div className=' bg-black  absolute inset-0    h-[500px]     opacity-70'></div>
+        </div>
       </section>
       <section className="bg-[#f2f2f2]">
         <div className="lg:max-w-[1200px] sl:px-0 m-auto px-6 py-10 lg:py-20 ">

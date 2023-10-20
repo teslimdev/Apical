@@ -46,11 +46,12 @@ export default function Header() {
           id="navmain"
           style={{ backgroundColor }}
           className={`py-2 w-full  fixed    border-[#333333] z-10 ${
-            backgroundColor === "transparent" ? " shadow-none" : " shadow-lg"
+            backgroundColor === "transparent" ? " shadow-none " : " shadow-lg"
           } `}
         >
-          <div className=" flex sl:max-w-[1200px] px-6 sl:px-0 items-center m-auto justify-between">
-            <div
+          <div className={` sl:max-w-[1200px] px-6 sl:px-0  m-auto   `}>
+           <div className={` flex justify-between   items-center ${backgroundColor === "transparent" ? " border-b border-white pb-3 "  : " border-none pb-0"} `}>
+             <div
               className={`  ${
                 backgroundColor === "transparent" ? "text-white" : "text-black"
               }`}
@@ -275,6 +276,7 @@ export default function Header() {
                 </div>
               )}
             </div>
+           </div>
           </div>
         </div>
       </nav>

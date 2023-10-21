@@ -25,9 +25,13 @@ import {
   Slider,
   Tabs,
   HomeSlider,
-  Footer
+  Footer,
+  
 } from "../../components/";
+
 const Home = () => {
+ 
+
   const tabs = [
     {
       id: 1,
@@ -407,8 +411,9 @@ const Home = () => {
               scrollbar={{ draggable: true }}
               className=" md:max-w-full lg:max-w-full sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto  "
             >
-              <SwiperSlide>
-                <Slide image={pic2}></Slide>
+              <SwiperSlide >
+                <Slide image={pic2}   > </Slide>
+               
               </SwiperSlide>
               <SwiperSlide>
                 <Slide image={pic3}></Slide>

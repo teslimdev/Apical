@@ -1,7 +1,7 @@
 
-import { Header, Footer, Footer2} from "./components";
+import { Header, Footer, Footer2,} from "./components";
 import { Routes, Route } from "react-router-dom";
-import { Home,About,News,Projects,Contacts,Services,Home2 , NewsPost1, ProjectPost1} from "./container";
+import { Home,About,News,Projects,Contacts,Services,Home2 , NewsPost1, ProjectPost1,} from "./container";
 
 function App() {
   return (

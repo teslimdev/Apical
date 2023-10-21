@@ -62,7 +62,11 @@ export default function Header() {
                   alt=""
                   className=" w-8 md:w-12 3xl:w-20"
                 />
-                <h1 className="  text-[1rem] lg:text-3xl 3xl:text-5xl">
+                <h1 className={`text-[1rem] lg:text-3xl 3xl:text-5xl  ${
+                    location.pathname === "/"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
+                  }`}>
                   APICAL DESIGNS
                 </h1>
               </a>
@@ -84,7 +88,7 @@ export default function Header() {
                   }`}
                 >
                   <li
-                    className={`3xl:text-4xl  hover:bg-[#222222] py-1 px-2 rounded hover:text-white`}
+                    className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}
                   >
                     HOME
                   </li>
@@ -98,7 +102,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     ABOUT
                   </li>
                 </Link>
@@ -111,7 +115,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className="  hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     SERVICES
                   </li>
                 </Link>
@@ -123,7 +127,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     PROJECTS
                   </li>
                 </Link>
@@ -135,7 +139,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     NEWS
                   </li>
                 </Link>
@@ -147,7 +151,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className=" hover:bg-[#222222] py-1 px-2 rounded hover:text-white 3xl:text-4xl ">
+                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     CONTACTS
                   </li>
                 </Link>
@@ -170,7 +174,11 @@ export default function Header() {
                       <div className=" ">
                         <a href="/" className="flex items-center gap-2">
                           <img src={pic1} alt="" className=" w-8" />
-                          <h1 className=" text-black text-[1rem] lg:text-3xl 3xl:text-5xl">
+                          <h1 className={`text-black text-[1rem] lg:text-3xl 3xl:text-5xl   ${
+                    location.pathname === "/"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
+                  }`}>
                             APICAL DESIGNS
                           </h1>
                         </a>

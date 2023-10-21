@@ -1,9 +1,9 @@
-import React, { useCallback, useRef, } from "react";
+import React, { useCallback, useRef } from "react";
 import { Link } from "react-router-dom";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
-import pic12 from '../../../src/pictures/ridwan.png'
+import pic12 from "../../../src/pictures/ridwan.png";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
@@ -26,12 +26,9 @@ import {
   Tabs,
   HomeSlider,
   Footer,
-  
 } from "../../components/";
 
 const Home = () => {
- 
-
   const tabs = [
     {
       id: 1,
@@ -59,6 +56,7 @@ const Home = () => {
         "SOM has been responsible for the design of many notable buildings worldwide, including the Sears Tower (now known as Willis Tower) in Chicago, which was the world's tallest building from 1973 to 1998. The company has also designed the John Hancock Center, One World Trade Center, and Burj Khalifa, which is currently the tallest building in the world.",
         "Throughout its history, SOM has been recognized for its innovative designs and commitment to sustainability. ",
       ],
+      image: pic3,
     },
   ];
 
@@ -74,22 +72,18 @@ const Home = () => {
     sliderRef.current.swiper.slideNext();
   }, []);
 
+  const slideRef = useRef(null);
 
+  const handlPrev = useCallback(() => {
+    if (!slideRef.current) return;
+    slideRef.current.swiper.slidePrev();
+  }, []);
 
+  const handlNext = useCallback(() => {
+    if (!slideRef.current) return;
+    slideRef.current.swiper.slideNext();
+  }, []);
 
-   const slideRef = useRef(null);
-
-   const handlPrev = useCallback(() => {
-     if (!slideRef.current) return;
-     slideRef.current.swiper.slidePrev();
-   }, []);
-
-   const handlNext = useCallback(() => {
-     if (!slideRef.current) return;
-     slideRef.current.swiper.slideNext();
-   }, []);
-
-   
   return (
     <div id="hom" className=" ">
       <section id=" home" className=" one">
@@ -190,7 +184,7 @@ const Home = () => {
                 impression for visitors and should provide a compelling overview
                 of the architecture firm and its offerings.
               </h3>
-              <div className="">
+              <div className="  place-self-end ">
                 <Link
                   to="/Services"
                   className=" underline hover:no-underline 3xl:text-[2rem] flex"
@@ -202,36 +196,32 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="pb-8 lg:pb-20">
-            <ul className=" grid  md:grid-cols-3 md:max-w-[700px]  gap-3 3xl:max-w-[1700px] lg:max-w-[1000px] sl:max-w-[1100px] px-6  lg:m-auto ">
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
+          <div className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
+            <ul className=" grid  md:grid-cols-2  max-w-fit gap-x-32 gap-2 px-6  ">
+              <Link to="/Architecture">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Architectural Design</p>
+                </li>
+              </Link>
+              <Link to="/Interior">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Interior Design</p>
+                </li>
+              </Link>
+              <Link to="/Visualization">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Visualization</p>
+                </li>
+              </Link>
+              <Link to="/Construction">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Building Construction</p>
+                </li>
+              </Link>
             </ul>
           </div>
           <div className=" max-w-[400px]  md:max-w-[700px] lg:max-w-[950px] px-6 md:px-0 sl:max-w-[1200px] 3xl:max-w-[2000px] m-auto pb-8 lg:pb-16">
@@ -411,9 +401,8 @@ const Home = () => {
               scrollbar={{ draggable: true }}
               className=" md:max-w-full lg:max-w-full sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto  "
             >
-              <SwiperSlide >
-                <Slide image={pic2}   > </Slide>
-               
+              <SwiperSlide>
+                <Slide image={pic2}> </Slide>
               </SwiperSlide>
               <SwiperSlide>
                 <Slide image={pic3}></Slide>
@@ -572,7 +561,9 @@ const Home = () => {
           <div className=" lg:max-w-[950px] sl:max-w-[1200px] m-auto">
             <div className="  absolute   z-[1]  flex  gap-6    px-6   bottom-20">
               <div
-                className="prev-arrow rounded-full  border  hover:bg-white py-2"
+                className={`prev-arrow rounded-full  border  hover:bg-white py-2  ${
+                  slideRef === "null" ? " text-white" : ""
+                }`}
                 onClick={handlPrev}
               >
                 <GrPrevious className=" text-white  text-3xl   w-12  cursor-pointer  " />
@@ -781,10 +772,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-    <section>
-     <Footer/>
-    </section>
-      
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 };

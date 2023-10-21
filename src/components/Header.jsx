@@ -62,11 +62,11 @@ export default function Header() {
                   alt=""
                   className=" w-8 md:w-12 3xl:w-20"
                 />
-                <h1 className={`text-[1rem] lg:text-3xl 3xl:text-5xl  ${
+                <h1 className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${
                     location.pathname === "/"
-                      ? "text-[#8A6201] font-semibold"
-                      : ""
-                  }`}>
+                      ? "text-[#8A6201]  font-semibold  "
+                      : " "
+                  } ${backgroundColor === "transparent" ? " hover:text-white" : " hover:text-black"}`}>
                   APICAL DESIGNS
                 </h1>
               </a>

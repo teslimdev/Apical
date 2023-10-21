@@ -170,10 +170,10 @@ const Home2 = () => {
         </div>
       </section>
 
-      <section className=" two bg-[#f2f2f2]">
+       <section className=" two bg-[#f2f2f2]">
         <div>
-          <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[7%]  px-6  sl:px-0   ">
-            <h2 className=" text-[3rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-10 font-bold">
+          <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
+            <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
             </h2>
             <div className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1150px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
@@ -182,7 +182,7 @@ const Home2 = () => {
                 impression for visitors and should provide a compelling overview
                 of the architecture firm and its offerings.
               </h3>
-              <div className="">
+              <div className="  place-self-end ">
                 <Link
                   to="/Services"
                   className=" underline hover:no-underline 3xl:text-[2rem] flex"
@@ -194,36 +194,32 @@ const Home2 = () => {
             </div>
           </div>
 
-          <div className="pb-8 lg:pb-20">
-            <ul className=" grid  md:grid-cols-3 md:max-w-[700px]  gap-3 3xl:max-w-[1700px] lg:max-w-[1000px] sl:max-w-[1100px] px-6  lg:m-auto ">
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
-              <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] gap-2">
-                <AiOutlinePlus></AiOutlinePlus> <p>Feasibility Studies</p>
-              </li>
+          <div className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
+            <ul className=" grid  md:grid-cols-2  max-w-fit gap-x-32 gap-2 px-6  ">
+              <Link to="/Architecture">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Architectural Design</p>
+                </li>
+              </Link>
+              <Link to="/Interior">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Interior Design</p>
+                </li>
+              </Link>
+              <Link to="/Visualization">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Visualization</p>
+                </li>
+              </Link>
+              <Link to="/Construction">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Building Construction</p>
+                </li>
+              </Link>
             </ul>
           </div>
           <div className=" max-w-[400px]  md:max-w-[700px] lg:max-w-[950px] px-6 md:px-0 sl:max-w-[1200px] 3xl:max-w-[2000px] m-auto pb-8 lg:pb-16">

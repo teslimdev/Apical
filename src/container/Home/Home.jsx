@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from "react";
+import React, { useCallback, useRef ,useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
@@ -26,9 +26,33 @@ import {
   Tabs,
   HomeSlider,
   Footer,
+  Countdown1,
+  Countdown2,
+  Countdown3
 } from "../../components/";
 
 const Home = () => {
+    const [isSectionVisible, setIsSectionVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      const section = document.getElementById('target-section');
+      const sectionOffset = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      if (offset > sectionOffset - sectionHeight / 2) {
+        setIsSectionVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const tabs = [
     {
       id: 1,
@@ -173,7 +197,7 @@ const Home = () => {
       </section>
 
       <section className=" two bg-[#f2f2f2]">
-        <div>
+        <div id="target-section">
           <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
             <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
@@ -234,8 +258,8 @@ const Home = () => {
             <ul className=" grid md:grid-cols-3  gap-10   ">
               <li className="  text-center md:text-start">
                 {" "}
-                <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
-                  64
+                <h2   className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
+                  {isSectionVisible && <Countdown1 startCount={0} />}
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">
                   Clients Around the World
@@ -244,13 +268,13 @@ const Home = () => {
               <li className=" text-center  md:text-start">
                 {" "}
                 <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
-                  124
+                   {isSectionVisible && <Countdown2 startCount={0} />}
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">Projects Completed</p>
               </li>
               <li className=" text-center  md:text-start">
-                <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
-                  244K
+                <h2 className=" border-black border-b text-[5rem]  flex   sl:text-[6rem]  3xl:text-[8rem]">
+                  {isSectionVisible && <Countdown3 startCount={0} />}K
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">Square Feet</p>
               </li>

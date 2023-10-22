@@ -273,7 +273,7 @@ const Home = () => {
                 <p className=" 3xl:text-4xl text-xl pt-6">Projects Completed</p>
               </li>
               <li className=" text-center  md:text-start">
-                <h2 className=" border-black border-b text-[5rem]  flex   sl:text-[6rem]  3xl:text-[8rem]">
+                <h2 className=" border-black border-b text-[5rem]  flex  justify-center md:justify-start  sl:text-[6rem]  3xl:text-[8rem]">
                   {isSectionVisible && <Countdown3 startCount={0} />}K
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">Square Feet</p>

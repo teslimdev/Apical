@@ -170,7 +170,7 @@ const Home2 = () => {
         </div>
       </section>
 
-       <section className=" two bg-[#f2f2f2]">
+     <section className=" two bg-[#f2f2f2]">
         <div>
           <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
             <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
@@ -195,7 +195,7 @@ const Home2 = () => {
           </div>
 
           <div className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
-            <ul className=" grid  md:grid-cols-2  max-w-fit gap-x-32 gap-2 px-6  ">
+            <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
               <Link to="/Architecture">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
                   <AiOutlinePlus className=""></AiOutlinePlus>{" "}
@@ -206,6 +206,12 @@ const Home2 = () => {
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
                   <AiOutlinePlus className=""></AiOutlinePlus>{" "}
                   <p>Interior Design</p>
+                </li>
+              </Link>
+               <Link to="/Exterior">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Exterior Design</p>
                 </li>
               </Link>
               <Link to="/Visualization">
@@ -250,6 +256,7 @@ const Home2 = () => {
           </div>
         </div>
       </section>
+
 
       <section className=" three">
         <div

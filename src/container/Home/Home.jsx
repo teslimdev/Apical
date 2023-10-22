@@ -197,7 +197,7 @@ const Home = () => {
           </div>
 
           <div className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
-            <ul className=" grid  md:grid-cols-2  max-w-fit gap-x-32 gap-2 px-6  ">
+            <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
               <Link to="/Architecture">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
                   <AiOutlinePlus className=""></AiOutlinePlus>{" "}
@@ -208,6 +208,12 @@ const Home = () => {
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
                   <AiOutlinePlus className=""></AiOutlinePlus>{" "}
                   <p>Interior Design</p>
+                </li>
+              </Link>
+               <Link to="/Exterior">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
+                  <p>Exterior Design</p>
                 </li>
               </Link>
               <Link to="/Visualization">

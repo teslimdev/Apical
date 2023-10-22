@@ -57,6 +57,10 @@ const Footer = () => {
                 {" "}
                 <li className=" 3xl:text-2xl ">Interior Design</li>{" "}
               </Link>
+               <Link to="/Exterior">
+                {" "}
+                <li className=" 3xl:text-2xl ">Exterior Design</li>{" "}
+              </Link>
               <Link to="/Visualization">
                 <li className=" 3xl:text-2xl ">Visualization</li>
               </Link>

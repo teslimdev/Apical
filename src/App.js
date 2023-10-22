@@ -14,6 +14,7 @@ import {
   Visualization,
   Interior,
   Architecture,
+  Exterior
 } from "./container";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/Visualization" element={<Visualization />} />
           <Route path="/Interior" element={<Interior />} />
           <Route path="/Construction" element={<Construction />} />
+           <Route path="/Exterior" element={<Exterior/>} />
         </Routes>
       </div>
     </div>

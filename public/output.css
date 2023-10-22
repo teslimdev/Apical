@@ -1989,6 +1989,10 @@ video {
     margin-top: 10%;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:h-\[380px\] {
     height: 380px;
   }

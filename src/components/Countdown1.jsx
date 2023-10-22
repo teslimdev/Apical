@@ -1,7 +1,7 @@
 import React ,{ useState, useEffect}from 'react'
 
-const Countdown1 = ({ startCount }) => {
-      const [count, setCount] = useState(startCount);
+const Countdown1 = () => {
+      const [count, setCount] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {

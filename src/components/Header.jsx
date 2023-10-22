@@ -3,31 +3,24 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import pic1 from "../../src/pictures/img1.png";
 import pic7 from "../../src/pictures/img7.png";
-
 export default function Header() {
   const [backgroundColor, setBackgroundColor] = useState("transparent");
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const navbarHeight = 60;
-
       if (scrollY > navbarHeight) {
         setBackgroundColor("white");
       } else {
         setBackgroundColor("transparent");
       }
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   const [nav, setNav] = useState(false);
-
   const isOpen = () => {
     setNav(true);
     document.getElementById("navmain").classList.remove("items-center");
@@ -64,9 +57,9 @@ export default function Header() {
                 />
                 <h1 className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${
                     location.pathname === "/"
-                      ? "text-[#8A6201]  font-semibold  "
+                      ? "  font-semibold  "
                       : " "
-                  } ${backgroundColor === "transparent" ? " hover:text-white" : " hover:text-black"}`}>
+                  } ${backgroundColor === "transparent" ? " " : " hover:text-[#8A6201]"}`}>
                   APICAL DESIGNS
                 </h1>
               </a>
@@ -291,3 +284,4 @@ export default function Header() {
     </div>
   );
 }
+

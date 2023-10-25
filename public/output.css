@@ -686,12 +686,32 @@ video {
   top: 30%;
 }
 
-.top-\[45\%\] {
-  top: 45%;
-}
-
 .top-\[80\%\] {
   top: 80%;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[30\] {
+  top: 30;
+}
+
+.top-\[40\%\] {
+  top: 40%;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[45\%\] {
+  top: 45%;
 }
 
 .z-10 {
@@ -1379,8 +1399,44 @@ video {
   padding-top: 5%;
 }
 
+.pt-\[50\%\] {
+  padding-top: 50%;
+}
+
 .pt-\[8\%\] {
   padding-top: 8%;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[20\] {
+  padding-top: 20;
+}
+
+.pt-\[20\%\] {
+  padding-top: 20%;
+}
+
+.pt-\[0\%\] {
+  padding-top: 0%;
+}
+
+.pt-\[30\%\] {
+  padding-top: 30%;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
+.pt-\[30\] {
+  padding-top: 30;
+}
+
+.pt-\[60\%\] {
+  padding-top: 60%;
 }
 
 .text-center {
@@ -2416,6 +2472,10 @@ video {
     padding-top: 7%;
   }
 
+  .lg\:pt-\[20\%\] {
+    padding-top: 20%;
+  }
+
   .lg\:text-start {
     text-align: start;
   }
@@ -2580,6 +2640,10 @@ video {
 
   .sl\:pt-\[10\%\] {
     padding-top: 10%;
+  }
+
+  .sl\:pt-\[20\%\] {
+    padding-top: 20%;
   }
 
   .sl\:text-4xl {

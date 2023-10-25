@@ -50,3 +50,52 @@
     border: 6px solid goldenrod;
 
 }
+
+/* .panels div.back {
+    transform: rotatey(90deg),;
+   
+} */
+
+
+
+.panels li:hover div.front {
+    animation: twirl .2s ease-in forwards, twil .9s ease-in forwards ;
+   
+}
+
+.panels li:hover div.back {
+    animation: twirl 2s 2s ease-out forwards , twil 2s 2s ease-out forwards ;
+   
+}
+
+
+ 
+@keyframes twil{
+0% {
+        transform: rotateY(-180deg);
+    }
+        100% {
+            transform: rotateY(0deg);
+        }
+}
+
+@keyframes twirl {
+    0% {
+        transform: rotatey(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg) rotateZ(180deg);
+    }
+    
+}
+
+@keyframes twin{
+    0%{
+        transform: rotateZ(360deg);
+    }
+
+    100%{
+        transform: rotateZ(0deg);
+    }
+}

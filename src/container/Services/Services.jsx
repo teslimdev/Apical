@@ -8,7 +8,7 @@ import pic12 from "../../../src/pictures/ridwan.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsPinterest } from "react-icons/bs";
-import { Footer } from "../../components";
+import { Footer , Header} from "../../components";
 const Services = () => {
   const [faqs, setFaqs] = useState([
     {
@@ -81,6 +81,9 @@ const Services = () => {
 
   return (
     <div>
+    <section>
+      <Header/>
+    </section>
       <section className=" one">
         <div
           style={{ backgroundImage: `url(${pic3})` }}

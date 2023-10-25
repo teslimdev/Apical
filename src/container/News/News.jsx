@@ -1,13 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import pic9 from '../../../src/pictures/img9.jpeg'
+import React from "react";
+import { Link } from "react-router-dom";
+import pic9 from "../../../src/pictures/img9.jpeg";
 import pic7 from "../../../src/pictures/img7.png";
-  import {Footer2} from '../../components'
-
+import { Footer2, Header } from "../../components";
 
 const News = () => {
   return (
     <div className="   ">
+      <section>
+        <Header />
+      </section>
+
       <section>
         <div
           style={{ backgroundImage: `url(${pic9})` }}
@@ -167,10 +170,10 @@ const News = () => {
         </div>
       </section>
       <section>
-        <Footer2/>
+        <Footer2 />
       </section>
     </div>
   );
-}
+};
 
-export default News
+export default News;

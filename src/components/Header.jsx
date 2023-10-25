@@ -64,7 +64,7 @@ export default function Header() {
                 </h1>
               </a>
             </div>
-            <div className=" hidden md:block  ">
+            <div className="   hidden lg:block  ">
               <ul
                 className={` flex  2xl:gap-6  ${
                   backgroundColor === "transparent"
@@ -125,6 +125,18 @@ export default function Header() {
                   </li>
                 </Link>
                 <Link
+                  to="/Products"
+                  className={` ${
+                    location.pathname === "/Products"
+                      ? "text-[#8A6201] font-semibold"
+                      : ""
+                  }`}
+                >
+                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                    PRODUCTS
+                  </li>
+                </Link>
+                <Link
                   to="/News"
                   className={` ${
                     location.pathname === "/News"
@@ -150,7 +162,7 @@ export default function Header() {
                 </Link>
               </ul>
             </div>
-            <div className=" md:hidden">
+            <div className=" lg:hidden">
               {!nav ? (
                 <FaBars
                   className={`text-black text-2xl ${
@@ -239,6 +251,21 @@ export default function Header() {
                           {" "}
                           <li className="  border-b py-1 border-[#222222]">
                             PROJECTS
+                          </li>
+                        </a>
+                      </div>
+                       <div>
+                        <a
+                          href="/Products"
+                          className={`text-[#222222] ${
+                            location.pathname === "/Products"
+                              ? "text-[#8A6201] font-semibold"
+                              : ""
+                          }`}
+                        >
+                          {" "}
+                          <li className="  border-b py-1 border-[#222222]">
+                            PRODUCTS
                           </li>
                         </a>
                       </div>

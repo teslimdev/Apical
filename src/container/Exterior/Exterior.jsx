@@ -1,9 +1,12 @@
 import React from 'react'
-import {Footer} from '../../components'
+import {Footer, Header} from '../../components'
 import pic9 from "../../../src/pictures/img9.jpeg";
 const Exterior = () => {
   return (
     <div>
+    <section>
+        <Header />
+      </section>
         <section>
          <div
         style={{ backgroundImage: `url(${pic9})` }}

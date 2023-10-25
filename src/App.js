@@ -1,4 +1,4 @@
-import { Header, Footer, Footer2 } from "./components";
+import { Header, Footer, Footer2 ,Header2} from "./components";
 import { Routes, Route } from "react-router-dom";
 import {
   Home,
@@ -14,15 +14,14 @@ import {
   Visualization,
   Interior,
   Architecture,
-  Exterior
+  Exterior,
+  Products
 } from "./container";
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <Header />
-      </div>
+     
       <div>
         <Routes>
           <Route path="/Footer2" element={<Footer2 />} />
@@ -41,6 +40,9 @@ function App() {
           <Route path="/Interior" element={<Interior />} />
           <Route path="/Construction" element={<Construction />} />
            <Route path="/Exterior" element={<Exterior/>} />
+           <Route path="/Products" element={<Products/>} />
+              <Route path="Header2" element={<Header2/>} />
+               <Route path="Header" element={<Header/>} />
         </Routes>
       </div>
     </div>

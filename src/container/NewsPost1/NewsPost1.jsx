@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
-import { Footer2 } from '../../components';
+import { Footer2,Header } from '../../components';
 const NewsPost1 = () => {
  
     const [formData, setFormData] = useState({
@@ -27,6 +27,9 @@ const NewsPost1 = () => {
   
   return (
     <div className="">
+    <section>
+        <Header />
+      </section>
     <section>
         <div
           style={{ backgroundImage: `url(${pic9})` }}

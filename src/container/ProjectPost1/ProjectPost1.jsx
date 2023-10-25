@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay, } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
-import { Tabs, HomeSlide, Footer2 } from "../../components";
+import { Tabs, HomeSlide, Footer2,Header } from "../../components";
 const ProjectPost1 = () => {
     const tabs = [
       {
@@ -62,6 +62,9 @@ const ProjectPost1 = () => {
       }, []);
   return (
     <div>
+    <section>
+        <Header />
+      </section>
       <section className=" one bg-[#f2f2f2]">
         <div
           style={{ backgroundImage: `url(${pic9})` }}

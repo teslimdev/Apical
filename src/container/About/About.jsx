@@ -14,10 +14,13 @@ import { GoArrowUpRight } from "react-icons/go";
 import { BsPinterest } from "react-icons/bs";
 import pic2 from "../../../src/pictures/img2.jpeg";
 
-import { AboutSlide, Footer } from '../../components';
+import { AboutSlide, Footer, Header } from '../../components';
 const About = () => {
   return (
     <div>
+    <section>
+      <Header/>
+    </section>
       <section>
         <div
           style={{ backgroundImage: `url(${pic9})` }}

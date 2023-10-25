@@ -1,12 +1,15 @@
 import React from 'react'
 import pic3  from '../../../src/pictures/img3.jpeg'
-import {Footer} from '../../components'
+import {Footer, Header} from '../../components'
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 
 const Contacts = () => {
   return (
     <div className="">
+    <section>
+        <Header />
+      </section>
       <section className=" one">
         <div
           style={{ backgroundImage: `url(${pic3})` }}

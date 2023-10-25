@@ -29,7 +29,8 @@ import {
   Footer,
   Countdown1,
   Countdown2,
-  Countdown3
+  Countdown3,
+  Header
 } from "../../components/";
 const Home2 = () => {
   const [isSectionVisible, setIsSectionVisible] = useState(false);
@@ -107,6 +108,9 @@ const Home2 = () => {
   }, []);
   return (
     <div id="hom" className=" ">
+    <section>
+      <Header/>
+    </section>
       <section id=" home" className=" one">
         <div className=" relative  ">
           <div>

@@ -28,7 +28,8 @@ import {
   Footer,
   Countdown1,
   Countdown2,
-  Countdown3
+  Countdown3,
+  Header
 } from "../../components/";
 
 const Home = () => {
@@ -110,6 +111,9 @@ const Home = () => {
 
   return (
     <div id="hom" className=" ">
+    <section>
+      <Header/>
+    </section>
       <section id=" home" className=" one">
         <div className=" relative  ">
           <div>
@@ -224,32 +228,32 @@ const Home = () => {
             <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
               <Link to="/Architecture">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Architectural Design</p>
+                  <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Architectural Design</p>
                 </li>
               </Link>
               <Link to="/Interior">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Interior Design</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">Interior Design</p>
                 </li>
               </Link>
                <Link to="/Exterior">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Exterior Design</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Exterior Design</p>
                 </li>
               </Link>
               <Link to="/Visualization">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Visualization</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Visualization</p>
                 </li>
               </Link>
               <Link to="/Construction">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Building Construction</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Building Construction</p>
                 </li>
               </Link>
             </ul>

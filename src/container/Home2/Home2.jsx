@@ -1,4 +1,4 @@
-import React, { useCallback, useRef,useState,useEffect } from "react";
+import React, { useCallback, useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import pic8 from "../../../src/pictures/img8.jpeg";
 import pic9 from "../../../src/pictures/img9.jpeg";
@@ -30,7 +30,7 @@ import {
   Countdown1,
   Countdown2,
   Countdown3,
-  Header
+  Header,
 } from "../../components/";
 const Home2 = () => {
   const [isSectionVisible, setIsSectionVisible] = useState(false);
@@ -38,7 +38,7 @@ const Home2 = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      const section = document.getElementById('target-section');
+      const section = document.getElementById("target-section");
       const sectionOffset = section.offsetTop;
       const sectionHeight = section.offsetHeight;
 
@@ -47,10 +47,10 @@ const Home2 = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   const tabs = [
@@ -108,9 +108,9 @@ const Home2 = () => {
   }, []);
   return (
     <div id="hom" className=" ">
-    <section>
-      <Header/>
-    </section>
+      <section>
+        <Header />
+      </section>
       <section id=" home" className=" one">
         <div className=" relative  ">
           <div>
@@ -196,7 +196,7 @@ const Home2 = () => {
           </div>
         </div>
       </section>
- <section className=" two bg-[#f2f2f2]">
+      <section className=" two bg-[#f2f2f2]">
         <div id="target-section">
           <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
             <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
@@ -224,32 +224,42 @@ const Home2 = () => {
             <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
               <Link to="/Architecture">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Architectural Design</p>
+                  <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201]  hover:border-b border-[#8A6201]">
+                    Architectural Design
+                  </p>
                 </li>
               </Link>
               <Link to="/Interior">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Interior Design</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">
+                    Interior Design
+                  </p>
                 </li>
               </Link>
-               <Link to="/Exterior">
+              <Link to="/Exterior">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Exterior Design</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">
+                    Exterior Design
+                  </p>
                 </li>
               </Link>
               <Link to="/Visualization">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Visualization</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">
+                    Visualization
+                  </p>
                 </li>
               </Link>
               <Link to="/Construction">
                 <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                  <p>Building Construction</p>
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">
+                    Building Construction
+                  </p>
                 </li>
               </Link>
             </ul>
@@ -258,7 +268,7 @@ const Home2 = () => {
             <ul className=" grid md:grid-cols-3  gap-10   ">
               <li className="  text-center md:text-start">
                 {" "}
-                <h2   className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
+                <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
                   {isSectionVisible && <Countdown1 startCount={0} />}
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">
@@ -268,12 +278,12 @@ const Home2 = () => {
               <li className=" text-center  md:text-start">
                 {" "}
                 <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
-                   {isSectionVisible && <Countdown2 startCount={0} />}
+                  {isSectionVisible && <Countdown2 startCount={0} />}
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">Projects Completed</p>
               </li>
               <li className=" text-center  md:text-start">
-                <h2 className=" border-black border-b text-[5rem]  flex justify-center md:justify-start  sl:text-[6rem]  3xl:text-[8rem]">
+                <h2 className=" border-black border-b text-[5rem]  flex  justify-center md:justify-start  sl:text-[6rem]  3xl:text-[8rem]">
                   {isSectionVisible && <Countdown3 startCount={0} />}K
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">Square Feet</p>
@@ -282,7 +292,6 @@ const Home2 = () => {
           </div>
         </div>
       </section>
-
 
       <section className=" three">
         <div

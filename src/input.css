@@ -58,44 +58,58 @@
 
 
 
+.panels li {
+    position: relative;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.panels li div {
+    position: absolute;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.panels li div.back {
+    transform: rotateY(180deg);
+}
+
 .panels li:hover div.front {
-    animation: twirl .2s ease-in forwards, twil .9s ease-in forwards ;
-   
+    animation: flipFront 1s forwards ease-in-out;
+}
+
+.panels li div.front {
+    backface-visibility: hidden;
 }
 
 .panels li:hover div.back {
-    animation: twirl 2s 2s ease-out forwards , twil 2s 2s ease-out forwards ;
-   
+    animation: flipBack 1s forwards ease-in-out;
 }
 
-
- 
-@keyframes twil{
-0% {
-        transform: rotateY(-180deg);
-    }
-        100% {
-            transform: rotateY(0deg);
-        }
-}
-
-@keyframes twirl {
+@keyframes flipFront {
     0% {
-        transform: rotatey(0deg) rotateZ(0deg);
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(-90deg);
     }
 
     100% {
-        transform: rotateY(180deg) rotateZ(180deg);
+        transform: rotateY(-180deg);
     }
-    
 }
 
-@keyframes twin{
-    0%{
-        transform: rotateZ(360deg);
+@keyframes flipBack {
+    0% {
+        transform: rotateY(180deg);
     }
 
-    100%{
-        transform: rotateZ(0deg);
+    50% {
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
     }
 }

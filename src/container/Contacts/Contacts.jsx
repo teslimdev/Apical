@@ -1,13 +1,13 @@
-import React from 'react'
-import pic3  from '../../../src/pictures/img3.jpeg'
-import {Footer, Header} from '../../components'
+import React from "react";
+import pic3 from "../../../src/pictures/img3.jpeg";
+import { Footer, Header } from "../../components";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 
 const Contacts = () => {
   return (
     <div className="">
-    <section>
+      <section>
         <Header />
       </section>
       <section className=" one">
@@ -15,7 +15,7 @@ const Contacts = () => {
           style={{ backgroundImage: `url(${pic3})` }}
           className=" min-h-[300px] md:min-h-[500px] bg-cover bg-center"
         >
-          <div className=' bg-black  absolute inset-0   h-[300px]  md:h-[500px]     opacity-70'></div>
+          <div className=" bg-black  absolute inset-0   h-[300px]  md:h-[500px]     opacity-70"></div>
         </div>
       </section>
       <section className="two bg-[#f2f2f2] ">
@@ -87,10 +87,10 @@ const Contacts = () => {
         </div>
       </section>
       <section>
-        <Footer/>
+        <Footer />
       </section>
     </div>
   );
-}
+};
 
-export default Contacts
+export default Contacts;

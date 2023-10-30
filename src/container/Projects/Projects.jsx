@@ -54,7 +54,7 @@ const Projects = () => {
                       <h2 className=" text-center pt-2 lg:pt-5 text-[1.3rem] lg:text-[1.6rem]"> The Petronas Twin Towers</h2>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae amet pariatur eveniet officia hic mollitia delectus soluta quo sapiente illo ipsa voluptates ducimus, sequi totam placeat, voluptatibus necessitatibus voluptatum. Autem vitae magnam illo iste totam eligendi quaerat tenetur nemo animi dignissimos culpa deserunt commodi, nam illum? Corrupti odio alias sit.</p>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8 hidden lg:block" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque excepturi commodi cum porro doloribus nostrum maiores esse suscipit illum! Assumenda itaque culpa in debitis fugit sunt omnis consequatur quod.</p>
-                     <div className=" text-center pt-2">
+                     <div className=" text-center pt-6  md:pt-2">
                        <button className=" text-white border rounded-md  py-1 px-6 hover:bg-white hover:text-black">Read More</button>
                      </div>
                     </div>
@@ -87,7 +87,7 @@ const Projects = () => {
                       <h2 className=" text-center pt-2 lg:pt-5 text-[1.3rem] lg:text-[1.6rem]"> The Petronas Twin Towers</h2>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae amet pariatur eveniet officia hic mollitia delectus soluta quo sapiente illo ipsa voluptates ducimus, sequi totam placeat, voluptatibus necessitatibus voluptatum. Autem vitae magnam illo iste totam eligendi quaerat tenetur nemo animi dignissimos culpa deserunt commodi, nam illum? Corrupti odio alias sit.</p>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8 hidden lg:block" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque excepturi commodi cum porro doloribus nostrum maiores esse suscipit illum! Assumenda itaque culpa in debitis fugit sunt omnis consequatur quod.</p>
-                     <div className=" text-center pt-2">
+                     <div className=" text-center pt-6  md:pt-2">
                        <button className=" text-white border rounded-md  py-1 px-6 hover:bg-white hover:text-black">Read More</button>
                      </div>
                     </div>
@@ -120,7 +120,7 @@ const Projects = () => {
                       <h2 className=" text-center pt-2 lg:pt-5 text-[1.3rem] lg:text-[1.6rem]"> The Petronas Twin Towers</h2>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae amet pariatur eveniet officia hic mollitia delectus soluta quo sapiente illo ipsa voluptates ducimus, sequi totam placeat, voluptatibus necessitatibus voluptatum. Autem vitae magnam illo iste totam eligendi quaerat tenetur nemo animi dignissimos culpa deserunt commodi, nam illum? Corrupti odio alias sit.</p>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8 hidden lg:block" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque excepturi commodi cum porro doloribus nostrum maiores esse suscipit illum! Assumenda itaque culpa in debitis fugit sunt omnis consequatur quod.</p>
-                     <div className=" text-center pt-2">
+                     <div className=" text-center pt-6  md:pt-2">
                        <button className=" text-white border rounded-md  py-1 px-6 hover:bg-white hover:text-black">Read More</button>
                      </div>
                     </div>
@@ -152,7 +152,7 @@ const Projects = () => {
                       <h2 className=" text-center pt-2 lg:pt-5 text-[1.3rem] lg:text-[1.6rem]"> The Petronas Twin Towers</h2>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae amet pariatur eveniet officia hic mollitia delectus soluta quo sapiente illo ipsa voluptates ducimus, sequi totam placeat, voluptatibus necessitatibus voluptatum. Autem vitae magnam illo iste totam eligendi quaerat tenetur nemo animi dignissimos culpa deserunt commodi, nam illum? Corrupti odio alias sit.</p>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8 hidden lg:block" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque excepturi commodi cum porro doloribus nostrum maiores esse suscipit illum! Assumenda itaque culpa in debitis fugit sunt omnis consequatur quod.</p>
-                     <div className=" text-center pt-2">
+                     <div className=" text-center  pt-6  md:pt-2">
                        <button className=" text-white border rounded-md  py-1 px-6 hover:bg-white hover:text-black">Read More</button>
                      </div>
                     </div>
@@ -185,7 +185,7 @@ const Projects = () => {
                       <h2 className=" text-center pt-2 lg:pt-5 text-[1.3rem] lg:text-[1.6rem]"> The Petronas Twin Towers</h2>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae amet pariatur eveniet officia hic mollitia delectus soluta quo sapiente illo ipsa voluptates ducimus, sequi totam placeat, voluptatibus necessitatibus voluptatum. Autem vitae magnam illo iste totam eligendi quaerat tenetur nemo animi dignissimos culpa deserunt commodi, nam illum? Corrupti odio alias sit.</p>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8 hidden lg:block " >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque excepturi commodi cum porro doloribus nostrum maiores esse suscipit illum! Assumenda itaque culpa in debitis fugit sunt omnis consequatur quod.</p>
-                     <div className=" text-center pt-2">
+                     <div className=" text-center  pt-6  md:pt-2">
                        <button className=" text-white border rounded-md  py-1 px-6 hover:bg-white hover:text-black">Read More</button>
                      </div>
                     </div>
@@ -217,7 +217,7 @@ const Projects = () => {
                       <h2 className=" text-center pt-2 lg:pt-5 text-[1.3rem] lg:text-[1.6rem]"> The Petronas Twin Towers</h2>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae amet pariatur eveniet officia hic mollitia delectus soluta quo sapiente illo ipsa voluptates ducimus, sequi totam placeat, voluptatibus necessitatibus voluptatum. Autem vitae magnam illo iste totam eligendi quaerat tenetur nemo animi dignissimos culpa deserunt commodi, nam illum? Corrupti odio alias sit.</p>
                       <p className=" text-[0.7rem]  lg:text-[1rem] py-2 md:py-1 lg:py-8 hidden lg:block" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti itaque excepturi commodi cum porro doloribus nostrum maiores esse suscipit illum! Assumenda itaque culpa in debitis fugit sunt omnis consequatur quod.</p>
-                     <div className=" text-center pt-2">
+                     <div className=" text-center pt-6  md:pt-2">
                        <button className=" text-white border rounded-md  py-1 px-6 hover:bg-white hover:text-black">Read More</button>
                      </div>
                     </div>

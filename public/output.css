@@ -674,6 +674,10 @@ video {
   top: 0px;
 }
 
+.top-36 {
+  top: 9rem;
+}
+
 .top-\[25\%\] {
   top: 25%;
 }
@@ -688,10 +692,6 @@ video {
 
 .top-\[80\%\] {
   top: 80%;
-}
-
-.top-36 {
-  top: 9rem;
 }
 
 .z-10 {
@@ -920,10 +920,6 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.place-content-center {
-  place-content: center;
 }
 
 .place-items-end {
@@ -1395,10 +1391,6 @@ video {
   text-align: end;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -1625,6 +1617,20 @@ video {
 
 .outline-\[\#222222\] {
   outline-color: #222222;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .\[-webkit-text-stroke-color\:\#926F34\] {
@@ -1872,6 +1878,14 @@ video {
   outline-offset: 2px;
 }
 
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+.group:hover .group-hover\:hidden {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .md\:left-\[40\%\] {
     left: 40%;
@@ -2066,6 +2080,11 @@ video {
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .md\:pb-12 {
@@ -2428,6 +2447,10 @@ video {
     padding-top: 7rem;
   }
 
+  .lg\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
   .lg\:pt-6 {
     padding-top: 1.5rem;
   }
@@ -2473,6 +2496,14 @@ video {
 
   .lg\:text-\[1\.5rem\] {
     font-size: 1.5rem;
+  }
+
+  .lg\:text-\[1\.6rem\] {
+    font-size: 1.6rem;
+  }
+
+  .lg\:text-\[1rem\] {
+    font-size: 1rem;
   }
 
   .lg\:text-\[2\.7rem\] {

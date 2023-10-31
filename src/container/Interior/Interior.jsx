@@ -26,8 +26,8 @@ const Interior = () => {
 
       <section className="bg-[#f2f2f2]">
        <div className=" max-w-[1200px] m-auto py-20 px-6 sl:px-0">
-         <div className=" grid lg:grid-cols-2  place-items-center  sl:place-items-start  gap-10 sl:gap-20">
-          <div className=" lg:max-w-[650px] ">
+         <div className=" grid lg:grid-cols-2  place-items-center  lg:place-items-start  gap-10 sl:gap-20">
+          <div className=" lg:max-w-[650px] sl:max-w-[700px] ">
             <div className=" text-center lg:text-start">
               <h2 className=" text-[1.6rem] md:text-[2rem]  lg:text-[2.7rem] lg:leading-[3rem] font-bold first-line:text-[#8A6201]  text-[#222222]">Creative Solutions <br/> by Professional Designers</h2>
               <p className=" py-6">
@@ -38,9 +38,9 @@ const Interior = () => {
               </p>
             </div>
             <div className=" grid grid-cols-3 max-w-fit gap-6 m-auto  ">
-              <img src={pic9} alt="" className="  w-full sl:w-[180px]  lg:h-[200px] sl:h-[250px] md:h-[250px]" />
-               <img src={pic9} alt="" className="  w-full sl:w-[180px] ] lg:h-[200px] sl:h-[250px] md:h-[250px]" />
-                <img src={pic9} alt=""   className="  w-full sl:w-[180px]  lg:h-[200px] sl:h-[250px] md:h-[250px]"/>
+              <img src={pic9} alt="" className="  w-full sl:w-[200px]  lg:h-[200px] sl:h-[250px] md:h-[250px]" />
+               <img src={pic9} alt="" className="  w-full sl:w-[200px] ] lg:h-[200px] sl:h-[250px] md:h-[250px]" />
+                <img src={pic9} alt=""   className="  w-full sl:w-[200px]  lg:h-[200px] sl:h-[250px] md:h-[250px]"/>
             </div>
             <div className=" pt-8 flex justify-center lg:justify-start">
              <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
@@ -49,8 +49,8 @@ const Interior = () => {
               </button>
             </div>
           </div>
-          <div className=" md:max-w-[450px]">
-            <img src={pic9} alt=""  className="  md:w-[450px] md:h-[600px]"/>
+          <div className=" md:max-w-[450px] sl:max-w-[500px]">
+            <img src={pic9} alt=""  className="  md:w-[450px] sl:w-[500px] md:h-[600px]"/>
           </div>
         </div>
        </div>

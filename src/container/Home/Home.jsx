@@ -202,12 +202,12 @@ const Home = () => {
 
       <section className=" two bg-[#f2f2f2]">
         <div id="target-section">
-          <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
+          <div className="  lg:max-w-[1200px]  sl:max-w-[1200px] sl:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
             <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
             </h2>
-            <div className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1150px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
-              <h3 className="   lg:text-3xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[800px]">
+            <div className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
+              <h3 className="  sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
                 The homepage of an architecture website serves as the first
                 impression for visitors and should provide a compelling overview
                 of the architecture firm and its offerings.
@@ -227,31 +227,31 @@ const Home = () => {
           <div className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
             <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
               <Link to="/Architecture">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Architectural Design</p>
                 </li>
               </Link>
               <Link to="/Interior">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">Interior Design</p>
                 </li>
               </Link>
                <Link to="/Exterior">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Exterior Design</p>
                 </li>
               </Link>
               <Link to="/Visualization">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Visualization</p>
                 </li>
               </Link>
               <Link to="/Construction">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.5rem] gap-2">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Building Construction</p>
                 </li>
@@ -316,8 +316,8 @@ const Home = () => {
 
       <section className=" four bg-[#f2f2f2]">
         <div>
-          <div className=" max-w-[700px] lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[7%]  px-6  sl:px-0  ">
-            <div className=" flex flex-col-reverse md:flex-row gap-3 lg:max-w-[1150px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
+          <div className=" max-w-[700px] lg:max-w-[1200px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[7%]  px-6  sl:px-0  ">
+            <div className=" flex flex-col-reverse md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
               <h2 className=" text-[2rem] md:text-[3rem] lg:text-[4.5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem]">
                 "Discover Our Story"
               </h2>

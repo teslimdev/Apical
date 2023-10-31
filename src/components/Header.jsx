@@ -53,7 +53,7 @@ export default function Header() {
                 <img
                   src={`${backgroundColor === "transparent" ? pic7 : pic1}`}
                   alt=""
-                  className=" w-8 md:w-12 3xl:w-20"
+                  className=" w-8 lg:w-12 3xl:w-20"
                 />
                 <h1 className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${
                     location.pathname === "/"

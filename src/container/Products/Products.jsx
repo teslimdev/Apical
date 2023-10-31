@@ -1,24 +1,27 @@
-import React from 'react'
-import { Header2 } from '../../components'
+import React from "react";
+import { Header2 } from "../../components";
 const Products = () => {
   return (
     <div>
-    <section>
-      <Header2/>
-    </section>
-     <div className='  flex  justify-center '>
-      <div  className='   absolute top-[40%]  '>
-     <ul class="panels  ">
-            <li className='   w-[150px]   cursor-pointer '>
-                <div  className='front bg-[#222222]    w-[150px]  text-white text-xl h-[150px] rounded-full text-center flex flex-col justify-center'>  Coming Soon</div>
-                <div  className='back bg-[#8A6201]   w-[150px] text-white text-xl h-[150px] rounded-full text-center flex flex-col justify-center'>  Coming Soon</div>
-            </li>
-            </ul>
-     </div>
-     </div>
-     
-    </div>
-  )
-}
+      <section>
+        <Header2 />
+      </section>
 
-export default Products
+      <div className=" flex justify-center">
+        <div className="card-container w-[150px] absolute top-[40%] ">
+          <div className="card w-[150px] h-[150px] relative">
+            <div className="card-front rounded-full bg-[#222222] text-white flex items-center justify-center text-xl ">
+              Coming Soon
+            </div>
+            <div className="card-back rounded-full bg-[#8A6201] text-white flex items-center justify-center text-xl ">
+              Coming Soon
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  );
+};
+
+export default Products;

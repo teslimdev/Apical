@@ -59,7 +59,7 @@ export default function Header2() {
                   <img
                     src={`${backgroundColor === "transparent" ? pic1 : pic7}`}
                     alt=""
-                    className=" w-8 md:w-12 3xl:w-20"
+                    className=" w-8 lg:w-12 3xl:w-20"
                   />
                   <h1
                     className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${

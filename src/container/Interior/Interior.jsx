@@ -1,11 +1,21 @@
 import React from "react";
-import { Footer,Header } from "../../components";
+import { Footer, Header, InteriorSlide } from "../../components";
 import pic9 from "../../../src/pictures/img9.jpeg";
-import { AiOutlineArrowRight} from 'react-icons/ai'
+import pic15 from "../../../src/pictures/img15.png";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { LuBedDouble } from "react-icons/lu";
+import { FaBath } from "react-icons/fa";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/effect-fade";
+import { Pagination, A11y, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, EffectCoverflow, EffectCube } from "swiper/modules";
 const Interior = () => {
   return (
     <div>
-    <section>
+      <section>
         <Header />
       </section>
       <section>
@@ -25,37 +35,444 @@ const Interior = () => {
       </section>
 
       <section className="bg-[#f2f2f2]">
-       <div className=" max-w-[1200px] m-auto py-20 px-6 sl:px-0">
-         <div className=" grid lg:grid-cols-2  place-items-center  lg:place-items-start  gap-10 sl:gap-20">
-          <div className=" lg:max-w-[650px] sl:max-w-[700px] ">
-            <div className=" text-center lg:text-start">
-              <h2 className=" text-[1.6rem] md:text-[2rem]  lg:text-[2.7rem] lg:leading-[3rem] font-bold first-line:text-[#8A6201]  text-[#222222]">Creative Solutions <br/> by Professional Designers</h2>
-              <p className=" py-6">
-                Cras vel cursus libero. Vestibulum porttitor nunc enim, quis
-                congue leo fringilla ut. Quisque in lacus lacus. Nunc malesuada
-                nisi at porta convallis. In posuere interdum erat, et bibendum
-                arcu. Etiam quis viverra diam.
-              </p>
+        <div className=" max-w-[1200px] m-auto py-20 px-6 sl:px-0">
+          <div className=" grid lg:grid-cols-2  place-items-center  lg:place-items-start  gap-10 sl:gap-20">
+            <div className=" lg:max-w-[650px] sl:max-w-[700px] ">
+              <div className=" text-center lg:text-start">
+                <h2 className=" text-[1.6rem] md:text-[2rem]  lg:text-[2.7rem] lg:leading-[3rem] font-bold first-line:text-[#8A6201]  text-[#222222]">
+                  Creative Solutions <br /> by Professional Designers
+                </h2>
+                <p className=" py-6">
+                  Cras vel cursus libero. Vestibulum porttitor nunc enim, quis
+                  congue leo fringilla ut. Quisque in lacus lacus. Nunc
+                  malesuada nisi at porta convallis. In posuere interdum erat,
+                  et bibendum arcu. Etiam quis viverra diam.
+                </p>
+              </div>
+              <div className=" grid grid-cols-3 max-w-fit gap-6 m-auto  ">
+                <img
+                  src={pic9}
+                  alt=""
+                  className="  w-full sl:w-[200px]  lg:h-[200px] sl:h-[250px] md:h-[250px]"
+                />
+                <img
+                  src={pic9}
+                  alt=""
+                  className="  w-full sl:w-[200px] ] lg:h-[200px] sl:h-[250px] md:h-[250px]"
+                />
+                <img
+                  src={pic9}
+                  alt=""
+                  className="  w-full sl:w-[200px]  lg:h-[200px] sl:h-[250px] md:h-[250px]"
+                />
+              </div>
+              <div className=" pt-8 flex justify-center lg:justify-start">
+                <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
+                  Read More
+                  <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
+                </button>
+              </div>
             </div>
-            <div className=" grid grid-cols-3 max-w-fit gap-6 m-auto  ">
-              <img src={pic9} alt="" className="  w-full sl:w-[200px]  lg:h-[200px] sl:h-[250px] md:h-[250px]" />
-               <img src={pic9} alt="" className="  w-full sl:w-[200px] ] lg:h-[200px] sl:h-[250px] md:h-[250px]" />
-                <img src={pic9} alt=""   className="  w-full sl:w-[200px]  lg:h-[200px] sl:h-[250px] md:h-[250px]"/>
+            <div className=" md:max-w-[450px] sl:max-w-[500px]">
+              <img
+                src={pic9}
+                alt=""
+                className="  md:w-[450px] sl:w-[500px] md:h-[600px]"
+              />
             </div>
-            <div className=" pt-8 flex justify-center lg:justify-start">
-             <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
-                Read More
-                <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
-              </button>
-            </div>
-          </div>
-          <div className=" md:max-w-[450px] sl:max-w-[500px]">
-            <img src={pic9} alt=""  className="  md:w-[450px] sl:w-[500px] md:h-[600px]"/>
           </div>
         </div>
+      </section>
+      <section className="bg-[#f2f2f2]">
+        <div className="py-12 sl:py-24">
+          <div className=" grid md:grid-cols-2 lg:grid-cols-3 sl:grid-cols-4 gap-6 max-w-fit m-auto px-6 sl:px-0 ">
+            <div className=" md:w-[280px] ">
+              <h2 className=" text-4xl first-line:text-[#8A6201]">
+                <span>Modern ideas</span>
+                <br /> for home
+              </h2>
+              <p className=" text-[1rem] pt-8">
+                Vestibulum augue tortor, consequat eu diam a, varius pulvinar
+                ipsum. Vivamus posuere, mauris eu interdum molestie.
+              </p>
+              <div className=" pt-6">
+                <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
+                  Read More
+                  <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
+                </button>
+              </div>
+            </div>
+
+            <div className="card-container md:w-[280px]  ">
+              <div className="card md:w-[280px] h-[350px] relative">
+                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                  <div className="  text-center max-w-[250px] m-auto">
+                    <div className=" flex justify-center py-6">
+                      <LuBedDouble className="  text-[5rem] text-white  " />
+                    </div>
+                    <h2 className=" text-white text-2xl ">Bedrooms</h2>
+                    <p className="  pt-6 text-[1.2rem] text-white">
+                      Vestibulum augue tortor, consequat eu diam a, varius
+                      pulvinar ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="card-back  ">
+                  <div
+                    style={{ backgroundImage: `url(${pic9})` }}
+                    className="   bg-center h-full  "
+                  >
+                    <div className=" bg-black opacity-40"></div>
+                  </div>
+                  <div className="  flex justify-center">
+                    <div className=" absolute top-0 text-center max-w-[250px]">
+                      <div className=" flex justify-center py-6">
+                        <LuBedDouble className="  text-[5rem] text-white  " />
+                      </div>
+                      <h2 className=" text-white text-2xl ">Bedrooms</h2>
+                      <p className="  pt-6 text-[1.2rem] text-white">
+                        Vestibulum augue tortor, consequat eu diam a, varius
+                        pulvinar ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-container md:w-[280px]  ">
+              <div className="card md:w-[280px] h-[350px] relative">
+                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                  <div className="  text-center max-w-[250px] m-auto">
+                    <div className=" flex justify-center py-6">
+                      <LuBedDouble className="  text-[5rem] text-white  " />
+                    </div>
+                    <h2 className=" text-white text-2xl ">Kitchens</h2>
+                    <p className="  pt-6 text-[1.2rem] text-white">
+                      Vestibulum augue tortor, consequat eu diam a, varius
+                      pulvinar ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="card-back  ">
+                  <div
+                    style={{ backgroundImage: `url(${pic9})` }}
+                    className="   bg-center h-full  "
+                  >
+                    <div className=" bg-black opacity-40"></div>
+                  </div>
+                  <div className="  flex justify-center">
+                    <div className=" absolute top-0 text-center max-w-[250px]">
+                      <div className=" flex justify-center py-6">
+                        <LuBedDouble className="  text-[5rem] text-white  " />
+                      </div>
+                      <h2 className=" text-white text-2xl ">Kitchens</h2>
+                      <p className="  pt-6 text-[1.2rem] text-white">
+                        Vestibulum augue tortor, consequat eu diam a, varius
+                        pulvinar ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-container md:w-[280px]  ">
+              <div className="card md:w-[280px] h-[350px] relative">
+                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                  <div className="  text-center max-w-[250px] m-auto">
+                    <div className=" flex justify-center py-6">
+                      <LuBedDouble className="  text-[5rem] text-white  " />
+                    </div>
+                    <h2 className=" text-white text-2xl ">Lighting</h2>
+                    <p className="  pt-6 text-[1.2rem] text-white">
+                      Vestibulum augue tortor, consequat eu diam a, varius
+                      pulvinar ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="card-back  ">
+                  <div
+                    style={{ backgroundImage: `url(${pic9})` }}
+                    className="   bg-center h-full  "
+                  >
+                    <div className=" bg-black opacity-40"></div>
+                  </div>
+                  <div className="  flex justify-center">
+                    <div className=" absolute top-0 text-center max-w-[250px]">
+                      <div className=" flex justify-center py-6">
+                        <LuBedDouble className="  text-[5rem] text-white  " />
+                      </div>
+                      <h2 className=" text-white text-2xl ">Lighting</h2>
+                      <p className="  pt-6 text-[1.2rem] text-white">
+                        Vestibulum augue tortor, consequat eu diam a, varius
+                        pulvinar ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-container md:w-[280px]  ">
+              <div className="card md:w-[280px] h-[350px] relative">
+                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                  <div className="  text-center max-w-[250px] m-auto">
+                    <div className=" flex justify-center py-6">
+                      <LuBedDouble className="  text-[5rem] text-white  " />
+                    </div>
+                    <h2 className=" text-white text-2xl ">Windows</h2>
+                    <p className="  pt-6 text-[1.2rem] text-white">
+                      Vestibulum augue tortor, consequat eu diam a, varius
+                      pulvinar ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="card-back  ">
+                  <div
+                    style={{ backgroundImage: `url(${pic9})` }}
+                    className="   bg-center h-full  "
+                  >
+                    <div className=" bg-black opacity-40"></div>
+                  </div>
+                  <div className="  flex justify-center">
+                    <div className=" absolute top-0 text-center max-w-[250px]">
+                      <div className=" flex justify-center py-6">
+                        <LuBedDouble className="  text-[5rem] text-white  " />
+                      </div>
+                      <h2 className=" text-white text-2xl ">Windows</h2>
+                      <p className="  pt-6 text-[1.2rem] text-white">
+                        Vestibulum augue tortor, consequat eu diam a, varius
+                        pulvinar ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-container md:w-[280px]  ">
+              <div className="card md:w-[280px] h-[350px] relative">
+                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                  <div className="  text-center max-w-[250px] m-auto">
+                    <div className=" flex justify-center py-6">
+                      <FaBath className="  text-[5rem] text-white  " />
+                    </div>
+                    <h2 className=" text-white text-2xl ">Bathrooms</h2>
+                    <p className="  pt-6 text-[1.2rem] text-white">
+                      Vestibulum augue tortor, consequat eu diam a, varius
+                      pulvinar ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="card-back  ">
+                  <div
+                    style={{ backgroundImage: `url(${pic9})` }}
+                    className="   bg-center h-full  "
+                  >
+                    <div className=" bg-black opacity-40"></div>
+                  </div>
+                  <div className="  flex justify-center">
+                    <div className=" absolute top-0 text-center max-w-[250px]">
+                      <div className=" flex justify-center py-6">
+                        <FaBath className="  text-[5rem] text-white  " />
+                      </div>
+                      <h2 className=" text-white text-2xl ">Bathrooms</h2>
+                      <p className="  pt-6 text-[1.2rem] text-white">
+                        Vestibulum augue tortor, consequat eu diam a, varius
+                        pulvinar ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-container md:w-[280px]  ">
+              <div className="card md:w-[280px] h-[350px] relative">
+                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                  <div className="  text-center max-w-[250px] m-auto">
+                    <div className=" flex justify-center py-6">
+                      <LuBedDouble className="  text-[5rem] text-white  " />
+                    </div>
+                    <h2 className=" text-white text-2xl ">Decoration</h2>
+                    <p className="  pt-6 text-[1.2rem] text-white">
+                      Vestibulum augue tortor, consequat eu diam a, varius
+                      pulvinar ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="card-back  ">
+                  <div
+                    style={{ backgroundImage: `url(${pic9})` }}
+                    className="   bg-center h-full  "
+                  >
+                    <div className=" bg-black opacity-40"></div>
+                  </div>
+                  <div className="  flex justify-center">
+                    <div className=" absolute top-0 text-center max-w-[250px]">
+                      <div className=" flex justify-center py-6">
+                        <LuBedDouble className="  text-[5rem] text-white  " />
+                      </div>
+                      <h2 className=" text-white text-2xl ">Decoration</h2>
+                      <p className="  pt-6 text-[1.2rem] text-white">
+                        Vestibulum augue tortor, consequat eu diam a, varius
+                        pulvinar ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="card-container md:w-[280px]  ">
+              <div className="card md:w-[280px] h-[350px] relative">
+                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                  <div className="  text-center max-w-[250px] m-auto">
+                    <div className=" flex justify-center py-6">
+                      <LuBedDouble className="  text-[5rem] text-white  " />
+                    </div>
+                    <h2 className=" text-white text-2xl ">Fireplaces</h2>
+                    <p className="  pt-6 text-[1.2rem] text-white">
+                      Vestibulum augue tortor, consequat eu diam a, varius
+                      pulvinar ipsum.
+                    </p>
+                  </div>
+                </div>
+                <div className="card-back  ">
+                  <div
+                    style={{ backgroundImage: `url(${pic9})` }}
+                    className="   bg-center h-full  "
+                  >
+                    <div className=" bg-black opacity-40"></div>
+                  </div>
+                  <div className="  flex justify-center">
+                    <div className=" absolute top-0 text-center max-w-[250px]">
+                      <div className=" flex justify-center py-6">
+                        <LuBedDouble className="  text-[5rem] text-white  " />
+                      </div>
+                      <h2 className=" text-white text-2xl ">Fireplaces</h2>
+                      <p className="  pt-6 text-[1.2rem] text-white">
+                        Vestibulum augue tortor, consequat eu diam a, varius
+                        pulvinar ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#222222]">
+        <div className=" py-14 pb-40">
+          <div className=" relative">
+            <div>
+              <h2 className=" text-[3.8rem] md:text-[9rem] lg:text-[12rem] sl:text-[15rem] 2xl:text-[17rem] text-center uppercase text-transparent  opacity-20 [-webkit-text-stroke-color:white] [-webkit-text-stroke-width:_1px]">
+                {" "}
+                portfolio
+              </h2>
+            </div>
+            <div className=" flex justify-center text-white">
+              <div className=" top-10 absolute md:top-20 lg:top-32 sl:top-44 2xl:top-52  text-center  ">
+                <h3 className=" text-xl md:text-2xl">our portfolio</h3>
+                <h3 className=" md:text-3xl">Completed Projects</h3>
+              </div>
+            </div>
+          </div>
+          <div className=" px-6 sl:px-0">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectFade,
+                Autoplay,
+                EffectCube,
+                EffectCoverflow,
+              ]}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                520: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+              }}
+              effect=""
+              loop={true}
+              speed={1200}
+              autoplay={{
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              pagination={{
+                el: ".swiper-pagination",
+                clickable: true,
+              }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
+                <InteriorSlide image={pic9} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <InteriorSlide image={pic9} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <InteriorSlide image={pic9} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <InteriorSlide image={pic9} />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div className=" grid place-items-center lg:grid-cols-2 max-w-[1200px] m-auto px-6 sl:px-0 py-12 sl:py-20">
+            <div className="">
+              <h2 className=" first-line:text-[#8A6201] text-3xl md:text-4xl sl:text-5xl sl:leading-[3.5rem] font-bold text-center lg:text-start ">
+                {" "}
+                We follow the trends <br /> of world interior design and bring
+                them to reality
+              </h2>
+              <p className=" max-w-[300px] text-center lg:text-start  sl:max-w-[400px] m-auto pt-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                hic quisquam minima voluptate quidem nesciunt?
+              </p>
+            </div>
+            <div>
+              <img src={pic15} alt="" className=" w-[400px]" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+       <div className=" relative">
+         <div
+          style={{ backgroundImage: `url(${pic9})` }}
+          className=" min-h-[700px] bg-cover bg-center relative"
+        >
+          <div className=" bg-black inset-0 absolute top-0 w-full opacity-40 h-full"></div>
+        </div>
+       <div className=" flex justify-center ">
+         <div className=" absolute top-20 px-6 sl:px-0">
+          <h2 className=" first-line:text-[#8A6201] text-3xl lg:leading-[3.8rem] md:text-4xl text-white font-semibold lg:text-5xl text-center md:font-bold">We create projects <br /> from visualization to finished interior</h2>
+          <p className="  md:max-w-[800px] sl:max-w-[1000px] m-auto text-center text-white pt-6">Sed non dapibus dolor, non rhoncus dui. Ut eleifend justo at ipsum aliquam, vel cursus tellus pulvinar. Nulla vel tempus diam. Nunc vulputate, quam sit amet commodo tincidunt, enim lorem scelerisque massa, vel ultricies purus ipsum eu mauris.</p>
+        </div>
+       </div>
        </div>
       </section>
-
       <section>
         <Footer />
       </section>

@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, EffectCoverflow } from "swiper/modules";
+import { EffectFade, EffectCoverflow,EffectCards } from "swiper/modules";
 import {
   HomeBanner,
   HomeSlide,
@@ -339,8 +339,8 @@ const Home = () => {
             <div className=" flex justify-between flex-col lg:flex-row">
               <div className="  lg:max-w-[500px]">
                 <Swiper
-                  modules={[Pagination, A11y, EffectCoverflow, Autoplay]}
-                  effect="coverflow"
+                  modules={[Pagination, A11y, EffectCoverflow, Autoplay,EffectCards]}
+                  effect="cards"
                   loop={true}
                   speed={1000}
                   centeredSlides={true}
@@ -461,7 +461,7 @@ const Home = () => {
             <BiWorld className=" text-7xl text-[#222222] max-w-fit m-auto"></BiWorld>
             <div>
               <h3 className=" text-[1.3rem] py-3">
-                Consultation and initial meetin
+                Consultation and initial meeting
               </h3>
               <p className=" text-[0.9rem]">
                 The architecture company meets with the client to discuss their

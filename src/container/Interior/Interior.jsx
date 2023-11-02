@@ -460,10 +460,10 @@ const Interior = () => {
       <section>
         <div
          style={{ backgroundImage: `url(${pic9})` }}
-         className=" relative  h-full sl:min-h-[800px] ">
+         className=" relative  h-full sl:min-h-[800px] bg-cover bg-center ">
           <div
            
-            className="bg-cover bg-center h-full "
+            className=" h-full "
             // className=" min-h-[2900px] md:min-h-[2600px]  lg:min-h-[2650px] sl:min-h-[800px] bg-cover bg-center relative"
           >
             <div className=" bg-black inset-0 absolute top-0 w-full opacity-40 h-full"></div>

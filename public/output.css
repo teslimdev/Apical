@@ -690,6 +690,10 @@ video {
   top: 25%;
 }
 
+.top-\[26rem\] {
+  top: 26rem;
+}
+
 .top-\[30\%\] {
   top: 30%;
 }
@@ -798,6 +802,18 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[1500px\] {
+  height: 1500px;
 }
 
 .min-h-\[2900px\] {
@@ -1417,10 +1433,6 @@ video {
   padding-top: 10%;
 }
 
-.pt-\[25rem\] {
-  padding-top: 25rem;
-}
-
 .pt-\[40\%\] {
   padding-top: 40%;
 }
@@ -1431,6 +1443,30 @@ video {
 
 .pt-\[8\%\] {
   padding-top: 8%;
+}
+
+.pt-48 {
+  padding-top: 12rem;
+}
+
+.pt-60 {
+  padding-top: 15rem;
+}
+
+.pt-72 {
+  padding-top: 18rem;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[22rem\] {
+  padding-top: 22rem;
+}
+
+.pt-\[25rem\] {
+  padding-top: 25rem;
 }
 
 .text-center {
@@ -1899,6 +1935,10 @@ video {
     top: 5rem;
   }
 
+  .md\:top-\[20rem\] {
+    top: 20rem;
+  }
+
   .md\:top-\[50\%\] {
     top: 50%;
   }
@@ -2115,6 +2155,10 @@ video {
     padding-top: 20%;
   }
 
+  .md\:pt-\[\] {
+    padding-top: ;
+  }
+
   .md\:pt-\[22rem\] {
     padding-top: 22rem;
   }
@@ -2202,6 +2246,10 @@ video {
 
   .lg\:top-32 {
     top: 8rem;
+  }
+
+  .lg\:top-\[22rem\] {
+    top: 22rem;
   }
 
   .lg\:order-1 {
@@ -2636,6 +2684,22 @@ video {
     top: 11rem;
   }
 
+  .sl\:top-\[25\.5rem\] {
+    top: 25.5rem;
+  }
+
+  .sl\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .sl\:bottom-\[\] {
+    bottom: ;
+  }
+
+  .sl\:bottom-10 {
+    bottom: 2.5rem;
+  }
+
   .sl\:m-auto {
     margin: auto;
   }
@@ -2658,6 +2722,22 @@ video {
 
   .sl\:min-h-\[800px\] {
     min-height: 800px;
+  }
+
+  .sl\:min-h-\[\] {
+    min-height: ;
+  }
+
+  .sl\:min-h-\[700px\] {
+    min-height: 700px;
+  }
+
+  .sl\:min-h-\[80px\] {
+    min-height: 80px;
+  }
+
+  .sl\:min-h-\[0px\] {
+    min-height: 0px;
   }
 
   .sl\:w-\[1100px\] {
@@ -2778,10 +2858,6 @@ video {
     padding-bottom: 1rem;
   }
 
-  .sl\:pb-0 {
-    padding-bottom: 0px;
-  }
-
   .sl\:pb-8 {
     padding-bottom: 2rem;
   }
@@ -2796,6 +2872,18 @@ video {
 
   .sl\:pt-\[10\%\] {
     padding-top: 10%;
+  }
+
+  .sl\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .sl\:pb-\[\] {
+    padding-bottom: ;
+  }
+
+  .sl\:pb-\[-10px\] {
+    padding-bottom: -10px;
   }
 
   .sl\:text-3xl {

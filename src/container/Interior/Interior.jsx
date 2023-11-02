@@ -460,10 +460,10 @@ const Interior = () => {
       <section>
         <div
          style={{ backgroundImage: `url(${pic9})` }}
-         className=" relative  h-full sl:min-h-[800px] bg-cover bg-center ">
+         className=" relative   min-h-[2850px] h-full sl:min-h-[800px] bg-cover bg-center ">
           <div
            
-            className=" h-full "
+            className="  h-full "
             // className=" min-h-[2900px] md:min-h-[2600px]  lg:min-h-[2650px] sl:min-h-[800px] bg-cover bg-center relative"
           >
             <div className=" bg-black inset-0 absolute top-0 w-full opacity-40 h-full"></div>
@@ -486,11 +486,11 @@ const Interior = () => {
           </div>
 
           <div className=" flex justify-center">
-            <div className="  sl:absolute   pt-[25rem] md:pt-[22rem] pb-10  sl:pb-0  w-full ">
+            <div className="  absolute   pt-[25rem] md:pt-[22rem] pb-10  sl:pb-0  w-full ">
     
               <div className="  grid  sl:grid-cols-4 max-w-[1200px] m-auto gap-10 px-6 sl:px-0 sl:gap-6 ">
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0 text-center text-white">
+                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0 text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">
@@ -499,13 +499,13 @@ const Interior = () => {
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
-                      <ul className=" space-y-2 ">
-                        <li className=" border-b pb-1 ">
+                      <ul className=" space-y-4 ">
+                        <li className=" border-b pb-2 ">
                           Flat Project Planning
                         </li>
-                        <li className=" border-b pb-1 ">Style Selection</li>
-                        <li className=" border-b pb-1 ">3D-Visualization</li>
-                        <li className=" border-b pb-1  ">Recommendations</li>
+                        <li className=" border-b pb-2 ">Style Selection</li>
+                        <li className=" border-b pb-2 ">3D-Visualization</li>
+                        <li className=" border-b pb-2  ">Recommendations</li>
                       </ul>
                     </div>
                     <div className=" flex justify-center">
@@ -519,7 +519,7 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">
@@ -528,13 +528,13 @@ const Interior = () => {
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
-                      <ul className=" space-y-2 ">
-                        <li className=" border-b pb-1 ">
+                      <ul className=" space-y-4 ">
+                        <li className=" border-b pb-2 ">
                           Flat Project Planning
                         </li>
-                        <li className=" border-b pb-1 ">Style Selection</li>
-                        <li className=" border-b pb-1 ">3D-Visualization</li>
-                        <li className=" border-b pb-1  ">Recommendations</li>
+                        <li className=" border-b pb-2 ">Style Selection</li>
+                        <li className=" border-b pb-2 ">3D-Visualization</li>
+                        <li className=" border-b pb-2  ">Recommendations</li>
                       </ul>
                     </div>
                     <div className=" flex justify-center">
@@ -548,7 +548,7 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">
@@ -557,13 +557,13 @@ const Interior = () => {
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
-                      <ul className=" space-y-2 ">
-                        <li className=" border-b pb-1 ">
+                      <ul className=" space-y-4 ">
+                        <li className=" border-b pb-2 ">
                           Flat Project Planning
                         </li>
-                        <li className=" border-b pb-1 ">Style Selection</li>
-                        <li className=" border-b pb-1 ">3D-Visualization</li>
-                        <li className=" border-b pb-1  ">Recommendations</li>
+                        <li className=" border-b pb-2 ">Style Selection</li>
+                        <li className=" border-b pb-2 ">3D-Visualization</li>
+                        <li className=" border-b pb-2  ">Recommendations</li>
                       </ul>
                     </div>
                     <div className=" flex justify-center">
@@ -577,7 +577,7 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">
@@ -586,13 +586,13 @@ const Interior = () => {
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
-                      <ul className=" space-y-2 ">
-                        <li className=" border-b pb-1 ">
+                      <ul className=" space-y-4 ">
+                        <li className=" border-b pb-2 ">
                           Flat Project Planning
                         </li>
-                        <li className=" border-b pb-1 ">Style Selection</li>
-                        <li className=" border-b pb-1 ">3D-Visualization</li>
-                        <li className=" border-b pb-1  ">Recommendations</li>
+                        <li className=" border-b pb-2 ">Style Selection</li>
+                        <li className=" border-b pb-2 ">3D-Visualization</li>
+                        <li className=" border-b pb-2  ">Recommendations</li>
                       </ul>
                     </div>
                     <div className=" flex justify-center">

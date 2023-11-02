@@ -689,7 +689,7 @@ const Interior = () => {
                 Subscribe for Members <br /> to Receive Latest News and Special Offers
               </h2>
             </div>
-            <form action="" className=" flex flex-col gap-3 lg:gap-0   lg:flex-row items-center md:max-w-[700px] pt-6 px-6  md:px-0 ">
+            <form action="" className=" flex flex-col gap-6 lg:gap-0   lg:flex-row items-center md:max-w-[700px] pt-6 px-6  md:px-0 ">
              <div className=" w-full">
                <input type="email" placeholder=" Your Email..."
               className=" py-3 w-full pl-4 shadow-lg text-[#222222] placeholder:text-[#8A6201]  border-none outline-none"

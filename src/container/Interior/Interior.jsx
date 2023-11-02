@@ -458,7 +458,7 @@ const Interior = () => {
         </div>
       </section>
       <section>
-        <div className=" relative">
+        <div className=" relative py-12">
           <div
             style={{ backgroundImage: `url(${pic9})` }}
             className=" min-h-[2730px] md:min-h-[2600px]  lg:min-h-[2650px] sl:min-h-[800px] bg-cover bg-center relative"

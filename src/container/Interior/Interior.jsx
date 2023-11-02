@@ -680,7 +680,7 @@ const Interior = () => {
             style={{ backgroundImage: `url(${pic9})` }}
             className=" min-h-[300px] md:min-h-[400px]   bg-cover bg-center relative"
           >
-            <div className=" bg-black  absolute inset-0  h-[300px] md:h-[400px]      opacity-20"></div>
+            <div className=" bg-black  absolute inset-0  h-[300px] md:h-[400px]      opacity-50"></div>
           </div>
           <div className=" flex justify-center">
             <div className=" absolute top-10 md:top-20 lg:top-32">

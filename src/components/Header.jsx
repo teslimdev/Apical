@@ -33,7 +33,7 @@ export default function Header() {
   };
   const location = useLocation();
   return (
-    <div className="  z-10 w-full">
+    <div className="  z-[80] w-full">
       <nav className="    ">
         <div
           id="navmain"

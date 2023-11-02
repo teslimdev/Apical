@@ -458,7 +458,7 @@ const Interior = () => {
         </div>
       </section>
       <section>
-        <div className=" relative py-12">
+        <div className=" relative ">
           <div
             style={{ backgroundImage: `url(${pic9})` }}
             className=" min-h-[2730px] md:min-h-[2600px]  lg:min-h-[2650px] sl:min-h-[800px] bg-cover bg-center relative"
@@ -482,7 +482,7 @@ const Interior = () => {
           </div>
 
           <div className=" flex justify-center">
-            <div className="  absolute   bottom-20 sl:bottom-[-50px]  w-full ">
+            <div className="  absolute  top-[26rem] md:top-[20rem] lg:top-[22rem]  sl:top-[25.5rem]   w-full ">
               <div className="  grid  sl:grid-cols-4 max-w-[1200px] m-auto gap-10 px-6 sl:px-0 sl:gap-6">
                 <div className="sl:max-w-[300px]   relative">
                   <div className=" bg-[#222222] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0 text-center text-white">

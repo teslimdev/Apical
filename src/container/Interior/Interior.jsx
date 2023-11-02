@@ -490,7 +490,7 @@ const Interior = () => {
     
               <div className="  grid  sl:grid-cols-4 max-w-[1200px] m-auto gap-10 px-6 sl:px-0 sl:gap-6 ">
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[80vh] sl:min-h-[70vh]  px-6 sl:px-0 text-center text-white">
+                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0 text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">
@@ -519,7 +519,7 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[80vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">
@@ -548,7 +548,7 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[80vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">
@@ -577,7 +577,7 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] min-h-[80vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                  <div className=" bg-[#444444] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2">Planning</h2>
                       <div className=" flex justify-center">

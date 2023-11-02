@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Header, InteriorSlide } from "../../components";
+import { Footer2, Header, InteriorSlide } from "../../components";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic15 from "../../../src/pictures/img15.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -459,10 +459,10 @@ const Interior = () => {
       </section>
       <section>
         <div
-         style={{ backgroundImage: `url(${pic9})` }}
-         className=" relative   min-h-[2850px] h-full sl:min-h-[800px] bg-cover bg-center ">
+          style={{ backgroundImage: `url(${pic9})` }}
+          className=" relative   min-h-[2850px] h-full sl:min-h-[800px] bg-cover bg-center "
+        >
           <div
-           
             className="  h-full "
             // className=" min-h-[2900px] md:min-h-[2600px]  lg:min-h-[2650px] sl:min-h-[800px] bg-cover bg-center relative"
           >
@@ -471,7 +471,6 @@ const Interior = () => {
 
           <div className=" flex justify-center ">
             <div className="  absolute top-20 px-6 sl:px-0">
-          
               <p className=" first-line:text-[#8A6201] text-3xl lg:leading-[3.8rem] md:text-4xl text-white font-semibold lg:text-5xl text-center md:font-bold">
                 We create projects <br /> from visualization to finished
                 interior
@@ -487,15 +486,16 @@ const Interior = () => {
 
           <div className=" flex justify-center">
             <div className="  absolute   pt-[25rem] md:pt-[22rem] pb-10  sl:pb-0  w-full ">
-    
               <div className="  grid  sl:grid-cols-4 max-w-[1200px] m-auto gap-10 px-6 sl:px-0 sl:gap-6 ">
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0 text-center text-white">
-                    <div className=" pt-20">
-                      <h2 className=" text-2xl pb-2">Planning</h2>
+                  <div className=" bg-white shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0 text-center">
+                    <div className=" pt-20 ">
+                      <h2 className="  text-2xl pb-2 font-semibold">
+                        Planning
+                      </h2>
                       <div className=" flex justify-center">
-                        <p className=" text-2xl">$</p>
-                        <p className=" text-5xl">169</p>
+                        <p className=" text-[#8A6201] text-2xl">$</p>
+                        <p className=" text-[#8A6201] text-5xl">169</p>
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
@@ -510,7 +510,7 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className=" shadow-lg py-3  w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                        <button className=" shadow-lg py-3  w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
                       </div>
@@ -519,12 +519,14 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center text-white">
+                  <div className=" bg-white shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center">
                     <div className=" pt-20">
-                      <h2 className=" text-2xl pb-2">Planning</h2>
+                      <h2 className=" text-2xl pb-2 font-semibold">
+                        Single Project
+                      </h2>
                       <div className=" flex justify-center">
-                        <p className=" text-2xl">$</p>
-                        <p className=" text-5xl">169</p>
+                        <p className=" text-[#8A6201] text-2xl">$</p>
+                        <p className=" text-[#8A6201] text-5xl">799</p>
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
@@ -539,7 +541,7 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
                       </div>
@@ -548,12 +550,14 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center text-white">
+                  <div className="  bg-white  shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center">
                     <div className=" pt-20">
-                      <h2 className=" text-2xl pb-2">Planning</h2>
+                      <h2 className=" text-2xl pb-2 font-semibold">
+                        Smart Home
+                      </h2>
                       <div className=" flex justify-center">
-                        <p className=" text-2xl">$</p>
-                        <p className=" text-5xl">169</p>
+                        <p className=" text-[#8A6201] text-2xl">$</p>
+                        <p className=" text-[#8A6201] text-5xl">2500</p>
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
@@ -568,7 +572,7 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
                       </div>
@@ -577,12 +581,14 @@ const Interior = () => {
                 </div>
 
                 <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-[#444444] shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center text-white">
+                  <div className="  bg-white shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center ">
                     <div className=" pt-20">
-                      <h2 className=" text-2xl pb-2">Planning</h2>
+                      <h2 className=" text-2xl pb-2 font-semibold">
+                        Commercial
+                      </h2>
                       <div className=" flex justify-center">
-                        <p className=" text-2xl">$</p>
-                        <p className=" text-5xl">169</p>
+                        <p className=" text-[#8A6201] text-2xl">$</p>
+                        <p className=" text-[#8A6201] text-5xl">1259</p>
                       </div>
                     </div>
                     <div className=" pt-16 sl:max-w-[200px] m-auto">
@@ -597,7 +603,7 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
                       </div>
@@ -609,15 +615,96 @@ const Interior = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="bg-[#f2f2f2]">
         <div className=" py-20">
           <div className=" text-center pt-20">
-            <h2 className=" text-2xl  font-semibold md:text-4xl sl:text-5xl first-line:text-[#8A6201]">4 Easy Steps <br /> to Get Interior Design</h2>
+            <h2 className=" text-2xl  font-semibold md:text-4xl sl:text-5xl first-line:text-[#8A6201]">
+              4 Easy Steps <br /> to Get Interior Design
+            </h2>
+          </div>
+          <div className=" grid md:grid-cols-2 sl:grid-cols-4 max-w-fit m-auto gap-[4.5rem] py-8">
+            <div className=" max-w-[300px] sl:max-w-[250px] text-center">
+              <div className=" text-[6rem] leading-[6rem] md:leading-[8rem] md:text-[8rem] font-bold text-[#8A6201]">
+                <h2>01</h2>
+              </div>
+              <div>
+                <h3 className=" text-2xl py-2">Request Sending</h3>
+                <p>
+                  Mauris libero ex, ullamcorper in facilisis sagittis, gravida
+                  in ipsum.
+                </p>
+              </div>
+            </div>
+
+            <div className=" max-w-[300px] sl:max-w-[250px] text-center">
+              <div className=" text-[6rem] leading-[6rem] md:leading-[8rem] md:text-[8rem] font-bold text-[#8A6201]">
+                <h2>02</h2>
+              </div>
+              <div>
+                <h3 className=" text-2xl py-2">Project Planning</h3>
+                <p>
+                  Nulla lacinia, felis eget cursus aliquet, tellus mauris
+                  gravida ligula.
+                </p>
+              </div>
+            </div>
+
+            <div className=" max-w-[300px] sl:max-w-[250px] text-center">
+              <div className=" text-[6rem] leading-[6rem] md:leading-[8rem] md:text-[8rem] font-bold text-[#8A6201]">
+                <h2>03</h2>
+              </div>
+              <div>
+                <h3 className=" text-2xl py-2">Design Creating</h3>
+                <p>Sed pulvinar urna sit amet felis condimentum dapibus.</p>
+              </div>
+            </div>
+
+            <div className=" max-w-[300px] sl:max-w-[250px] text-center">
+              <div className=" text-[6rem] leading-[6rem] md:leading-[8rem] md:text-[8rem] font-bold text-[#8A6201]">
+                <h2>04</h2>
+              </div>
+              <div>
+                <h3 className=" text-2xl py-2">Enjoying Work</h3>
+                <p>
+                  Duis non arcu ante. Quisque convallis, nulla sit amet
+                  scelerisque sollicitudin.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="">
+        <div className=" relative">
+          <div
+            style={{ backgroundImage: `url(${pic9})` }}
+            className=" min-h-[300px] md:min-h-[400px]   bg-cover bg-center relative"
+          >
+            <div className=" bg-black  absolute inset-0  h-[300px] md:h-[400px]      opacity-20"></div>
+          </div>
+          <div className=" flex justify-center">
+            <div className=" absolute top-10 md:top-20 lg:top-32">
+            <div className=" text-center text-white">
+              <h2 className=" text-2xl font-semibold   first-line:text-[#8A6201] sl:first-line:text-3xl">
+                Subscribe for Members <br /> to Receive Latest News and Special Offers
+              </h2>
+            </div>
+            <form action="" className=" flex flex-col gap-3 lg:gap-0   lg:flex-row items-center md:max-w-[700px] pt-6 px-6  md:px-0 ">
+             <div className=" w-full">
+               <input type="email" placeholder=" Your Email..."
+              className=" py-3 w-full pl-4 shadow-lg text-[#222222] placeholder:text-[#8A6201]  border-none outline-none"
+               />
+             </div>
+             <div className=" w-full lg:w-fit">
+               <button className=" bg-[#222222] py-3 w-full  lg:w-fit lg:px-7 text-white   hover:bg-[#444444] shadow-lg  ">SUBSCRIBE</button>
+             </div>
+            </form>
+          </div>
           </div>
         </div>
       </section>
       <section>
-        <Footer />
+        <Footer2 />
       </section>
     </div>
   );

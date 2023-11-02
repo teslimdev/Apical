@@ -776,27 +776,29 @@ const Home2 = () => {
         </div>
       </section>
 
-      <section className=" thirteen">
+        <section className=" thirteen">
         <div
           style={{ backgroundImage: `url(${pic9})` }}
           className=" min-h-[300px] md:min-h-[450px] bg-cover bg-center relative"
         >
-          <div className=" px-6 pt-[10%] lg:pt-[7%] ">
+          <div className=" bg-black  absolute inset-0  h-[300px] md:h-[450px]      opacity-70">
+            <div className=" px-6 pt-[10%] lg:pt-[7%] ">
             <div className="  text-center  ">
-              <h2 className=" text-[#8A6201]  text-4xl md:text-5xl lg:text-7xl">
+              <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
                 Have a project in mind?
               </h2>
-              <p className=" text-[#8A6201]  py-4 text-2xl font-semibold">
+              <p className=" text-white py-4 text-2xl font-semibold">
                 Do not hesitate to say Hello
               </p>
-              <div>
+              <div className=" pt-4">
                 <Link to="/Contacts">
-                  <button className=" text-[#8A6201]  border-[#8A6201]  hover:border-white border-2 py-3 px-16 rounded-full hover:text-black   text-2xl hover:bg-white ">
+                  <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
                     Lets Talk
                   </button>
                 </Link>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>

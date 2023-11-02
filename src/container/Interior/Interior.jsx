@@ -458,20 +458,158 @@ const Interior = () => {
         </div>
       </section>
       <section>
-       <div className=" relative">
-         <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[700px] bg-cover bg-center relative"
-        >
-          <div className=" bg-black inset-0 absolute top-0 w-full opacity-40 h-full"></div>
+        <div className=" relative">
+          <div
+            style={{ backgroundImage: `url(${pic9})` }}
+            className=" min-h-[2730px] md:min-h-[2600px]  lg:min-h-[2650px] sl:min-h-[800px] bg-cover bg-center relative"
+          >
+            <div className=" bg-black inset-0 absolute top-0 w-full opacity-40 h-full"></div>
+          </div>
+
+          <div className=" flex justify-center ">
+            <div className=" absolute top-20 px-6 sl:px-0">
+              <h2 className=" first-line:text-[#8A6201] text-3xl lg:leading-[3.8rem] md:text-4xl text-white font-semibold lg:text-5xl text-center md:font-bold">
+                We create projects <br /> from visualization to finished
+                interior
+              </h2>
+              <p className="  md:max-w-[800px] sl:max-w-[1000px] m-auto text-center text-white pt-6">
+                Sed non dapibus dolor, non rhoncus dui. Ut eleifend justo at
+                ipsum aliquam, vel cursus tellus pulvinar. Nulla vel tempus
+                diam. Nunc vulputate, quam sit amet commodo tincidunt, enim
+                lorem scelerisque massa, vel ultricies purus ipsum eu mauris.
+              </p>
+            </div>
+          </div>
+
+          <div className=" flex justify-center">
+            <div className="  absolute   bottom-20 sl:bottom-[-50px]  w-full ">
+              <div className="  grid  sl:grid-cols-4 max-w-[1200px] m-auto gap-10 px-6 sl:px-0 sl:gap-6">
+                <div className="sl:max-w-[300px]   relative">
+                  <div className=" bg-[#222222] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0 text-center text-white">
+                    <div className=" pt-20">
+                      <h2 className=" text-2xl pb-2">Planning</h2>
+                      <div className=" flex justify-center">
+                        <p className=" text-2xl">$</p>
+                        <p className=" text-5xl">169</p>
+                      </div>
+                    </div>
+                    <div className=" pt-16 sl:max-w-[200px] m-auto">
+                      <ul className=" space-y-2 ">
+                        <li className=" border-b pb-1 ">
+                          Flat Project Planning
+                        </li>
+                        <li className=" border-b pb-1 ">Style Selection</li>
+                        <li className=" border-b pb-1 ">3D-Visualization</li>
+                        <li className=" border-b pb-1  ">Recommendations</li>
+                      </ul>
+                    </div>
+                    <div className=" flex justify-center">
+                      <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
+                        <button className=" shadow-lg py-3  w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                          SEND REQUEST
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="sl:max-w-[300px]   relative">
+                  <div className=" bg-[#222222] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                    <div className=" pt-20">
+                      <h2 className=" text-2xl pb-2">Planning</h2>
+                      <div className=" flex justify-center">
+                        <p className=" text-2xl">$</p>
+                        <p className=" text-5xl">169</p>
+                      </div>
+                    </div>
+                    <div className=" pt-16 sl:max-w-[200px] m-auto">
+                      <ul className=" space-y-2 ">
+                        <li className=" border-b pb-1 ">
+                          Flat Project Planning
+                        </li>
+                        <li className=" border-b pb-1 ">Style Selection</li>
+                        <li className=" border-b pb-1 ">3D-Visualization</li>
+                        <li className=" border-b pb-1  ">Recommendations</li>
+                      </ul>
+                    </div>
+                    <div className=" flex justify-center">
+                      <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
+                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                          SEND REQUEST
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="sl:max-w-[300px]   relative">
+                  <div className=" bg-[#222222] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                    <div className=" pt-20">
+                      <h2 className=" text-2xl pb-2">Planning</h2>
+                      <div className=" flex justify-center">
+                        <p className=" text-2xl">$</p>
+                        <p className=" text-5xl">169</p>
+                      </div>
+                    </div>
+                    <div className=" pt-16 sl:max-w-[200px] m-auto">
+                      <ul className=" space-y-2 ">
+                        <li className=" border-b pb-1 ">
+                          Flat Project Planning
+                        </li>
+                        <li className=" border-b pb-1 ">Style Selection</li>
+                        <li className=" border-b pb-1 ">3D-Visualization</li>
+                        <li className=" border-b pb-1  ">Recommendations</li>
+                      </ul>
+                    </div>
+                    <div className=" flex justify-center">
+                      <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
+                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                          SEND REQUEST
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="sl:max-w-[300px]   relative">
+                  <div className=" bg-[#222222] min-h-[85vh] sl:min-h-[70vh]  px-6 sl:px-0  text-center text-white">
+                    <div className=" pt-20">
+                      <h2 className=" text-2xl pb-2">Planning</h2>
+                      <div className=" flex justify-center">
+                        <p className=" text-2xl">$</p>
+                        <p className=" text-5xl">169</p>
+                      </div>
+                    </div>
+                    <div className=" pt-16 sl:max-w-[200px] m-auto">
+                      <ul className=" space-y-2 ">
+                        <li className=" border-b pb-1 ">
+                          Flat Project Planning
+                        </li>
+                        <li className=" border-b pb-1 ">Style Selection</li>
+                        <li className=" border-b pb-1 ">3D-Visualization</li>
+                        <li className=" border-b pb-1  ">Recommendations</li>
+                      </ul>
+                    </div>
+                    <div className=" flex justify-center">
+                      <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
+                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:text-black bg-[#8A6201] hover:bg-white">
+                          SEND REQUEST
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-       <div className=" flex justify-center ">
-         <div className=" absolute top-20 px-6 sl:px-0">
-          <h2 className=" first-line:text-[#8A6201] text-3xl lg:leading-[3.8rem] md:text-4xl text-white font-semibold lg:text-5xl text-center md:font-bold">We create projects <br /> from visualization to finished interior</h2>
-          <p className="  md:max-w-[800px] sl:max-w-[1000px] m-auto text-center text-white pt-6">Sed non dapibus dolor, non rhoncus dui. Ut eleifend justo at ipsum aliquam, vel cursus tellus pulvinar. Nulla vel tempus diam. Nunc vulputate, quam sit amet commodo tincidunt, enim lorem scelerisque massa, vel ultricies purus ipsum eu mauris.</p>
+      </section>
+      <section>
+        <div className=" py-20">
+          <div className=" text-center pt-20">
+            <h2 className=" text-2xl  font-semibold md:text-4xl sl:text-5xl first-line:text-[#8A6201]">4 Easy Steps <br /> to Get Interior Design</h2>
+          </div>
         </div>
-       </div>
-       </div>
       </section>
       <section>
         <Footer />

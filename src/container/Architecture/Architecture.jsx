@@ -26,39 +26,41 @@ const Architecture = () => {
       </section>
 
       <section>
-        <div className=" relative">
+        <div
+        style={{ backgroundImage: `url(${pic3})` }}
+         className=" relative  bg-cover bg-center  bg-fixed">
           <div
-            style={{ backgroundImage: `url(${pic3})` }}
-            className=" min-h-[85vh] md:min-h-screen bg-cover bg-center relative  bg-fixed"
+            
+            className="  relative   min-h-screen  "
           >
             <div className=" bg-white absolute inset-0 top-0 opacity-50"></div>
           </div>
           <div className="  lg:max-w-[1200px] m-auto ">
-            <div className=" text-center lg:text-start  absolute top-16 md:top-32 px-6 sl:px-0">
+            <div className=" text-center lg:text-start  absolute top-[30%] md:top-32 px-6 sl:px-0">
               <div>
                 <h3 className=" bg-black text-white max-w-fit  m-auto lg:m-0 py-1 px-6">
                   Architecture
                 </h3>
-                <h2 className=" max-w-[900px] text-[3rem] md:text-[4rem] leading-[3rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] font-semibold lg:font-bold py-5">
+                <h2 className=" max-w-[900px] text-[2.3rem] md:text-[4rem] leading-[2.3rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] font-semibold lg:font-bold py-5">
                   Facade of the Parliament Building
                 </h2>
               </div>
               <div>
-                <p className=" font-bold flex items-center justify-center lg:justify-start gap-1 py-2">
+                <p className=" font-bold flex items-center justify-center lg:justify-start gap-1 py-1">
                   area:{" "}
                   <p className=" flex font-normal">
                     1670 m <p className=" text-[0.8rem]">2</p>
                   </p>
                 </p>
-                <p className=" font-bold flex items-center justify-center lg:justify-start gap-1 py-2">
+                <p className=" font-bold flex items-center justify-center lg:justify-start gap-1 py-1">
                   Completed Date: <p className=" font-normal">September 2018</p>
                 </p>
-                <p className=" font-bold flex items-center justify-center lg:justify-start gap-1 py-2">
+                <p className=" font-bold flex items-center justify-center lg:justify-start gap-1 py-1">
                   Architect:{" "}
                   <p className=" font-normal"> Abdullah Ridwanullah</p>
                 </p>
               </div>
-              <div className=" pt-8">
+              <div className=" pt-2 md:pt-8">
                 <button className=" border border-black py-2 px-7 hover:bg-black hover:text-white">
                   {" "}
                   Read More

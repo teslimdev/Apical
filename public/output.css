@@ -678,6 +678,10 @@ video {
   top: 2.5rem;
 }
 
+.top-16 {
+  top: 4rem;
+}
+
 .top-20 {
   top: 5rem;
 }
@@ -706,8 +710,24 @@ video {
   top: 80%;
 }
 
-.top-16 {
-  top: 4rem;
+.top-8 {
+  top: 2rem;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[50\] {
+  top: 50;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.top-\[0\%\] {
+  top: 0%;
 }
 
 .z-10 {
@@ -852,36 +872,54 @@ video {
   min-height: 500px;
 }
 
+.min-h-\[85vh\] {
+  min-height: 85vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-fit {
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .min-h-\[\] {
   min-height: ;
 }
 
-.min-h-\[80vh\] {
-  min-height: 80vh;
+.min-h-\[70vh\] {
+  min-height: 70vh;
 }
 
-.min-h-\[0vh\] {
-  min-height: 0vh;
+.min-h-\[75vh\] {
+  min-height: 75vh;
 }
 
-.min-h-\[90vh\] {
-  min-height: 90vh;
+.min-h-\[vh\] {
+  min-height: vh;
 }
 
-.min-h-\[85vh\] {
-  min-height: 85vh;
+.min-h-\[6vh\] {
+  min-height: 6vh;
 }
 
-.min-h-0 {
-  min-height: 0px;
+.min-h-\[65vh\] {
+  min-height: 65vh;
 }
 
-.min-h-\[85\] {
-  min-height: 85;
+.min-h-\[60vh\] {
+  min-height: 60vh;
+}
+
+.min-h-\[55vh\] {
+  min-height: 55vh;
+}
+
+.min-h-\[58vh\] {
+  min-height: 58vh;
 }
 
 .w-12 {
@@ -1643,6 +1681,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[2\.3rem\] {
+  font-size: 2.3rem;
+}
+
 .font-\[300px\] {
   font-weight: 300px;
 }
@@ -1687,6 +1729,14 @@ video {
   line-height: 6rem;
 }
 
+.leading-\[rem\] {
+  line-height: rem;
+}
+
+.leading-\[2\.3rem\] {
+  line-height: 2.3rem;
+}
+
 .text-\[\#222222\] {
   --tw-text-opacity: 1;
   color: rgb(34 34 34 / var(--tw-text-opacity));
@@ -1729,6 +1779,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[2\.rem\] {
+  color: 2.rem;
 }
 
 .underline {
@@ -2014,12 +2068,12 @@ video {
     top: 5rem;
   }
 
-  .md\:top-\[50\%\] {
-    top: 50%;
-  }
-
   .md\:top-32 {
     top: 8rem;
+  }
+
+  .md\:top-\[50\%\] {
+    top: 50%;
   }
 
   .md\:block {
@@ -2253,6 +2307,10 @@ video {
 
   .md\:pt-\[22rem\] {
     padding-top: 22rem;
+  }
+
+  .md\:pt-8 {
+    padding-top: 2rem;
   }
 
   .md\:text-start {

@@ -29,12 +29,12 @@ const Architecture = () => {
         <div className=" relative">
           <div
             style={{ backgroundImage: `url(${pic3})` }}
-            className=" min-h-screen bg-cover bg-center relative  bg-fixed"
+            className=" min-h-[85vh] md:min-h-screen bg-cover bg-center relative  bg-fixed"
           >
             <div className=" bg-white absolute inset-0 top-0 opacity-50"></div>
           </div>
-          <div className="  lg:max-w-[1200px] m-auto px-6 sl:px-0">
-            <div className=" text-center lg:text-start  absolute top-32">
+          <div className="  lg:max-w-[1200px] m-auto ">
+            <div className=" text-center lg:text-start  absolute top-16 md:top-32 px-6 sl:px-0">
               <div>
                 <h3 className=" bg-black text-white max-w-fit  m-auto lg:m-0 py-1 px-6">
                   Architecture
@@ -73,12 +73,12 @@ const Architecture = () => {
         <div className=" relative">
           <div
             style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-screen bg-cover bg-center relative  bg-fixed"
+            className=" min-h-[85vh] md:min-h-screen bg-cover bg-center relative  bg-fixed"
           >
             <div className=" bg-black absolute inset-0 top-0 opacity-50 "></div>
           </div>
           <div className="  lg:max-w-[1200px] flex justify-center lg:justify-end   m-auto ">
-            <div className=" text-center lg:text-end  absolute top-32 lg:top-40 text-white  px-6 sl:px-0 ">
+            <div className=" text-center lg:text-end  absolute top-16 md:top-32 lg:top-40 text-white  px-6 sl:px-0 ">
               <div className="   relative  ">
                 <h3 className=" bg-white text-black    lg:absolute lg:right-0  m-auto   max-w-fit   text-[1.2rem]    py-2 px-6">
                   Construction

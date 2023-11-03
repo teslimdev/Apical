@@ -678,7 +678,7 @@ const Interior = () => {
         <div className=" relative">
           <div
             style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-[320px] md:min-h-[400px]   bg-cover bg-center relative"
+            className=" min-h-[320px] md:min-h-[400px]   bg-cover bg-center relative bg-fixed"
           >
             <div className=" bg-black  absolute inset-0  h-[320px] md:h-[400px]      opacity-50"></div>
           </div>

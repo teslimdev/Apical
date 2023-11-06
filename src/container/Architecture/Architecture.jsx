@@ -31,12 +31,12 @@ const Architecture = () => {
          className=" relative  bg-cover bg-center  bg-fixed">
           <div
             
-            className="  relative   min-h-screen  "
+            className="  relative  min-h-[70vh]  md:min-h-screen flex justify-center items-center border-4 border "
           >
             <div className=" bg-white absolute inset-0 top-0 opacity-50"></div>
           </div>
           <div className="  lg:max-w-[1200px] m-auto ">
-            <div className=" text-center lg:text-start  absolute top-[30%] md:top-32 px-6 sl:px-0">
+            <div className=" text-center lg:text-start  absolute top-0  px-6 sl:px-0">
               <div>
                 <h3 className=" bg-black text-white max-w-fit  m-auto lg:m-0 py-1 px-6">
                   Architecture

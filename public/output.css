@@ -710,26 +710,6 @@ video {
   top: 80%;
 }
 
-.top-8 {
-  top: 2rem;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[50\] {
-  top: 50;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.top-\[0\%\] {
-  top: 0%;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -872,54 +852,16 @@ video {
   min-height: 500px;
 }
 
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
+
 .min-h-\[85vh\] {
   min-height: 85vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-fit {
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
-}
-
-.min-h-\[\] {
-  min-height: ;
-}
-
-.min-h-\[70vh\] {
-  min-height: 70vh;
-}
-
-.min-h-\[75vh\] {
-  min-height: 75vh;
-}
-
-.min-h-\[vh\] {
-  min-height: vh;
-}
-
-.min-h-\[6vh\] {
-  min-height: 6vh;
-}
-
-.min-h-\[65vh\] {
-  min-height: 65vh;
-}
-
-.min-h-\[60vh\] {
-  min-height: 60vh;
-}
-
-.min-h-\[55vh\] {
-  min-height: 55vh;
-}
-
-.min-h-\[58vh\] {
-  min-height: 58vh;
 }
 
 .w-12 {
@@ -1185,6 +1127,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-8 {
@@ -1639,6 +1585,10 @@ video {
   font-size: 1rem;
 }
 
+.text-\[2\.3rem\] {
+  font-size: 2.3rem;
+}
+
 .text-\[2\.5rem\] {
   font-size: 2.5rem;
 }
@@ -1681,10 +1631,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[2\.3rem\] {
-  font-size: 2.3rem;
-}
-
 .font-\[300px\] {
   font-weight: 300px;
 }
@@ -1717,6 +1663,10 @@ video {
   text-transform: uppercase;
 }
 
+.leading-\[2\.3rem\] {
+  line-height: 2.3rem;
+}
+
 .leading-\[3\.5rem\] {
   line-height: 3.5rem;
 }
@@ -1727,14 +1677,6 @@ video {
 
 .leading-\[6rem\] {
   line-height: 6rem;
-}
-
-.leading-\[rem\] {
-  line-height: rem;
-}
-
-.leading-\[2\.3rem\] {
-  line-height: 2.3rem;
 }
 
 .text-\[\#222222\] {
@@ -1779,10 +1721,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[2\.rem\] {
-  color: 2.rem;
 }
 
 .underline {
@@ -2301,16 +2239,16 @@ video {
     padding-top: 0.5rem;
   }
 
+  .md\:pt-8 {
+    padding-top: 2rem;
+  }
+
   .md\:pt-\[20\%\] {
     padding-top: 20%;
   }
 
   .md\:pt-\[22rem\] {
     padding-top: 22rem;
-  }
-
-  .md\:pt-8 {
-    padding-top: 2rem;
   }
 
   .md\:text-start {

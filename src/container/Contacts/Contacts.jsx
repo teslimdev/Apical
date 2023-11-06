@@ -1,10 +1,24 @@
-import React from "react";
+import React , { useRef} from "react";
+import emailjs from '@emailjs/browser';
 import pic3 from "../../../src/pictures/img3.jpeg";
 import { Footer, Header } from "../../components";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 
 const Contacts = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_inlr4va', 'template_7hcp4rl', form.current, 'oeczAqi6w0uttZPIh')
+      .then((result) => {
+          console.log(result.text);
+          console.log('sucessful')
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className="">
       <section>
@@ -46,12 +60,13 @@ const Contacts = () => {
           </div>
 
           <div>
-            <form action="data">
+            <form action="data" ref={form} onSubmit={sendEmail}>
               <div>
                 <input
                   type="text"
                   required
                   placeholder=" Name"
+                   name="user_name"
                   className="  bg-transparent text-[#222222] border-0 py-1 placeholder:text-[#8A6201] pl-1 w-full border-b border-b-black outline-[#222222] "
                 />
               </div>{" "}
@@ -60,6 +75,7 @@ const Contacts = () => {
                 <input
                   type="email"
                   placeholder="Email"
+                  name="user_email"
                   required
                   className="  bg-transparent text-[#222222] border-0 py-1 placeholder:text-[#8A6201] w-full border-b pl-2 border-b-black outline-[#222222] "
                 />
@@ -67,7 +83,7 @@ const Contacts = () => {
               <br />
               <div>
                 <textarea
-                  name=""
+                  name="message"
                   id=""
                   cols="60"
                   rows="8"
@@ -78,7 +94,9 @@ const Contacts = () => {
               </div>{" "}
               <br />
               <div>
-                <button className=" py-2 px-4 rounded-full  bg-[#222222] text-white hover:bg-[#333333]">
+                <button 
+                value="Send"
+                className=" py-2 px-4 rounded-full  bg-[#222222] text-white hover:bg-[#333333]">
                   Submit
                 </button>
               </div>

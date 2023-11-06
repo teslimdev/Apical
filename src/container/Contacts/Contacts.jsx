@@ -13,8 +13,8 @@ const Contacts = () => {
 
     emailjs.sendForm('service_inlr4va', 'template_7hcp4rl', form.current, 'oeczAqi6w0uttZPIh')
       .then((result) => {
-          console.log(result.text);
-          console.log('sucessful')
+         alert('message sent successfully');
+         e.target.reset();
       }, (error) => {
           console.log(error.text);
       });

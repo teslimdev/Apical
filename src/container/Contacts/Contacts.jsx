@@ -1,23 +1,33 @@
-import React , { useRef} from "react";
+import React , { useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 import pic3 from "../../../src/pictures/img3.jpeg";
-import { Footer, Header } from "../../components";
+
+import { Footer, Header,Notification } from "../../components";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 
 const Contacts = () => {
+   const [isSuccess, setIsSuccess] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
     const form = useRef();
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_inlr4va', 'template_7hcp4rl', form.current, 'oeczAqi6w0uttZPIh')
       .then((result) => {
-         alert('message sent successfully');
+       setIsSuccess(true);
+          setShowNotification(true);
          e.target.reset();
       }, (error) => {
           console.log(error.text);
+           setIsSuccess(false);
+          setShowNotification(true);
       });
+  };
+   const closeNotification = () => {
+    setShowNotification(false);
   };
   return (
     <div className="">
@@ -103,6 +113,14 @@ const Contacts = () => {
             </form>
           </div>
         </div>
+         {showNotification && (
+        <Notification
+      
+          message={isSuccess ? "Message sent successfully "  : "Message sending failed"}
+          isSuccess={isSuccess}
+          onClose={closeNotification}
+        />
+      )}
       </section>
       <section>
         <Footer />

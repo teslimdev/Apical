@@ -1,6 +1,7 @@
-import React from "react";
-import { Footer, Header } from "../../components";
+import React from 'react'
+import {Footer2, Header,} from '../../components'
 import pic9 from "../../../src/pictures/img9.jpeg";
+
 const Construction = () => {
   return (
     <div>
@@ -24,7 +25,7 @@ const Construction = () => {
       </section>
 
       <section>
-        <Footer />
+        <Footer2 />
       </section>
     </div>
   );

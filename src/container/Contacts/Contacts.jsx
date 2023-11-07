@@ -1,8 +1,7 @@
 import React , { useRef, useState} from "react";
 import emailjs from '@emailjs/browser';
 import pic3 from "../../../src/pictures/img3.jpeg";
-
-import { Footer, Header,Notification } from "../../components";
+import { Footer, Header,Notification, } from "../../components";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 

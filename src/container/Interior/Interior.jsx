@@ -83,7 +83,7 @@ const Interior = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#f2f2f2]">
+     <section className="bg-[#f2f2f2]">
         <div className="py-12 sl:py-24">
           <div className=" grid md:grid-cols-2 lg:grid-cols-3 sl:grid-cols-4 gap-6 max-w-fit m-auto px-6 sl:px-0 ">
             <div className=" md:w-[280px] ">
@@ -105,13 +105,13 @@ const Interior = () => {
 
             <div className="card-container md:w-[280px]  ">
               <div className="card md:w-[280px] h-[350px] relative">
-                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                <div className="card-front  bg-white text-[#222222]  shadow-lg text-xl ">
                   <div className="  text-center max-w-[250px] m-auto">
                     <div className=" flex justify-center py-6">
-                      <LuBedDouble className="  text-[5rem] text-white  " />
+                      <LuBedDouble className="  text-[5rem] text-[#222222]  " />
                     </div>
-                    <h2 className=" text-white text-2xl ">Bedrooms</h2>
-                    <p className="  pt-6 text-[1.2rem] text-white">
+                    <h2 className=" text-[#222222] text-2xl ">Bedrooms</h2>
+                    <p className="  pt-6 text-[1.2rem] text-[#222222]">
                       Vestibulum augue tortor, consequat eu diam a, varius
                       pulvinar ipsum.
                     </p>
@@ -142,13 +142,13 @@ const Interior = () => {
 
             <div className="card-container md:w-[280px]  ">
               <div className="card md:w-[280px] h-[350px] relative">
-                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                <div className="card-front   bg-white text-[#222222] shadow-lg text-xl ">
                   <div className="  text-center max-w-[250px] m-auto">
                     <div className=" flex justify-center py-6">
-                      <LuBedDouble className="  text-[5rem] text-white  " />
+                      <LuBedDouble className="  text-[5rem] text-[#222222]  " />
                     </div>
-                    <h2 className=" text-white text-2xl ">Kitchens</h2>
-                    <p className="  pt-6 text-[1.2rem] text-white">
+                    <h2 className=" text-[#222222] text-2xl ">Kitchens</h2>
+                    <p className="  pt-6 text-[1.2rem] text-[#222222]">
                       Vestibulum augue tortor, consequat eu diam a, varius
                       pulvinar ipsum.
                     </p>
@@ -179,13 +179,13 @@ const Interior = () => {
 
             <div className="card-container md:w-[280px]  ">
               <div className="card md:w-[280px] h-[350px] relative">
-                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                <div className="card-front  bg-white text-[#222222] shadow-lg text-xl ">
                   <div className="  text-center max-w-[250px] m-auto">
                     <div className=" flex justify-center py-6">
-                      <LuBedDouble className="  text-[5rem] text-white  " />
+                      <LuBedDouble className="  text-[5rem] text-[#222222]  " />
                     </div>
-                    <h2 className=" text-white text-2xl ">Lighting</h2>
-                    <p className="  pt-6 text-[1.2rem] text-white">
+                    <h2 className=" text-[#222222] text-2xl ">Lighting</h2>
+                    <p className="  pt-6 text-[1.2rem] text-[#222222]">
                       Vestibulum augue tortor, consequat eu diam a, varius
                       pulvinar ipsum.
                     </p>
@@ -216,13 +216,13 @@ const Interior = () => {
 
             <div className="card-container md:w-[280px]  ">
               <div className="card md:w-[280px] h-[350px] relative">
-                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                <div className="card-front  bg-white text-[#222222] shadow-lg   text-xl ">
                   <div className="  text-center max-w-[250px] m-auto">
                     <div className=" flex justify-center py-6">
-                      <LuBedDouble className="  text-[5rem] text-white  " />
+                      <LuBedDouble className="  text-[5rem] text-[#222222]  " />
                     </div>
-                    <h2 className=" text-white text-2xl ">Windows</h2>
-                    <p className="  pt-6 text-[1.2rem] text-white">
+                    <h2 className=" text-[#222222] text-2xl ">Windows</h2>
+                    <p className="  pt-6 text-[1.2rem] text-[#222222]">
                       Vestibulum augue tortor, consequat eu diam a, varius
                       pulvinar ipsum.
                     </p>
@@ -253,13 +253,13 @@ const Interior = () => {
 
             <div className="card-container md:w-[280px]  ">
               <div className="card md:w-[280px] h-[350px] relative">
-                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                <div className="card-front   bg-white text-[#222222] shadow-lg   text-xl ">
                   <div className="  text-center max-w-[250px] m-auto">
                     <div className=" flex justify-center py-6">
-                      <FaBath className="  text-[5rem] text-white  " />
+                      <FaBath className="  text-[5rem] text-[#222222]  " />
                     </div>
-                    <h2 className=" text-white text-2xl ">Bathrooms</h2>
-                    <p className="  pt-6 text-[1.2rem] text-white">
+                    <h2 className=" text-[#222222] text-2xl ">Bathrooms</h2>
+                    <p className="  pt-6 text-[1.2rem] text-[#222222]">
                       Vestibulum augue tortor, consequat eu diam a, varius
                       pulvinar ipsum.
                     </p>
@@ -290,13 +290,13 @@ const Interior = () => {
 
             <div className="card-container md:w-[280px]  ">
               <div className="card md:w-[280px] h-[350px] relative">
-                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                <div className="card-front  bg-white text-[#222222] shadow-lg   text-xl ">
                   <div className="  text-center max-w-[250px] m-auto">
                     <div className=" flex justify-center py-6">
-                      <LuBedDouble className="  text-[5rem] text-white  " />
+                      <LuBedDouble className="  text-[5rem] text-[#222222]  " />
                     </div>
-                    <h2 className=" text-white text-2xl ">Decoration</h2>
-                    <p className="  pt-6 text-[1.2rem] text-white">
+                    <h2 className=" text-[#222222] text-2xl ">Decoration</h2>
+                    <p className="  pt-6 text-[1.2rem] text-[#222222]">
                       Vestibulum augue tortor, consequat eu diam a, varius
                       pulvinar ipsum.
                     </p>
@@ -327,13 +327,13 @@ const Interior = () => {
 
             <div className="card-container md:w-[280px]  ">
               <div className="card md:w-[280px] h-[350px] relative">
-                <div className="card-front  bg-[#333333] text-white  text-xl ">
+                <div className="card-front   bg-white text-[#222222] shadow-lg   text-xl ">
                   <div className="  text-center max-w-[250px] m-auto">
                     <div className=" flex justify-center py-6">
-                      <LuBedDouble className="  text-[5rem] text-white  " />
+                      <LuBedDouble className="  text-[5rem] text-[#222222]  " />
                     </div>
-                    <h2 className=" text-white text-2xl ">Fireplaces</h2>
-                    <p className="  pt-6 text-[1.2rem] text-white">
+                    <h2 className=" text-[#222222] text-2xl ">Fireplaces</h2>
+                    <p className="  pt-6 text-[1.2rem] text-[#222222]">
                       Vestibulum augue tortor, consequat eu diam a, varius
                       pulvinar ipsum.
                     </p>

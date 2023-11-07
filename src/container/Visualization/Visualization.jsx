@@ -1,6 +1,7 @@
 import React from 'react'
-import {Footer, Header} from '../../components'
+import {Footer2, Header,} from '../../components'
 import pic9 from "../../../src/pictures/img9.jpeg";
+
 const Visualization = () => {
   return (
     <div>
@@ -23,8 +24,9 @@ const Visualization = () => {
       </div>
       </section>
 
-        <section>
-        <Footer/>
+    
+      <section>
+        <Footer2 />
       </section>
     </div>
   )

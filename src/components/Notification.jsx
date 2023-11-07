@@ -8,7 +8,7 @@ const Notification = ({ message, isSuccess, onClose }) => {
        <div
       className={classNames("fixed top-[40%]       py-6 px-10 rounded-lg shadow-lg", {
         "bg-white text-[#222222]": isSuccess ,
-        "bg-[#444444] text-white": !isSuccess,
+        "bg-white text-[#333333]": !isSuccess,
       })}
     >
      <div className=" text-[1.2rem]">

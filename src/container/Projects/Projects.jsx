@@ -31,7 +31,7 @@ const Projects = () => {
          <div className=" py-10  ">
         <div className=" pt-20 px-6 ">
         <div className="  grid  md:grid-cols-2  gap-6   sl:px-0  m-auto  ">
-          <Link to="/ProjectPost1">
+          <Link to="/ProjectPost2">
             <div className="relative   group transition-all ease-out duration-500">
               <div className=" ">
                 <img
@@ -97,7 +97,7 @@ const Projects = () => {
             </div>
           </Link>
 
-         <Link to="/ProjectPost1">
+         <Link to="/ProjectPost2">
             <div className="relative   group transition-all ease-out duration-500">
               <div className=" ">
                 <img
@@ -129,7 +129,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-         <Link to="/ProjectPost1">
+         <Link to="/ProjectPost2">
             <div className="relative   group transition-all ease-out duration-500">
               <div className=" ">
                 <img
@@ -162,7 +162,7 @@ const Projects = () => {
             </div>
           </Link>
 
-        <Link to="/ProjectPost1">
+        <Link to="/ProjectPost2">
             <div className="relative   group transition-all ease-out duration-500">
               <div className=" ">
                 <img
@@ -194,7 +194,7 @@ const Projects = () => {
               </div>
             </div>
           </Link>
-         <Link to="/ProjectPost1">
+         <Link to="/ProjectPost2">
             <div className="relative   group transition-all ease-out duration-500">
               <div className=" ">
                 <img

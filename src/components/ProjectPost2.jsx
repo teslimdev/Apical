@@ -1,14 +1,14 @@
 import React from 'react'
-import vid1 from '../../../src/pictures/vid1.mp4'
+import vid1 from '../../src/pictures/vid1.mp4'
 import  { useCallback, useRef } from "react";
 import {GrNext, GrPrevious} from 'react-icons/gr'
-import pic8 from "../../../src/pictures/img8.jpeg";
-import pic10 from "../../../src/pictures/img10.jpeg";
-import pic11 from "../../../src/pictures/img11.jpeg";
-import pic9 from "../../../src/pictures/img9.jpeg";
+import pic8 from "../../src/pictures/img8.jpeg";
+import pic10 from "../../src/pictures/img10.jpeg";
+import pic11 from "../../src/pictures/img11.jpeg";
+import pic9 from "../../src/pictures/img9.jpeg";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
-import pic2 from "../../../src/pictures/img2.jpeg";
+import pic2 from "../../src/pictures/img2.jpeg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -16,8 +16,8 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay, } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
-import { Tabs, HomeSlide, Footer2,Header } from "../../components";
-const ProjectPost1 = () => {
+import { Tabs, HomeSlide, Footer2,Header } from "../components";
+const ProjectPost2 = () => {
     const tabs = [
       {
         id: 1,
@@ -334,4 +334,4 @@ const ProjectPost1 = () => {
   );
 }
 
-export default ProjectPost1
+export default ProjectPost2

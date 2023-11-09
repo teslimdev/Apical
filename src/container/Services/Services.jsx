@@ -104,30 +104,38 @@ const Services = () => {
 
             <div className=" ">
               <div className=" pt-5 lg:pt-10  ">
-                <ul className=" grid  md:grid-cols-2      max-w-fit  gap-2 gap-x-32">
-                  <Link to="/Architecture">
-                    <li className=" flex items-center 3xl:text-[2rem] text-[1.15rem] lg:text-[1.5rem]  gap-2">
-                      <AiOutlinePlus className=""></AiOutlinePlus>{" "}
-                      <p className=" ">Architectural Design</p>
-                    </li>
-                  </Link>
-                  <Link to="/Interior">
-                    <li className=" flex items-center 3xl:text-[2rem] text-[1.15rem] lg:text-[1.5rem] gap-2">
-                      <AiOutlinePlus></AiOutlinePlus> <p>Interior Design</p>
-                    </li>
-                  </Link>
-                  <Link to="/Visualization">
-                    <li className=" flex items-center 3xl:text-[2rem] text-[1.15rem] lg:text-[1.5rem] gap-2">
-                      <AiOutlinePlus></AiOutlinePlus> <p>Visualization</p>
-                    </li>
-                  </Link>
-                  <Link to="/Construction">
-                    <li className=" flex items-center 3xl:text-[2rem] text-[1.15rem] lg:text-[1.5rem] gap-2">
-                      <AiOutlinePlus></AiOutlinePlus>{" "}
-                      <p>Building Construction</p>
-                    </li>
-                  </Link>
-                </ul>
+                <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
+              <Link to="/Architecture">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Architectural Design</p>
+                </li>
+              </Link>
+              <Link to="/Interior">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">Interior Design</p>
+                </li>
+              </Link>
+               <Link to="/Exterior">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Exterior Design</p>
+                </li>
+              </Link>
+              <Link to="/Visualization">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Visualization</p>
+                </li>
+              </Link>
+              <Link to="/Construction">
+                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Building Construction</p>
+                </li>
+              </Link>
+            </ul>
               </div>
             </div>
           </div>
@@ -278,12 +286,13 @@ const Services = () => {
         </div>
       </section>
 
-      <section className=" six">
+     <section className=" six">
         <div
           style={{ backgroundImage: `url(${pic3})` }}
           className=" min-h-[300px] md:min-h-[450px] bg-cover bg-center relative"
         >
-          <div className=" px-6 pt-[10%] lg:pt-[7%] ">
+          <div className=" bg-black  absolute inset-0  h-[300px] md:h-[450px]      opacity-70">
+            <div className=" px-6 pt-[10%] lg:pt-[7%] ">
             <div className="  text-center  ">
               <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
                 Have a project in mind?
@@ -291,14 +300,15 @@ const Services = () => {
               <p className=" text-white py-4 text-2xl font-semibold">
                 Do not hesitate to say Hello
               </p>
-              <div>
+              <div className=" pt-4">
                 <Link to="/Contacts">
-                  <button className=" text-white border-2 py-3 px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
+                  <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
                     Lets Talk
                   </button>
                 </Link>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>

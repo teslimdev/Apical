@@ -18,21 +18,23 @@ const Exterior = () => {
     <section>
         <Header />
       </section>
-        <section>
-         <div
-        style={{ backgroundImage: `url(${pic9})` }}
-        className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
-      >
-        <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
-          <div className=" pt-[40%] md:pt-[20%] lg:pt-[15%] sl:pt-[10%] text-center">
-            <h2 className=" text-white lg:text-[7rem] text-[3rem] md:text-[5rem] font-bold">
-              {" "}
-              Exterior Designs
-            </h2>
+       <section>
+        <div
+          style={{ backgroundImage: `url(${pic9})` }}
+          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
+        >
+          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
+           <div className=" flex justify-center">
+             <div className="  absolute top-[40%] sl:top-[30%] ">
+              <h2 className=" text-white sl:text-[7rem] lg:text-[5rem] text-center text-[2.5rem] md:text-[4rem] font-bold">
+                {" "}
+                Exterior Designs
+              </h2>
+            </div>
+           </div>
           </div>
         </div>
-      </div>
-       </section>
+      </section>
  
 
       <section className="bg-[#f2f2f2]">

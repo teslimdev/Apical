@@ -710,6 +710,10 @@ video {
   top: 5%;
 }
 
+.top-\[50\%\] {
+  top: 50%;
+}
+
 .top-\[80\%\] {
   top: 80%;
 }
@@ -718,12 +722,12 @@ video {
   top: ;
 }
 
-.top-\[40\] {
-  top: 40;
+.top-\[10\] {
+  top: 10;
 }
 
-.top-\[50\%\] {
-  top: 50%;
+.top-\[10\%\] {
+  top: 10%;
 }
 
 .z-10 {
@@ -762,6 +766,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mb-4 {
@@ -880,8 +889,16 @@ video {
   min-height: ;
 }
 
-.min-h-\[50\] {
-  min-height: 50;
+.min-h-\[50rem\] {
+  min-height: 50rem;
+}
+
+.min-h-\[45rem\] {
+  min-height: 45rem;
+}
+
+.min-h-\[42rem\] {
+  min-height: 42rem;
 }
 
 .w-12 {
@@ -910,6 +927,12 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-\[1100px\] {
@@ -988,10 +1011,6 @@ video {
 
 .max-w-\[\] {
   max-width: ;
-}
-
-.max-w-\[500p\] {
-  max-width: 500p;
 }
 
 .cursor-pointer {
@@ -1179,10 +1198,6 @@ video {
 
 .border-t-2 {
   border-top-width: 2px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
 }
 
 .border-none {
@@ -1443,6 +1458,10 @@ video {
   padding-left: 0.25rem;
 }
 
+.pl-11 {
+  padding-left: 2.75rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -1513,10 +1532,6 @@ video {
 
 .pt-\[8\%\] {
   padding-top: 8%;
-}
-
-.pl-11 {
-  padding-left: 2.75rem;
 }
 
 .text-center {
@@ -1650,10 +1665,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[1\.4rem\] {
-  font-size: 1.4rem;
-}
-
 .font-\[300px\] {
   font-weight: 300px;
 }
@@ -1750,26 +1761,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
-}
-
-.text-\[3r\] {
-  color: 3r;
-}
-
-.text-\[1\.\] {
-  color: 1.;
-}
-
-.text-\[1\.rem\] {
-  color: 1.rem;
-}
-
-.text-\[0\.\] {
-  color: 0.;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -1792,10 +1783,6 @@ video {
 
 .opacity-70 {
   opacity: 0.7;
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .shadow-2xl {
@@ -1992,6 +1979,10 @@ ol{
   border-color: rgb(138 98 1 / var(--tw-border-opacity));
 }
 
+.hover\:border-\[\]:hover {
+  border-color: ;
+}
+
 .hover\:bg-\[\#222222\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
@@ -2047,16 +2038,8 @@ ol{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\]:hover {
-  color: ;
-}
-
 .hover\:no-underline:hover {
   text-decoration-line: none;
-}
-
-.hover\:opacity-60:hover {
-  opacity: 0.6;
 }
 
 .focus\:outline-none:focus {
@@ -2089,32 +2072,16 @@ ol{
     top: 10%;
   }
 
+  .md\:top-\[110px\] {
+    top: 110px;
+  }
+
   .md\:top-\[25\%\] {
     top: 25%;
   }
 
   .md\:top-\[50\%\] {
     top: 50%;
-  }
-
-  .md\:top-32 {
-    top: 8rem;
-  }
-
-  .md\:top-3 {
-    top: 0.75rem;
-  }
-
-  .md\:top-\[\] {
-    top: ;
-  }
-
-  .md\:top-\[120px\] {
-    top: 120px;
-  }
-
-  .md\:top-\[110px\] {
-    top: 110px;
   }
 
   .md\:block {
@@ -2257,6 +2224,10 @@ ol{
     max-width: 100%;
   }
 
+  .md\:max-w-\[500px\] {
+    max-width: 500px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2384,6 +2355,10 @@ ol{
     line-height: 1;
   }
 
+  .md\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
+
   .md\:text-\[2rem\] {
     font-size: 2rem;
   }
@@ -2413,14 +2388,6 @@ ol{
     line-height: 1.75rem;
   }
 
-  .md\:text-\[0\.9rem\] {
-    font-size: 0.9rem;
-  }
-
-  .md\:text-\[1rem\] {
-    font-size: 1rem;
-  }
-
   .md\:font-bold {
     font-weight: 700;
   }
@@ -2435,14 +2402,6 @@ ol{
 
   .md\:leading-\[8rem\] {
     line-height: 8rem;
-  }
-
-  .md\:text-\[\] {
-    color: ;
-  }
-
-  .md\:text-\[0\.\] {
-    color: 0.;
   }
 }
 
@@ -2469,10 +2428,6 @@ ol{
 
   .lg\:top-\[20\%\] {
     top: 20%;
-  }
-
-  .lg\:top-10 {
-    top: 2.5rem;
   }
 
   .lg\:order-1 {
@@ -2949,16 +2904,16 @@ ol{
     bottom: -10px;
   }
 
+  .sl\:top-10 {
+    top: 2.5rem;
+  }
+
   .sl\:top-44 {
     top: 11rem;
   }
 
   .sl\:top-\[30\%\] {
     top: 30%;
-  }
-
-  .sl\:top-10 {
-    top: 2.5rem;
   }
 
   .sl\:m-auto {
@@ -2977,16 +2932,16 @@ ol{
     height: 600px;
   }
 
+  .sl\:min-h-\[500px\] {
+    min-height: 500px;
+  }
+
   .sl\:min-h-\[70vh\] {
     min-height: 70vh;
   }
 
   .sl\:min-h-\[800px\] {
     min-height: 800px;
-  }
-
-  .sl\:min-h-\[500px\] {
-    min-height: 500px;
   }
 
   .sl\:w-\[1100px\] {

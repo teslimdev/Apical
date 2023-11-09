@@ -29,12 +29,12 @@ const Visualization = () => {
         <div  className=" relative">
           <div
             style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-screen sl:min-h-[500px] bg-cover bg-center relative"
+            className=" min-h-[42rem] md:min-h-screen sl:min-h-[500px] bg-cover bg-center relative"
           >
             <div className="  absolute bg-black top-0 inset-0 opacity-50 h-full transition ease-out duration-300 delay-100"></div>
           </div>
          <div className=" flex justify-center">
-           <div className=" max-w-[1200px] text-white m-auto absolute top-10 md:top-[110px] sl:top-10 px-6 sl:px-0">
+           <div className=" max-w-[1200px] text-white m-auto absolute top-[10%] md:top-[110px] sl:top-10 px-6 sl:px-0">
             <div className=" max-w-[500px] border-b-2 pb-2 border-white">
               <h2 className=" text-3xl">3D <br /> VISUALIZATION .</h2>
             </div>
@@ -72,8 +72,8 @@ const Visualization = () => {
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
-            <div className=" absolute top-[50%] max-w-[500px] text-center  w-full border-b-2 pb-6">
-             <h2 className=" text-3xl text-white hover:text-[#8A6201]">RENDERS</h2>
+            <div className=" absolute top-[50%]  text-center max-w-[500px] w-full px-6">
+             <h2 className="  text-3xl text-white hover:text-[#8A6201] hover:border-[#8A6201] border-b-2  m-auto  pb-2">RENDERS</h2>
             </div>
           </div>
         </div>
@@ -87,8 +87,8 @@ const Visualization = () => {
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
-            <div className=" absolute top-[50%] max-w-[500px] text-center  w-full border-b-2 pb-6">
-             <h2 className=" text-3xl text-white hover:text-[#8A6201]">CINEMATICS</h2>
+            <div className=" absolute top-[50%]  text-center max-w-[500px] w-full px-6">
+             <h2 className="  text-3xl text-white hover:text-[#8A6201] hover:border-[#8A6201] border-b-2  m-auto  pb-2">CINEMATICS</h2>
             </div>
           </div>
         </div>
@@ -102,8 +102,8 @@ const Visualization = () => {
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
-            <div className=" absolute top-[50%] max-w-[500px] text-center  w-full border-b-2 pb-6">
-             <h2 className=" text-3xl text-white hover:text-[#8A6201]">3D ON PLAN</h2>
+            <div className=" absolute top-[50%]  text-center max-w-[500px] w-full px-6">
+             <h2 className="  text-3xl text-white hover:text-[#8A6201] hover:border-[#8A6201] border-b-2  m-auto  pb-2">3D ON PLAN</h2>
             </div>
           </div>
         </div>
@@ -117,8 +117,8 @@ const Visualization = () => {
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
-            <div className=" absolute top-[50%] max-w-[500px] text-center  w-full border-b-2 pb-6">
-             <h2 className=" text-3xl text-white hover:text-[#8A6201]">3D ON CONSTRUCTION SITE</h2>
+            <div className=" absolute top-[50%]  text-center max-w-[500px] w-full px-6">
+             <h2 className="  text-3xl text-white hover:text-[#8A6201] hover:border-[#8A6201] border-b-2  m-auto  pb-2">3D ON CONSTRUCTION SITE</h2>
             </div>
           </div>
         </div>
@@ -132,8 +132,8 @@ const Visualization = () => {
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
-            <div className=" absolute top-[50%] max-w-[500px] text-center  w-full border-b-2 pb-6">
-             <h2 className=" text-3xl text-white hover:text-[#8A6201]">PROPERTY EXPLORER</h2>
+            <div className=" absolute top-[50%]  text-center max-w-[500px] w-full px-6">
+             <h2 className="  text-3xl text-white hover:text-[#8A6201] hover:border-[#8A6201] border-b-2  m-auto  pb-2">PROPERTY EXPLORER</h2>
             </div>
           </div>
         </div>
@@ -146,9 +146,9 @@ const Visualization = () => {
            className=" min-h-[500px] bg-center bg-cover relative ">
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
-          <div className=" flex justify-center ">
-            <div className=" absolute top-[50%] max-w-[500px] text-center  w-full border-b-2 pb-6">
-             <h2 className=" text-3xl text-white hover:text-[#8A6201]">TERRAIN MAPPING</h2>
+          <div className=" flex justify-center  ">
+            <div className=" absolute top-[50%]  text-center max-w-[500px] w-full px-6 ">
+             <h2 className=" text-3xl text-white hover:text-[#8A6201] hover:border-[#8A6201] border-b-2  m-auto  pb-2">TERRAIN MAPPING</h2>
             </div>
           </div>
         </div>

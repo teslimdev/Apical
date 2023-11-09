@@ -80,7 +80,7 @@ const Footer = () => {
                 <a href="/">Terms & Conditions</a>
               </li>
               <li className=" 3xl:text-2xl">
-                <a href="/">Faqs</a>
+                <a href="/Faq">Faqs</a>
               </li>
               <li className=" 3xl:text-2xl">
                 <a href="/">Cookies</a>

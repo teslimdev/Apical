@@ -13,3 +13,4 @@ export { default as Visualization } from "./Visualization/Visualization";
 export { default as Construction } from "./Construction/Construction";
 export { default as Exterior } from "./Exterior/Exterior";
 export { default as Products } from "./Products/Products";
+export { default as Faq } from "./Faq/Faq";

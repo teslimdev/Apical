@@ -1,4 +1,4 @@
-import { Header, Footer, Footer2 ,Header2,ProjectPost2} from "./components";
+import { Header, Footer, Footer2 ,Header2,ProjectPost2,Error} from "./components";
 import { Routes, Route } from "react-router-dom";
 import {
   Home,
@@ -9,13 +9,13 @@ import {
   Services,
   Home2,
   NewsPost1,
-  ProjectPost1,
   Construction,
   Visualization,
   Interior,
   Architecture,
   Exterior,
-  Products
+  Products,
+  Faq,
 } from "./container";
 
 function App() {
@@ -44,6 +44,8 @@ function App() {
               <Route path="Header2" element={<Header2/>} />
                <Route path="Header" element={<Header/>} />
                 <Route path="/ProjectPost2" element={<ProjectPost2/>} />
+                 <Route path="/Faq" element={< Faq/>} />
+                 <Route path="*" element={<Error/>}/>
         </Routes>
       </div>
     </div>

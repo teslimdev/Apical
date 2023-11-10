@@ -56,8 +56,8 @@ const Request = () => {
                 <select 
                 required
                 placeholder=""
-                name="" id="" className=" option-bg   w-full py-1 pl-2 outline-white  ">
-                 <option value="" className="   text-white    bg-[#222222] ">Select field</option>
+                name="" id="" className=" option-bg  text-[#8A6201]  w-full py-1 pl-2 outline-white  ">
+                 <option value="" className="  text-white    bg-[#222222] ">Select field</option>
               <option value="" className="   text-white    bg-[#222222] ">Planning</option>
               <option value="" className=" text-white  bg-[#222222]">Single Project</option>
               <option value="" className="text-white  bg-[#222222] ">Smart Home</option>
@@ -81,7 +81,7 @@ const Request = () => {
             </div> <br />
             </div> 
             
-            <button className=" border border-white text-white hover:bg-white hover:text-black py-2 w-full md:w-fit md:px-7 rounded-md">Submit Request</button>
+            <button className=" border border-white text-white hover:bg-white hover:text-[#8A6201] py-2 w-full md:w-fit md:px-7 rounded-md">Submit Request</button>
           </form>
         </div>
         </div>

@@ -98,6 +98,7 @@ const Interior = () => {
                 Vestibulum augue tortor, consequat eu diam a, varius pulvinar
                 ipsum. Vivamus posuere, mauris eu interdum molestie.
               </p>
+              
               <div className=" pt-6">
                 <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
                   Read More

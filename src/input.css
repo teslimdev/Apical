@@ -92,7 +92,4 @@ ol{
 clip-path: polygon(100% 0, 51% 0, 100% 54%);
 }
 
-.option-bg:hover{
- background-color: #8A6201;
- color: white;
-}
+

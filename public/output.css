@@ -998,30 +998,6 @@ video {
   cursor: pointer;
 }
 
-.cursor-wait {
-  cursor: wait;
-}
-
-.cursor-move {
-  cursor: move;
-}
-
-.cursor-text {
-  cursor: text;
-}
-
-.cursor-help {
-  cursor: help;
-}
-
-.cursor-cell {
-  cursor: cell;
-}
-
-.cursor-auto {
-  cursor: auto;
-}
-
 .resize-none {
   resize: none;
 }
@@ -1958,11 +1934,6 @@ ol{
 .clip{
   -webkit-clip-path: polygon(100% 0, 51% 0, 100% 54%);
           clip-path: polygon(100% 0, 51% 0, 100% 54%);
-}
-
-.option-bg:hover{
-  background-color: #8A6201;
-  color: white;
 }
 
 .first-line\:text-\[\#8A6201\]::first-line {
@@ -3346,3 +3317,5 @@ ol{
     line-height: 9rem;
   }
 }
+
+

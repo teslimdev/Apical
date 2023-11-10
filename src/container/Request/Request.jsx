@@ -25,8 +25,9 @@ const Request = () => {
               <div className=" pt-2">
                 <input
                 type="text"
+                required
                 placeholder="Enter Your Name"
-                className="  text-white  py-1 placeholder:text-[#8A6201] pl-2 w-full  outline-white  "
+                className="  text-[#222222]  py-1 placeholder:text-[#8A6201] pl-2 w-full  outline-white  "
               />
               </div>{" "}
               
@@ -41,7 +42,7 @@ const Request = () => {
                 type="email"
                 required
                 placeholder="Enter Your Email"
-                className="  text-white border-0 py-1 placeholder:text-[#8A6201] w-full  pl-2  outline-white "
+                className="  text-[#222222] border-0 py-1 placeholder:text-[#8A6201] w-full  pl-2  outline-white "
               />
               </div>
               
@@ -52,8 +53,12 @@ const Request = () => {
             <br />
             
             <div className=" pt-2 ">
-                <select name="" id="" className=" w-full   py-1 pl-2   outline-white  ">
-              <option value="" className="   text-white  bg-[#222222]">Planning</option>
+                <select 
+                required
+                placeholder=""
+                name="" id="" className=" option-bg   w-full py-1 pl-2 outline-white  ">
+                 <option value="" className="   text-white    bg-[#222222] ">Select field</option>
+              <option value="" className="   text-white    bg-[#222222] ">Planning</option>
               <option value="" className=" text-white  bg-[#222222]">Single Project</option>
               <option value="" className="text-white  bg-[#222222] ">Smart Home</option>
               <option value="" className="text-white  bg-[#222222] ">Commercial</option>
@@ -65,9 +70,10 @@ const Request = () => {
                 <label htmlFor="" className=" text-white">Message</label> <br /> 
             <div className=" pt-2">
                 <textarea
-              className="  h-32 w-full resize-none border-b text-[#222222] py-1  rounded outline-white  pl-1  placeholder:text-[#8A6201]"
+              className="  h-32 w-full resize-none border-b text-[#222222] py-1  rounded outline-white  pl-2  placeholder:text-[#8A6201]"
               name=""
               id=""
+              required
               cols="60"
               rows="8"
               placeholder="message"

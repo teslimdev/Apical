@@ -12,6 +12,7 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, EffectCoverflow, EffectCube } from "swiper/modules";
+import { Link } from "react-router-dom";
 const Interior = () => {
   return (
     <div>
@@ -512,9 +513,11 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className=" shadow-lg py-3  w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
+                         <Link to='/Request'>
+                         <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
+                       </Link>
                       </div>
                     </div>
                   </div>
@@ -543,9 +546,11 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
+                         <Link to='/Request'>
+                         <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
+                       </Link>
                       </div>
                     </div>
                   </div>
@@ -574,9 +579,11 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
+                        <Link to='/Request'>
+                         <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
+                       </Link>
                       </div>
                     </div>
                   </div>
@@ -608,9 +615,11 @@ const Interior = () => {
                     </div>
                     <div className=" flex justify-center">
                       <div className=" w-full sl:w-fit pt-12 sl:pt-0 sl:absolute sl:bottom-[-10px] ">
-                        <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
+                       <Link to='/Request'>
+                         <button className="  shadow-lg py-3 w-full sl:px-7 hover:border hover:border-[#8A6201]  text-white hover:text-black bg-[#8A6201] hover:bg-[#f2f2f2]">
                           SEND REQUEST
                         </button>
+                       </Link>
                       </div>
                     </div>
                   </div>

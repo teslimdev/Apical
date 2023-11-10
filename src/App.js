@@ -16,6 +16,7 @@ import {
   Exterior,
   Products,
   Faq,
+  Request
 } from "./container";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
                 <Route path="/ProjectPost2" element={<ProjectPost2/>} />
                  <Route path="/Faq" element={< Faq/>} />
                  <Route path="*" element={<Error/>}/>
+                 <Route path="/Request" element={<Request/>}/>
         </Routes>
       </div>
     </div>

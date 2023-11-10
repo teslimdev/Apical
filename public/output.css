@@ -686,6 +686,10 @@ video {
   top: 9rem;
 }
 
+.top-6 {
+  top: 1.5rem;
+}
+
 .top-\[10\%\] {
   top: 10%;
 }
@@ -722,6 +726,30 @@ video {
   top: 80%;
 }
 
+.top-\[\] {
+  top: ;
+}
+
+.top-\[20\] {
+  top: 20;
+}
+
+.top-\[20\%\%\] {
+  top: 20%%;
+}
+
+.top-\[15\%\] {
+  top: 15%;
+}
+
+.top-\[1\%\] {
+  top: 1%;
+}
+
+.top-\[17\%\] {
+  top: 17%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -736,6 +764,14 @@ video {
 
 .z-\[80\] {
   z-index: 80;
+}
+
+.z-\[\] {
+  z-index: ;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .order-1 {
@@ -758,6 +794,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mb-4 {
@@ -880,6 +921,30 @@ video {
   min-height: 100vh;
 }
 
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[100rem\] {
+  min-height: 100rem;
+}
+
+.min-h-\[70rem\] {
+  min-height: 70rem;
+}
+
+.min-h-\[0rem\] {
+  min-height: 0rem;
+}
+
+.min-h-\[50rem\] {
+  min-height: 50rem;
+}
+
+.min-h-\[60rem\] {
+  min-height: 60rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -984,6 +1049,18 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[6\] {
+  max-width: 6;
+}
+
+.max-w-\[00px\] {
+  max-width: 00px;
 }
 
 .cursor-pointer {
@@ -1216,6 +1293,11 @@ video {
   border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-b-white {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-\[\#222222\] {
   --tw-bg-opacity: 1;
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
@@ -1257,6 +1339,10 @@ video {
 
 .bg-\[\] {
   background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
 }
 
 .bg-cover {
@@ -1381,6 +1467,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .pb-0 {
@@ -1789,6 +1880,10 @@ video {
   outline-color: #222222;
 }
 
+.outline-white {
+  outline-color: #fff;
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, -webkit-transform, -webkit-filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -2154,6 +2249,12 @@ ol{
     width: 500px;
   }
 
+  .md\:w-fit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .md\:max-w-\[200px\] {
     max-width: 200px;
   }
@@ -2273,6 +2374,11 @@ ol{
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .md\:pb-12 {

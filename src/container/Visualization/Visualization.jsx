@@ -2,6 +2,7 @@ import React from "react";
 import { Footer2, Header } from "../../components";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
+
 const Visualization = () => {
   return (
     <div>
@@ -29,7 +30,7 @@ const Visualization = () => {
         <div  className=" relative">
           <div
             style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-[42rem] md:min-h-screen sl:min-h-[500px] bg-cover bg-center relative"
+            className=" min-h-[42rem] md:min-h-screen sl:min-h-[500px]  bg-cover bg-center relative"
           >
             <div className="  absolute bg-black top-0 inset-0 opacity-50 h-full transition ease-out duration-300 delay-100"></div>
           </div>
@@ -43,7 +44,7 @@ const Visualization = () => {
               RENDERING SERVICES IN PAKISTAN AND IS NOW EXPANDING TO THE GLOBAL
               MARKET.
             </h2>
-            <h2 className=" text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] py-3">
+            <h2 className=" text-[0.8rem] md:text-[0.9rem] lg:text-[1rem] py-3"> 
               WE, AS AN ARCHITECTURAL VISUALIZATION COMPANY, ALWAYS TRY TO MAKE
               YOUR DREAM PROJECT COME TO LIFE WITH TRUE COLORS.
             </h2>
@@ -80,10 +81,10 @@ const Visualization = () => {
       </section>
 
       <section>
-        <div className=" relative">
+        <div className=" relative ">
           <div
           style={{backgroundImage:`url(${pic9})`}}
-           className=" min-h-[500px] bg-center bg-cover relative ">
+           className=" min-h-[500px] bg-center bg-cover relative  ">
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
@@ -194,6 +195,7 @@ const Visualization = () => {
       <section>
         <Footer2 />
       </section>
+      
     </div>
   );
 };

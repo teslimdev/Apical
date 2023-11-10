@@ -85,3 +85,9 @@ ol{
 .card-container:hover .card {
     transform: rotateY(180deg);
 }
+
+
+
+.clip{
+clip-path: polygon(100% 0, 51% 0, 100% 54%);
+}

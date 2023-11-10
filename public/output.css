@@ -686,6 +686,10 @@ video {
   top: 9rem;
 }
 
+.top-\[10\%\] {
+  top: 10%;
+}
+
 .top-\[18\%\] {
   top: 18%;
 }
@@ -716,18 +720,6 @@ video {
 
 .top-\[80\%\] {
   top: 80%;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[10\] {
-  top: 10;
-}
-
-.top-\[10\%\] {
-  top: 10%;
 }
 
 .z-10 {
@@ -768,11 +760,6 @@ video {
   margin-right: auto;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -807,6 +794,10 @@ video {
 
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-\[200px\] {
+  height: 200px;
 }
 
 .h-\[250px\] {
@@ -869,6 +860,10 @@ video {
   min-height: 40vh;
 }
 
+.min-h-\[42rem\] {
+  min-height: 42rem;
+}
+
 .min-h-\[450px\] {
   min-height: 450px;
 }
@@ -883,22 +878,6 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[\] {
-  min-height: ;
-}
-
-.min-h-\[50rem\] {
-  min-height: 50rem;
-}
-
-.min-h-\[45rem\] {
-  min-height: 45rem;
-}
-
-.min-h-\[42rem\] {
-  min-height: 42rem;
 }
 
 .w-12 {
@@ -917,6 +896,10 @@ video {
   width: 150px;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
 .w-\[400px\] {
   width: 400px;
 }
@@ -927,12 +910,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .max-w-\[1100px\] {
@@ -1007,10 +984,6 @@ video {
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[\] {
-  max-width: ;
 }
 
 .cursor-pointer {
@@ -1280,6 +1253,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-cover {
@@ -1946,6 +1923,11 @@ ol{
           transform: rotateY(180deg);
 }
 
+.clip{
+  -webkit-clip-path: polygon(100% 0, 51% 0, 100% 54%);
+          clip-path: polygon(100% 0, 51% 0, 100% 54%);
+}
+
 .first-line\:text-\[\#8A6201\]::first-line {
   --tw-text-opacity: 1;
   color: rgb(138 98 1 / var(--tw-text-opacity));
@@ -1977,10 +1959,6 @@ ol{
 .hover\:border-\[\#8A6201\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(138 98 1 / var(--tw-border-opacity));
-}
-
-.hover\:border-\[\]:hover {
-  border-color: ;
 }
 
 .hover\:bg-\[\#222222\]:hover {
@@ -2222,10 +2200,6 @@ ol{
 
   .md\:max-w-full {
     max-width: 100%;
-  }
-
-  .md\:max-w-\[500px\] {
-    max-width: 500px;
   }
 
   .md\:grid-cols-2 {

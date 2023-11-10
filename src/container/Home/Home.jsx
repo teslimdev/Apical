@@ -317,7 +317,7 @@ const Home = () => {
       <section className=" four bg-[#f2f2f2]">
         <div>
           <div className=" max-w-[700px] lg:max-w-[1200px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[7%]  px-6  sl:px-0  ">
-            <div className=" flex flex-col-reverse md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
+            <div  className=" flex flex-col-reverse md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
               <h2 className=" text-[2rem] md:text-[3rem] lg:text-[4.5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem]">
                 "Discover Our Story"
               </h2>

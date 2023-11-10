@@ -489,8 +489,8 @@ const Interior = () => {
           <div className=" flex justify-center">
             <div className="  absolute   pt-[25rem] md:pt-[22rem] pb-10  sl:pb-0  w-full ">
               <div className="  grid  sl:grid-cols-4 max-w-[1200px] m-auto gap-10 px-6 sl:px-0 sl:gap-6 ">
-                <div className="sl:max-w-[300px]   relative">
-                  <div className=" bg-white shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0 text-center">
+                <div className="sl:max-w-[300px]   relative   ">
+                  <div className=" bg-white shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0 text-center ">
                     <div className=" pt-20 ">
                       <h2 className="  text-2xl pb-2 font-semibold">
                         Planning
@@ -551,7 +551,7 @@ const Interior = () => {
                   </div>
                 </div>
 
-                <div className="sl:max-w-[300px]   relative">
+                <div className="sl:max-w-[300px]   relative ">
                   <div className="  bg-white  shadow-lg pb-[6rem] sl:min-h-[70vh]  px-8 sl:px-0  text-center">
                     <div className=" pt-20">
                       <h2 className=" text-2xl pb-2 font-semibold">
@@ -579,6 +579,9 @@ const Interior = () => {
                         </button>
                       </div>
                     </div>
+                  </div>
+                  <div className=" bg-[#8A6201]  w-[200px] h-[200px]    absolute top-0 right-0  clip">
+                  
                   </div>
                 </div>
 
@@ -713,6 +716,7 @@ const Interior = () => {
           </div>
         </div>
       </section>
+     
       <section>
         <Footer2 />
       </section>

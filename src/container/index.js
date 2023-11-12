@@ -15,3 +15,4 @@ export { default as Exterior } from "./Exterior/Exterior";
 export { default as Products } from "./Products/Products";
 export { default as Faq } from "./Faq/Faq";
 export { default as Request } from "./Request/Request";
+export { default as InteriorPost1 } from "./InteriorPost1/IInteriorPost1";

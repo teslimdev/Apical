@@ -16,7 +16,8 @@ import {
   Exterior,
   Products,
   Faq,
-  Request
+  Request,
+  InteriorPost1
 } from "./container";
 
 function App() {
@@ -35,7 +36,6 @@ function App() {
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contacts" element={<Contacts />} />
           <Route path="/NewsPost1" element={<NewsPost1 />} />
-    
           <Route path="/Architecture" element={<Architecture />} />
           <Route path="/Visualization" element={<Visualization />} />
           <Route path="/Interior" element={<Interior />} />
@@ -48,6 +48,7 @@ function App() {
                  <Route path="/Faq" element={< Faq/>} />
                  <Route path="*" element={<Error/>}/>
                  <Route path="/Request" element={<Request/>}/>
+                 <Route path="/InteriorPost1" element={<InteriorPost1/>}/>
         </Routes>
       </div>
     </div>

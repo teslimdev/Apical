@@ -43,7 +43,7 @@ const Interior = () => {
             <div className=" lg:max-w-[650px] sl:max-w-[700px] ">
               <div className=" text-center lg:text-start">
                 <h2 className=" text-[1.6rem] md:text-[2rem]  lg:text-[2.7rem] lg:leading-[3rem] font-bold first-line:text-[#8A6201]  text-[#222222]">
-                  Creative Solutions <br /> by Professional Designers
+                  Creative Solutions <br /> by Professional Designer
                 </h2>
                 <p className=" py-6">
                   Cras vel cursus libero. Vestibulum porttitor nunc enim, quis
@@ -70,10 +70,12 @@ const Interior = () => {
                 />
               </div>
               <div className=" pt-8 flex justify-center lg:justify-start">
-                <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
+               <Link to='/InteriorPost1'>
+                 <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
                   Read More
                   <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
                 </button>
+               </Link>
               </div>
             </div>
             <div className=" md:max-w-[450px] sl:max-w-[500px]">

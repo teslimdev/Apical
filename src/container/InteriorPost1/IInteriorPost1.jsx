@@ -27,7 +27,7 @@ const IInteriorPost1 = () => {
       <section>
         <div className=' py-10 lg:py-14'>
           <div className=' max-w-[1200px] m-auto px-6 sl:px-0'>
-            <h2 className=' md:hidden sl:text-[3rem] text-[1.5rem] pb-4 first-line:text-[2.5rem] leading-[2.3rem] sl:leading-[4rem] text-center sl:first-line:text-[4rem] first-line:text-[#8A6201]'>Welcome to our  architectural haven, where innovation meets expertise</h2>
+            <h2 className=' md:hidden sl:text-[3rem] text-[1.2rem] pb-4 first-line:text-[2rem] leading-[2rem] sl:leading-[4rem]  sl:first-line:text-[4rem] first-line:text-[#8A6201]'>Welcome to our  architectural haven, where innovation meets expertise.</h2>
            <h2 className=' hidden md:block lg:first-line:text-[3rem] lg:leading-[3rem] lg:text-[2rem] sl:text-[3rem] text-[1.3rem] pb-4 first-line:text-[2.5rem] leading-[1.8rem] sl:leading-[4rem] text-center sl:first-line:text-[4rem] first-line:text-[#8A6201]'>Welcome to our architectural haven, <br /> where innovation meets expertise</h2>
           <p className=' text-[1.01rem]'>At Apical Designs, we pride ourselves on being at the forefront of cutting-edge design, delivering solutions that not only meet but exceed our clients' expectations.</p>
           </div>
@@ -56,28 +56,28 @@ const IInteriorPost1 = () => {
       </section>
       <section>
         <div className=' pb-12'>
-          <div className=' text-center'>
-            <h2 className=' text-4xl text-[#222222]'>Why Choose Apical Designs:</h2>
+          <div className=' md:text-center px-6 md:px-0'>
+            <h2 className=' text-2xl lg:text-4xl text-[#222222]'>Why Choose Apical Designs:</h2>
           </div>
-          <div className='  grid md:grid-cols-2 max-w-[1200px] m-auto  px-6 sl:px-0 pt-8'>
-            <div className=' pb-6'>
-              <h2 className=' text-2xl pb-3 ' >Innovative Thinking</h2>
+          <div className='  grid md:grid-cols-2 lg:grid-cols-3 max-w-fit md:m-auto gap-3 md:gap-10  px-6 sl:px-0 pt-8'>
+            <div className=' pb-6 md:max-w-[370px]'>
+              <h2 className=' text-2xl pb-3 ' >Innovative Thinking:</h2>
               <p>We thrive on pushing boundaries and exploring new possibilities in design.</p>
             </div>
-             <div className=' pb-6'>
-              <h2  className=' text-2xl pb-3'>Collaborative Approach</h2>
+             <div className=' pb-6 md:max-w-[370px]'>
+              <h2  className=' text-2xl pb-3'>Collaborative Approach:</h2>
               <p> Your vision is our inspiration. We work closely with you to bring your dreams to life.</p>
              </div>
-              <div className=' pb-6'>
+              <div className=' pb-6 md:max-w-[370px]'>
                 <h2  className=' text-2xl  pb-3'>Expertise Across Sectors: </h2>
                 <p> From residential to commercial, we have a diverse portfolio that showcases our versatility.</p>
               </div>
-               <div className=' pb-6'>
-                <h2  className=' text-2xl pb-3'>Sustainability Focus</h2>
+               <div className=' pb-6 md:max-w-[370px]'>
+                <h2  className=' text-2xl pb-3'>Sustainability Focus:</h2>
                 <p>We believe in responsible design, incorporating eco-friendly practices in every project.</p>
                </div>
-               <div className=' pb-8'>
-                <h2  className=' text-2xl pb-3'>Timeless Design</h2>
+               <div className=' pb-8  md:max-w-[370px]'>
+                <h2  className=' text-2xl pb-3 '>Timeless Design:</h2>
                 <p>Our creations stand the test of time, marrying contemporary flair with enduring appeal.</p>
                </div>
           </div>

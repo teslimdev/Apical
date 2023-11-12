@@ -920,6 +920,10 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-\[1100px\] {
   max-width: 1100px;
 }
@@ -998,16 +1002,28 @@ video {
   max-width: ;
 }
 
-.max-w-\[200px\] {
-  max-width: 200px;
+.max-w-\[40px\] {
+  max-width: 40px;
 }
 
-.max-w-\[20px\] {
-  max-width: 20px;
+.max-w-\[420px\] {
+  max-width: 420px;
 }
 
-.max-w-\[0px\] {
-  max-width: 0px;
+.max-w-\[380px\] {
+  max-width: 380px;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px;
+}
+
+.max-w-\[30px\] {
+  max-width: 30px;
+}
+
+.max-w-\[370px\] {
+  max-width: 370px;
 }
 
 .cursor-pointer {
@@ -1026,18 +1042,6 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1048,10 +1052,6 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
-}
-
-.place-content-center {
-  place-content: center;
 }
 
 .place-items-end {
@@ -1080,6 +1080,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-1 {
@@ -1116,6 +1120,10 @@ video {
 
 .gap-\[4\.5rem\] {
   gap: 4.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-32 {
@@ -1547,16 +1555,16 @@ video {
   padding-top: 8%;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
-}
-
 .text-center {
   text-align: center;
 }
 
 .text-end {
   text-align: end;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-sans {
@@ -1608,6 +1616,10 @@ video {
   font-size: 0.9rem;
 }
 
+.text-\[1\.01rem\] {
+  font-size: 1.01rem;
+}
+
 .text-\[1\.05rem\] {
   font-size: 1.05rem;
 }
@@ -1626,6 +1638,10 @@ video {
 
 .text-\[1\.3rem\] {
   font-size: 1.3rem;
+}
+
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
 }
 
 .text-\[1\.6rem\] {
@@ -1682,24 +1698,8 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[1\.8rem\] {
-  font-size: 1.8rem;
-}
-
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
-}
-
-.text-\[1\.0rem\] {
-  font-size: 1.0rem;
-}
-
-.text-\[1\.02rem\] {
-  font-size: 1.02rem;
-}
-
-.text-\[1\.01rem\] {
-  font-size: 1.01rem;
+.text-\[12rem\] {
+  font-size: 12rem;
 }
 
 .font-\[300px\] {
@@ -1734,6 +1734,14 @@ video {
   text-transform: uppercase;
 }
 
+.leading-\[1\.8rem\] {
+  line-height: 1.8rem;
+}
+
+.leading-\[2\.3rem\] {
+  line-height: 2.3rem;
+}
+
 .leading-\[3\.5rem\] {
   line-height: 3.5rem;
 }
@@ -1750,40 +1758,8 @@ video {
   line-height: 6rem;
 }
 
-.leading-\[\] {
-  line-height: ;
-}
-
-.leading-\[2\.5rem\] {
-  line-height: 2.5rem;
-}
-
 .leading-\[2rem\] {
   line-height: 2rem;
-}
-
-.leading-\[1\.rem\] {
-  line-height: 1.rem;
-}
-
-.leading-\[1\.8rem\] {
-  line-height: 1.8rem;
-}
-
-.leading-\[1\.5rem\] {
-  line-height: 1.5rem;
-}
-
-.leading-\[1\.7rem\] {
-  line-height: 1.7rem;
-}
-
-.leading-\[2\.rem\] {
-  line-height: 2.rem;
-}
-
-.leading-\[2\.3rem\] {
-  line-height: 2.3rem;
 }
 
 .tracking-\[1rem\] {
@@ -1832,26 +1808,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[rem\] {
-  color: rem;
-}
-
-.text-\[1\.rem\] {
-  color: 1.rem;
-}
-
-.text-\[1\.8remrem\] {
-  color: 1.8remrem;
-}
-
-.text-\[\@\] {
-  color: @;
 }
 
 .underline {
@@ -2048,29 +2004,17 @@ ol{
           clip-path: polygon(100% 0, 51% 0, 100% 54%);
 }
 
-.first-line\:text-\[5rem\]::first-line {
-  font-size: 5rem;
-}
-
-.first-line\:text-\[4rem\]::first-line {
-  font-size: 4rem;
-}
-
-.first-line\:text-\[3rem\]::first-line {
-  font-size: 3rem;
-}
-
 .first-line\:text-\[2\.5rem\]::first-line {
   font-size: 2.5rem;
+}
+
+.first-line\:text-\[2rem\]::first-line {
+  font-size: 2rem;
 }
 
 .first-line\:text-\[\#8A6201\]::first-line {
   --tw-text-opacity: 1;
   color: rgb(138 98 1 / var(--tw-text-opacity));
-}
-
-.first-line\:text-\[\]::first-line {
-  color: ;
 }
 
 .placeholder\:text-\[\#8A6201\]::-webkit-input-placeholder {
@@ -2200,6 +2144,10 @@ ol{
 
   .md\:top-\[50\%\] {
     top: 50%;
+  }
+
+  .md\:m-auto {
+    margin: auto;
   }
 
   .md\:block {
@@ -2352,12 +2300,24 @@ ol{
     max-width: 100%;
   }
 
+  .md\:max-w-\[370px\] {
+    max-width: 370px;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2390,6 +2350,10 @@ ol{
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:place-self-start {
@@ -2453,6 +2417,10 @@ ol{
 
   .md\:pt-\[22rem\] {
     padding-top: 22rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-start {
@@ -2807,6 +2775,11 @@ ol{
     padding-bottom: 3rem;
   }
 
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -2840,11 +2813,6 @@ ol{
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .lg\:py-14 {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
   }
 
   .lg\:pb-10 {
@@ -3001,10 +2969,6 @@ ol{
     line-height: 1.75rem;
   }
 
-  .lg\:text-\[2\.5rem\] {
-    font-size: 2.5rem;
-  }
-
   .lg\:font-\[350\] {
     font-weight: 350;
   }
@@ -3037,20 +3001,8 @@ ol{
     line-height: 7rem;
   }
 
-  .lg\:leading-\[\] {
-    line-height: ;
-  }
-
-  .lg\:text-\[\] {
-    color: ;
-  }
-
   .lg\:first-line\:text-\[3rem\]::first-line {
     font-size: 3rem;
-  }
-
-  .lg\:first-line\:text-\[\]::first-line {
-    color: ;
   }
 }
 
@@ -3280,6 +3232,10 @@ ol{
     font-size: 2rem;
   }
 
+  .sl\:text-\[3rem\] {
+    font-size: 3rem;
+  }
+
   .sl\:text-\[5\.7rem\] {
     font-size: 5.7rem;
   }
@@ -3296,16 +3252,16 @@ ol{
     font-size: 7rem;
   }
 
-  .sl\:text-\[3rem\] {
-    font-size: 3rem;
-  }
-
   .sl\:leading-\[13rem\] {
     line-height: 13rem;
   }
 
   .sl\:leading-\[3\.5rem\] {
     line-height: 3.5rem;
+  }
+
+  .sl\:leading-\[4rem\] {
+    line-height: 4rem;
   }
 
   .sl\:leading-\[5rem\] {
@@ -3318,10 +3274,6 @@ ol{
 
   .sl\:leading-\[7rem\] {
     line-height: 7rem;
-  }
-
-  .sl\:leading-\[4rem\] {
-    line-height: 4rem;
   }
 
   .sl\:first-line\:text-3xl::first-line {

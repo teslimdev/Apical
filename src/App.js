@@ -17,7 +17,8 @@ import {
   Products,
   Faq,
   Request,
-  InteriorPost1
+  InteriorPost1,
+  InteriorPost2
 } from "./container";
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
                  <Route path="*" element={<Error/>}/>
                  <Route path="/Request" element={<Request/>}/>
                  <Route path="/InteriorPost1" element={<InteriorPost1/>}/>
+                   <Route path="/InteriorPost2" element={<InteriorPost2/>}/>
         </Routes>
       </div>
     </div>

@@ -102,10 +102,12 @@ const Interior = () => {
               </p>
               
               <div className=" pt-6">
-                <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
+              <Link to='/InteriorPost2'>
+                  <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
                   Read More
                   <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
                 </button>
+              </Link>
               </div>
             </div>
 

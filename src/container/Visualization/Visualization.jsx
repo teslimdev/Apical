@@ -2,6 +2,7 @@ import React from "react";
 import { Footer2, Header } from "../../components";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
+import vid1 from '../../../src/pictures/vid1.mp4'
 
 const Visualization = () => {
   return (
@@ -9,13 +10,18 @@ const Visualization = () => {
       <section>
         <Header />
       </section>
-      <section>
-        <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
-        >
-          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
-            <div className=" flex justify-center">
+<section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+
+             <div className=" flex justify-center">
               <div className="  absolute top-[40%] sl:top-[30%] ">
                 <h2 className=" text-white sl:text-[7rem] lg:text-[5rem] text-center text-[2.5rem] md:text-[4rem] font-bold">
                   {" "}
@@ -26,6 +32,8 @@ const Visualization = () => {
           </div>
         </div>
       </section>
+
+     
       <section>
         <div  className=" relative">
           <div

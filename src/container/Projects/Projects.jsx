@@ -4,6 +4,7 @@ import pic3 from "../../../src/pictures/img3.jpeg";
 import pic5 from "../../../src/pictures/img5.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
+import vid1 from '../../../src/pictures/vid1.mp4'
 import { Footer2,Header } from "../../components";
 
 const Projects = () => {
@@ -12,12 +13,17 @@ const Projects = () => {
     <section>
       <Header/>
     </section>
-      <div
-        style={{ backgroundImage: `url(${pic3})` }}
-        className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
-      >
-        <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
-         <div className=" flex justify-center">
+     <section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+               <div className=" flex justify-center">
            <div className="    absolute  top-36 ">
             <h2 className=" text-white lg:text-[7rem] text-[3rem] md:text-[5rem] font-bold">
               {" "}
@@ -25,11 +31,13 @@ const Projects = () => {
             </h2>
           </div>
          </div>
+          </div>
         </div>
-      </div>
+      </section>
+     
        <section className="bg-[#f2f2f2]">
          <div className=" py-10  ">
-        <div className=" pt-20 px-6 ">
+        <div className=" pt-10 px-6 ">
         <div className="  grid  md:grid-cols-2  gap-6   sl:px-0  m-auto  ">
           <Link to="/ProjectPost2">
             <div className="relative   group transition-all ease-out duration-500">

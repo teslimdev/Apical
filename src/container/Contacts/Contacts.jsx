@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import pic3 from "../../../src/pictures/img3.jpeg";
 import { Footer, Header,Notification, } from "../../components";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import vid1 from '../../../src/pictures/vid1.mp4'
+
 import { BsPinterest } from "react-icons/bs";
 
 const Contacts = () => {
@@ -33,12 +35,16 @@ const Contacts = () => {
       <section>
         <Header />
       </section>
-      <section className=" one">
-        <div
-          style={{ backgroundImage: `url(${pic3})` }}
-          className=" min-h-[300px] md:min-h-[500px] bg-cover bg-center"
-        >
-          <div className=" bg-black  absolute inset-0   h-[300px]  md:h-[500px]     opacity-70"></div>
+      <section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50"></div>
         </div>
       </section>
       <section className="two bg-[#f2f2f2] ">

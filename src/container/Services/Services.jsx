@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
+import vid1 from '../../../src/pictures/vid1.mp4'
 import pic3 from "../../../src/pictures/img3.jpeg";
 import { Link } from "react-router-dom";
 import { BiMinus, BiPlus } from "react-icons/bi";
@@ -84,12 +85,16 @@ const Services = () => {
     <section>
       <Header/>
     </section>
-      <section className=" one">
-        <div
-          style={{ backgroundImage: `url(${pic3})` }}
-          className=" h-[300px] md:min-h-[500px] bg-cover bg-center"
-        >
-          <div className=" bg-black  absolute inset-0  h-[300px]   md:h-[500px]     opacity-70"></div>
+       <section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50"></div>
         </div>
       </section>
 
@@ -287,30 +292,35 @@ const Services = () => {
       </section>
 
      <section className=" six">
-        <div
-          style={{ backgroundImage: `url(${pic3})` }}
-          className=" min-h-[300px] md:min-h-[450px] bg-cover bg-center relative"
-        >
-          <div className=" bg-black  absolute inset-0  h-[300px] md:h-[450px]      opacity-70">
-            <div className=" px-6 pt-[10%] lg:pt-[7%] ">
-            <div className="  text-center  ">
-              <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
-                Have a project in mind?
-              </h2>
-              <p className=" text-white py-4 text-2xl font-semibold">
-                Do not hesitate to say Hello
-              </p>
-              <div className=" pt-4">
-                <Link to="/Contacts">
-                  <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
-                    Lets Talk
-                  </button>
-                </Link>
+       <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[450px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[450px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+             <div className=" px-6 pt-[10%] lg:pt-[7%] ">
+              <div className="  text-center  ">
+                <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
+                  Have a project in mind?
+                </h2>
+                <p className=" text-white py-4 text-2xl font-semibold">
+                  Do not hesitate to say Hello
+                </p>
+                <div className=" pt-4">
+                  <Link to="/Contacts">
+                    <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
+                      Lets Talk
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          </div>
         </div>
+       
       </section>
       <section>
         <Footer />

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import { Footer2, Header } from "../../components";
-
+import vid1 from '../../../src/pictures/vid1.mp4'
 const News = () => {
   return (
     <div className="   ">
@@ -11,19 +11,23 @@ const News = () => {
       </section>
 
       <section>
-        <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
-        >
-          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
-            <div className=" flex justify-center">
-              <div className="    absolute  top-36 ">
-                <h2 className=" text-white lg:text-[7rem] text-[3rem] md:text-[5rem] font-bold">
-                  {" "}
-                  News
-                </h2>
-              </div>
-            </div>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+               <div className=" flex justify-center">
+           <div className="    absolute  top-32 ">
+            <h2 className=" text-white lg:text-[7rem] text-[3.5rem] md:text-[5rem] font-bold">
+              {" "}
+              News
+            </h2>
+          </div>
+         </div>
           </div>
         </div>
       </section>

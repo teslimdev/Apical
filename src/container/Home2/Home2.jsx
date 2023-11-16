@@ -5,6 +5,7 @@ import pic9 from "../../../src/pictures/img9.jpeg";
 import pic10 from "../../../src/pictures/img10.jpeg";
 import pic11 from "../../../src/pictures/img11.jpeg";
 import pic2 from "../../../src/pictures/img2.jpeg";
+import vid1 from '../../../src/pictures/vid1.mp4'
 import pic12 from "../../../src/pictures/ridwan.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
@@ -145,7 +146,7 @@ const Home2 = () => {
             >
               <SwiperSlide>
                 <HomeBanner
-                  image={pic9}
+                  image={vid1}
                   header={"Architecture is our Passion, Design is Our Art."}
                   text={
                     "Architect offer design and planning for buildings, landscapes and interiors"
@@ -155,7 +156,7 @@ const Home2 = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic11}
+                  image={vid1}
                   header={"Designing Spaces, Creating Experiences."}
                   text={
                     "Many architect specialize in sustainable design,incorporating environmentally friendly features into buildings."
@@ -165,7 +166,7 @@ const Home2 = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic10}
+                  image={vid1}
                   header={"Transforming Ideas   Into  Structures."}
                   text={
                     "Architects can conducts site analysis and evaluation to determine the best location for a building or development project"
@@ -174,7 +175,7 @@ const Home2 = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <HomeBanner
-                  image={pic8}
+                  image={vid1}
                   header={"Building Your Vision, Creating Your Reality. "}
                   text={
                     "Architect can manage the construction process from start to finish, overseeing contractors and ensuring that the project stays on schedule."

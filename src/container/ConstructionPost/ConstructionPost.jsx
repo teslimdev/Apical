@@ -1,20 +1,24 @@
 import React from "react";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import { Header, Footer2 } from "../../components";
-
+import vid1 from '../../../src/pictures/vid1.mp4'
 const ConstructionPost = () => {
   return (
     <div>
       <section>
         <Header />
       </section>
-      <section>
-        <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
-        >
-          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
-            <div className=" flex justify-center">
+<section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+             <div className=" flex justify-center">
               <div className="  absolute top-[35%] sl:top-[30%] ">
                 <h2 className=" text-white sl:text-[5.5rem] sl:leading-[5.5rem] lg:text-[4.5rem] lg:leading-[4.5rem] md:leading-[3.5rem] text-center text-[2rem] md:text-[3.5rem] font-bold">
                   {" "}
@@ -25,6 +29,8 @@ const ConstructionPost = () => {
           </div>
         </div>
       </section>
+
+    
        <section className=" bg-[#f2f2f2]">
         <div>
           <div className=" max-w-[1200px] m-auto py-12 sl:py-20 px-6 sl:px-0">

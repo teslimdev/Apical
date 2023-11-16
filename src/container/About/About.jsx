@@ -1,32 +1,37 @@
-import React from 'react'
-import pic9 from '../../../src/pictures/img9.jpeg'
+import React from "react";
+import pic9 from "../../../src/pictures/img9.jpeg";
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { Pagination, A11y, Autoplay, } from "swiper/modules";
+import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {  EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow } from "swiper/modules";
 import pic12 from "../../../src/pictures/ridwan.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsPinterest } from "react-icons/bs";
+import vid1 from "../../../src/pictures/vid1.mp4";
 import pic2 from "../../../src/pictures/img2.jpeg";
 
-import { AboutSlide, Footer, Header } from '../../components';
+import { AboutSlide, Footer, Header } from "../../components";
 const About = () => {
   return (
     <div>
-    <section>
-      <Header/>
-    </section>
       <section>
-        <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[500px] bg-cover bg-center"
-        >
-           <div className=' bg-black  absolute inset-0    h-[500px]     opacity-70'></div>
+        <Header />
+      </section>
+      <section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50"></div>
         </div>
       </section>
       <section className="bg-[#f2f2f2]">
@@ -303,37 +308,42 @@ const About = () => {
           </div>
         </div>
       </section>
-       <section className=" six">
-        <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[300px] md:min-h-[450px] bg-cover bg-center relative"
-        >
-          <div className=" bg-black  absolute inset-0  h-[300px] md:h-[450px]      opacity-70">
-            <div className=" px-6 pt-[10%] lg:pt-[7%] ">
-            <div className="  text-center  ">
-              <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
-                Have a project in mind?
-              </h2>
-              <p className=" text-white py-4 text-2xl font-semibold">
-                Do not hesitate to say Hello
-              </p>
-              <div className=" pt-4">
-                <Link to="/Contacts">
-                  <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
-                    Lets Talk
-                  </button>
-                </Link>
+      <section className=" six">
+       <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[450px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[450px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+             <div className=" px-6 pt-[10%] lg:pt-[7%] ">
+              <div className="  text-center  ">
+                <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
+                  Have a project in mind?
+                </h2>
+                <p className=" text-white py-4 text-2xl font-semibold">
+                  Do not hesitate to say Hello
+                </p>
+                <div className=" pt-4">
+                  <Link to="/Contacts">
+                    <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
+                      Lets Talk
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          </div>
         </div>
+       
       </section>
       <section>
-        <Footer/>
+        <Footer />
       </section>
     </div>
   );
-}
+};
 
-export default About
+export default About;

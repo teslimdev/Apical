@@ -1,5 +1,5 @@
-import React from 'react'
-import {Footer2, Header,InteriorSlide} from '../../components'
+import React from "react";
+import { Footer2, Header, InteriorSlide } from "../../components";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic15 from "../../../src/pictures/img15.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -11,31 +11,35 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import vid1 from "../../../src/pictures/vid1.mp4";
 import { EffectFade, EffectCoverflow, EffectCube } from "swiper/modules";
 const Exterior = () => {
   return (
     <div>
-    <section>
+      <section>
         <Header />
       </section>
-       <section>
-        <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
-        >
-          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
-           <div className=" flex justify-center">
-             <div className="  absolute top-[40%] sl:top-[30%] ">
-              <h2 className=" text-white sl:text-[7rem] lg:text-[5rem] text-center text-[2.5rem] md:text-[4rem] font-bold">
-                {" "}
-                Exterior Designs
-              </h2>
+      <section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+            <div className=" flex justify-center">
+              <div className="  absolute top-[40%] sl:top-[30%] ">
+                <h2 className=" text-white sl:text-[7rem] lg:text-[5rem] text-center text-[2.5rem] md:text-[4rem] font-bold">
+                  {" "}
+                  Exterior Designs
+                </h2>
+              </div>
             </div>
-           </div>
           </div>
         </div>
       </section>
- 
 
       <section className="bg-[#f2f2f2]">
         <div className=" max-w-[1200px] m-auto py-20 px-6 sl:px-0">
@@ -460,7 +464,7 @@ const Exterior = () => {
           </div>
         </div>
       </section>
-     
+
       <section className="bg-[#f2f2f2]">
         <div className=" py-20">
           <div className=" text-center pt-20">
@@ -530,31 +534,38 @@ const Exterior = () => {
           </div>
           <div className=" flex justify-center">
             <div className=" absolute top-10 md:top-20 lg:top-32">
-            <div className=" text-center text-white">
-              <h2 className=" text-2xl font-semibold   first-line:text-[#8A6201] sl:first-line:text-3xl">
-                Subscribe for Members <br /> to Receive Latest News and Special Offers
-              </h2>
+              <div className=" text-center text-white">
+                <h2 className=" text-2xl font-semibold   first-line:text-[#8A6201] sl:first-line:text-3xl">
+                  Subscribe for Members <br /> to Receive Latest News and
+                  Special Offers
+                </h2>
+              </div>
+              <form
+                action=""
+                className=" flex flex-col gap-6 lg:gap-0   lg:flex-row items-center md:max-w-[700px] pt-6 px-6  md:px-0 "
+              >
+                <div className=" w-full">
+                  <input
+                    type="email"
+                    placeholder=" Your Email..."
+                    className=" py-3 w-full pl-4 shadow-lg text-[#222222] placeholder:text-[#8A6201]  border-none outline-none"
+                  />
+                </div>
+                <div className=" w-full lg:w-fit">
+                  <button className=" bg-[#222222] py-3 w-full  lg:w-fit lg:px-7 text-white   hover:bg-[#444444] shadow-lg  ">
+                    SUBSCRIBE
+                  </button>
+                </div>
+              </form>
             </div>
-            <form action="" className=" flex flex-col gap-6 lg:gap-0   lg:flex-row items-center md:max-w-[700px] pt-6 px-6  md:px-0 ">
-             <div className=" w-full">
-               <input type="email" placeholder=" Your Email..."
-              className=" py-3 w-full pl-4 shadow-lg text-[#222222] placeholder:text-[#8A6201]  border-none outline-none"
-               />
-             </div>
-             <div className=" w-full lg:w-fit">
-               <button className=" bg-[#222222] py-3 w-full  lg:w-fit lg:px-7 text-white   hover:bg-[#444444] shadow-lg  ">SUBSCRIBE</button>
-             </div>
-            </form>
-          </div>
           </div>
         </div>
       </section>
       <section>
         <Footer2 />
       </section>
-       
     </div>
-  )
-}
+  );
+};
 
-export default Exterior
+export default Exterior;

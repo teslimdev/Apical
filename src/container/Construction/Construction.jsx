@@ -1,8 +1,8 @@
-import React from 'react'
-import {Footer2, Header, InteriorSlide} from '../../components'
+import React from "react";
+import { Footer2, Header, InteriorSlide } from "../../components";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic15 from "../../../src/pictures/img15.png";
-import {AiOutlineArrowRight} from 'react-icons/ai'
+import { AiOutlineArrowRight } from "react-icons/ai";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -10,37 +10,43 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, EffectCoverflow, EffectCube } from "swiper/modules";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import vid1 from "../../../src/pictures/vid1.mp4";
 const Construction = () => {
   return (
     <div>
       <section>
         <Header />
       </section>
-     <section>
-        <div
-          style={{ backgroundImage: `url(${pic9})` }}
-          className=" min-h-[350px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center"
-        >
-          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[500px]     opacity-70">
-           <div className=" flex justify-center">
-             <div className="  absolute top-[40%] sl:top-[30%] ">
-              <h2 className=" text-white sl:text-[7rem] lg:text-[5rem] text-center text-[2.5rem] md:text-[4rem] font-bold">
-                {" "}
-                Building Construction
-              </h2>
+      <section>
+        <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
+          <video
+            autoPlay
+            muted
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
+            <div className=" flex justify-center">
+              <div className="  absolute top-[40%] sl:top-[30%] ">
+                <h2 className=" text-white sl:text-[7rem] lg:text-[5rem] text-center text-[2.5rem] md:text-[4rem] font-bold">
+                  {" "}
+                  Building Construction
+                </h2>
+              </div>
             </div>
-           </div>
           </div>
         </div>
       </section>
-       <section className="bg-[#f2f2f2]">
+
+      <section className="bg-[#f2f2f2]">
         <div className=" max-w-[1200px] m-auto py-20 px-6 sl:px-0">
           <div className=" grid lg:grid-cols-2  place-items-center  lg:place-items-start  gap-10 sl:gap-20">
             <div className=" lg:max-w-[650px] sl:max-w-[700px] ">
               <div className=" text-center lg:text-start">
                 <h2 className=" text-[1.6rem] md:text-[2rem]  lg:text-[2.7rem] lg:leading-[3rem] font-bold first-line:text-[#8A6201]  text-[#222222]">
-                  The Best  <br /> Architectural and Construction Agency
+                  The Best <br /> Architectural and Construction Agency
                 </h2>
                 <p className=" py-6">
                   Cras vel cursus libero. Vestibulum porttitor nunc enim, quis
@@ -67,12 +73,12 @@ const Construction = () => {
                 />
               </div>
               <div className=" pt-8 flex justify-center lg:justify-start">
-               <Link to='/ConstructionPost'>
-                 <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
-                  Read More
-                  <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
-                </button>
-               </Link>
+                <Link to="/ConstructionPost">
+                  <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
+                    Read More
+                    <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
+                  </button>
+                </Link>
               </div>
             </div>
             <div className=" md:max-w-[450px] sl:max-w-[500px]">
@@ -158,7 +164,7 @@ const Construction = () => {
           </div>
         </div>
       </section>
-       <section>
+      <section>
         <div>
           <div className=" grid place-items-center lg:grid-cols-2 max-w-[1200px] m-auto px-6 sl:px-0 py-12 sl:py-20">
             <div className="">
@@ -178,7 +184,7 @@ const Construction = () => {
           </div>
         </div>
       </section>
-        <section className="">
+      <section className="">
         <div className=" relative">
           <div
             style={{ backgroundImage: `url(${pic9})` }}

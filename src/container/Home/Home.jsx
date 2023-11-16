@@ -209,16 +209,16 @@ const Home = () => {
       <section className=" two bg-[#f2f2f2]">
         <div id="target-section">
           <div  className="  lg:max-w-[1200px]  sl:max-w-[1200px] sl:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
-            <h2  data-aos="fade-up-right" className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
+            <h2    className=" overflow-x-hidden  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
             </h2>
             <div   className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
-              <h3 data-aos="fade-up-left" className="  sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
+              <h3 className="  overflow-x-hidden sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
                 The homepage of an architecture website serves as the first
                 impression for visitors and should provide a compelling overview
                 of the architecture firm and its offerings.
               </h3>
-              <div data-aos="fade-up-right" className="  place-self-end ">
+              <div    className="   place-self-end ">
                 <Link
                   to="/Services"
                   className=" underline hover:no-underline 3xl:text-[2rem] flex"
@@ -234,31 +234,31 @@ const Home = () => {
             <div   className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
             <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
               <Link to="/Architecture">
-                <li data-aos="fade-down" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Architectural Design</p>
                 </li>
               </Link>
               <Link to="/Interior">
-                <li data-aos="fade-down" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">Interior Design</p>
                 </li>
               </Link>
                <Link to="/Exterior">
-                <li data-aos="fade-down" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Exterior Design</p>
                 </li>
               </Link>
               <Link to="/Visualization">
-                <li data-aos="fade-up" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Visualization</p>
                 </li>
               </Link>
               <Link to="/Construction">
-                <li data-aos="fade-up" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Building Construction</p>
                 </li>
@@ -267,7 +267,7 @@ const Home = () => {
           </div>
           <div  className=" max-w-[400px]  md:max-w-[700px] lg:max-w-[950px] px-6 md:px-0 sl:max-w-[1200px] 3xl:max-w-[2000px] m-auto pb-8 lg:pb-16">
             <ul className=" grid md:grid-cols-3  gap-10   ">
-              <li  data-aos="zoom-in" className="  text-center md:text-start">
+              <li   className="  text-center md:text-start">
                 {" "}
                 <h2   className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
                   {isSectionVisible && <Countdown1 startCount={0} />}
@@ -276,14 +276,14 @@ const Home = () => {
                   Clients Around the World
                 </p>
               </li>
-              <li  data-aos="zoom-in" className=" text-center  md:text-start">
+              <li   className=" text-center  md:text-start">
                 {" "}
                 <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
                    {isSectionVisible && <Countdown2 startCount={0} />}
                 </h2>{" "}
                 <p className=" 3xl:text-4xl text-xl pt-6">Projects Completed</p>
               </li>
-              <li  data-aos="zoom-in" className=" text-center  md:text-start">
+              <li   className=" text-center  md:text-start">
                 <h2 className=" border-black border-b text-[5rem]  flex  justify-center md:justify-start  sl:text-[6rem]  3xl:text-[8rem]">
                   {isSectionVisible && <Countdown3 startCount={0} />}K
                 </h2>{" "}
@@ -297,7 +297,7 @@ const Home = () => {
 
       <section className=" three">
         <div
-        data-aos="zoom-out"
+       
           style={{ backgroundImage: `url(${pic3})` }}
           className=" min-h-[40vh] md:min-h-[60vh] bg-center bg-no-repeat bg-cover shadow-2xl flex justify-center items-center [background-attachment:_fixed]"
         >
@@ -327,10 +327,10 @@ const Home = () => {
         <div>
           <div className=" max-w-[700px] lg:max-w-[1200px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[7%]  px-6  sl:px-0  ">
             <div  className=" flex flex-col-reverse md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
-              <h2 data-aos="fade-up-left" className=" text-[2rem] md:text-[3rem] lg:text-[4.5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem]">
+              <h2  className=" text-[2rem] md:text-[3rem] lg:text-[4.5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem]">
                 "Discover Our Story"
               </h2>
-              <div data-aos="fade-up-right" className=" flex   place-self-end md:place-self-start">
+              <div  className=" flex   place-self-end md:place-self-start">
                 <Link
                   to="/About"
                   className=" underline hover:no-underline 3xl:text-[2rem] flex"
@@ -342,11 +342,11 @@ const Home = () => {
             </div>
           </div>
           <div className="lg:max-w-[1000px] 3xl:max-w-[2000px] sl:max-w-[1200px]  lg:m-auto py-8 lg:py-12    px-6  sl:px-0 ">
-            <h2 data-aos="zoom-in" className=" py-3 lg:py-8 text-xl lg:text-3xl">
+            <h2 className=" py-3 lg:py-8 text-xl lg:text-3xl">
               Designing the future, today - welcome to our architecture
             </h2>
             <div className=" flex justify-between flex-col lg:flex-row">
-              <div data-aos="fade-up-left" className="  lg:max-w-[500px]">
+              <div  className="  lg:max-w-[500px]">
                 <Swiper
                   modules={[Pagination, A11y, EffectCoverflow, Autoplay,EffectCards]}
                   effect="coverflow"
@@ -381,7 +381,7 @@ const Home = () => {
                   </SwiperSlide>
                 </Swiper>
               </div>
-              <div data-aos="fade-up-right" className=" pt-6 lg:pt-0">
+              <div  className=" pt-6 lg:pt-0">
                 <div className=" lg:max-w-[400px] sl:max-w-[500px] ">
                   <Tabs tabs={tabs} />
                   <div>
@@ -408,7 +408,7 @@ const Home = () => {
       </section>
 
       <section  className=" five bg-[#f2f2f2]">
-        <div data-aos="fade-down" id="home" className=" py-10">
+        <div id="home" className=" py-10">
           <div className="  px-6">
             <Swiper
               modules={[Pagination, A11y, EffectFade, Autoplay, Navigation]}
@@ -466,9 +466,9 @@ const Home = () => {
 
       <section className="six bg-[#f2f2f2] ">
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 sl:grid-cols-4  max-w-fit m-auto gap-8 px-6  py-10 ">
-          <div  data-aos="zoom-out" className=" md:max-w-[320px]">
+          <div   className=" md:max-w-[320px]">
             <BiWorld  className=" text-7xl text-[#222222] max-w-fit m-auto"></BiWorld>
-            <div  data-aos="zoom-in">
+            <div >
               <h3 className=" text-[1.3rem] py-3">
                 Consultation and initial meeting
               </h3>
@@ -479,9 +479,9 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div data-aos="fade-down" className=" md:max-w-[320px]">
+          <div className=" md:max-w-[320px]">
             <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
-            <div  data-aos="zoom-in">
+            <div  >
               <h3 className=" text-[1.3rem] py-3">Concept design</h3>
               <p className=" text-[0.9rem]">
                 Based on the client's requirements, the architecture company
@@ -491,9 +491,9 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div  data-aos="fade-up" className=" md:max-w-[320px]">
+          <div  className=" md:max-w-[320px]">
             <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
-            <div  data-aos="fade-right">
+            <div  >
               <h3 className=" text-[1.3rem] py-3">Design development</h3>
               <p className=" text-[0.9rem]">
                 Once the client approves the concept design, the architecture
@@ -503,9 +503,9 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div  data-aos="fade-down" className=" md:max-w-[320px]">
+          <div   className=" md:max-w-[320px]">
             <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto "></BiWorld>
-            <div  data-aos="fade-left">
+            <div  >
               <h3 className=" text-[1.3rem] py-3">Permitting and approvals</h3>
               <p className=" text-[0.9rem]">
                 Before construction can begin, the architecture company must

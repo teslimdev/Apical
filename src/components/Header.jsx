@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import pic1 from "../../src/pictures/img1.png";
 import pic7 from "../../src/pictures/img7.png";
+import UseAos from "./UseAos";
 export default function Header() {
   const [backgroundColor, setBackgroundColor] = useState("transparent");
   useEffect(() => {
@@ -32,30 +33,32 @@ export default function Header() {
     document.getElementById("navmain").classList.add("py-3");
   };
   const location = useLocation();
+   const Aos = UseAos();
   return (
-    <div className="  z-[80] w-full">
-      <nav className="    ">
+    <div className="  z-[80] w-full ">
+      <nav className="     ">
         <div
           id="navmain"
           style={{ backgroundColor }}
-          className={`py-2 w-full  fixed    border-[#333333] z-10 ${
+          className={`py-2 w-full  fixed   border-[#333333] z-10 ${
             backgroundColor === "transparent" ? " shadow-none " : " shadow-lg"
           } `}
         >
           <div className={` sl:max-w-[1200px] px-6 sl:px-0  m-auto   `}>
-           <div className={` flex justify-between   items-center ${backgroundColor === "transparent" ? " border-b border-white pb-3 "  : " border-none pb-0"} `}>
+           <div  className={` flex justify-between    items-center ${backgroundColor === "transparent" ? " border-b border-white pb-3 "  : " border-none pb-0"} `}>
              <div
               className={`  ${
                 backgroundColor === "transparent" ? "text-white" : "text-black"
               }`}
             >
-              <a href="/" className=" flex  items-center gap-2">
+              <a href="/"  className=" flex  items-center gap-2">
                 <img
+                data-aos="fade-down"
                   src={`${backgroundColor === "transparent" ? pic7 : pic1}`}
                   alt=""
                   className=" w-8 lg:w-12 3xl:w-20"
                 />
-                <h1 className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${
+                <h1 data-aos="fade-right" className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${
                     location.pathname === "/"
                       ? "  font-semibold  "
                       : " "
@@ -165,6 +168,7 @@ export default function Header() {
             <div className=" lg:hidden">
               {!nav ? (
                 <FaBars
+                data-aos="fade-left"
                   className={`text-black text-2xl ${
                     backgroundColor === "transparent"
                       ? "text-white"
@@ -178,8 +182,8 @@ export default function Header() {
                     <div className=" flex items-center justify-between px-6">
                       <div className=" ">
                         <a href="/" className="flex items-center gap-2">
-                          <img src={pic1} alt="" className=" w-8" />
-                          <h1 className={`text-black text-[1rem] lg:text-3xl 3xl:text-5xl   ${
+                          <img src={pic1} data-aos="fade-down" alt="" className=" w-8" />
+                          <h1 data-aos="fade-right" className={`text-black text-[1rem] lg:text-3xl 3xl:text-5xl   ${
                     location.pathname === "/"
                       ? "text-[#8A6201] font-semibold"
                       : ""
@@ -189,7 +193,7 @@ export default function Header() {
                         </a>
                       </div>
                       <div className=" text-end" onClick={closeNav}>
-                        <FaTimes className=" text-2xl " />
+                        <FaTimes data-aos="fade-left" className=" text-2xl " />
                       </div>
                     </div>
                   </div>

@@ -84,6 +84,7 @@ export default function Header() {
                   }`}
                 >
                   <li
+                   data-aos="fade-down"
                     className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}
                   >
                     HOME
@@ -98,7 +99,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li  data-aos="fade-up" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     ABOUT
                   </li>
                 </Link>
@@ -111,7 +112,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li  data-aos="fade-left" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     SERVICES
                   </li>
                 </Link>
@@ -123,7 +124,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li  data-aos="fade-right" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     PROJECTS
                   </li>
                 </Link>
@@ -135,7 +136,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li  data-aos="fade-down" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     PRODUCTS
                   </li>
                 </Link>
@@ -147,7 +148,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li  data-aos="fade-up" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     NEWS
                   </li>
                 </Link>
@@ -159,7 +160,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li  data-aos="fade-left" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     CONTACTS
                   </li>
                 </Link>
@@ -177,7 +178,7 @@ export default function Header() {
                   onClick={isOpen}
                 />
               ) : (
-                <div className=" bg-white   right-0 h-full bottom-0 w-full fixed">
+                <div data-aos="zoom-in-down" className=" bg-white   right-0 h-full bottom-0 w-full fixed">
                   <div className="  py-3  shadow-lg">
                     <div className=" flex items-center justify-between px-6">
                       <div className=" ">
@@ -199,7 +200,7 @@ export default function Header() {
                   </div>
                   <div className="  pt-10 ">
                     <ul className=" text-black gap-6 px-6 space-y-8 ">
-                      <div>
+                      <div >
                         <a
                           href="/Home2"
                           className={`text-[#222222]  ${

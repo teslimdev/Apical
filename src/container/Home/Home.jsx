@@ -5,6 +5,7 @@ import pic3 from "../../../src/pictures/img3.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic12 from "../../../src/pictures/ridwan.png";
 import pic5 from "../../../src/pictures/img5.jpeg";
+import vid1 from '../../../src/pictures/vid1.mp4'
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -154,7 +155,7 @@ const Home = () => {
             >
               <SwiperSlide>
                 <HomeBanner
-                  image={pic3}
+                  image={vid1}
                   header={"Architecture is our Passion, Design is Our Art."}
                   text={
                     "Architect offer design and planning for buildings, landscapes and interiors"
@@ -164,7 +165,7 @@ const Home = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic4}
+                  image={vid1}
                   header={"Designing Spaces, Creating Experiences."}
                   text={
                     "Many architect specialize in sustainable design,incorporating environmentally friendly features into buildings."
@@ -174,7 +175,7 @@ const Home = () => {
 
               <SwiperSlide>
                 <HomeBanner
-                  image={pic2}
+                  image={vid1}
                   header={"Transforming Ideas   Into  Structures."}
                   text={
                     "Architects can conducts site analysis and evaluation to determine the best location for a building or development project"
@@ -183,7 +184,7 @@ const Home = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <HomeBanner
-                  image={pic5}
+                  image={vid1}
                   header={"Building Your Vision, Creating Your Reality. "}
                   text={
                     "Architect can manage the construction process from start to finish, overseeing contractors and ensuring that the project stays on schedule."
@@ -209,11 +210,11 @@ const Home = () => {
       <section className=" two bg-[#f2f2f2]">
         <div id="target-section">
           <div  className="  lg:max-w-[1200px]  sl:max-w-[1200px] sl:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
-            <h2    className=" overflow-x-hidden  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
+            <h2    className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
             </h2>
             <div   className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
-              <h3 className="  overflow-x-hidden sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
+              <h3 className="   sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
                 The homepage of an architecture website serves as the first
                 impression for visitors and should provide a compelling overview
                 of the architecture firm and its offerings.
@@ -817,6 +818,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+    
       <section>
         <Footer />
       </section>

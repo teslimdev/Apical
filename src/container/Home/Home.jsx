@@ -1,4 +1,4 @@
-import React, { useCallback, useRef ,useState,useEffect } from "react";
+import  { React, useCallback, useRef ,useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
@@ -18,6 +18,8 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, EffectCoverflow,EffectCards } from "swiper/modules";
+
+
 import {
   HomeBanner,
   HomeSlide,
@@ -29,7 +31,8 @@ import {
   Countdown1,
   Countdown2,
   Countdown3,
-  Header
+  Header,
+  UseAos,
 } from "../../components/";
 
 const Home = () => {
@@ -109,12 +112,15 @@ const Home = () => {
     slideRef.current.swiper.slideNext();
   }, []);
 
+  const Aos = UseAos();
+  
+
   return (
     <div id="hom" className=" ">
     <section>
       <Header/>
     </section>
-      <section id=" home" className=" one">
+      <section  id=" home" className=" one">
         <div className=" relative  ">
           <div>
             <Swiper
@@ -202,11 +208,11 @@ const Home = () => {
 
       <section className=" two bg-[#f2f2f2]">
         <div id="target-section">
-          <div className="  lg:max-w-[1200px]  sl:max-w-[1200px] sl:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
-            <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
+          <div  className="  lg:max-w-[1200px]  sl:max-w-[1200px] sl:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
+            <h2  data-aos="fade-up-right" className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
             </h2>
-            <div className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
+            <div  data-aos="fade-up-left" className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
               <h3 className="  sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
                 The homepage of an architecture website serves as the first
                 impression for visitors and should provide a compelling overview
@@ -224,41 +230,42 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
+        <div >
+            <div   className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
             <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
               <Link to="/Architecture">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li data-aos="fade-down" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Architectural Design</p>
                 </li>
               </Link>
               <Link to="/Interior">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li data-aos="fade-down" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">Interior Design</p>
                 </li>
               </Link>
                <Link to="/Exterior">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li data-aos="fade-down" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Exterior Design</p>
                 </li>
               </Link>
               <Link to="/Visualization">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li data-aos="fade-up" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Visualization</p>
                 </li>
               </Link>
               <Link to="/Construction">
-                <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                <li data-aos="fade-up" className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
                   <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
                   <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Building Construction</p>
                 </li>
               </Link>
             </ul>
           </div>
-          <div className=" max-w-[400px]  md:max-w-[700px] lg:max-w-[950px] px-6 md:px-0 sl:max-w-[1200px] 3xl:max-w-[2000px] m-auto pb-8 lg:pb-16">
+          <div  data-aos="zoom-in" className=" max-w-[400px]  md:max-w-[700px] lg:max-w-[950px] px-6 md:px-0 sl:max-w-[1200px] 3xl:max-w-[2000px] m-auto pb-8 lg:pb-16">
             <ul className=" grid md:grid-cols-3  gap-10   ">
               <li className="  text-center md:text-start">
                 {" "}
@@ -284,6 +291,7 @@ const Home = () => {
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </section>
 

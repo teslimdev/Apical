@@ -10,6 +10,7 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, EffectCoverflow, EffectCube } from "swiper/modules";
+import { Link } from 'react-router-dom';
 const Construction = () => {
   return (
     <div>
@@ -66,10 +67,12 @@ const Construction = () => {
                 />
               </div>
               <div className=" pt-8 flex justify-center lg:justify-start">
-                <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
+               <Link to='/ConstructionPost'>
+                 <button className=" border text-black py-3 px-8  flex  gap-4 border-black   place-items-center  hover:bg-[#222222] hover:text-white text-sm">
                   Read More
                   <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
                 </button>
+               </Link>
               </div>
             </div>
             <div className=" md:max-w-[450px] sl:max-w-[500px]">

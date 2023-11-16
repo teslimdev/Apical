@@ -445,7 +445,7 @@ const Interior = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="bg-[#f2f2f2]">
         <div>
           <div className=" grid place-items-center lg:grid-cols-2 max-w-[1200px] m-auto px-6 sl:px-0 py-12 sl:py-20">
             <div className="">
@@ -465,7 +465,7 @@ const Interior = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="bg-[#f2f2f2]">
         <div
           style={{ backgroundImage: `url(${pic9})` }}
           className=" relative   min-h-[2850px] h-full sl:min-h-[800px] bg-cover bg-center "
@@ -693,7 +693,7 @@ const Interior = () => {
           </div>
         </div>
       </section>
-      <section className="">
+      <section className=" ">
         <div className=" relative">
           <div
             style={{ backgroundImage: `url(${pic9})` }}

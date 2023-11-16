@@ -16,3 +16,4 @@ export { default as Faq } from "./Faq/Faq";
 export { default as Request } from "./Request/Request";
 export { default as InteriorPost1 } from "./InteriorPost1/InteriorPost1";
 export { default as InteriorPost2 } from "./InteriorPost2/InteriorPost2";
+export { default as  ConstructionPost } from "./ConstructionPost/ConstructionPost";

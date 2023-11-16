@@ -61,23 +61,23 @@ const IInteriorPost1 = () => {
           </div>
           <div className='  grid md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] md:m-auto  gap-6  px-6 sl:px-0 pt-8'>
             <div className='  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20 '>
-              <h2 className=' text-2xl pb-3 text-center ' >Innovative Thinking  </h2>
+              <h2 className=' text-2xl text-[#8A6201]  font-semibold  pb-3 text-center ' >Innovative Thinking  </h2>
               <p>We thrive on pushing boundaries and exploring new possibilities in design.</p>
             </div>
              <div className='  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20'>
-              <h2  className=' text-2xl pb-3 text-center'>Collaborative Approach</h2>
+              <h2  className=' text-2xl pb-3 text-[#8A6201]  font-semibold  text-center'>Collaborative Approach</h2>
               <p> Your vision is our inspiration. We work closely with you to bring your dreams to life.</p>
              </div>
               <div className='  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20'>
-                <h2  className=' text-2xl  text-center pb-3'>Expertise Across Sectors </h2>
+                <h2  className=' text-2xl  text-[#8A6201]  font-semibold  text-center pb-3'>Expertise Across Sectors </h2>
                 <p> From residential to commercial, we have a diverse portfolio that showcases our versatility.</p>
               </div>
                <div className='  lg:max-w-[400px]   bg-white shadow-lg    px-6 pt-6 pb-20'>
-                <h2  className=' text-2xl pb-3 text-center'>Sustainability Focus</h2>
+                <h2  className=' text-2xl pb-3 text-[#8A6201]  font-semibold  text-center'>Sustainability Focus</h2>
                 <p>We believe in responsible design, incorporating eco-friendly practices in every project.</p>
                </div>
                <div className='  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20'>
-                <h2  className=' text-2xl pb-3  text-center'>Timeless Design</h2>
+                <h2  className=' text-2xl pb-3  text-[#8A6201]  font-semibold  text-center'>Timeless Design</h2>
                 <p>Our creations stand the test of time, marrying contemporary flair with enduring appeal.</p>
                </div>
           </div>

@@ -22,6 +22,7 @@ const Construction = () => {
         <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
           <video
             autoPlay
+            loop
             muted
             className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
           >

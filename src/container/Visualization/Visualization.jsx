@@ -15,6 +15,7 @@ const Visualization = () => {
           <video
             autoPlay
             muted
+            loop
             className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
           >
             <source src={vid1} type="video/mp4 " className="  " />

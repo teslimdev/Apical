@@ -5,7 +5,7 @@ const HomeBanner = ({image,header,text}) => {
   return (
 
          <div className=" relative min-h-screen">
-         <video  autoPlay muted className=" shadow-2xl w-full h-screen  object-cover">
+         <video  autoPlay muted loop playsInline className=" shadow-2xl w-full h-screen  object-cover">
             <source src={image} type="video/mp4 "  className='  '/>
           </video>
           <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
@@ -14,7 +14,9 @@ const HomeBanner = ({image,header,text}) => {
                       <p   className=' text-white text-[1.2rem] 3xl:text-[3rem] max-w-[450px] 3xl:max-w-[900px] lg:max-w-[550px]  pt-16  lg:pt-28 '>{text}</p>
                   </div>
           </div>
+        
      </div>
+
 
   )
 }

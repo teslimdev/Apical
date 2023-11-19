@@ -121,6 +121,7 @@ const Home = () => {
     <section>
       <Header/>
     </section>
+
       <section  id=" home" className=" one">
         <div className=" relative  ">
           <div>
@@ -214,12 +215,12 @@ const Home = () => {
               We specialize in these fields.
             </h2>
             <div   className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
-              <h3 className="   sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
+              <h3  data-aos="" className="   sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
                 The homepage of an architecture website serves as the first
                 impression for visitors and should provide a compelling overview
                 of the architecture firm and its offerings.
               </h3>
-              <div    className="   place-self-end ">
+              <div    data-aos=""  className="   place-self-end ">
                 <Link
                   to="/Services"
                   className=" underline hover:no-underline 3xl:text-[2rem] flex"

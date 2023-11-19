@@ -111,7 +111,7 @@ const IInteriorPost1 = () => {
             </h2>
           </div>
           <div className="  grid md:grid-cols-2 lg:grid-cols-3 max-w-[1200px] md:m-auto  gap-6  px-6 sl:px-0 pt-8">
-            <div className="  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20 ">
+            <div className="  lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6 pt-6 pb-20 ">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  pb-3 text-center ">
                 Innovative Thinking{" "}
               </h2>
@@ -120,7 +120,7 @@ const IInteriorPost1 = () => {
                 in design.
               </p>
             </div>
-            <div className="  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20">
+            <div className="  lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6 pt-6 pb-20">
               <h2 className=" text-2xl pb-3 text-[#8A6201]  font-semibold  text-center">
                 Collaborative Approach
               </h2>
@@ -130,7 +130,7 @@ const IInteriorPost1 = () => {
                 bring your dreams to life.
               </p>
             </div>
-            <div className="  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20">
+            <div className="  lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6 pt-6 pb-20">
               <h2 className=" text-2xl  text-[#8A6201]  font-semibold  text-center pb-3">
                 Expertise Across Sectors{" "}
               </h2>
@@ -140,7 +140,7 @@ const IInteriorPost1 = () => {
                 showcases our versatility.
               </p>
             </div>
-            <div className="  lg:max-w-[400px]   bg-white shadow-lg    px-6 pt-6 pb-20">
+            <div className="  lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg    px-6 pt-6 pb-20">
               <h2 className=" text-2xl pb-3 text-[#8A6201]  font-semibold  text-center">
                 Sustainability Focus
               </h2>
@@ -149,7 +149,7 @@ const IInteriorPost1 = () => {
                 practices in every project.
               </p>
             </div>
-            <div className="  lg:max-w-[400px]   bg-white shadow-lg  px-6 pt-6 pb-20">
+            <div className="  lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6 pt-6 pb-20">
               <h2 className=" text-2xl pb-3  text-[#8A6201]  font-semibold  text-center">
                 Timeless Design
               </h2>

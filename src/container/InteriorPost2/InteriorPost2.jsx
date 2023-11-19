@@ -55,7 +55,7 @@ const InteriorPost2 = () => {
       <section className=" bg-[#f2f2f2]">
         <div className=" py-10 max-w-[1200px] m-auto px-6 sl:px-0">
           <div className=" grid md:grid-cols-2 lg:grid-cols-3  gap-6 ">
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Open-Concept Living <br /> Spaces
               </h2>
@@ -67,7 +67,7 @@ const InteriorPost2 = () => {
                 families and guests.
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Smart Home Integration
               </h2>
@@ -79,7 +79,7 @@ const InteriorPost2 = () => {
                 sustainability.
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Sustainable Design
               </h2>
@@ -91,7 +91,7 @@ const InteriorPost2 = () => {
                 designs
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Flexible Furniture and Multi- <br /> Functional Spaces
               </h2>
@@ -102,7 +102,7 @@ const InteriorPost2 = () => {
                 retractable furniture and innovative storage solutions
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300    bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Biophilic Design
               </h2>
@@ -114,7 +114,7 @@ const InteriorPost2 = () => {
                 well-being and tranquility
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Minimalistic Aesthetics
               </h2>
@@ -125,7 +125,7 @@ const InteriorPost2 = () => {
                 create an uncluttered and serene environment.
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px]  hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Architectural Lighting
               </h2>
@@ -137,7 +137,7 @@ const InteriorPost2 = () => {
                 functionality of a space
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Floating Staircases and <br /> Glass Railings
               </h2>
@@ -147,7 +147,7 @@ const InteriorPost2 = () => {
                 modernity, creating a visually striking focal point in your home
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Artistic Wall Treatments
               </h2>
@@ -158,7 +158,7 @@ const InteriorPost2 = () => {
                 living spaces.
               </p>
             </div>
-            <div className=" lg:max-w-[400px]   bg-white shadow-lg  px-6">
+            <div className=" lg:max-w-[400px] hover:transform hover:scale-[1.05] transition ease-out delay-200  duration-300   bg-white shadow-lg  px-6">
               <h2 className=" text-2xl text-[#8A6201]  font-semibold  text-center py-6">
                 Outdoor Living Spaces
               </h2>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import { Footer2, Header } from "../../components";
-import vid1 from '../../../src/pictures/vid1.mp4'
+import vid2 from '../../../src/pictures/vid2.mp4'
 const News = () => {
   return (
     <div className="   ">
@@ -15,9 +15,9 @@ const News = () => {
           <video
             autoPlay
             muted
-            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+            className="   shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
           >
-            <source src={vid1} type="video/mp4 " className="  " />
+            <source src={vid2} type="video/mp4 " className="    " />
           </video>
           <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
                <div className=" flex justify-center">

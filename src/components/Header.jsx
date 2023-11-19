@@ -53,7 +53,7 @@ export default function Header() {
             >
               <a href="/"  className=" flex  items-center gap-2">
                 <img
-                data-aos="fade-down"
+                c
                   src={`${backgroundColor === "transparent" ? pic7 : pic1}`}
                   alt=""
                   className=" w-8 lg:w-12 3xl:w-20"
@@ -193,7 +193,7 @@ export default function Header() {
                           </h1>
                         </a>
                       </div>
-                      <div className=" text-end" onClick={closeNav}>
+                      <div   className=" text-end" onClick={closeNav}>
                         <FaTimes data-aos="fade-left" className=" text-2xl " />
                       </div>
                     </div>

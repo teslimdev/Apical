@@ -15,8 +15,9 @@ import { BsPinterest } from "react-icons/bs";
 import vid1 from "../../../src/pictures/vid1.mp4";
 import pic2 from "../../../src/pictures/img2.jpeg";
 
-import { AboutSlide, Footer, Header } from "../../components";
+import { AboutSlide, Footer, Header,UseAos } from "../../components";
 const About = () => {
+     const Aos = UseAos();
   return (
     <div>
       <section>
@@ -38,7 +39,7 @@ const About = () => {
         <div className="lg:max-w-[1200px] sl:px-0 m-auto px-6 py-10 lg:py-20 ">
           <div className=" flex flex-col md:flex-row gap-10  justify-between ">
             <div className="max-w-full lg:max-w-[700px]">
-              <h2 className=" text-[2.5rem] md:text-[4rem] lg:text-[7rem] font-bold border-b">
+              <h2 data-aos="fade-down" className=" text-[2.5rem] md:text-[4rem] lg:text-[7rem] font-bold border-b">
                 About Us
               </h2>
               <h3 className=" pt-3 text-xl  lg:text-3xl">
@@ -199,7 +200,7 @@ const About = () => {
       <section className="bg-[#f2f2f2]">
         <div className=" max-w-[1200px] m-auto px-6 sl:px-0 py-6 lg:py-12">
           <div className=" max-w-[600px] lg:max-w-[900px]">
-            <h2 className=" text-[3rem] lg:text-[7rem] font-bold text-[#222222]  lg:leading-[7rem] border-b pb-2 lg:pb-6">
+            <h2  className=" text-[3rem] lg:text-[7rem] font-bold text-[#222222]  lg:leading-[7rem] border-b pb-2 lg:pb-6">
               Showcase
             </h2>
             <p className=" text-xl lg:text-3xl pt-2 lg:pt-6">

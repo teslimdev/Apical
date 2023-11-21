@@ -53,7 +53,7 @@ export default function Header() {
             >
               <a href="/"  className=" flex  items-center gap-2">
                 <img
-                c
+                 data-aos="fade-down"
                   src={`${backgroundColor === "transparent" ? pic7 : pic1}`}
                   alt=""
                   className=" w-8 lg:w-12 3xl:w-20"

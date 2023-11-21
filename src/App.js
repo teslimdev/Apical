@@ -24,7 +24,7 @@ import {
   Products,
   Faq,
   Request,
-  InteriorPost1,
+  Post1,
   InteriorPost2,
   ConstructionPost
 } from "./container";
@@ -56,7 +56,7 @@ function App() {
           <Route path="/Faq" element={<Faq />} />
           <Route path="*" element={<Error />} />
           <Route path="/Request" element={<Request />} />
-          <Route path="/InteriorPost1" element={<InteriorPost1 />} />
+          <Route path="/Post1" element={<Post1 />} />
           <Route path="/InteriorPost2" element={<InteriorPost2 />} />
           <Route path="/ConstructionPost" element={<ConstructionPost />} />
         </Routes>

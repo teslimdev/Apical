@@ -1,11 +1,11 @@
-import  { React, useCallback, useRef ,useState,useEffect } from "react";
+import { React, useCallback, useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import pic4 from "../../../src/pictures/img4.jpeg";
 import pic12 from "../../../src/pictures/ridwan.png";
 import pic5 from "../../../src/pictures/img5.jpeg";
-import vid1 from '../../../src/pictures/vid1.mp4'
+import vid1 from "../../../src/pictures/vid1.mp4";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -18,8 +18,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, EffectCoverflow,EffectCards } from "swiper/modules";
-
+import { EffectFade, EffectCoverflow, EffectCards } from "swiper/modules";
 
 import {
   HomeBanner,
@@ -34,15 +33,16 @@ import {
   Countdown3,
   Header,
   UseAos,
+  Pop,
 } from "../../components/";
 
 const Home = () => {
-    const [isSectionVisible, setIsSectionVisible] = useState(false);
+  const [isSectionVisible, setIsSectionVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      const section = document.getElementById('target-section');
+      const section = document.getElementById("target-section");
       const sectionOffset = section.offsetTop;
       const sectionHeight = section.offsetHeight;
 
@@ -51,10 +51,10 @@ const Home = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -114,15 +114,18 @@ const Home = () => {
   }, []);
 
   const Aos = UseAos();
-  
 
   return (
     <div id="hom" className=" ">
-    <section>
-      <Header/>
-    </section>
-
-      <section  id=" home" className=" one">
+      <section>
+        <Header />
+      </section>
+      <section>
+        <div data-aos="zoom-in"  data-aos-duration={4000} className="  fixed top-44 z-10 w-full">
+          <Pop />
+        </div>
+      </section>
+      <section id=" home" className=" one">
         <div className=" relative  ">
           <div>
             <Swiper
@@ -210,17 +213,20 @@ const Home = () => {
 
       <section className=" two bg-[#f2f2f2]">
         <div id="target-section">
-          <div  className="  lg:max-w-[1200px]  sl:max-w-[1200px] sl:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
-            <h2    className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
+          <div className="  lg:max-w-[1200px]  sl:max-w-[1200px] sl:m-auto pt-[8%] lg:pt-[7%]  px-6  sl:px-0   ">
+            <h2 className="  text-[2.5rem] leading-[3rem] md:text-[4rem] md:leading-[4rem] lg:text-[6rem] 3xl:leading-[10rem]  3xl:text-[9rem] lg:leading-[6rem] max-w-[900px] text-[#222222]  pb-6 lg:pb-10 font-bold">
               We specialize in these fields.
             </h2>
-            <div   className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
-              <h3  data-aos="" className="   sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]">
+            <div className=" flex  flex-col md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px] justify-between  items-end pb-8 lg:pb-12 lg:items-center">
+              <h3
+                data-aos=""
+                className="   sl:text-3xl  lg:text-2xl md:max-w-[450px] 3xl:border-t-4 border-t pt-2 lg:font-[350] 3xl:text-5xl  3xl:max-w-[1100px] lg:max-w-[700px] sl:max-w-[800px]"
+              >
                 The homepage of an architecture website serves as the first
                 impression for visitors and should provide a compelling overview
                 of the architecture firm and its offerings.
               </h3>
-              <div    data-aos=""  className="   place-self-end ">
+              <div data-aos="" className="   place-self-end ">
                 <Link
                   to="/Services"
                   className=" underline hover:no-underline 3xl:text-[2rem] flex"
@@ -232,74 +238,85 @@ const Home = () => {
             </div>
           </div>
 
-        <div >
-            <div   className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
-            <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
-              <Link to="/Architecture">
-                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
-                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Architectural Design</p>
+          <div>
+            <div className="pb-8 lg:pb-20 max-w-[1100px] mx-auto">
+              <ul className=" grid  md:grid-cols-2  lg:grid-cols-3 max-w-fit gap-x-32 gap-2 px-6  ">
+                <Link to="/Architecture">
+                  <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                    <AiOutlinePlus className=" text-[#8A6201]"></AiOutlinePlus>{" "}
+                    <p className="text-[#8A6201] hover:border-b border-[#8A6201]">
+                      Architectural Design
+                    </p>
+                  </li>
+                </Link>
+                <Link to="/Interior">
+                  <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                    <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                    <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">
+                      Interior Design
+                    </p>
+                  </li>
+                </Link>
+                <Link to="/Exterior">
+                  <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                    <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                    <p className="text-[#8A6201] hover:border-b border-[#8A6201]">
+                      Exterior Design
+                    </p>
+                  </li>
+                </Link>
+                <Link to="/Visualization">
+                  <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                    <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                    <p className="text-[#8A6201] hover:border-b border-[#8A6201]">
+                      Visualization
+                    </p>
+                  </li>
+                </Link>
+                <Link to="/Construction">
+                  <li className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
+                    <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
+                    <p className="text-[#8A6201] hover:border-b border-[#8A6201]">
+                      Building Construction
+                    </p>
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            <div className=" max-w-[400px]  md:max-w-[700px] lg:max-w-[950px] px-6 md:px-0 sl:max-w-[1200px] 3xl:max-w-[2000px] m-auto pb-8 lg:pb-16">
+              <ul className=" grid md:grid-cols-3  gap-10   ">
+                <li className="  text-center md:text-start">
+                  {" "}
+                  <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
+                    {isSectionVisible && <Countdown1 startCount={0} />}
+                  </h2>{" "}
+                  <p className=" 3xl:text-4xl text-xl pt-6">
+                    Clients Around the World
+                  </p>
                 </li>
-              </Link>
-              <Link to="/Interior">
-                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
-                  <p className="text-[#8A6201] hover:border-b border-[#8A6201] ">Interior Design</p>
+                <li className=" text-center  md:text-start">
+                  {" "}
+                  <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
+                    {isSectionVisible && <Countdown2 startCount={0} />}
+                  </h2>{" "}
+                  <p className=" 3xl:text-4xl text-xl pt-6">
+                    Projects Completed
+                  </p>
                 </li>
-              </Link>
-               <Link to="/Exterior">
-                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
-                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Exterior Design</p>
+                <li className=" text-center  md:text-start">
+                  <h2 className=" border-black border-b text-[5rem]  flex  justify-center md:justify-start  sl:text-[6rem]  3xl:text-[8rem]">
+                    {isSectionVisible && <Countdown3 startCount={0} />}K
+                  </h2>{" "}
+                  <p className=" 3xl:text-4xl text-xl pt-6">Square Feet</p>
                 </li>
-              </Link>
-              <Link to="/Visualization">
-                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
-                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Visualization</p>
-                </li>
-              </Link>
-              <Link to="/Construction">
-                <li  className=" flex items-center 3xl:text-[2rem] text-[1.1rem] lg:text-[1.3rem] sl:text-[1.5rem] gap-2">
-                  <AiOutlinePlus className="text-[#8A6201]"></AiOutlinePlus>{" "}
-                  <p className="text-[#8A6201] hover:border-b border-[#8A6201]">Building Construction</p>
-                </li>
-              </Link>
-            </ul>
+              </ul>
+            </div>
           </div>
-          <div  className=" max-w-[400px]  md:max-w-[700px] lg:max-w-[950px] px-6 md:px-0 sl:max-w-[1200px] 3xl:max-w-[2000px] m-auto pb-8 lg:pb-16">
-            <ul className=" grid md:grid-cols-3  gap-10   ">
-              <li   className="  text-center md:text-start">
-                {" "}
-                <h2   className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
-                  {isSectionVisible && <Countdown1 startCount={0} />}
-                </h2>{" "}
-                <p className=" 3xl:text-4xl text-xl pt-6">
-                  Clients Around the World
-                </p>
-              </li>
-              <li   className=" text-center  md:text-start">
-                {" "}
-                <h2 className=" border-black border-b text-[5rem]  sl:text-[6rem]  3xl:text-[8rem]">
-                   {isSectionVisible && <Countdown2 startCount={0} />}
-                </h2>{" "}
-                <p className=" 3xl:text-4xl text-xl pt-6">Projects Completed</p>
-              </li>
-              <li   className=" text-center  md:text-start">
-                <h2 className=" border-black border-b text-[5rem]  flex  justify-center md:justify-start  sl:text-[6rem]  3xl:text-[8rem]">
-                  {isSectionVisible && <Countdown3 startCount={0} />}K
-                </h2>{" "}
-                <p className=" 3xl:text-4xl text-xl pt-6">Square Feet</p>
-              </li>
-            </ul>
-          </div>
-        </div>
         </div>
       </section>
 
       <section className=" three">
         <div
-       
           style={{ backgroundImage: `url(${pic3})` }}
           className=" min-h-[40vh] md:min-h-[60vh] bg-center bg-no-repeat bg-cover shadow-2xl flex justify-center items-center [background-attachment:_fixed]"
         >
@@ -328,11 +345,11 @@ const Home = () => {
       <section className=" four bg-[#f2f2f2]">
         <div>
           <div className=" max-w-[700px] lg:max-w-[1200px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[7%]  px-6  sl:px-0  ">
-            <div  className=" flex flex-col-reverse md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
-              <h2  className=" text-[2rem] md:text-[3rem] lg:text-[4.5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem]">
+            <div className=" flex flex-col-reverse md:flex-row gap-3 lg:max-w-[1200px] 3xl:max-w-[1700px]   md:justify-between md:items-start">
+              <h2 className=" text-[2rem] md:text-[3rem] lg:text-[4.5rem] sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem]">
                 "Discover Our Story"
               </h2>
-              <div  className=" flex   place-self-end md:place-self-start">
+              <div className=" flex   place-self-end md:place-self-start">
                 <Link
                   to="/About"
                   className=" underline hover:no-underline 3xl:text-[2rem] flex"
@@ -348,9 +365,15 @@ const Home = () => {
               Designing the future, today - welcome to our architecture
             </h2>
             <div className=" flex justify-between flex-col lg:flex-row">
-              <div  className="  lg:max-w-[500px]">
+              <div className="  lg:max-w-[500px]">
                 <Swiper
-                  modules={[Pagination, A11y, EffectCoverflow, Autoplay,EffectCards]}
+                  modules={[
+                    Pagination,
+                    A11y,
+                    EffectCoverflow,
+                    Autoplay,
+                    EffectCards,
+                  ]}
                   effect="coverflow"
                   loop={true}
                   speed={1000}
@@ -383,7 +406,7 @@ const Home = () => {
                   </SwiperSlide>
                 </Swiper>
               </div>
-              <div  className=" pt-6 lg:pt-0">
+              <div className=" pt-6 lg:pt-0">
                 <div className=" lg:max-w-[400px] sl:max-w-[500px] ">
                   <Tabs tabs={tabs} />
                   <div>
@@ -409,7 +432,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section  className=" five bg-[#f2f2f2]">
+      <section className=" five bg-[#f2f2f2]">
         <div id="home" className=" py-10">
           <div className="  px-6">
             <Swiper
@@ -468,9 +491,9 @@ const Home = () => {
 
       <section className="six bg-[#f2f2f2] ">
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 sl:grid-cols-4  max-w-fit m-auto gap-8 px-6  py-10 ">
-          <div   className=" md:max-w-[320px]">
-            <BiWorld  className=" text-7xl text-[#222222] max-w-fit m-auto"></BiWorld>
-            <div >
+          <div className=" md:max-w-[320px]">
+            <BiWorld className=" text-7xl text-[#222222] max-w-fit m-auto"></BiWorld>
+            <div>
               <h3 className=" text-[1.3rem] py-3">
                 Consultation and initial meeting
               </h3>
@@ -483,7 +506,7 @@ const Home = () => {
           </div>
           <div className=" md:max-w-[320px]">
             <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
-            <div  >
+            <div>
               <h3 className=" text-[1.3rem] py-3">Concept design</h3>
               <p className=" text-[0.9rem]">
                 Based on the client's requirements, the architecture company
@@ -493,9 +516,9 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div  className=" md:max-w-[320px]">
+          <div className=" md:max-w-[320px]">
             <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
-            <div  >
+            <div>
               <h3 className=" text-[1.3rem] py-3">Design development</h3>
               <p className=" text-[0.9rem]">
                 Once the client approves the concept design, the architecture
@@ -505,9 +528,9 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div   className=" md:max-w-[320px]">
+          <div className=" md:max-w-[320px]">
             <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto "></BiWorld>
-            <div  >
+            <div>
               <h3 className=" text-[1.3rem] py-3">Permitting and approvals</h3>
               <p className=" text-[0.9rem]">
                 Before construction can begin, the architecture company must
@@ -800,26 +823,26 @@ const Home = () => {
         >
           <div className=" bg-black  absolute inset-0  h-[300px] md:h-[450px]      opacity-70">
             <div className=" px-6 pt-[10%] lg:pt-[7%] ">
-            <div className="  text-center  ">
-              <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
-                Have a project in mind?
-              </h2>
-              <p className=" text-white py-4 text-2xl font-semibold">
-                Do not hesitate to say Hello
-              </p>
-              <div className=" pt-4">
-                <Link to="/Contacts">
-                  <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
-                    Lets Talk
-                  </button>
-                </Link>
+              <div className="  text-center  ">
+                <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
+                  Have a project in mind?
+                </h2>
+                <p className=" text-white py-4 text-2xl font-semibold">
+                  Do not hesitate to say Hello
+                </p>
+                <div className=" pt-4">
+                  <Link to="/Contacts">
+                    <button className=" text-white border-2 py-2 lg:py-3 px-10 lg:px-16 rounded-full   text-2xl hover:bg-white hover:text-black">
+                      Lets Talk
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          </div>
         </div>
       </section>
-    
+       
       <section>
         <Footer />
       </section>

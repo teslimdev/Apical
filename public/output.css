@@ -1966,8 +1966,8 @@ ol{
           animation-name: spin;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   transition: 1s;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -1975,6 +1975,8 @@ ol{
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .card-container {

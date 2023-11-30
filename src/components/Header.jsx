@@ -178,12 +178,12 @@ export default function Header() {
                   onClick={isOpen}
                 />
               ) : (
-                <div data-aos="zoom-in-down" className=" bg-white   right-0 h-full bottom-0 w-full fixed">
+                <div  className=" bg-white   right-0 h-full bottom-0 w-full fixed">
                   <div className="  py-3  shadow-lg">
                     <div className=" flex items-center justify-between px-6">
                       <div className=" ">
                         <a href="/" className="flex items-center gap-2">
-                          <img src={pic1} data-aos="fade-down" alt="" className=" w-8" />
+                          <img src={pic1}  alt="" className=" w-8" />
                           <h1  className={`text-black text-[1rem] lg:text-3xl 3xl:text-5xl   ${
                     location.pathname === "/"
                       ? "text-[#8A6201] font-semibold"

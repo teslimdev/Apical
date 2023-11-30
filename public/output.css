@@ -1959,6 +1959,24 @@ ol{
   list-style: decimal;
 }
 
+.card-contain {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  transition: 1s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 .card-container {
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -1991,9 +2009,38 @@ ol{
           transform: rotateY(180deg);
 }
 
+.card-contain:hover .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 .clip{
   -webkit-clip-path: polygon(100% 0, 51% 0, 100% 54%);
           clip-path: polygon(100% 0, 51% 0, 100% 54%);
+}
+
+@-webkit-keyframes spin{
+  from{
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+
+  t0{
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin{
+  from{
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+
+  t0{
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
 .first-line\:text-\[2\.5rem\]::first-line {
@@ -3508,5 +3555,3 @@ ol{
     line-height: 9rem;
   }
 }
-
-

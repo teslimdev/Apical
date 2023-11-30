@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import pic1 from "../../src/pictures/img1.png";
 import pic7 from "../../src/pictures/img7.png";
-import UseAos from "./UseAos";
+
 export default function Header() {
   const [backgroundColor, setBackgroundColor] = useState("transparent");
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Header() {
     document.getElementById("navmain").classList.add("py-3");
   };
   const location = useLocation();
-   const Aos = UseAos();
+
   return (
     <div className="  z-[80] w-full ">
       <nav className="     ">
@@ -53,12 +53,12 @@ export default function Header() {
             >
               <a href="/"  className=" flex  items-center gap-2">
                 <img
-                 data-aos="fade-down"
+            
                   src={`${backgroundColor === "transparent" ? pic7 : pic1}`}
                   alt=""
                   className=" w-8 lg:w-12 3xl:w-20"
                 />
-                <h1 data-aos="fade-right" className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${
+                <h1  className={`text-[1rem] lg:text-3xl  3xl:text-5xl  ${
                     location.pathname === "/"
                       ? "  font-semibold  "
                       : " "
@@ -84,7 +84,7 @@ export default function Header() {
                   }`}
                 >
                   <li
-                   data-aos="fade-down"
+                
                     className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}
                   >
                     HOME
@@ -99,7 +99,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li  data-aos="fade-up" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li   className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     ABOUT
                   </li>
                 </Link>
@@ -112,7 +112,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li  data-aos="fade-left" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li   className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     SERVICES
                   </li>
                 </Link>
@@ -124,7 +124,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li  data-aos="fade-right" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li   className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     PROJECTS
                   </li>
                 </Link>
@@ -136,7 +136,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li  data-aos="fade-down" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li   className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     PRODUCTS
                   </li>
                 </Link>
@@ -148,7 +148,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li  data-aos="fade-up" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li   className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     NEWS
                   </li>
                 </Link>
@@ -160,7 +160,7 @@ export default function Header() {
                       : ""
                   }`}
                 >
-                  <li  data-aos="fade-left" className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
+                  <li   className={`3xl:text-4xl   py-1 px-2 rounded  ${backgroundColor === "transparent" ? " hover:bg-white hover:text-[#222222]" : "hover:bg-[#222222] hover:text-white "}`}>
                     CONTACTS
                   </li>
                 </Link>
@@ -169,7 +169,7 @@ export default function Header() {
             <div className=" lg:hidden">
               {!nav ? (
                 <FaBars
-                data-aos="fade-left"
+              
                   className={`text-black text-2xl ${
                     backgroundColor === "transparent"
                       ? "text-white"
@@ -184,7 +184,7 @@ export default function Header() {
                       <div className=" ">
                         <a href="/" className="flex items-center gap-2">
                           <img src={pic1} data-aos="fade-down" alt="" className=" w-8" />
-                          <h1 data-aos="fade-right" className={`text-black text-[1rem] lg:text-3xl 3xl:text-5xl   ${
+                          <h1  className={`text-black text-[1rem] lg:text-3xl 3xl:text-5xl   ${
                     location.pathname === "/"
                       ? "text-[#8A6201] font-semibold"
                       : ""
@@ -194,7 +194,7 @@ export default function Header() {
                         </a>
                       </div>
                       <div   className=" text-end" onClick={closeNav}>
-                        <FaTimes data-aos="fade-left" className=" text-2xl " />
+                        <FaTimes  className=" text-2xl " />
                       </div>
                     </div>
                   </div>

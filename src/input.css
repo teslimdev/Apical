@@ -57,10 +57,22 @@ ol{
 
 
 
+.card-contain {
+    perspective: 1000px;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    transition: 1s;
+    transform: rotate(360deg);
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 
+}
 
 .card-container {
     perspective: 1000px;
+    
+    
 }
 
 .card {
@@ -85,6 +97,9 @@ ol{
 .card-container:hover .card {
     transform: rotateY(180deg);
 }
+.card-contain:hover .card {
+    transform: rotateY(180deg);
+}
 
 
 
@@ -93,3 +108,7 @@ clip-path: polygon(100% 0, 51% 0, 100% 54%);
 }
 
 
+@keyframes spin{
+    from{transform: rotateZ(0deg);}
+    t0{transform: rotateZ(360deg);}
+}

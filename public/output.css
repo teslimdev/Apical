@@ -2654,6 +2654,10 @@ ol{
     height: 600px;
   }
 
+  .lg\:h-\[\] {
+    height: ;
+  }
+
   .lg\:min-h-\[2650px\] {
     min-height: 2650px;
   }

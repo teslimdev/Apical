@@ -1,8 +1,7 @@
 import React from "react";
 import { Footer2, Header } from "../../components";
-import pic9 from "../../../src/pictures/img9.jpeg";
-import pic3 from "../../../src/pictures/img3.jpeg";
 import vid1 from '../../../src/pictures/vid1.mp4'
+import vid2 from '../../../src/pictures/vid2.mp4'
 
 const Visualization = () => {
   return (
@@ -37,10 +36,15 @@ const Visualization = () => {
      
       <section>
         <div  className=" relative">
-          <div
-            style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-[42rem] md:min-h-screen sl:min-h-[500px]  bg-cover bg-center relative"
+          <div >
+          <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px]  lg:h-[500px]  bg-fixed  object-cover"
           >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             <div className="  absolute bg-black top-0 inset-0 opacity-50 h-full transition ease-out duration-300 delay-100"></div>
           </div>
          <div className=" flex justify-center">
@@ -76,9 +80,15 @@ const Visualization = () => {
       </section>
       <section>
         <div className=" relative">
-          <div
-          style={{backgroundImage:`url(${pic3})`}}
-           className=" min-h-[500px] bg-center bg-cover relative ">
+          <div>
+          <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
@@ -91,9 +101,15 @@ const Visualization = () => {
 
       <section>
         <div className=" relative ">
-          <div
-          style={{backgroundImage:`url(${pic9})`}}
-           className=" min-h-[500px] bg-center bg-cover relative  ">
+          <div>
+          <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
@@ -106,9 +122,15 @@ const Visualization = () => {
 
       <section>
         <div className=" relative">
-          <div
-          style={{backgroundImage:`url(${pic3})`}}
-           className=" min-h-[500px] bg-center bg-cover relative ">
+          <div>
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
@@ -121,9 +143,15 @@ const Visualization = () => {
 
       <section>
         <div className=" relative">
-          <div
-          style={{backgroundImage:`url(${pic9})`}}
-           className=" min-h-[500px] bg-center bg-cover relative ">
+          <div>
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
@@ -136,9 +164,15 @@ const Visualization = () => {
 
       <section>
         <div className=" relative">
-          <div
-          style={{backgroundImage:`url(${pic3})`}}
-           className=" min-h-[500px] bg-center bg-cover relative ">
+          <div>
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center ">
@@ -151,9 +185,15 @@ const Visualization = () => {
 
       <section>
         <div className=" relative">
-          <div
-          style={{backgroundImage:`url(${pic9})`}}
-           className=" min-h-[500px] bg-center bg-cover relative ">
+          <div>
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[500px]  object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             <div className=" absolute top-0 h-full bg-black inset-0 opacity-70"></div>
           </div>
           <div className=" flex justify-center  ">
@@ -165,12 +205,17 @@ const Visualization = () => {
       </section>
 
         <section className="">
-        <div className=" relative">
-          <div
-            style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-[320px] md:min-h-[400px]   bg-cover bg-center relative bg-fixed"
+        <div className=" relative ">
+          <div className=" ">
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px]   bg-fixed  object-cover"
           >
-            <div className=" bg-black  absolute inset-0  h-[320px] md:h-[400px]      opacity-50"></div>
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+            <div className=" bg-black  absolute inset-0  h-[300px] md:h-[400px]      opacity-50"></div>
           </div>
           <div className=" flex justify-center">
             <div className=" absolute top-10 md:top-20 lg:top-32">

@@ -15,9 +15,9 @@ import { BsPinterest } from "react-icons/bs";
 import vid1 from "../../../src/pictures/vid1.mp4";
 import pic2 from "../../../src/pictures/img2.jpeg";
 
-import { AboutSlide, Footer, Header,UseAos } from "../../components";
+import { AboutSlide, Footer, Header } from "../../components";
 const About = () => {
-     const Aos = UseAos();
+    
   return (
     <div>
       <section>
@@ -40,7 +40,7 @@ const About = () => {
         <div className="lg:max-w-[1200px] sl:px-0 m-auto px-6 py-10 lg:py-20 ">
           <div className=" flex flex-col md:flex-row gap-10  justify-between ">
             <div className="max-w-full lg:max-w-[700px]">
-              <h2 data-aos="fade-down" className=" text-[2.5rem] md:text-[4rem] lg:text-[7rem] font-bold border-b">
+              <h2  className=" text-[2.5rem] md:text-[4rem] lg:text-[7rem] font-bold border-b">
                 About Us
               </h2>
               <h3 className=" pt-3 text-xl  lg:text-3xl">

@@ -572,7 +572,7 @@ const Home = () => {
             modules={[Pagination, A11y, EffectFade, Autoplay]}
             effect="fade"
             loop={true}
-            speed={1500}
+            speed={1200}
             ref={slideRef}
             autoplay={{
               delay: 6900,

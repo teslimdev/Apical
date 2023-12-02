@@ -118,7 +118,7 @@ const Home = () => {
         <Header />
       </section>
       <section>
-        <div data-aos="zoom-in"  data-aos-duration={4000} className="  fixed top-44 z-10 w-full">
+        <div  className="  fixed top-44 z-10 w-full">
           <Pop />
         </div>
       </section>
@@ -376,7 +376,7 @@ const Home = () => {
                   speed={1000}
                   centeredSlides={true}
                   autoplay={{
-                    delay: 7000,
+                    delay: 5000,
                     stopOnLastSlide: false,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
@@ -451,7 +451,7 @@ const Home = () => {
               }}
               speed={1500}
               autoplay={{
-                delay: 7000,
+                delay: 6000,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
@@ -575,7 +575,7 @@ const Home = () => {
             speed={1500}
             ref={slideRef}
             autoplay={{
-              delay: 7000,
+              delay: 6900,
               stopOnLastSlide: false,
               disableOnInteraction: false,
               pauseOnMouseEnter: false,
@@ -679,7 +679,7 @@ const Home = () => {
               effect="cube"
               speed={1500}
               autoplay={{
-                delay: 7000,
+                delay: 6500,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,

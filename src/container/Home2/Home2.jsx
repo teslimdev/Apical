@@ -339,7 +339,7 @@ const Home2 = () => {
                   speed={1000}
                   centeredSlides={true}
                   autoplay={{
-                    delay: 7000,
+                    delay: 5000,
                     stopOnLastSlide: false,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
@@ -414,7 +414,7 @@ const Home2 = () => {
               }}
               speed={1500}
               autoplay={{
-                delay: 4000,
+                delay: 6000,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
@@ -538,7 +538,7 @@ const Home2 = () => {
             speed={1500}
             ref={slideRef}
             autoplay={{
-              delay: 7000,
+              delay: 6900,
               stopOnLastSlide: false,
               disableOnInteraction: false,
               pauseOnMouseEnter: false,
@@ -640,7 +640,7 @@ const Home2 = () => {
               effect="cube"
               speed={1500}
               autoplay={{
-                delay: 7000,
+                delay: 6500,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,

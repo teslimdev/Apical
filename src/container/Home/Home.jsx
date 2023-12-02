@@ -575,7 +575,7 @@ const Home = () => {
             speed={1200}
             ref={slideRef}
             autoplay={{
-              delay: 6900,
+              delay: 6500,
               stopOnLastSlide: false,
               disableOnInteraction: false,
               pauseOnMouseEnter: false,

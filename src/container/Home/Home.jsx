@@ -1,11 +1,9 @@
 import { React, useCallback, useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import pic2 from "../../../src/pictures/img2.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
-import pic4 from "../../../src/pictures/img4.jpeg";
 import pic12 from "../../../src/pictures/ridwan.png";
-import pic5 from "../../../src/pictures/img5.jpeg";
 import vid1 from "../../../src/pictures/vid1.mp4";
+import vid2 from "../../../src/pictures/vid2.mp4";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -32,7 +30,6 @@ import {
   Countdown2,
   Countdown3,
   Header,
-  UseAos,
   Pop,
 } from "../../components/";
 
@@ -113,7 +110,7 @@ const Home = () => {
     slideRef.current.swiper.slideNext();
   }, []);
 
-  const Aos = UseAos();
+ 
 
   return (
     <div id="hom" className=" ">
@@ -365,7 +362,7 @@ const Home = () => {
               Designing the future, today - welcome to our architecture
             </h2>
             <div className=" flex justify-between flex-col lg:flex-row">
-              <div className="  lg:max-w-[500px]">
+              <div className="  lg:max-w-[500px] ">
                 <Swiper
                   modules={[
                     Pagination,
@@ -379,7 +376,7 @@ const Home = () => {
                   speed={1000}
                   centeredSlides={true}
                   autoplay={{
-                    delay: 3000,
+                    delay: 7000,
                     stopOnLastSlide: false,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
@@ -392,17 +389,17 @@ const Home = () => {
                   slidesPerView={1}
                   scrollbar={{ draggable: true }}
                 >
-                  <SwiperSlide>
-                    <Slider image={pic2}></Slider>
+                  <SwiperSlide >
+                    <Slider vid={vid1}></Slider>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <Slider image={pic3}></Slider>
+                    <Slider vid={vid2}></Slider>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <Slider image={pic4}></Slider>
+                    <Slider vid={vid1}></Slider>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <Slider image={pic4}></Slider>
+                    <Slider vid={vid2}></Slider>
                   </SwiperSlide>
                 </Swiper>
               </div>
@@ -454,7 +451,7 @@ const Home = () => {
               }}
               speed={1500}
               autoplay={{
-                delay: 4000,
+                delay: 7000,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
@@ -470,19 +467,19 @@ const Home = () => {
               className=" md:max-w-full lg:max-w-full sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto  "
             >
               <SwiperSlide>
-                <Slide image={pic2}> </Slide>
+                <Slide vid={vid1}> </Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic3}></Slide>
+                <Slide vid={vid2}></Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic4}></Slide>
+                <Slide vid={vid1}></Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic5}></Slide>
+                <Slide vid={vid2}></Slide>
               </SwiperSlide>
               <SwiperSlide>
-                <Slide image={pic3}></Slide>
+                <Slide vid={vid1}></Slide>
               </SwiperSlide>
             </Swiper>
           </div>
@@ -597,24 +594,24 @@ const Home = () => {
           >
             <SwiperSlide>
               <HomeSlide
-                image={pic2}
+                image={vid1}
                 text={" Multi-Family Housing"}
               ></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic3} text={" The Light House"}></HomeSlide>
+              <HomeSlide image={vid2} text={" The Light House"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic4} text={"Architectural Home"}></HomeSlide>
+              <HomeSlide image={vid1} text={"Architectural Home"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic5} text={"Interior space"}></HomeSlide>
+              <HomeSlide image={vid1} text={"Interior space"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic3} text={"Design Art"}></HomeSlide>
+              <HomeSlide image={vid2} text={"Design Art"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic2} text={"Visualization"}></HomeSlide>
+              <HomeSlide image={vid1} text={"Visualization"}></HomeSlide>
             </SwiperSlide>
             <div
               id="two"
@@ -682,7 +679,7 @@ const Home = () => {
               effect="cube"
               speed={1500}
               autoplay={{
-                delay: 4000,
+                delay: 7000,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
@@ -716,19 +713,19 @@ const Home = () => {
               className=" w-full  2xl:max-w-[1200px]  m-auto  "
             >
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider vid={vid1}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider vid={vid2}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider vid={vid1}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider vid={vid2}></HomeSlider>
               </SwiperSlide>
               <SwiperSlide>
-                <HomeSlider image={pic2}></HomeSlider>
+                <HomeSlider vid={vid1}></HomeSlider>
               </SwiperSlide>
               <div
                 id="one"
@@ -817,17 +814,22 @@ const Home = () => {
       </section>
 
       <section className=" thirteen">
-        <div
-          style={{ backgroundImage: `url(${pic3})` }}
-          className=" min-h-[300px] md:min-h-[450px] bg-cover bg-center relative"
-        >
-          <div className=" bg-black  absolute inset-0  h-[300px] md:h-[450px]      opacity-70">
-            <div className=" px-6 pt-[10%] lg:pt-[7%] ">
+        <div className="  relative" >
+         <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl w-full h-[350px] md:h-[400px]  lg:h-[450px]   object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
+          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[450px]      opacity-70">
+            <div className=" px-6 pt-[14%] lg:pt-[7%] ">
               <div className="  text-center  ">
-                <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
+                <h2 className=" text-white text-3xl md:text-5xl lg:text-7xl">
                   Have a project in mind?
                 </h2>
-                <p className=" text-white py-4 text-2xl font-semibold">
+                <p className=" text-white py-4 text-2xl pt-8 font-semibold">
                   Do not hesitate to say Hello
                 </p>
                 <div className=" pt-4">

@@ -1,5 +1,4 @@
 import React from "react";
-import pic9 from "../../../src/pictures/img9.jpeg";
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";

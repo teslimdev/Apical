@@ -1,7 +1,6 @@
 import React from 'react'
-import UseAos from './UseAos'
 const HomeBanner = ({image,header,text}) => {
-     const Aos = UseAos();
+   
   return (
 
          <div className=" relative min-h-screen">

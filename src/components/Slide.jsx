@@ -1,16 +1,18 @@
 import React  from 'react'
 
-const Slide = ({image}) => {
+const Slide = ({vid}) => {
 
  
   return (
     <div className=' '>
-      <img
-      
-        src={image}
-        alt=""
-        className=" w-full     object-cover  h-[300px]  lg:h-[380px]"
-      />
+      <video
+              autoPlay
+              muted
+              loop
+              className=" shadow-2xl w-full h-[320px] md:h-[400px]   object-cover"
+            >
+              <source src={vid} type="video/mp4 " className="  " />
+            </video>
       
   
     </div>

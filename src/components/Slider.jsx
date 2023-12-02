@@ -1,13 +1,17 @@
 import React from 'react'
 
-const Slider = ({image}) => {
+const Slider = ({vid}) => {
   return (
     <div className="  ">
-      <img
-        src={image}
-        alt=""
-        className=" w-full lg:w-[500px] h-[350px]  md:h-[430px]  lg:h-[450px] "
-      />
+      <video
+              autoPlay
+              muted
+              loop
+              className=" shadow-2xl  w-full h-[320px] md:h-[400px]  lg:h-[450px]  object-cover "
+            >
+              <source src={vid} type="video/mp4 " className=" " />
+            </video>
+      
     </div>
   );
 }

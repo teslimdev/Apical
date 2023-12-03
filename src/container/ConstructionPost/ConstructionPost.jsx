@@ -1,15 +1,14 @@
 import React from "react";
 import pic9 from "../../../src/pictures/img9.jpeg";
-import ridwan from "../../../src/pictures/ridwan2.png";
 import { Header, Footer2,Reviews } from "../../components";
 import vid1 from "../../../src/pictures/vid1.mp4";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
+import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, EffectCoverflow,EffectCards } from "swiper/modules";
+import { EffectFade, EffectCoverflow} from "swiper/modules";
 import ridwam from '../../../src/pictures/ridwan2.png'
 import { Link } from "react-router-dom";
 

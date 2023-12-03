@@ -12,6 +12,7 @@ import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
 import { BsPinterest } from "react-icons/bs";
 import vid1 from "../../../src/pictures/vid1.mp4";
+import vid2 from "../../../src/pictures/vid2.mp4";
 import pic2 from "../../../src/pictures/img2.jpeg";
 
 import { AboutSlide, Footer, Header } from "../../components";
@@ -209,39 +210,94 @@ const About = () => {
           </div>
           <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
             <div>
-              <img src={pic2} alt="" />
+               <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+              <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px] object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+              <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+               <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+              <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+               <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+              <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+               <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             </div>
             <div>
-              {" "}
-              <img src={pic2} alt="" />
+               <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-[350px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             </div>
           </div>
         </div>
@@ -310,11 +366,12 @@ const About = () => {
         </div>
       </section>
       <section className=" six">
-       <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[450px]">
+       <div className=" relative min-h-[300px] md:min-h-[400px] ">
           <video
             autoPlay
             muted
-            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[450px]  object-cover"
+            loop
+            className=" shadow-2xl w-full h-[300px] md:h-[400px]   object-cover"
           >
             <source src={vid1} type="video/mp4 " className="  " />
           </video>

@@ -108,8 +108,46 @@ ol{
 clip-path: polygon(100% 0, 51% 0, 100% 54%);
 }
 
+#pop-up {
+     top: -400px;
+    transform-origin: 10px 10px;
+    animation: drop 0.5s ease forwards, swing 2s 3s ease forwards;
+}
+
+
+
+@keyframes drop {
+    0% {}
+
+    70% {
+        transform: translateY(700px);
+    }
+
+    100% {
+        transform: translateY(650px);
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: translateY(650px) rotateZ(0deg);
+    }
+
+    40% {
+        transform: translateY(650px) rotateZ(90deg);
+    }
+
+    70% {
+        transform: translateY(650px) rotateZ(70deg);
+    }
+
+    100% {
+        transform: translateY(650px) rotateZ(75deg);
+    }
+}
 
 @keyframes spin{
     from{transform: rotateZ(0deg);}
     t0{transform: rotateZ(360deg);}
 }
+

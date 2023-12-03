@@ -2021,6 +2021,88 @@ ol{
           clip-path: polygon(100% 0, 51% 0, 100% 54%);
 }
 
+#pop-up {
+  top: -400px;
+  -webkit-transform-origin: 10px 10px;
+          transform-origin: 10px 10px;
+  -webkit-animation: drop 0.5s ease forwards, swing 2s 3s ease forwards;
+          animation: drop 0.5s ease forwards, swing 2s 3s ease forwards;
+}
+
+@-webkit-keyframes drop {
+  0% {
+  }
+
+  70% {
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+  }
+
+  100% {
+    -webkit-transform: translateY(650px);
+            transform: translateY(650px);
+  }
+}
+
+@keyframes drop {
+  0% {
+  }
+
+  70% {
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+  }
+
+  100% {
+    -webkit-transform: translateY(650px);
+            transform: translateY(650px);
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: translateY(650px) rotateZ(0deg);
+            transform: translateY(650px) rotateZ(0deg);
+  }
+
+  40% {
+    -webkit-transform: translateY(650px) rotateZ(90deg);
+            transform: translateY(650px) rotateZ(90deg);
+  }
+
+  70% {
+    -webkit-transform: translateY(650px) rotateZ(70deg);
+            transform: translateY(650px) rotateZ(70deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(650px) rotateZ(75deg);
+            transform: translateY(650px) rotateZ(75deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: translateY(650px) rotateZ(0deg);
+            transform: translateY(650px) rotateZ(0deg);
+  }
+
+  40% {
+    -webkit-transform: translateY(650px) rotateZ(90deg);
+            transform: translateY(650px) rotateZ(90deg);
+  }
+
+  70% {
+    -webkit-transform: translateY(650px) rotateZ(70deg);
+            transform: translateY(650px) rotateZ(70deg);
+  }
+
+  100% {
+    -webkit-transform: translateY(650px) rotateZ(75deg);
+            transform: translateY(650px) rotateZ(75deg);
+  }
+}
+
 @-webkit-keyframes spin{
   from{
     -webkit-transform: rotateZ(0deg);
@@ -2431,9 +2513,9 @@ ol{
     padding-bottom: 2.5rem;
   }
 
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .md\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .md\:py-6 {
@@ -3545,3 +3627,4 @@ ol{
     line-height: 9rem;
   }
 }
+

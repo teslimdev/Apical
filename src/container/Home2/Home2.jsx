@@ -780,11 +780,11 @@ const Home2 = () => {
             autoPlay
             muted
             loop
-            className=" shadow-2xl w-full h-[350px] md:h-[400px]  lg:h-[450px]   object-cover"
+            className=" shadow-2xl w-full h-[350px] md:h-[400px]     object-cover"
           >
             <source src={vid2} type="video/mp4 " className="  " />
           </video>
-          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]  lg:h-[450px]      opacity-70">
+          <div className=" bg-black  absolute inset-0  h-[350px] md:h-[400px]       opacity-70">
             <div className=" px-6 pt-[14%] lg:pt-[7%] ">
               <div className="  text-center  ">
                 <h2 className=" text-white text-3xl md:text-5xl lg:text-7xl">

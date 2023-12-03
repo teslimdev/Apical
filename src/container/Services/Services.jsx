@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import vid1 from '../../../src/pictures/vid1.mp4'
-import pic3 from "../../../src/pictures/img3.jpeg";
+import vid2 from '../../../src/pictures/vid2.mp4'
 import { Link } from "react-router-dom";
 import { BiMinus, BiPlus } from "react-icons/bi";
 import pic12 from "../../../src/pictures/ridwan.png";
@@ -159,11 +159,15 @@ const Services = () => {
 
           <div className="   grid lg:grid-cols-2  gap-10 pt-16">
             <div>
-              <img
-                src={pic3}
-                alt=""
-                className=" w-full lg:w-[500px] h-[300px] md:h-[400px] lg:h-[600px]"
-              />
+              <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl  w-full lg:w-[500px] h-[300px] md:h-[400px] lg:h-[600px]  object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+             
             </div>
             <div className="  lg:max-w-[500px]">
               <ul>
@@ -217,11 +221,14 @@ const Services = () => {
               </ul>
             </div>
             <div className=" order-1 lg:order-2">
-              <img
-                src={pic3}
-                alt=""
-                className=" w-full lg:w-[500px] h-[300px] md:h-[400px] lg:h-[600px]"
-              />
+              <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl  w-full lg:w-[500px] h-[300px] md:h-[400px] lg:h-[600px]  object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             </div>
           </div>
         </div>

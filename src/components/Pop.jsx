@@ -53,7 +53,7 @@ const Pop = () => {
                   />
                   <div className="w-full">
                     <button className="border w-full hover:bg-[#222222] hover:text-white text-xl border-[#222222] px-7 py-2 rounded-md">
-                      Submit
+                      Subscribe
                     </button>
                   </div>
                 </form>

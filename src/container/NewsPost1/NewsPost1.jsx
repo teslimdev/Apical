@@ -218,6 +218,7 @@ const NewsPost1 = () => {
                   id=""
                   cols="30"
                   rows="7"
+                  placeholder='Leave Your Message Here'
                   className=" w-full pl-3 pt-2"
                 ></textarea>
               </div>
@@ -230,6 +231,7 @@ const NewsPost1 = () => {
                     type="text"
                     required
                     name="username"
+                    placeholder='Adison'
                     value={formData.username}
                     onChange={handleInputChange}
                     className=" w-full py-1 pl-2"
@@ -241,6 +243,7 @@ const NewsPost1 = () => {
                   required
                     type="emaill"
                     name="email"
+                    placeholder='adison@emaiil.com'
                     value={formData.email}
                     onChange={handleInputChange}
                     className=" w-full py-1 pl-2"
@@ -255,7 +258,7 @@ const NewsPost1 = () => {
                 </label>
               </div>
               <div className=" pt-6">
-                <button className=" border-2 px-6 py-1 rounded-full border-black">
+                <button className=" border-2 px-6 py-1 rounded-full hover:bg-[#222222] hover:text-white border-black">
                   Post Comment
                 </button>
               </div>

@@ -108,7 +108,7 @@ ol{
 clip-path: polygon(100% 0, 51% 0, 100% 54%);
 }
 
-#pop-up {
+/* #pop-up {
      top: -400px;
     transform-origin: 10px 10px;
     animation: drop 0.5s ease forwards, swing 2s 3s ease forwards;
@@ -144,7 +144,39 @@ clip-path: polygon(100% 0, 51% 0, 100% 54%);
     100% {
         transform: translateY(650px) rotateZ(75deg);
     }
+} */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Set the minimum height to 100% of the viewport height */
+   
+    /* Add overflow to allow scrolling if content is larger than the viewport */
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-video {
+    width: 100%;
+    height: 100vh;
+    /* Set the height to 100% */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the entire modal */
+}
+
 
 @keyframes spin{
     from{transform: rotateZ(0deg);}

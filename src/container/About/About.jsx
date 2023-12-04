@@ -1,10 +1,12 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { Pagination, A11y, Autoplay } from "swiper/modules";
+import { Pagination, A11y, Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow } from "swiper/modules";
 import pic12 from "../../../src/pictures/ridwan.png";
@@ -14,10 +16,37 @@ import { BsPinterest } from "react-icons/bs";
 import vid1 from "../../../src/pictures/vid1.mp4";
 import vid2 from "../../../src/pictures/vid2.mp4";
 import pic2 from "../../../src/pictures/img2.jpeg";
-
 import { AboutSlide, Footer, Header } from "../../components";
 const About = () => {
-    
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+
+  const openModal = (video) => {
+    setSelectedVideo(video);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedVideo(null);
+  setModalIsOpen(false);
+  };
+
+  const videoList = [
+    { id: 1, src: vid1 },
+    { id: 2, src: vid2 },
+    { id: 3, src: vid1 },
+    { id: 4, src: vid2 },
+    { id: 5, src: vid1 },
+    { id: 6, src: vid2 },
+    { id: 7, src: vid1 },
+    { id: 8, src: vid2 },
+    { id: 9, src: vid1 },
+  ];
+
+  useEffect(() => {
+    Modal.setAppElement("body");
+  }, []);
+
   return (
     <div>
       <section>
@@ -40,7 +69,7 @@ const About = () => {
         <div className="lg:max-w-[1200px] sl:px-0 m-auto px-6 py-10 lg:py-20 ">
           <div className=" flex flex-col md:flex-row gap-10  justify-between ">
             <div className="max-w-full lg:max-w-[700px]">
-              <h2  className=" text-[2.5rem] md:text-[4rem] lg:text-[7rem] font-bold border-b">
+              <h2 className=" text-[2.5rem] md:text-[4rem] lg:text-[7rem] font-bold border-b">
                 About Us
               </h2>
               <h3 className=" pt-3 text-xl  lg:text-3xl">
@@ -48,7 +77,7 @@ const About = () => {
                 Designs"
               </h3>
             </div>
-            <div className=" md:max-w-[350px]">
+            <div className=" md:max-w-[350px] z-[10]">
               <Swiper
                 modules={[Pagination, A11y, EffectCoverflow, Autoplay]}
                 effect="coverflow"
@@ -198,7 +227,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#f2f2f2]">
+      {/* <section className="bg-[#f2f2f2]">
         <div className=" max-w-[1200px] m-auto px-6 sl:px-0 py-6 lg:py-12">
           <div className=" max-w-[600px] lg:max-w-[900px]">
             <h2  className=" text-[3rem] lg:text-[7rem] font-bold text-[#222222]  lg:leading-[7rem] border-b pb-2 lg:pb-6">
@@ -301,6 +330,64 @@ const About = () => {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="bg-[#f2f2f2]">
+        <div className="max-w-[1200px] m-auto px-6 sl:px-0 py-6 lg:py-12">
+       <div className=" max-w-[600px] lg:max-w-[900px]">
+            <h2  className=" text-[3rem] lg:text-[7rem] font-bold text-[#222222]  lg:leading-[7rem] border-b pb-2 lg:pb-6">
+              Showcase
+            </h2>
+            <p className=" text-xl lg:text-3xl pt-2 lg:pt-6">
+              Bringing visions to reality
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
+            {videoList.map((video) => (
+              <div key={video.id} onClick={() => openModal(video)}>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  className="shadow-2xl w-full h-[350px] object-cover cursor-pointer"
+                >
+                  <source src={video.src} type="video/mp4" />
+                </video>
+              </div>
+            ))}
+          </div>
+          {/* Video Modal */}
+          <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            className="modal  "
+            overlayClassName="overlay"
+            contentLabel="Video Modal"
+          >
+            <Swiper
+              spaceBetween={10}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 3000 }}
+            >
+              {videoList.map((video) => (
+                <SwiperSlide key={video.id}>
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="swiper-video w-full h-[100vh] object-cover"
+                  >
+                    <source src={video.src} type="video/mp4" />
+                  </video>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <button onClick={closeModal} className="close-btn  absolute top-44  z-10 border border-red-400 right-0">
+              Close
+            </button>
+          </Modal>
+        </div>
       </section>
       <section className="  bg-[#f2f2f2]">
         <div className=" ">
@@ -366,7 +453,7 @@ const About = () => {
         </div>
       </section>
       <section className=" six">
-       <div className=" relative min-h-[300px] md:min-h-[400px] ">
+        <div className=" relative min-h-[300px] md:min-h-[400px] ">
           <video
             autoPlay
             muted
@@ -376,7 +463,7 @@ const About = () => {
             <source src={vid1} type="video/mp4 " className="  " />
           </video>
           <div className="   absolute bg-black w-full h-full top-0 inset-0 opacity-50">
-             <div className=" px-6 pt-[10%] lg:pt-[7%] ">
+            <div className=" px-6 pt-[10%] lg:pt-[7%] ">
               <div className="  text-center  ">
                 <h2 className=" text-white text-4xl md:text-5xl lg:text-7xl">
                   Have a project in mind?
@@ -395,7 +482,6 @@ const About = () => {
             </div>
           </div>
         </div>
-       
       </section>
       <section>
         <Footer />

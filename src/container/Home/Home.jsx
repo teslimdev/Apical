@@ -30,7 +30,6 @@ import {
   Countdown2,
   Countdown3,
   Header,
-  Pop,
 } from "../../components/";
 
 const Home = () => {
@@ -118,10 +117,6 @@ const Home = () => {
         <Header />
       </section>
       <section>
-      
-         <div  className="  fixed top-44 z-10 w-full">
-          <Pop />
-        </div>
       </section>
       <section id=" home" className=" one">
         <div className=" relative  ">

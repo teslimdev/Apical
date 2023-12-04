@@ -300,11 +300,11 @@ const Services = () => {
       </section>
 
      <section className=" six">
-       <div className=" relative min-h-[300px] md:min-h-[400px] lg:min-h-[450px]">
+       <div className=" relative min-h-[300px] md:min-h-[400px] ">
           <video
             autoPlay
             muted
-            className=" shadow-2xl w-full h-[300px] md:h-[400px] lg:h-[450px]  object-cover"
+            className=" shadow-2xl w-full h-[300px] md:h-[400px]  object-cover"
           >
             <source src={vid1} type="video/mp4 " className="  " />
           </video>

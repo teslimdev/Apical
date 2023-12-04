@@ -5,6 +5,7 @@ import {
   Header2,
   ProjectPost2,
   Error,
+  Pop,
 } from "./components";
 import { Routes, Route } from "react-router-dom";
 import {
@@ -26,12 +27,16 @@ import {
   Request,
   Post1,
   InteriorPost2,
-  ConstructionPost
+  ConstructionPost,
+
 } from "./container";
 
 function App() {
   return (
     <div className="App">
+    <div  className="  fixed top-44 z-10 w-full">
+       <Pop/>
+    </div>
       <div>
         <Routes>
           <Route path="/Footer2" element={<Footer2 />} />

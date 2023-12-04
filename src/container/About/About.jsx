@@ -20,14 +20,17 @@ import { AboutSlide, Footer, Header } from "../../components";
 const About = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [selectedVideoIndex, setSelectedVideoIndex] = useState(0);
 
-  const openModal = (video) => {
+  const openModal = (video,index) => {
     setSelectedVideo(video);
     setModalIsOpen(true);
+    setSelectedVideoIndex(index);
   };
 
   const closeModal = () => {
     setSelectedVideo(null);
+     setSelectedVideoIndex(0);
   setModalIsOpen(false);
   };
 
@@ -66,7 +69,7 @@ const About = () => {
         </div>
       </section>
       <section className="bg-[#f2f2f2]">
-        <div className="lg:max-w-[1200px] sl:px-0 m-auto px-6 py-10 lg:py-20 ">
+        <div className="lg:max-w-[1200px]  sl:px-0 m-auto px-6 py-10 lg:py-20 ">
           <div className=" flex flex-col md:flex-row gap-10  justify-between ">
             <div className="max-w-full lg:max-w-[700px]">
               <h2 className=" text-[2.5rem] md:text-[4rem] lg:text-[7rem] font-bold border-b">
@@ -77,7 +80,7 @@ const About = () => {
                 Designs"
               </h3>
             </div>
-            <div className=" md:max-w-[350px] z-[10]">
+            <div className=" md:max-w-[350px]  ">
               <Swiper
                 modules={[Pagination, A11y, EffectCoverflow, Autoplay]}
                 effect="coverflow"
@@ -227,110 +230,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* <section className="bg-[#f2f2f2]">
-        <div className=" max-w-[1200px] m-auto px-6 sl:px-0 py-6 lg:py-12">
-          <div className=" max-w-[600px] lg:max-w-[900px]">
-            <h2  className=" text-[3rem] lg:text-[7rem] font-bold text-[#222222]  lg:leading-[7rem] border-b pb-2 lg:pb-6">
-              Showcase
-            </h2>
-            <p className=" text-xl lg:text-3xl pt-2 lg:pt-6">
-              Bringing visions to reality
-            </p>
-          </div>
-          <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
-            <div>
-               <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid1} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-              <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px] object-cover"
-          >
-            <source src={vid2} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-              <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid1} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-               <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid2} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-              <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid1} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-               <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid2} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-              <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid1} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-               <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid2} type="video/mp4 " className="  " />
-          </video>
-            </div>
-            <div>
-               <video
-            autoPlay
-            loop
-            muted
-            className=" shadow-2xl w-full  h-[350px]  object-cover"
-          >
-            <source src={vid1} type="video/mp4 " className="  " />
-          </video>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <section className="bg-[#f2f2f2]">
         <div className="max-w-[1200px] m-auto px-6 sl:px-0 py-6 lg:py-12">
        <div className=" max-w-[600px] lg:max-w-[900px]">
@@ -342,8 +241,8 @@ const About = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
-            {videoList.map((video) => (
-              <div key={video.id} onClick={() => openModal(video)}>
+            {videoList.map((video ,index) => (
+              <div key={video.id} onClick={() => openModal(video, index)}>
                 <video
                   autoPlay
                   loop
@@ -360,15 +259,19 @@ const About = () => {
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             className="modal  "
+            id='home'
             overlayClassName="overlay"
             contentLabel="Video Modal"
           >
             <Swiper
+             modules={[Pagination, A11y, EffectCoverflow, Navigation]}
               spaceBetween={10}
               slidesPerView={1}
-              navigation
+              navigation={{
+                clickable: true,
+              }}
               pagination={{ clickable: true }}
-              autoplay={{ delay: 3000 }}
+             initialSlide={selectedVideoIndex}
             >
               {videoList.map((video) => (
                 <SwiperSlide key={video.id}>
@@ -383,8 +286,8 @@ const About = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <button onClick={closeModal} className="close-btn  absolute top-44  z-10 border border-red-400 right-0">
-              Close
+            <button onClick={closeModal} className="close-btn  absolute top-10 text-2xl md:text-4xl   z-10  border py-2 px-4 bg-white  right-5 md:right-10">
+              X
             </button>
           </Modal>
         </div>

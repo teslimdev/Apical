@@ -9,7 +9,12 @@ import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
-import { BiWorld } from "react-icons/bi";
+import {
+  FaGlobeAfrica,
+  FaArtstation,
+  FaDigitalOcean,
+  FaCreativeCommonsSa,
+} from "react-icons/fa";
 import { GrLinkNext, GrLinkPrevious, GrNext, GrPrevious } from "react-icons/gr";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -38,7 +43,7 @@ const Home = () => {
   const [selectedVideoIndex, setSelectedVideoIndex] = useState(0);
 
   useEffect(() => {
-    Modal.setAppElement('body');
+    Modal.setAppElement("body");
   }, []);
 
   const openModal = (index) => {
@@ -56,7 +61,6 @@ const Home = () => {
     { id: 3, src: vid1 },
     { id: 4, src: vid2 },
     { id: 5, src: vid1 },
-   
   ];
   const [isSectionVisible, setIsSectionVisible] = useState(false);
 
@@ -134,15 +138,12 @@ const Home = () => {
     slideRef.current.swiper.slideNext();
   }, []);
 
- 
-
   return (
     <div id="hom" className=" ">
       <section>
         <Header />
       </section>
-      <section>
-      </section>
+      <section></section>
       <section id=" home" className=" one">
         <div className=" relative  ">
           <div>
@@ -247,7 +248,7 @@ const Home = () => {
               <div data-aos="" className="   place-self-end ">
                 <Link
                   to="/Services"
-                  className=" underline hover:no-underline 3xl:text-[2rem] flex"
+                  className=" border-b border-black hover:border-b-0 pb-1  3xl:text-[2rem] flex"
                 >
                   All Services
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -370,7 +371,7 @@ const Home = () => {
               <div className=" flex   place-self-end md:place-self-start">
                 <Link
                   to="/About"
-                  className=" underline hover:no-underline 3xl:text-[2rem] flex"
+                  className=" border-b border-black hover:border-b-0 pb-1 3xl:text-[2rem] flex"
                 >
                   About Us
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -410,7 +411,7 @@ const Home = () => {
                   slidesPerView={1}
                   scrollbar={{ draggable: true }}
                 >
-                  <SwiperSlide >
+                  <SwiperSlide>
                     <Slider vid={vid1}></Slider>
                   </SwiperSlide>
                   <SwiperSlide>
@@ -450,92 +451,106 @@ const Home = () => {
         </div>
       </section>
 
-     <section className="five bg-[#f2f2f2]">
-      <div id="home" className="py-10">
-        <div className="px-6">
-          <Swiper
-            modules={[Pagination, A11y, EffectCoverflow, Navigation]}
-            effect="cube"
-            loop={true}
-            navigation={{
-              clickable: true,
-            }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              520: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-            }}
-            speed={1500}
-            autoplay={{
-              delay: 6000,
-              stopOnLastSlide: false,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: false,
-              waitForTransition: true,
-            }}
-            a11y={{
-              prevSlide: 'true',
-              nextSlide: 'true',
-            }}
-            slidesPerView={1}
-            spaceBetween={20}
-            scrollbar={{ draggable: true }}
-            className="md:max-w-full lg:max-w-full h-[350px] sl:h-[370px] sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto"
-          >
-            {videoList.map((video, index) => (
-              <SwiperSlide key={video.id} onClick={() => openModal(index)}>
-                <Slide vid={video.src}></Slide>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* Video Modal */}
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            className="modal  "
-            id='home'
-            overlayClassName="overlay"
-            contentLabel="Video Modal"
-          >
+      <section className="five bg-[#f2f2f2]">
+        <div id="home" className="py-10">
+          <div className="px-6">
             <Swiper
-            className=""
-              modules={[Pagination, A11y, EffectCoverflow, Navigation]}
-              spaceBetween={10}
-              slidesPerView={1}
+              modules={[
+                Pagination,
+                A11y,
+                EffectCoverflow,
+                Autoplay,
+                Navigation,
+              ]}
+              effect="cube"
+              loop={true}
               navigation={{
                 clickable: true,
               }}
-              pagination={{ clickable: true }}
-              initialSlide={selectedVideoIndex}
-              onSlideChange={(swiper) => setSelectedVideoIndex(swiper.realIndex)}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+              }}
+              speed={1500}
+              autoplay={{
+                delay: 6000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
+              }}
+              slidesPerView={1}
+              spaceBetween={20}
+              scrollbar={{ draggable: true }}
+              className="md:max-w-full lg:max-w-full h-[350px] sl:h-[370px] sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto"
             >
-              {videoList.map((video) => (
-                <SwiperSlide key={video.id}>
+              {videoList.map((video, index) => (
+                <SwiperSlide key={video.id} onClick={() => openModal(index)}>
                   <Slide vid={video.src}></Slide>
                 </SwiperSlide>
               ))}
             </Swiper>
-            <button
-              onClick={closeModal}
-              className="close-btn absolute top-10 text-2xl md:text-4xl z-10 border py-2 px-4 bg-white right-5 md:right-10"
+
+            {/* Video Modal */}
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              className="modal  "
+              id="home"
+              overlayClassName="overlay"
+              contentLabel="Video Modal"
             >
-              X
-            </button>
-          </Modal>
+              <Swiper
+                className=""
+                modules={[Pagination, A11y, EffectCoverflow, Navigation]}
+                spaceBetween={10}
+                slidesPerView={1}
+                navigation={{
+                  clickable: true,
+                }}
+                pagination={{ clickable: true }}
+                initialSlide={selectedVideoIndex}
+                onSlideChange={(swiper) =>
+                  setSelectedVideoIndex(swiper.realIndex)
+                }
+              >
+                {videoList.map((video) => (
+                  <SwiperSlide key={video.id}>
+                    <Slide vid={video.src}></Slide>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+              <button
+                onClick={closeModal}
+                className="close-btn absolute top-10 text-2xl md:text-4xl z-10 border py-2 px-4 bg-white right-5 md:right-10"
+              >
+                X
+              </button>
+            </Modal>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <section className="six bg-[#f2f2f2] ">
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 sl:grid-cols-4  max-w-fit m-auto gap-8 px-6  py-10 ">
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222] max-w-fit m-auto"></BiWorld>
+          <div className=" max-w-[320px] relative  ">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px]  ">
+                {" "}
+                1
+              </p>
+              <FaGlobeAfrica className=" text-6xl text-[#222222] max-w-fit m-auto" />
+            </div>
             <div>
               <h3 className=" text-[1.3rem] py-3">
                 Consultation and initial meeting
@@ -547,8 +562,16 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
+
+          <div className="max-w-[320px] relative   ">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px] ">
+                {" "}
+                2
+              </p>
+              <FaArtstation className=" text-6xl text-[#222222]  max-w-fit m-auto" />
+            </div>
+
             <div>
               <h3 className=" text-[1.3rem] py-3">Concept design</h3>
               <p className=" text-[0.9rem]">
@@ -559,8 +582,15 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
+          <div className="max-w-[320px] relative ">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px]">
+                {" "}
+                3
+              </p>
+
+              <FaDigitalOcean className=" text-6xl text-[#222222]  max-w-fit m-auto" />
+            </div>
             <div>
               <h3 className=" text-[1.3rem] py-3">Design development</h3>
               <p className=" text-[0.9rem]">
@@ -571,8 +601,14 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto "></BiWorld>
+          <div className=" max-w-[320px] relative">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px]">
+                {" "}
+                4
+              </p>
+              <FaCreativeCommonsSa className=" text-6xl text-[#222222]  max-w-fit m-auto " />
+            </div>
             <div>
               <h3 className=" text-[1.3rem] py-3">Permitting and approvals</h3>
               <p className=" text-[0.9rem]">
@@ -596,7 +632,7 @@ const Home = () => {
               <div className=" flex   place-self-end md:place-self-end">
                 <Link
                   to="/About"
-                  className=" underline hover:no-underline 3xl:text-[2rem] flex "
+                  className=" border-b border-black hover:border-b-0 pb-1 3xl:text-[2rem] flex "
                 >
                   Latest Projects
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -700,7 +736,7 @@ const Home = () => {
               <div className=" flex   place-self-end">
                 <Link
                   to="/News"
-                  className=" underline hover:no-underline lg:text-[1.4rem] 3xl:text-[2rem] flex "
+                  className="border-b border-black hover:border-b-0 pb-1 lg:text-[1.4rem] 3xl:text-[2rem] flex "
                 >
                   Latest News
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -843,7 +879,7 @@ const Home = () => {
               <div className=" flex   place-self-end">
                 <Link
                   to="/Contacts"
-                  className=" underline hover:no-underline lg:text-[1.4rem] 3xl:text-[2rem] flex "
+                  className="border-b border-black hover:border-b-0 pb-1 lg:text-[1.4rem] 3xl:text-[2rem] flex "
                 >
                   Contact Us
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -860,8 +896,8 @@ const Home = () => {
       </section>
 
       <section className=" thirteen">
-        <div className="  relative" >
-         <video
+        <div className="  relative">
+          <video
             autoPlay
             muted
             loop
@@ -890,7 +926,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-       
+
       <section>
         <Footer />
       </section>

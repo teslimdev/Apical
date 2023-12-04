@@ -60,7 +60,7 @@ ol{
 .card-contain {
     perspective: 1000px;
     animation-name: spin;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-delay: 0s;
     transition: 1s;
     transform: rotate(360deg);

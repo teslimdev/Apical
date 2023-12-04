@@ -283,7 +283,7 @@ const Services = () => {
               <div className=" flex   place-self-end">
                 <Link
                   to="/Contacts"
-                  className=" underline hover:no-underline lg:text-[1.4rem] 3xl:text-[2rem] flex "
+                  className=" border-b border-black hover:border-b-0 pb-1 lg:text-[1.4rem] 3xl:text-[2rem] flex "
                 >
                   Contact Us
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>

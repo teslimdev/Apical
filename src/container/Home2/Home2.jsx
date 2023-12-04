@@ -9,7 +9,7 @@ import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsPinterest } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { GoArrowUpRight } from "react-icons/go";
-import { BiWorld } from "react-icons/bi";
+import { FaGlobeAfrica,FaArtstation,FaDigitalOcean,FaCreativeCommonsSa } from "react-icons/fa";
 import { GrLinkNext, GrLinkPrevious, GrNext, GrPrevious } from "react-icons/gr";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -235,7 +235,7 @@ const Home2 = () => {
               <div className="  place-self-end ">
                 <Link
                   to="/Services"
-                  className=" underline hover:no-underline 3xl:text-[2rem] flex"
+                  className="border-b border-black hover:border-b-0 pb-1 3xl:text-[2rem] flex"
                 >
                   All Services
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -343,7 +343,7 @@ const Home2 = () => {
               <div className=" flex   place-self-end md:place-self-start">
                 <Link
                   to="/About"
-                  className=" underline hover:no-underline 3xl:text-[2rem] flex"
+                  className=" border-b border-black hover:border-b-0 pb-1 3xl:text-[2rem] flex"
                 >
                   About Us
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -421,30 +421,31 @@ const Home2 = () => {
       <div id="home" className="py-10">
         <div className="px-6">
           <Swiper
-            modules={[Pagination, A11y, EffectCoverflow, Navigation]}
+            modules={[Pagination, A11y, EffectCoverflow, Autoplay, Navigation]}
             effect="cube"
             loop={true}
             navigation={{
               clickable: true,
             }}
+             autoplay={{
+                delay: 7000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+                waitForTransition: true,
+              }}
             breakpoints={{
               320: {
                 slidesPerView: 1,
                 spaceBetween: 20,
               },
-              520: {
+              768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
             }}
             speed={1500}
-            autoplay={{
-              delay: 6000,
-              stopOnLastSlide: false,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: false,
-              waitForTransition: true,
-            }}
+            
             a11y={{
               prevSlide: 'true',
               nextSlide: 'true',
@@ -498,14 +499,19 @@ const Home2 = () => {
         </div>
       </div>
     </section>
-
-      <section className="six bg-[#f2f2f2] ">
+  <section className="six bg-[#f2f2f2] ">
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 sl:grid-cols-4  max-w-fit m-auto gap-8 px-6  py-10 ">
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222] max-w-fit m-auto"></BiWorld>
+          <div className=" max-w-[320px] relative  ">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px]  ">
+                {" "}
+                1
+              </p>
+              <FaGlobeAfrica className=" text-6xl text-[#222222] max-w-fit m-auto" />
+            </div>
             <div>
               <h3 className=" text-[1.3rem] py-3">
-                Consultation and initial meetin
+                Consultation and initial meeting
               </h3>
               <p className=" text-[0.9rem]">
                 The architecture company meets with the client to discuss their
@@ -514,8 +520,16 @@ const Home2 = () => {
               </p>
             </div>
           </div>
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
+
+          <div className="max-w-[320px] relative   ">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px] ">
+                {" "}
+                2
+              </p>
+              <FaArtstation className=" text-6xl text-[#222222]  max-w-fit m-auto" />
+            </div>
+
             <div>
               <h3 className=" text-[1.3rem] py-3">Concept design</h3>
               <p className=" text-[0.9rem]">
@@ -526,8 +540,15 @@ const Home2 = () => {
               </p>
             </div>
           </div>
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto"></BiWorld>
+          <div className="max-w-[320px] relative ">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px]">
+                {" "}
+                3
+              </p>
+
+              <FaDigitalOcean className=" text-6xl text-[#222222]  max-w-fit m-auto" />
+            </div>
             <div>
               <h3 className=" text-[1.3rem] py-3">Design development</h3>
               <p className=" text-[0.9rem]">
@@ -538,8 +559,14 @@ const Home2 = () => {
               </p>
             </div>
           </div>
-          <div className=" md:max-w-[320px]">
-            <BiWorld className=" text-7xl text-[#222222]  max-w-fit m-auto "></BiWorld>
+          <div className=" max-w-[320px] relative">
+            <div className=" max-w-fit m-auto  relative">
+              <p className=" bg-black max-w-[30px] h-[30px] rounded-full text-white text-center absolute w-full right-[-30px] top-[-10px]">
+                {" "}
+                4
+              </p>
+              <FaCreativeCommonsSa className=" text-6xl text-[#222222]  max-w-fit m-auto " />
+            </div>
             <div>
               <h3 className=" text-[1.3rem] py-3">Permitting and approvals</h3>
               <p className=" text-[0.9rem]">
@@ -552,7 +579,6 @@ const Home2 = () => {
           </div>
         </div>
       </section>
-
       <section className=" seven bg-[#f2f2f2]">
         <div>
           <div className=" max-w-[950px] lg:max-w-[1200px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[7%]  px-6  sl:px-0  ">
@@ -563,7 +589,7 @@ const Home2 = () => {
               <div className=" flex   place-self-end md:place-self-end">
                 <Link
                   to="/About"
-                  className=" underline hover:no-underline 3xl:text-[2rem] flex "
+                  className=" border-b border-black hover:border-b-0 pb-1 3xl:text-[2rem] flex "
                 >
                   Latest Projects
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -665,7 +691,7 @@ const Home2 = () => {
               <div className=" flex   place-self-end">
                 <Link
                   to="/News"
-                  className=" underline hover:no-underline lg:text-[1.4rem] 3xl:text-[2rem] flex "
+                  className=" border-b border-black hover:border-b-0 pb-1 lg:text-[1.4rem] 3xl:text-[2rem] flex "
                 >
                   Latest News
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -808,7 +834,7 @@ const Home2 = () => {
               <div className=" flex   place-self-end">
                 <Link
                   to="/Contacts"
-                  className=" underline hover:no-underline lg:text-[1.4rem] 3xl:text-[2rem] flex "
+                  className=" border-b border-black hover:border-b-0 pb-1 lg:text-[1.4rem] 3xl:text-[2rem] flex "
                 >
                   Contact Us
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>

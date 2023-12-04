@@ -1,14 +1,11 @@
 import React from 'react'
 import vid1 from '../../src/pictures/vid1.mp4'
+import vid2 from '../../src/pictures/vid2.mp4'
 import  { useCallback, useRef } from "react";
 import {GrNext, GrPrevious} from 'react-icons/gr'
-import pic8 from "../../src/pictures/img8.jpeg";
-import pic10 from "../../src/pictures/img10.jpeg";
-import pic11 from "../../src/pictures/img11.jpeg";
 import pic9 from "../../src/pictures/img9.jpeg";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
-import pic2 from "../../src/pictures/img2.jpeg";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -188,7 +185,7 @@ const ProjectPost2 = () => {
               <div className=" flex  place-self-end  md:place-self-start">
                 <Link
                   to="/Projects"
-                  className=" underline hover:no-underline lg:text-[1.4rem] 3xl:text-[2rem] flex "
+                  className=" border-b border-black hover:border-b-0 pb-1 lg:text-[1.4rem] 3xl:text-[2rem] flex "
                 >
                   All Projects
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>
@@ -203,15 +200,15 @@ const ProjectPost2 = () => {
         </div>
       </section>
       <section className=" eight">
-        <div className="  relative ">
+       <div className="  relative ">
           <Swiper
             modules={[Pagination, A11y, EffectFade, Autoplay]}
             effect="fade"
             loop={true}
-            speed={1500}
+            speed={1200}
             ref={slideRef}
             autoplay={{
-              delay: 7000,
+              delay: 6500,
               stopOnLastSlide: false,
               disableOnInteraction: false,
               pauseOnMouseEnter: false,
@@ -230,24 +227,24 @@ const ProjectPost2 = () => {
           >
             <SwiperSlide>
               <HomeSlide
-                image={pic2}
+                image={vid1}
                 text={" Multi-Family Housing"}
               ></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic8} text={" The Light House"}></HomeSlide>
+              <HomeSlide image={vid2} text={" The Light House"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic9} text={"Architectural Home"}></HomeSlide>
+              <HomeSlide image={vid1} text={"Architectural Home"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic10} text={"Interior space"}></HomeSlide>
+              <HomeSlide image={vid1} text={"Interior space"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic11} text={"Design Art"}></HomeSlide>
+              <HomeSlide image={vid2} text={"Design Art"}></HomeSlide>
             </SwiperSlide>
             <SwiperSlide>
-              <HomeSlide image={pic9} text={"Visualization"}></HomeSlide>
+              <HomeSlide image={vid1} text={"Visualization"}></HomeSlide>
             </SwiperSlide>
             <div
               id="two"
@@ -262,7 +259,9 @@ const ProjectPost2 = () => {
           <div className=" lg:max-w-[950px] sl:max-w-[1200px] m-auto">
             <div className="  absolute   z-[1]  flex  gap-6    px-6   bottom-20">
               <div
-                className="prev-arrow rounded-full  border  hover:bg-white py-2"
+                className={`prev-arrow rounded-full  border  hover:bg-white py-2  ${
+                  slideRef === "null" ? " text-white" : ""
+                }`}
                 onClick={handlPrev}
               >
                 <GrPrevious className=" text-white  text-3xl   w-12  cursor-pointer  " />
@@ -287,7 +286,7 @@ const ProjectPost2 = () => {
               <div className=" flex   place-self-end md:place-self-start">
                 <Link
                   to="/Contacts"
-                  className=" underline hover:no-underline lg:text-[1.4rem] 3xl:text-[2rem] flex "
+                  className=" border-b border-black hover:border-b-0 pb-1 lg:text-[1.4rem] 3xl:text-[2rem] flex "
                 >
                   Contact Us
                   <GoArrowUpRight className=" text-2xl"></GoArrowUpRight>

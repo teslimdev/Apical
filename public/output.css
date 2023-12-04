@@ -860,6 +860,22 @@ video {
   height: 100vh;
 }
 
+.h-\[3\] {
+  height: 3;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
+.h-\[370px\] {
+  height: 370px;
+}
+
 .min-h-\[150px\] {
   min-height: 150px;
 }
@@ -3197,6 +3213,10 @@ ol{
 
   .sl\:h-\[600px\] {
     height: 600px;
+  }
+
+  .sl\:h-\[370px\] {
+    height: 370px;
   }
 
   .sl\:min-h-\[58rem\] {

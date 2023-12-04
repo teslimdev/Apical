@@ -12,16 +12,13 @@ const HomeSlide = ({image,text}) => {
           <h2 className=" text-white text-5xl sl:text-[5rem] sl:leading-[5rem] sl:max-w-[500px]">
             {text}
           </h2>
-          <div className=" pt-6 lg:pt-12">
-            
+          <div className=" pt-6 lg:pt-12 w-fit">
+            <Link to="/Projects">
               <button className=" border text-white py-2 px-8 rounded-full flex items-center gap-4  hover:bg-white hover:text-black text-xl">
-                <Link to="/Projects">
-                  View Projects
-                </Link>
-               
+                View Projects
                 <AiOutlineArrowRight className=" "></AiOutlineArrowRight>
               </button>
-          
+            </Link>
           </div>
         </div>
       </div>

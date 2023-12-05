@@ -639,7 +639,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <h3 className=" text-xl lg:text-[2rem] font-[350] py-10 lg:py-16">
+            <h3 className=" text-xl lg:text-[2rem] lg:leading-[2.5rem] font-[350] py-10 lg:py-16">
               Whether you're an architect, designer, or simply someone with an
               interest in the built environment, our latest projects are sure to
               inspire and challenge you.
@@ -743,7 +743,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <h3 className=" text-xl lg:text-[2rem] font-[350] py-10 lg:py-16 ">
+            <h3 className=" text-xl lg:text-[2rem] lg:leading-[2.5rem] font-[350] py-10 lg:py-16 ">
               "Our team is comprised of experienced architects, designers, and
               project managers who share a common goal of creating exceptional
               spaces.
@@ -831,18 +831,19 @@ const Home = () => {
       </section>
 
       <section className=" eleven bg-[#f2f2f2]">
-        <div>
+        <div className=" pb-6">
           <div className=" max-w-[950px] lg:max-w-[1200px] 3xl:max-w-[2000px] sl:max-w-[1200px] lg:m-auto pt-[5%] lg:pt-[2%]  px-6  sl:px-0  ">
             <div className="   md:max-w-[950px]  lg:max-w-[1200px] 3xl:max-w-[1700px]   ">
               <h2 className=" text-[2rem] md:text-[3rem] lg:leading-[7rem] lg:text-[4.5rem] border-b-2 pb-8 sl:text-[6rem] font-bold text-[#222222] 3xl:text-[8rem] ">
                 "Meet the man behind the designs"
               </h2>
             </div>
-            <h3 className=" text-xl lg:text-[2rem] font-[350] py-3 lg:py-16">
+            <h3 className=" text-xl lg:text-[2rem] lg:leading-[2.5rem] font-[350] py-3 lg:py-16">
               "Our team is comprised of experienced architects, designers, and
               project managers who share a common goal of creating exceptional
               spaces.
             </h3>
+            
           </div>
           <div className="  2xl:max-w-[1200px]  m-auto px-6 2xl:px-0 sl:max-w-[1200px]  lg:max-w-[1000px]">
             <div className=" flex  flex-col md:flex-row  gap-6 md:gap-12 lg:gap-16">
@@ -851,17 +852,37 @@ const Home = () => {
                 alt=""
                 className=" w-full md:w-[350px] lg:w-[400px]  shadow-lg"
               />
-              <div className=" sl:max-w-[600px] lg:max-w-[500px] md:max-w-[320px] pt-6 lg:pt-20">
-                <p>
+              <div className=" sl:max-w-[600px] lg:max-w-[500px] md:max-w-[500px] pt-6 lg:pt-20">
+                <p className=" text-[1rem] pb-10 text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Minima eaque architecto repudiandae sint nostrum ratione
                   placeat beatae necessitatibus ad numquam voluptatem ab, quidem
                   sed quasi cupiditate laudantium reiciendis hic ipsam!
                 </p>
-                <div className=" flex pt-10 gap-6">
-                  <AiFillInstagram className=" text-4xl text-[#222222]" />
-                  <AiFillLinkedin className=" text-4xl text-[#222222]" />
-                  <BsPinterest className=" text-4xl text-[#222222]" />
+                 <p className=" text-[1rem] text-center">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima eaque architecto repudiandae sint nostrum ratione
+                  placeat beatae necessitatibus ad numquam voluptatem ab, quidem
+                  sed quasi cupiditate laudantium reiciendis hic ipsam!
+                </p>
+                <div className=" flex pt-10 gap-6 justify-center">
+               <ul className=" flex space-x-4">
+            <li className=" ">
+              <a href="https://www.instagram.com/apical_designs/?hl=en">
+                <AiFillInstagram className="3xl:text-6xl  text-2xl md:text-4xl "></AiFillInstagram>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <AiFillLinkedin className="  3xl:text-6xl text-2xl md:text-4xl  "></AiFillLinkedin>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/Apicaldesigns/">
+                <BsPinterest className="3xl:text-6xl text-2xl md:text-4xl "></BsPinterest>
+              </a>
+            </li>
+          </ul>
                 </div>
               </div>
             </div>
@@ -886,10 +907,10 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            <h3 className=" text-xl lg:text-[2rem] font-[350] py-10 lg:py-16 ">
+            <h3 className=" text-xl lg:text-[2rem] lg:leading-[2.5rem] font-[350] py-10 lg:py-16 ">
               "Stay connected with our team and never miss a design update,
               industry news, or special offer. Join our community of design
-              enthusiasts.
+              enthusiasts."
             </h3>
           </div>
         </div>

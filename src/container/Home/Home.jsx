@@ -526,6 +526,7 @@ const Home = () => {
             >
               <div className="h-screen flex items-center justify-center">
                 <Swiper
+                  effect="cube"
                   className="w-full h-full"
                   modules={[Pagination, A11y, EffectCoverflow, Navigation]}
                   spaceBetween={10}
@@ -542,7 +543,7 @@ const Home = () => {
                   {videoList.map((video) => (
                     <SwiperSlide key={video.id}>
                       <div className="w-full h-full">
-                        <Slide vid={video.src} />
+                        <Slide vid={video.src} isModalVideo={true} />
                       </div>
                     </SwiperSlide>
                   ))}

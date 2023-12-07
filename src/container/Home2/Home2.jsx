@@ -432,87 +432,100 @@ const Home2 = () => {
       </section>
 
       <section className="five bg-[#f2f2f2]">
-      <div id="home" className="py-10">
-        <div className="px-6">
-          <Swiper
-            modules={[Pagination, A11y, EffectCoverflow, Autoplay, Navigation]}
-            effect="cube"
-            loop={true}
-            navigation={{
-              clickable: true,
-            }}
-             autoplay={{
-                delay: 7000,
+        <div id="home" className="py-10">
+          <div className="px-6">
+            <Swiper
+              modules={[
+                Pagination,
+                A11y,
+                EffectCoverflow,
+                Autoplay,
+                Navigation,
+              ]}
+              effect="cube"
+              loop={true}
+              navigation={{
+                clickable: true,
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+              }}
+              speed={1500}
+              autoplay={{
+                delay: 6000,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: false,
                 waitForTransition: true,
               }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-            }}
-            speed={1500}
-            
-            a11y={{
-              prevSlide: 'true',
-              nextSlide: 'true',
-            }}
-            slidesPerView={1}
-            spaceBetween={20}
-            scrollbar={{ draggable: true }}
-            className="md:max-w-full lg:max-w-full h-[350px] sl:h-[370px] sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto"
-          >
-            {videoList.map((video, index) => (
-              <SwiperSlide key={video.id} onClick={() => openModal(index)}>
-                <Slide vid={video.src}></Slide>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* Video Modal */}
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            className="modal  "
-            id='home'
-            overlayClassName="overlay"
-            contentLabel="Video Modal"
-          >
-            <Swiper
-            className=""
-              modules={[Pagination, A11y, EffectCoverflow, Navigation]}
-              spaceBetween={10}
-              slidesPerView={1}
-              navigation={{
-                clickable: true,
+              a11y={{
+                prevSlide: "true",
+                nextSlide: "true",
               }}
-              pagination={{ clickable: true }}
-              initialSlide={selectedVideoIndex}
-              onSlideChange={(swiper) => setSelectedVideoIndex(swiper.realIndex)}
+              slidesPerView={1}
+              spaceBetween={20}
+              scrollbar={{ draggable: true }}
+              className="   sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto"
             >
-              {videoList.map((video) => (
-                <SwiperSlide key={video.id}>
-                  <Slide vid={video.src}></Slide>
+              {videoList.map((video, index) => (
+                <SwiperSlide key={video.id} onClick={() => openModal(index)}>
+                  <Slide vid={video.src} />
                 </SwiperSlide>
               ))}
             </Swiper>
-            <button
-              onClick={closeModal}
-              className="close-btn absolute top-10 text-2xl md:text-4xl z-10 border py-2 px-4 bg-white right-5 md:right-10"
+
+            {/* Video Modal */}
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              className="modal"
+              id="home"
+              overlayClassName="overlay"
+              contentLabel="Video Modal"
             >
-              X
-            </button>
-          </Modal>
+              <div className="h-screen flex items-center justify-center">
+                <Swiper
+                  effect="cube"
+                  className="w-full h-full"
+                  modules={[Pagination, A11y, EffectCoverflow, Navigation]}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  navigation={{
+                    clickable: true,
+                  }}
+                  pagination={{ clickable: true }}
+                  initialSlide={selectedVideoIndex}
+                  onSlideChange={(swiper) =>
+                    setSelectedVideoIndex(swiper.realIndex)
+                  }
+                >
+                  {videoList.map((video) => (
+                    <SwiperSlide key={video.id}>
+                      <div className="w-full h-full">
+                        <Slide vid={video.src} isModalVideo={true} />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+              <button
+                onClick={closeModal}
+                className="close-btn absolute top-10 text-2xl md:text-4xl z-10 border py-2 px-4 bg-white right-5 md:right-10"
+              >
+                X
+              </button>
+            </Modal>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      
   <section className="six bg-[#f2f2f2] ">
         <div className=" grid md:grid-cols-2 lg:grid-cols-3 sl:grid-cols-4  max-w-fit m-auto gap-8 px-6  py-10 ">
           <div className=" max-w-[320px] relative  ">

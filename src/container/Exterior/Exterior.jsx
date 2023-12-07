@@ -12,6 +12,7 @@ import "swiper/css/effect-fade";
 import { Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import vid1 from "../../../src/pictures/vid1.mp4";
+import vid2 from "../../../src/pictures/vid2.mp4";
 import { EffectFade, EffectCoverflow, EffectCube } from "swiper/modules";
 import { Link } from "react-router-dom";
 const Exterior = () => {
@@ -433,16 +434,16 @@ const Exterior = () => {
               scrollbar={{ draggable: true }}
             >
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid1}  text={'Msquare Hotel'}  date={'13 march 2020'}/>
               </SwiperSlide>
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid2} text={'Fortune Shopping Complex'}  date={'13 march 2020'}/>
               </SwiperSlide>
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid1} text={'Diplomart Homes Apartments'}  date={'13 march 2020'} />
               </SwiperSlide>
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid2} text={'3 Bedroom Bungallow + Pents House'}  date={'13 march 2020'}/>
               </SwiperSlide>
             </Swiper>
           </div>

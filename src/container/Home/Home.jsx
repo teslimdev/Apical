@@ -221,10 +221,24 @@ const Home = () => {
           </div>
 
           <div className="  hidden md:block absolute  top-[80%] md:top-[50%] md:right-[5%] lg:right-[10%] z-10">
-            <div className="  flex  lg:items-end md:flex-col     gap-4 ">
-              <AiFillInstagram className=" text-white text-2xl 3xl:text-5xl"></AiFillInstagram>
-              <AiFillLinkedin className=" text-white text-2xl 3xl:text-5xl"></AiFillLinkedin>
-              <BsPinterest className=" text-white text-2xl 3xl:text-5xl"></BsPinterest>
+            <div className="     ">
+              <ul className=" flex  flex-col gap-4 ">
+                <li className=" ">
+                  <a href="https://www.instagram.com/apical_designs/?hl=en">
+                    <AiFillInstagram className="3xl:text-6xl  text-3xl  text-white"></AiFillInstagram>
+                  </a>
+                </li>
+                <li>
+                  <a href="/">
+                    <AiFillLinkedin className="  3xl:text-6xl text-3xl  text-white "></AiFillLinkedin>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.pinterest.com/Apicaldesigns/">
+                    <BsPinterest className="3xl:text-6xl text-3xl  text-white"></BsPinterest>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -492,11 +506,11 @@ const Home = () => {
               slidesPerView={1}
               spaceBetween={20}
               scrollbar={{ draggable: true }}
-              className="md:max-w-full lg:max-w-full h-[350px] sl:h-[370px] sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto"
+              className="   sl:max-w-[1350px] 2xl:max-w-[1450px] m-auto"
             >
               {videoList.map((video, index) => (
                 <SwiperSlide key={video.id} onClick={() => openModal(index)}>
-                  <Slide vid={video.src}></Slide>
+                  <Slide vid={video.src} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -505,31 +519,35 @@ const Home = () => {
             <Modal
               isOpen={modalIsOpen}
               onRequestClose={closeModal}
-              className="modal  "
+              className="modal"
               id="home"
               overlayClassName="overlay"
               contentLabel="Video Modal"
             >
-              <Swiper
-                className=""
-                modules={[Pagination, A11y, EffectCoverflow, Navigation]}
-                spaceBetween={10}
-                slidesPerView={1}
-                navigation={{
-                  clickable: true,
-                }}
-                pagination={{ clickable: true }}
-                initialSlide={selectedVideoIndex}
-                onSlideChange={(swiper) =>
-                  setSelectedVideoIndex(swiper.realIndex)
-                }
-              >
-                {videoList.map((video) => (
-                  <SwiperSlide key={video.id}>
-                    <Slide vid={video.src}></Slide>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+              <div className="h-screen flex items-center justify-center">
+                <Swiper
+                  className="w-full h-full"
+                  modules={[Pagination, A11y, EffectCoverflow, Navigation]}
+                  spaceBetween={10}
+                  slidesPerView={1}
+                  navigation={{
+                    clickable: true,
+                  }}
+                  pagination={{ clickable: true }}
+                  initialSlide={selectedVideoIndex}
+                  onSlideChange={(swiper) =>
+                    setSelectedVideoIndex(swiper.realIndex)
+                  }
+                >
+                  {videoList.map((video) => (
+                    <SwiperSlide key={video.id}>
+                      <div className="w-full h-full">
+                        <Slide vid={video.src} />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
               <button
                 onClick={closeModal}
                 className="close-btn absolute top-10 text-2xl md:text-4xl z-10 border py-2 px-4 bg-white right-5 md:right-10"
@@ -843,7 +861,6 @@ const Home = () => {
               project managers who share a common goal of creating exceptional
               spaces.
             </h3>
-            
           </div>
           <div className="  2xl:max-w-[1200px]  m-auto px-6 2xl:px-0 sl:max-w-[1200px]  lg:max-w-[1000px]">
             <div className=" flex  flex-col md:flex-row  gap-6 md:gap-12 lg:gap-16">
@@ -859,30 +876,30 @@ const Home = () => {
                   placeat beatae necessitatibus ad numquam voluptatem ab, quidem
                   sed quasi cupiditate laudantium reiciendis hic ipsam!
                 </p>
-                 <p className=" text-[1rem] text-center">
+                <p className=" text-[1rem] text-center">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Minima eaque architecto repudiandae sint nostrum ratione
                   placeat beatae necessitatibus ad numquam voluptatem ab, quidem
                   sed quasi cupiditate laudantium reiciendis hic ipsam!
                 </p>
                 <div className=" flex pt-10 gap-6 justify-center">
-               <ul className=" flex space-x-4">
-            <li className=" ">
-              <a href="https://www.instagram.com/apical_designs/?hl=en">
-                <AiFillInstagram className="3xl:text-6xl  text-2xl md:text-4xl "></AiFillInstagram>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <AiFillLinkedin className="  3xl:text-6xl text-2xl md:text-4xl  "></AiFillLinkedin>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.pinterest.com/Apicaldesigns/">
-                <BsPinterest className="3xl:text-6xl text-2xl md:text-4xl "></BsPinterest>
-              </a>
-            </li>
-          </ul>
+                  <ul className=" flex space-x-4">
+                    <li className=" ">
+                      <a href="https://www.instagram.com/apical_designs/?hl=en">
+                        <AiFillInstagram className="3xl:text-6xl  text-2xl md:text-4xl "></AiFillInstagram>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/">
+                        <AiFillLinkedin className="  3xl:text-6xl text-2xl md:text-4xl  "></AiFillLinkedin>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.pinterest.com/Apicaldesigns/">
+                        <BsPinterest className="3xl:text-6xl text-2xl md:text-4xl "></BsPinterest>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

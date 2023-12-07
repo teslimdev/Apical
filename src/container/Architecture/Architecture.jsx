@@ -3,6 +3,7 @@ import { Footer2, Header } from "../../components";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic3 from "../../../src/pictures/img3.jpeg";
 import vid1 from '../../../src/pictures/vid1.mp4'
+import vid2 from '../../../src/pictures/vid2.mp4'
 const Architecture = () => {
   return (
     <div>
@@ -36,19 +37,29 @@ const Architecture = () => {
       <section>
         <div className=" relative">
           <div
-            style={{ backgroundImage: `url(${pic3})` }}
-            className=" min-h-[40rem] md:min-h-screen bg-cover bg-center relative  bg-fixed"
+            className="   h-[40rem] md:h-screen"
           >
+          <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl    h-full w-full object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
+          
+
             <div className=" bg-white absolute inset-0  h-full top-0 opacity-40"></div>
+            
           </div>
-          <div className="  lg:max-w-[1200px] m-auto  px-6 sl:px-0">
-            <div className=" text-center lg:text-start  absolute  text-black  top-[18%]">
+          <div className="  lg:max-w-[1200px] flex justify-center lg:justify-start   m-auto  ">
+            <div className=" text-center lg:text-start  absolute  text-black  top-[18%] px-6 sl:px-0">
               <div>
-                <h3 className=" bg-black text-white max-w-fit  m-auto lg:m-0 py-2 px-6">
+                <h3 className=" bg-black text-white max-w-fit  m-auto lg:m-0 py-2 px-5 rounded-md">
                   Architecture
                 </h3>
                 <h2 className=" max-w-[900px] text-[3rem] md:text-[4rem] leading-[3rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] font-semibold lg:font-bold py-5">
-                  Facade of the Parliament Building
+              Calibre Mall
                 </h2>
               </div>
               <div>
@@ -80,19 +91,27 @@ const Architecture = () => {
       <section>
         <div className=" relative">
           <div
-            style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-[40rem] md:min-h-screen bg-cover bg-center relative  bg-fixed"
+           
+            className=" h-[40rem] md:h-screen"
           >
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl   h-full   w-full object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             <div className=" bg-black absolute inset-0 top-0 opacity-40 "></div>
           </div>
           <div className="  lg:max-w-[1200px] flex justify-center lg:justify-end   m-auto ">
             <div className=" text-center lg:text-end  absolute  top-[20%] text-white  px-6 sl:px-0 ">
               <div className="   relative  ">
-                <h3 className=" bg-white text-black    lg:absolute lg:right-0  m-auto   max-w-fit   text-[1.2rem]    py-2 px-6">
+                <h3 className=" bg-white text-black    lg:absolute lg:right-0  m-auto   max-w-fit   text-[1.2rem]    py-2 px-5 rounded-md">
                   Construction
                 </h3>
                 <h2 className=" max-w-[900px] text-[3rem] md:text-[4rem] leading-[3rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] font-semibold lg:font-bold lg:pt-10 py-5">
-                  Berlin Sport Arena
+                 Tripple J Court 
                 </h2>
               </div>
               <div>
@@ -124,16 +143,16 @@ const Architecture = () => {
       <section>
         <div className=" relative">
           <div
-            style={{ backgroundImage: `url(${pic3})` }}
+            style={{ backgroundImage: `url(${pic9})` }}
             className="    min-h-[80rem] md:min-h-[60rem] lg:min-h-screen bg-cover bg-center relative bg-fixed"
           >
-            <div className=" absolute  bg-white inset-0 top-0 opacity-40"></div>
+            <div className=" absolute  bg-black inset-0 top-0 opacity-40"></div>
           </div>
           <div className=" flex justify-center  ">
             <div className=" absolute  top-[5%] md:top-[10%] lg:top-[20%] ">
-              <div className=" text-center px-6 sl:px-0">
+              <div className=" text-center px-6 sl:px-0 text-white">
                 <h2 className=" text-[3rem] md:text-[4rem] leading-[3rem] md:leading-[4rem] lg:text-[5rem] font-bold lg:leading-[5rem ] pb-6">
-                  15 years of experience
+                  5 years of experience
                 </h2>
                 <p className=" max-w-[500px] m-auto">
                   Aliquam erat volutpat. Fusce ac enim et diam laoreet efficitur
@@ -141,27 +160,27 @@ const Architecture = () => {
                   ornare eu justo nec iaculis. Quisque id nisl metus.
                 </p>
               </div>
-              <div className=" grid md:grid-cols-2 lg:grid-cols-4 max-w-fit m-auto gap-3 md:gap-12 sl:gap-24 pt-8">
+              <div className=" grid md:grid-cols-2 lg:grid-cols-4 max-w-fit m-auto gap-3 md:gap-12 sl:gap-24 text-white pt-8">
                 <div className=" max-w-[150px] md:max-w-[200px] text-center">
-                  <h2 className=" max-w-[150px] md:max-w-[200px] min-h-[150px] md:min-h-[200px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-[#222222] text-white">
+                  <h2 className=" max-w-[150px] md:max-w-[180px] min-h-[150px] md:min-h-[180px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-white text-[#222222]">
                     85%
                   </h2>
                   <h3 className=" text-xl pt-6">Interior Design</h3>
                 </div>
                 <div className=" max-w-[150px] md:max-w-[200px] text-center">
-                  <h2 className=" max-w-[150px] md:max-w-[200px] min-h-[150px] md:min-h-[200px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-[#222222] text-white">
+                  <h2 className="max-w-[150px] md:max-w-[180px] min-h-[150px] md:min-h-[180px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-white text-[#222222]">
                     79%
                   </h2>
                   <h3 className=" text-xl pt-6">Architechture</h3>
                 </div>
                 <div className=" max-w-[150px] md:max-w-[200px] text-center">
-                  <h2 className=" max-w-[150px] md:max-w-[200px] min-h-[150px] md:min-h-[200px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-[#222222] text-white">
+                  <h2 className=" max-w-[150px] md:max-w-[180px] min-h-[150px] md:min-h-[180px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-white text-[#222222]">
                     68%
                   </h2>
                   <h3 className=" text-xl pt-6">Construction</h3>
                 </div>
                 <div className=" max-w-[150px] md:max-w-[200px] text-center ">
-                  <h2 className=" max-w-[150px] md:max-w-[200px] min-h-[150px] md:min-h-[200px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-[#222222] text-white">
+                  <h2 className=" max-w-[150px] md:max-w-[180px] min-h-[150px] md:min-h-[180px] flex items-center justify-center rounded-full text-[3rem] md:text-[4rem] bg-white text-[#222222]">
                     86%
                   </h2>
                   <h3 className=" text-xl pt-6">Projects Development</h3>
@@ -175,19 +194,27 @@ const Architecture = () => {
       <section>
         <div className=" relative">
           <div
-            style={{ backgroundImage: `url(${pic3})` }}
-            className=" min-h-[40rem] md:min-h-screen bg-cover bg-center relative  bg-fixed"
+           
+            className=" h-[40rem] md:h-screen"
           >
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl    h-full w-full object-cover"
+          >
+            <source src={vid1} type="video/mp4 " className="  " />
+          </video>
             <div className=" bg-black absolute inset-0  h-full top-0 opacity-40"></div>
           </div>
-          <div className="  lg:max-w-[1200px] m-auto  px-6 sl:px-0">
-            <div className=" text-center lg:text-start  absolute  text-white  top-[18%]">
+          <div className="   lg:max-w-[1200px] flex justify-center lg:justify-start   m-auto ">
+            <div className=" text-center lg:text-start  absolute  text-white  top-[18%] px-6 sl:px-0">
               <div>
-                <h3 className=" bg-white text-black max-w-fit  m-auto lg:m-0 py-2 px-6">
+                <h3 className=" bg-white text-black max-w-fit  m-auto lg:m-0 py-2 px-5 rounded-md">
                   Architecture
                 </h3>
                 <h2 className=" max-w-[900px] text-[3rem] md:text-[4rem] leading-[3rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] font-semibold lg:font-bold py-5">
-                  Facade of the Parliament Building
+                  Diplomat Homes
                 </h2>
               </div>
               <div>
@@ -218,19 +245,27 @@ const Architecture = () => {
       <section>
         <div className=" relative">
           <div
-            style={{ backgroundImage: `url(${pic9})` }}
-            className=" min-h-[40rem] md:min-h-screen bg-cover bg-center relative  bg-fixed"
+           
+            className=" h-[40rem] md:h-screen"
           >
+           <video
+            autoPlay
+            muted
+            loop
+            className=" shadow-2xl    h-full w-full object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             <div className=" bg-white absolute inset-0 top-0 opacity-40 "></div>
           </div>
           <div className="  lg:max-w-[1200px] flex justify-center lg:justify-end   m-auto ">
             <div className=" text-center lg:text-end  absolute  top-[20%] text-black  px-6 sl:px-0 ">
               <div className="   relative  ">
-                <h3 className=" bg-black text-white    lg:absolute lg:right-0  m-auto   max-w-fit   text-[1.2rem]    py-2 px-6">
+                <h3 className=" bg-black text-white    lg:absolute lg:right-0  m-auto   max-w-fit   text-[1.2rem]    py-2 px-5 rounded-md">
                   Construction
                 </h3>
                 <h2 className=" max-w-[900px] text-[3rem] md:text-[4rem] leading-[3rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] font-semibold lg:font-bold lg:pt-10 py-5">
-                  Berlin Sport Arena
+                5 Bedroom Detached Duplex
                 </h2>
               </div>
               <div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer2, Header, InteriorSlide } from "../../components";
 import vid1 from '../../../src/pictures/vid1.mp4'
+import vid2 from '../../../src/pictures/vid2.mp4'
 import pic9 from "../../../src/pictures/img9.jpeg";
 import pic15 from "../../../src/pictures/img15.png";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -436,16 +437,16 @@ const Interior = () => {
               scrollbar={{ draggable: true }}
             >
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid2} text={'Lara Gold Store'} date={'13 march 2020'} />
               </SwiperSlide>
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid1} text={'Black And White Kitchen'}  date={'13 march 2020'}/>
               </SwiperSlide>
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid2} text={'Living Room'}  date={'13 march 2020'}/>
               </SwiperSlide>
               <SwiperSlide>
-                <InteriorSlide image={pic9} />
+                <InteriorSlide video={vid1} text={'Closet'}  date={'13 march 2020'}/>
               </SwiperSlide>
             </Swiper>
           </div>

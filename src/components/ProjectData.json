@@ -1,0 +1,39 @@
+ [
+    {
+    "id": 1,
+    "title": "The Petronas Twin Towers",
+    "backgroundImage": "pic9.jpg",
+   
+  "tabs": [
+    {
+      "id": 1,
+      "label": "Interior",
+      "content": [
+        "Archy was founded in 1936 in Chicago, USA. The company was established by Louis Skidmore and Nathaniel Owings, and later joined by John O. Merrill.",
+        "SOM has been responsible for the design of many notable buildings worldwide, including the Sears Tower (now known as Willis Tower) in Chicago, which was the world's tallest building from 1973 to 1998. The company has also designed the John Hancock Center, One World Trade Center, and Burj Khalifa, which is currently the tallest building in the world.",
+        "Throughout its history, SOM has been recognized for its innovative designs and commitment to sustainability."
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Specifications",
+      "content": [
+        "Second Tab Archy was founded in 1936 in Chicago, USA. The company was established by Louis Skidmore and Nathaniel Owings, and later joined by John O. Merrill.",
+        "SOM has been responsible for the design of many notable buildings worldwide, including the Sears Tower (now known as Willis Tower) in Chicago, which was the world's tallest building from 1973 to 1998. The company has also designed the John Hancock Center, One World Trade Center, and Burj Khalifa, which is currently the tallest building in the world.",
+        "Throughout its history, SOM has been recognized for its innovative designs and commitment to sustainability."
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Facility",
+      "content": [
+        "Third Tab Archy was founded in 1936 in Chicago, USA. The company was established by Louis Skidmore and Nathaniel Owings, and later joined by John O. Merrill.",
+        "SOM has been responsible for the design of many notable buildings worldwide, including the Sears Tower (now known as Willis Tower) in Chicago, which was the world's tallest building from 1973 to 1998. The company has also designed the John Hancock Center, One World Trade Center, and Burj Khalifa, which is currently the tallest building in the world.",
+        "Throughout its history, SOM has been recognized for its innovative designs and commitment to sustainability."
+      ]
+    }
+ 
+  ]
+   
+  }
+ ]

@@ -209,28 +209,6 @@ const Home2 = () => {
               </div>
             </Swiper>
           </div>
-
-          <div className="  hidden md:block absolute  top-[80%] md:top-[50%] md:right-[5%] lg:right-[10%] z-10">
-            <div className="     ">
-              <ul className=" flex  flex-col gap-4 ">
-            <li className=" ">
-              <a href="https://www.instagram.com/apical_designs/?hl=en">
-                <AiFillInstagram className="3xl:text-6xl  text-3xl  text-white"></AiFillInstagram>
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <AiFillLinkedin className="  3xl:text-6xl text-3xl  text-white "></AiFillLinkedin>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.pinterest.com/Apicaldesigns/">
-                <BsPinterest className="3xl:text-6xl text-3xl  text-white"></BsPinterest>
-              </a>
-            </li>
-          </ul>
-            </div>
-          </div>
         </div>
       </section>
      

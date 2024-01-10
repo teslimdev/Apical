@@ -66,7 +66,9 @@ const ProjectPost2 = () => {
         <div
           style={{ backgroundImage: `url(${pic9})` }}
           className=" min-h-[500px] lg:min-h-[620px] bg-center"
-        ></div>
+        >
+            <div className="   absolute bg-black w-full h-[500px] lg:h-[620px] top-0 inset-0 opacity-50"></div>
+        </div>
       </section>
 
       <section className=" two bg-[#f2f2f2]">

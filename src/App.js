@@ -30,8 +30,36 @@ import {
   ConstructionPost,
 
 } from "./container";
-
+import { React,  useState, useEffect } from "react";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaMessage } from "react-icons/fa6";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 function App() {
+    const [socialIconsVisible, setSocialIconsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleIconClick = (event) => {
+      event.stopPropagation();
+      setSocialIconsVisible(!socialIconsVisible);
+    };
+
+    const handleCloseIcons = () => {
+      setSocialIconsVisible(false);
+    };
+
+    document
+      .getElementById("messageIcon")
+      .addEventListener("click", handleIconClick);
+    document.addEventListener("click", handleCloseIcons);
+
+    return () => {
+      document
+        .getElementById("messageIcon")
+        .removeEventListener("click", handleIconClick);
+      document.removeEventListener("click", handleCloseIcons);
+    };
+  }, [socialIconsVisible]);
   return (
     <div className="App">
     <div  className="  fixed top-44 z-10 w-full">
@@ -65,6 +93,36 @@ function App() {
           <Route path="/InteriorPost2" element={<InteriorPost2 />} />
           <Route path="/ConstructionPost" element={<ConstructionPost />} />
         </Routes>
+      </div>
+          <div className="popup-container">
+        <div className="message-icon" id="messageIcon">
+         <FaMessage/>
+        </div>
+        <div
+          className={`social-icons ${socialIconsVisible ? "flex" : "hidden"}`}
+          id="socialIcons"
+        >
+          <div className="social-icon">
+            <a href="https://www.linkedin.com/in/abdullah-teslim">
+              <AiFillLinkedin className=" icon"/>
+            </a>
+          </div>
+          <div className="social-icon">
+            <a href="https://www.instagram.com/apical_designs/?hl=en">
+              <AiFillInstagram  className=" icon"/>
+            </a>
+          </div>
+          <div className="social-icon">
+            <a href="https://wa.link/96p296">
+              <FaWhatsappSquare  className=" icon"/>
+            </a>
+          </div>
+          <div className="social-icon">
+            <a href="https://twitter.com/abdullah_teslim">
+              <RiTwitterXFill  className=" icon"/>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

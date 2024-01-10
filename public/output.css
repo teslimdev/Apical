@@ -746,10 +746,6 @@ video {
   top: 8%;
 }
 
-.top-\[80\%\] {
-  top: 80%;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -858,6 +854,10 @@ video {
 
 .h-\[40rem\] {
   height: 40rem;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[630px\] {
@@ -2126,6 +2126,62 @@ ol{
   object-fit: cover;
 }
 
+.popup-container {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 1000;
+}
+
+.message-icon {
+  font-size: 30px;
+  color: #666666;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  background: transparent;
+  display: inline-block;
+  padding: 10px;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.message-icon:hover {
+  color: #777777;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.social-icons {
+  font-size: 30px;
+  color: #666666;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  bottom: 60px;
+  left: 10px;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon .icon {
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.social-icon .icon:hover {
+  color: #777777;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 @-webkit-keyframes spin{
   from{
     -webkit-transform: rotateZ(0deg);
@@ -2292,10 +2348,6 @@ ol{
     right: 4rem;
   }
 
-  .md\:right-\[5\%\] {
-    right: 5%;
-  }
-
   .md\:top-20 {
     top: 5rem;
   }
@@ -2460,10 +2512,6 @@ ol{
 
   .md\:max-w-\[950px\] {
     max-width: 950px;
-  }
-
-  .md\:max-w-full {
-    max-width: 100%;
   }
 
   .md\:grid-cols-2 {
@@ -2683,10 +2731,6 @@ ol{
     right: 0px;
   }
 
-  .lg\:right-\[10\%\] {
-    right: 10%;
-  }
-
   .lg\:right-\[6rem\] {
     right: 6rem;
   }
@@ -2749,6 +2793,10 @@ ol{
 
   .lg\:h-\[600px\] {
     height: 600px;
+  }
+
+  .lg\:h-\[620px\] {
+    height: 620px;
   }
 
   .lg\:min-h-\[2650px\] {
@@ -2855,10 +2903,6 @@ ol{
 
   .lg\:max-w-\[950px\] {
     max-width: 950px;
-  }
-
-  .lg\:max-w-full {
-    max-width: 100%;
   }
 
   .lg\:grid-cols-2 {
@@ -3216,10 +3260,6 @@ ol{
 
   .sl\:h-\[250px\] {
     height: 250px;
-  }
-
-  .sl\:h-\[370px\] {
-    height: 370px;
   }
 
   .sl\:h-\[500px\] {

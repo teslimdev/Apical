@@ -181,6 +181,51 @@ clip-path: polygon(100% 0, 51% 0, 100% 54%);
   
 }
 
+.popup-container {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1000;
+}
+.message-icon {
+    font-size: 30px;
+    color: #666666;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+    transition: transform 0.3s ease-in-out;
+    background: transparent;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.5s;
+
+}
+.message-icon:hover {
+    color: #777777;
+    transform: translateY(-5px);
+}
+
+.social-icons {
+    font-size: 30px;
+    color: #666666;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1000;
+    bottom: 60px;
+    left: 10px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.social-icon .icon {
+    transition: transform 0.5s;
+}
+.social-icon .icon:hover {
+    color: #777777;
+    transform: translateY(-5px);
+}
+
 
 
 @keyframes spin{

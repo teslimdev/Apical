@@ -1,21 +1,26 @@
 import React from "react";
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import { Link } from "react-router-dom";
-import pic9 from "../../src/pictures/img9.jpeg";
-import { Header, Footer2 } from "../components";
+import vid2 from '../../src/pictures/vid2.mp4'
 const Error = () => {
   return (
     <div>
     
-      <section>
-        <Header />
-      </section>
+     
       <section>
         <div className=" relative">
           <div
-            style={{ backgroundImage: `url(${pic9})` }}
-            className=" bg-cover bg-center  min-h-screen"
+            
+            className=" bg-cover bg-center  h-screen"
           >
+           <video
+            autoPlay
+            loop
+            muted
+            className=" shadow-2xl w-full  h-full object-cover"
+          >
+            <source src={vid2} type="video/mp4 " className="  " />
+          </video>
             <div className=" absolute bg-black inset-0 top-0 opacity-70 h-full"></div>
           </div>
         <div className=" flex justify-center  ">
@@ -40,9 +45,7 @@ const Error = () => {
         </div>
         </div>
       </section>
-      <section>
-        <Footer2 />
-      </section>
+    
     </div>
   );
 };

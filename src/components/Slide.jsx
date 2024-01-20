@@ -7,7 +7,7 @@ const Slide = ({ vid, isModalVideo }) => {
 
   return (
     <div className={videoClassName}>
-      <video autoPlay muted loop className="w-full h-full object-cover">
+      <video autoPlay muted loop className="w-full h-full object-cover" controls={isModalVideo}>
         <source src={vid} type="video/mp4" />
       </video>
     </div>
@@ -15,6 +15,5 @@ const Slide = ({ vid, isModalVideo }) => {
 };
 
 export default Slide;
-
 
 

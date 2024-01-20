@@ -876,6 +876,14 @@ video {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
 .min-h-\[150px\] {
   min-height: 150px;
 }
@@ -2192,6 +2200,16 @@ ol{
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
   }
+
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes spin{
@@ -2204,6 +2222,22 @@ ol{
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
   }
+
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.modal-video {
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+  /* Adjust duration and timing function as needed */
 }
 
 .first-line\:text-\[2\.5rem\]::first-line {
@@ -2402,6 +2436,14 @@ ol{
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:h-\[\] {
+    height: ;
+  }
+
+  .md\:h-\[450px\] {
+    height: 450px;
   }
 
   .md\:min-h-\[180px\] {
@@ -2799,6 +2841,18 @@ ol{
     height: 620px;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
+  .lg\:h-\[\] {
+    height: ;
+  }
+
   .lg\:min-h-\[2650px\] {
     min-height: 2650px;
   }
@@ -2939,6 +2993,10 @@ ol{
 
   .lg\:justify-end {
     justify-content: flex-end;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
   }
 
   .lg\:justify-around {
@@ -3694,4 +3752,3 @@ ol{
     line-height: 9rem;
   }
 }
-

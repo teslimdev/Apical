@@ -233,3 +233,17 @@ clip-path: polygon(100% 0, 51% 0, 100% 54%);
     t0{transform: rotateZ(360deg);}
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.modal-video {
+    animation: spin 10s linear infinite;
+    /* Adjust duration and timing function as needed */
+}

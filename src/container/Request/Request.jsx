@@ -1,7 +1,14 @@
 import React from "react";
 import pic9 from "../../../src/pictures/img9.jpeg";
 import { Header,Footer2 } from "../../components";
+import Select from 'react-select'
 const Request = () => {
+  const options = [
+  { value: 'planning', label: 'Planning' },
+  { value: 'singleProject', label: 'Single Project' },
+  { value: 'smartHome', label: 'Smart Home' },
+  { value: 'commercial', label: 'Commercial' },
+];
   return (
     <div>
       <section>
@@ -52,18 +59,38 @@ const Request = () => {
                 <label htmlFor="" className=" w-full text-white" >Select Plan</label>
             <br />
             
-            <div className=" pt-2 ">
-                <select 
-                required
-                placeholder=""
-                name="" id="" className=" option-bg  text-[#8A6201]  w-full py-1 pl-2 outline-white  ">
-                 <option value="" className="  text-white    bg-[#222222] ">Select field</option>
-              <option value="" className="   text-white    bg-[#222222] ">Planning</option>
-              <option value="" className=" text-white  bg-[#222222]">Single Project</option>
-              <option value="" className="text-white  bg-[#222222] ">Smart Home</option>
-              <option value="" className="text-white  bg-[#222222] ">Commercial</option>
-            </select>
-            </div>
+           <div className="pt-2">
+      <Select
+        required
+        options={options}
+        placeholder="Select field"
+        className="w-full text-[#8A6201] py-1 pl-2 custom-select "
+        classNamePrefix="custom-select"
+        styles={{
+          control: (provided) => ({
+            ...provided,
+            backgroundColor: 'white',
+            color: 'white',
+            cursor:'pointer'
+          }),
+          option: (provided, state) => ({
+            ...provided,
+            backgroundColor: state.isSelected ? '#555555' : state.isFocused ? '#666666' : 'white',
+            color: state.isSelected ? 'white' : '#222222',
+            cursor:'pointer'
+          }),
+          placeholder: (provided) => ({
+            ...provided,
+            color: '#8A6201', 
+          }),
+          singleValue: (provided) => ({
+            ...provided,
+            color: '#8A6201', 
+            
+          }),
+        }}
+      />
+    </div>
             </div>
             <br />
             <div>

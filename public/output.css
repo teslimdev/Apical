@@ -800,6 +800,10 @@ video {
   margin-top: 25%;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -874,14 +878,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[40px\] {
-  height: 40px;
 }
 
 .min-h-\[150px\] {
@@ -1272,6 +1268,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
 .border-b-\[\#222222\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(34 34 34 / var(--tw-border-opacity));
@@ -1321,6 +1322,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1343,6 +1349,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-10 {
@@ -1879,9 +1889,19 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .outline-\[\#222222\] {
@@ -2365,6 +2385,14 @@ ol{
   outline-offset: 2px;
 }
 
+.focus\:outline:focus {
+  outline-style: solid;
+}
+
+.focus\:outline-white:focus {
+  outline-color: #fff;
+}
+
 .group:hover .group-hover\:block {
   display: block;
 }
@@ -2422,6 +2450,10 @@ ol{
     height: 400px;
   }
 
+  .md\:h-\[450px\] {
+    height: 450px;
+  }
+
   .md\:h-\[500px\] {
     height: 500px;
   }
@@ -2436,14 +2468,6 @@ ol{
 
   .md\:h-screen {
     height: 100vh;
-  }
-
-  .md\:h-\[\] {
-    height: ;
-  }
-
-  .md\:h-\[450px\] {
-    height: 450px;
   }
 
   .md\:min-h-\[180px\] {
@@ -2845,14 +2869,6 @@ ol{
     height: 100%;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
-  .lg\:h-\[\] {
-    height: ;
-  }
-
   .lg\:min-h-\[2650px\] {
     min-height: 2650px;
   }
@@ -2993,10 +3009,6 @@ ol{
 
   .lg\:justify-end {
     justify-content: flex-end;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
   }
 
   .lg\:justify-around {
